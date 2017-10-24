@@ -61,7 +61,7 @@
 			<div class="col-md-1">
 				<a href="index.html" class="logo"> <img
 					alt="Porto Website Template" class="img-responsive"
-					src="/Fooddiy/resources/img/logo-footer.png">
+					src="${ pageContext.request.contextPath}/resources/img/logo-footer.png">
 				</a>
 			</div>
 			<div class="col-md-7">

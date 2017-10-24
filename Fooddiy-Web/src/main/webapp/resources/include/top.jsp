@@ -58,43 +58,43 @@
 												class="tip tip-dark"></span></a>
 												<ul class="dropdown-menu">
 												<li><a href="index-corporate-hosting.html"
-													data-thumb-preview="/Fooddiy/resources/img/previews/preview-corporate-hosting.jpg">바나나킥</a></li>
+													data-thumb-preview="${ pageContext.request.contextPath}/resources/img/previews/preview-corporate-hosting.jpg">바나나킥</a></li>
 											</ul></li>
 										<li class="dropdown-submenu"><a
 											href="index-corporate.html">신제품<span class="tip tip-dark">NEW</span></a>
 											<ul class="dropdown-menu">
 												<li><a href="index-corporate.html"
-													data-thumb-preview="/Fooddiy/resources/img/previews/preview-corporate.jpg">Corporate
+													data-thumb-preview="${ pageContext.request.contextPath}/resources/img/previews/preview-corporate.jpg">Corporate
 														- Version 1</a></li>
 												<li><a href="index-corporate-2.html"
-													data-thumb-preview="/Fooddiy/resources/img/previews/preview-corporate-version2.jpg">Corporate
+													data-thumb-preview="${ pageContext.request.contextPath}/resources/img/previews/preview-corporate-version2.jpg">Corporate
 														- Version 2</a></li>
 												<li><a href="index-corporate-3.html"
-													data-thumb-preview="/Fooddiy/resources/img/previews/preview-corporate-version3.jpg">Corporate
+													data-thumb-preview="${ pageContext.request.contextPath}/resources/img/previews/preview-corporate-version3.jpg">Corporate
 														- Version 3</a></li>
 												<li><a href="index-corporate-4.html"
-													data-thumb-preview="/Fooddiy/resources/img/previews/preview-corporate-version4.jpg">Corporate
+													data-thumb-preview="${ pageContext.request.contextPath}/resources/img/previews/preview-corporate-version4.jpg">Corporate
 														- Version 4</a></li>
 												<li><a href="index-corporate-5.html"
-													data-thumb-preview="/Fooddiy/resources/img/previews/preview-corporate-version5.jpg">Corporate
+													data-thumb-preview="${ pageContext.request.contextPath}/resources/img/previews/preview-corporate-version5.jpg">Corporate
 														- Version 5</a></li>
 												<li><a href="index-corporate-6.html"
-													data-thumb-preview="/Fooddiy/resources/img/previews/preview-corporate-version6.jpg">Corporate
+													data-thumb-preview="${ pageContext.request.contextPath}/resources/img/previews/preview-corporate-version6.jpg">Corporate
 														- Version 6</a></li>
 												<li><a href="index-corporate-7.html"
-													data-thumb-preview="/Fooddiy/resources/img/previews/preview-corporate-version7.jpg">Corporate
+													data-thumb-preview="${ pageContext.request.contextPath}/resources/img/previews/preview-corporate-version7.jpg">Corporate
 														- Version 7</a></li>
 												<li><a href="index-corporate-8.html"
-													data-thumb-preview="/Fooddiy/resources/img/previews/preview-corporate-version8.jpg">Corporate
+													data-thumb-preview="${ pageContext.request.contextPath}/resources/img/previews/preview-corporate-version8.jpg">Corporate
 														- Version 8</a></li>
 												<li><a href="index-corporate-hosting.html"
-													data-thumb-preview="/Fooddiy/resources/img/previews/preview-corporate-hosting.jpg">Corporate
+													data-thumb-preview="${ pageContext.request.contextPath}/resources/img/previews/preview-corporate-hosting.jpg">Corporate
 														- Hosting</a></li>
 											</ul></li>
 										<li class="dropdown-submenu"><a href="#">사이드/음료</a>
 											<ul class="dropdown-menu">
 												<li><a href="index-one-page.html"
-													data-thumb-preview="/Fooddiy/resources/img/previews/preview-one-page.jpg">One
+													data-thumb-preview="${ pageContext.request.contextPath}/resources/img/previews/preview-one-page.jpg">One
 														Page Original</a></li>
 											</ul>
 										</li>

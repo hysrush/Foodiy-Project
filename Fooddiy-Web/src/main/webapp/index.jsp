@@ -15,8 +15,8 @@
 		<meta name="author" content="okler.net">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="/Fooddiy/resources/img/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="/Fooddiy/resources/img/apple-touch-icon.png">
+		<link rel="shortcut icon" href="${ pageContext.request.contextPath}/resources/img/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="${ pageContext.request.contextPath}/resources/img/apple-touch-icon.png">
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -67,34 +67,34 @@
 		</footer>
 
 		<!-- Vendor -->
-		<script src="/Fooddiy/resources/vendor/jquery/jquery.min.js"></script>
-		<script src="/Fooddiy/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
-		<script src="/Fooddiy/resources/vendor/jquery.easing/jquery.easing.min.js"></script>
-		<script src="/Fooddiy/resources/vendor/jquery-cookie/jquery-cookie.min.js"></script>
-		<script src="/Fooddiy/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
-		<script src="/Fooddiy/resources/vendor/common/common.min.js"></script>
-		<script src="/Fooddiy/resources/vendor/jquery.validation/jquery.validation.min.js"></script>
-		<script src="/Fooddiy/resources/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
-		<script src="/Fooddiy/resources/vendor/jquery.gmap/jquery.gmap.min.js"></script>
-		<script src="/Fooddiy/resources/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
-		<script src="/Fooddiy/resources/vendor/isotope/jquery.isotope.min.js"></script>
-		<script src="/Fooddiy/resources/vendor/owl.carousel/owl.carousel.min.js"></script>
-		<script src="/Fooddiy/resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<script src="/Fooddiy/resources/vendor/vide/vide.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easing/jquery.easing.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery-cookie/jquery-cookie.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/common/common.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.validation/jquery.validation.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/isotope/jquery.isotope.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/owl.carousel.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/vide/vide.min.js"></script>
 		
 		<!-- Theme Base, Components and Settings -->
-		<script src="/Fooddiy/resources/js/theme.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/js/theme.js"></script>
 		
 		<!-- Current Page Vendor and Views -->
-		<script src="/Fooddiy/resources/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-		<script src="/Fooddiy/resources/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-		<script src="/Fooddiy/resources/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
-		<script src="/Fooddiy/resources/js/views/view.home.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/js/views/view.home.js"></script>
 		
 		<!-- Theme Custom -->
-		<script src="/Fooddiy/resources/js/custom.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/js/custom.js"></script>
 		
 		<!-- Theme Initialization Files -->
-		<script src="/Fooddiy/resources/js/theme.init.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
 	</body>
 </html>
