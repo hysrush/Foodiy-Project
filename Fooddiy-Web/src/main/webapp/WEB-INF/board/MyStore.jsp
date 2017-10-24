@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 		<!-- Basic -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
@@ -53,18 +53,145 @@
 
 		<!-- Head Libs -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
-
-</head>
+		
+	</head>
 	<body>
-		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
-				<jsp:include page="/resources/include/top.jsp"/>
-		</header>
 		<div class="body">
-			<jsp:include page="/resources/include/slider.jsp"/>
+			<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
+				<jsp:include page="/resources/include/top.jsp"/>
+			</header>
+
+			<div role="main" class="main">
+
+				<section class="page-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="breadcrumb">
+									<li><a href="#">Home</a></li>
+									<li class="active">Store</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<h1>매장 찾기</h1>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="container">
+
+					<div class="row">
+						<div class="col-md-3">
+							<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+
+									<h4 class="heading-primary">매장찾기</h4>
+								<ul class="nav nav-list mb-xlg">
+									<li><a href="#">My매장 </a></li>
+									<li class="active">
+										<a href="#">매장찾기</a>
+									</li>
+								</ul>
+							</aside>
+						</div>
+						<div class="col-md-4">
+							<!-- START -->
+							<div class="row">
+								<hr class="tall">
+
+									<h4>자주가는 매장</h4>
+
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th>
+													매장명
+												</th>
+												<th>
+													거리
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													강남점
+												</td>
+												<td>
+													740m
+												</td>
+											</tr>
+											<tr>
+												<td>
+													노원점
+												</td>
+												<td>
+													25.5km
+												</td>
+											</tr>
+											<tr>
+												<td>
+													서초점
+												</td>
+												<td>
+													1.8km
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+							</div>
+						</div>
+							<div class="col-md-4">
+							<!-- START -->
+							<div class="row">
+								<hr class="tall">
+
+									<h4>나만의 매장</h4>
+
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th>
+													매장명
+												</th>
+												<th>
+													거리
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													강남점
+												</td>
+												<td>
+													740m
+												</td>
+											</tr>
+											<tr>
+												<td>
+													서울숲점
+												</td>
+												<td>
+													9.4km
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+							</div>
+						</div>
+			
+					</div>
+				</div>
+			<footer id="footer">
+				<jsp:include page="/resources/include/bottom.jsp"/>
+			</footer>
 		</div>
-		<footer id="footer">
-			<jsp:include page="/resources/include/bottom.jsp"/>
-		</footer>
+	</div>
 
 		<!-- Vendor -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
@@ -96,5 +223,55 @@
 		
 		<!-- Theme Initialization Files -->
 		<script src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
+
+
+<!-- Examples -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqatUi4ICaA6KBVjyOxul0QKP4F_H7-mY"></script>
+		<script>
+			// Markers
+			$("#googlemapsMarkers").gMap({
+				controls: {
+					draggable: (($.browser.mobile) ? false : true),
+					panControl: true,
+					zoomControl: true,
+					mapTypeControl: true,
+					scaleControl: true,
+					streetViewControl: true,
+					overviewMapControl: true
+				},
+				scrollwheel: false,
+				markers: [{
+					address: "217 Summit Boulevard, Birmingham, AL 35243",
+					html: "<strong>Alabama Office</strong><br>217 Summit Boulevard, Birmingham, AL 35243",
+					icon: {
+						image: "img/pin.png",
+						iconsize: [26, 46],
+						iconanchor: [12, 46]
+					}
+				},{
+					address: "645 E. Shaw Avenue, Fresno, CA 93710",
+					html: "<strong>California Office</strong><br>645 E. Shaw Avenue, Fresno, CA 93710",
+					icon: {
+						image: "img/pin.png",
+						iconsize: [26, 46],
+						iconanchor: [12, 46]
+					}
+				},{
+					address: "New York, NY 10017",
+					html: "<strong>New York Office</strong><br>New York, NY 10017",
+					icon: {
+						image: "img/pin.png",
+						iconsize: [26, 46],
+						iconanchor: [12, 46]
+					}
+				}],
+				latitude: 37.09024,
+				longitude: -95.71289,
+				zoom: 3
+			});
+
+
+		</script>	
+
 	</body>
 </html>

@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html>
-<head>
-		<!-- Basic -->
+	<head>
+<!-- Basic -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
@@ -54,17 +54,61 @@
 		<!-- Head Libs -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
 
-</head>
+	</head>
 	<body>
-		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
-				<jsp:include page="/resources/include/top.jsp"/>
-		</header>
 		<div class="body">
-			<jsp:include page="/resources/include/slider.jsp"/>
+			<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
+				<jsp:include page="/resources/include/top.jsp"/>
+			</header>
+
+			<div role="main" class="main">
+
+				<section class="page-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="breadcrumb">
+									<li><a href="#">Home</a></li>
+									<li class="active">Board</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<h1>SNS게시판</h1>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				
+					<div class="row">
+		
+						<div class="col-md-3">
+							<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+
+								<h4 class="heading-primary"><strong>SNS게시판</strong></h4>
+
+								<ul class="nav nav-list mb-xlg sort-source" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
+									<li data-option-value="*" class="active"><a href="#">자주하는 질문</a></li>
+									<li data-option-value=".websites"><a href="#">공지사항</a></li>
+									<li data-option-value=".logos"><a href="#">1:1문의</a></li>
+									<li data-option-value=".brands"><a href="#">SNS 게시판</a></li>
+								</ul>
+
+							</aside>
+						</div>
+							
+							<!-- END -->
+						</div>
+					</div>
+				
+			
+			<footer id="footer">
+				<jsp:include page="/resources/include/bottom.jsp"/>
+			</footer>
+	
 		</div>
-		<footer id="footer">
-			<jsp:include page="/resources/include/bottom.jsp"/>
-		</footer>
 
 		<!-- Vendor -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
@@ -96,5 +140,6 @@
 		
 		<!-- Theme Initialization Files -->
 		<script src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
+
 	</body>
 </html>
