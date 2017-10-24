@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Basic -->
+		<!-- Basic -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
@@ -80,64 +80,74 @@
 			</section>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
-						<div class="featured-boxes">
-							<div class="row">
-								<div class="col-sm-6 align-left">
-									<div class="featured-box featured-box-primary align-left mt-xlg">
-										<div class="box-content">
-											<h4 class="heading-primary text-uppercase mb-md">회원</h4>
-											<form action="/" id="frmSignIn" method="post">
-												<div class="row">
-													<div class="form-group">
-														<div class="col-md-12">
-															<label>Username or E-mail Address</label> <input
-																type="text" value="" class="form-control input-lg">
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="form-group">
-														<div class="col-md-12">
-															<label>Password</label>
-															<input type="password" value=""
-																class="form-control input-lg">
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-md-6">
-														<span class="remember-box checkbox"> <label
-															for="rememberme"> <input type="checkbox"
-																id="rememberme" name="rememberme">Remember Me
-														</label>
-														</span>
-													</div>
-													<div class="col-md-6 pull-right">
-														<a href="#">ID 찾기</a>&nbsp;
-														<a href="#"> Password 찾기</a>
-													</div>
-													<div class="col-md-6">
-														<input type="submit" value="Login"
-															class="btn btn-primary pull-right mb-xl"
-															data-loading-text="Loading...">
-													</div>
-												</div>
-											</form>
+					<div class="col-md-9">
+						<!-- START -->
+						<div class="row">
+							<div class="col-md-12">
+								<div class="tabs tabs-bottom tabs-center tabs-simple">
+									<ul class="nav nav-tabs">
+										<li class="active">
+											<a href="#memberLogin" data-toggle="tab" aria-expanded="true"> 회원 로그인</a>
+										</li>
+										<li class="">
+											<a href="#nonmemberLogin" data-toggle="tab" aria-expanded="false"> 비회원 로그인</a>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="memberLogin">
+											<jsp:include page="/resources/include/login/memberLogin.jsp"/>
 										</div>
-									</div>
+
+										<!--  비회원 로그인    -->
+										<div class="tab-pane" id="nonmemberLogin">
+											<jsp:include page="/resources/include/login/nonmemberLogin.jsp"/>
+										</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<p class="sign-up-info">회원 가입해 주세요.<a href="#" id="headerSignUp" class="p-none m-none ml-xs">Sign Up</a></p>
 			</div>
 		</div>
-		
+
 		<footer id="footer">
 			<jsp:include page="/resources/include/bottom.jsp"/>
 		</footer>
 	</div>
+	
+	<!-- Vendor -->
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easing/jquery.easing.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery-cookie/jquery-cookie.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/common/common.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.validation/jquery.validation.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/isotope/jquery.isotope.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/owl.carousel.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/vide/vide.min.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="${ pageContext.request.contextPath}/resources/js/theme.js"></script>
+		
+		<!-- Current Page Vendor and Views -->
+		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/js/views/view.home.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="${ pageContext.request.contextPath}/resources/js/custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
+
+		<!-- Examples -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqatUi4ICaA6KBVjyOxul0QKP4F_H7-mY"></script>
 </body>
 </html>

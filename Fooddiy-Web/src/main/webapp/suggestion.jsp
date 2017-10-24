@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>    
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,24 +55,34 @@
 
 		<!-- Head Libs -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
+
 <script type="text/javascript">
 	function doAction(type) {
 		switch (type) {
-		case 'W':
-			location.href = "<%= request.getContextPath() %>/notice/write.do";
+		case 'L':
+			location.href = "<%= request.getContextPath() %>/notice/list.do";
 			break;
 		default:
 			break;
 		}
 	}
+	
+	function submit() {
+		document.getElementById("dForm").submit();
+	}
+	
+	$('#dateRangePicker').datepicker({
+		 format: "yyyy-mm-dd",
+		 language: "kr"
+	});
 </script>
 </head>
 <body>
+
 	<div class="body">
 		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
 			<jsp:include page="/resources/include/top.jsp" />
 		</header>
-		
 		<div role="main" class="main">
 		
 			<section class="page-header">
@@ -79,28 +90,32 @@
 					<div class="row">
 						<div class="col-md-12">
 							<ul class="breadcrumb">
-								<li><a href="#">커뮤니티</a></li>
-								<li><a href="#">고객센터</a></li>
-								<li class="active">Subway 소식</li>
+								<li><a href="#">Home</a></li>
+								<li class="active">고객센터</li>
 							</ul>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<h1>Subway 소식</h1>
+							<h1>1:1 문의</h1>
 						</div>
 					</div>
 				</div>
 			</section>
 		
 			<div class="container">
+
+				<h2>고객센터 > <strong>1:1 문의</strong></h2>
+				
 				<section class="section section-default">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12">
-								<h4 class="mb-none">Subway 공지사항과 보도자료입니다.</h4><br>
+								<h4 class="mb-none">귀한 말씀 들려 주십시오. 작은 소리도 듣겠습니다.</h4><br>
 								<p class="mb-none">
-									Subway 공지사항과 보도자료입니다.
+									Subway에서는 고객 여러분의 즐겁고 행복한 시간을 위해 정성을 다하고 있습니다.<br>
+									만족스러운 서비스였는지, 불만스러운 점은 없으셨는지 귀한 의견을 들려주시기 바랍니다. 보다 나은 서비스로 보답하겠습니다.<br>
+									[ 1:1 문의 운영시간 ] 월~금 09:00~17:00 (토/일요일, 공휴일 휴무) / 접수하신 글은 3개월만 보관됩니다.
 								</p>
 							</div>
 						</div>
@@ -116,10 +131,10 @@
 								<div class="tabs tabs-vertical tabs-left tabs-navigation">
 									<ul class="nav nav-tabs col-sm-3">
 										<li class="active">
-											<a href="#tabsNavigation1" data-toggle="tab"><i class="fa fa-group"></i>공지사항</a>
+											<a href="#tabsNavigation1" data-toggle="tab"><i class="fa fa-group"></i>1:1 문의하기</a>
 										</li>
 										<li>
-											<a href="#tabsNavigation2" data-toggle="tab"><i class="fa fa-file"></i>보도자료</a>
+											<a href="#tabsNavigation2" data-toggle="tab"><i class="fa fa-file"></i>나의 문의내역</a>
 										</li>
 									</ul>
 								</div>
@@ -127,103 +142,130 @@
 							<div class="col-md-8">
 								<div class="tab-pane tab-pane-navigation active" id="tabsNavigation1">
 									<div class="center">
-										<h4>공지사항</h4>
+										<h4>1:1 문의하기</h4>
 										<hr>
-										<div class="col-md-12">
-											<div class="col-md-3" style="float: left;">
-												<select class="form-control">
-														<option value="title">제목</option>
-														<option value="content">내용</option>
-														<option value="title+content">제목+내용</option>
-												</select>
-											</div>
-											<div class="col-md-3">
-												<form action="">
-													<div class="input-group input-group-lg">
-														<input class="form-control" type="text" name="search" id="search" placeholder="Search...">
-														<span class="input-group-btn">
-															<button type="submit" class="btn btn-primary btn-lg">
-																<i class="fa fa-search"></i>
-															</button>
-														</span>
-													</div>
-												</form>
-											</div>
-										</div>
-										<table class="table table-hover" style="width:80%">
-											<thead>
+										<form:form commandName="boardVO" method="POST" >
+											<table class="table table-bordered" width="80%">
 												<tr>
-												<th>번호</th>
-												<th>제목</th>
-												<th>작성일</th>
-												<th>조회수</th>
-												</tr>
-											</thead>
-											<tbody>
-												<c:forEach items="${ noticeList }" var="notice">
-													<tr>
-														<td>${ notice.no }</td>
+													<!-- <div class="form-group" align="left"> -->
 														<td>
-															<a href="${ pageContext.request.contextPath }/notice/${ notice.no }/detail.do">
-															<c:out value="${ notice.title }"/>
-															</a>
+															<label for="">분야</label>
 														</td>
-														<td>${ notice.regDate }</td>
-														<td>${ notice.viewCnt }</td>
-													</tr>
-												</c:forEach>
-											</tbody>
-										</table>
-										<div class="center">
-											<div class="col-md-12">
-												<ul class="pagination pull-center">
-													<li>
-														<a href="#"><i class="fa fa-chevron-left"></i></a>
-													</li>
-													<li class="active">
-														<a href="#">1</a>
-													</li>
-													<li>
-														<a href="#">2</a>
-													</li>
-													<li>
-														<a href="#">3</a>
-													</li>
-													<li>
-														<a href="#"><i class="fa fa-chevron-right"></i></a>
-													</li>
-												</ul>
-											</div>
-											<button type="button" class="btn btn-primary" onclick="doAction('W')">글쓰기</button>
-										</div>
+														<td>
+															<select class="form-control">
+																<option value="">문의유형</option>
+																<option value="">문의</option>
+																<option value="">칭찬</option>
+																<option value="">불만</option>
+																<option value="">제안</option>
+																<option value="">기타</option>
+															</select>
+														</td>
+													<!-- </div> -->
+												</tr>
+												<tr>
+													<!-- <div class="form-group" align="left"> -->
+														<td>
+															<label for="email">답변 메일</label>
+														</td>
+														<td>
+															<input path="#" type="text" class="form-control" id="emailID" placeholder="로그인회원emailID"/>
+															@
+															<input path="#" type="text" class="form-control" id="emailAdd" placeholder="로그인회원emailAdd"/>
+														</td>
+													<!-- </div> -->
+												</tr>
+												<tr>
+													<div class="form-group" align="left">
+														<td>
+															<label for="email">연락처</label>
+														</td>
+														<td>
+															<select class="form-control">
+																<option value="">010</option>
+																<option value="">011</option>
+																<option value="">016</option>
+																<option value="">017</option>
+																<option value="">018</option>
+																<option value="">019</option>
+															</select>
+															-
+															<input path="#" type="text" class="form-control" id="phone2" placeholder="중간번호"/>
+															-
+															<input path="#" type="text" class="form-control" id="phone3" placeholder="마지막번호"/>
+														</td>
+													</div>
+												</tr>
+												<tr>
+													<!-- <div class="form-group" align="left"> -->
+														<td>
+															<label for="email">장소</label>
+														</td>
+														<td>
+															<label>
+																<input type="radio" name="optionRadios" id="optionRadio" value="" checked="checked">매장 방문
+																<input type="radio" name="optionRadios" id="optionRadio" value="" >매장 방문 외
+															</label>
+															<br>
+															<label for="email">방문매장</label>
+															<button type="button" class="btn btn-info mr-xs mb-sm">매장찾기</button>
+															&nbsp;&nbsp;&nbsp;
+															<label for="email">방문일</label>
+															<div class="input-group date">
+            													<input type="text" class="form-control">
+            													<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+       														</div>
+       													</td>
+													<!-- </div> -->
+												</tr>
+												<tr>
+													<!-- <div class="form-group" align="left"> -->
+														<td>
+															<label for="title">제목</label>
+														</td>
+														<td>
+															<form:input path="title" type="text" class="form-control" id="exampleInputEmail1" placeholder="title"/>
+															<form:errors path="title" class="form-control"></form:errors>
+														</td>
+													<!-- </div> -->
+												</tr>
+												<tr>
+													<!-- <div class="form-group" align="left"> -->
+														<td>
+															<label for="content">내용</label>
+														</td>
+														<td>
+															<form:textarea path="content" class="form-control" rows="5" id="comment" placeholder="contents"/>
+															<form:errors path="content" class="form-control"></form:errors>
+														</td>
+													<!-- </div> -->
+												</tr>
+												<tr>
+													<!-- <div class="form-group" align="left"> -->
+														<td>
+															<label for="content">파일첨부</label>
+														</td>
+														<td>
+															<input path="#" type="file" class="form-control" id="phone2" placeholder="파일첨부"/>
+															파일첨부는 아래의 파일만 등록이 가능하며 최대 5개(1개당 최대2MB), 총 10MB까지 등록이 가능합니다.<br>
+															(등록 가능 확장자 : jpg, jpeg, png, gif, zip, doc, docx, ppt, pptx, xls, xlsx, hwp)
+														</td>
+													<!-- </div> -->
+												</tr>
+												<form:hidden path="writer" value="admin"/>
+												<!-- <input type="hidden" id="writer" value="admin"> -->
+											</table>
+										</form:form>
+									</div>
+									<div class="center">
+										<button type="submit" class="btn btn-default">등록</button>
 									</div>
 								</div>
 								<div class="tab-pane tab-pane-navigation" id="tabsNavigation2">
 									<div class="center">
-										<h4>보도자료</h4>
+										<h4>나의 문의내역</h4>
 										<hr>
-										<div class="col-md-12">
-											<div class="col-md-3" style="float: left;;">
-												<select class="form-control">
-														<option value="title">제목</option>
-														<option value="content">내용</option>
-														<option value="title+content">제목+내용</option>
-												</select>
-											</div>
-											<div class="col-md-3">
-												<form action="">
-													<div class="input-group input-group-lg">
-														<input class="form-control" type="text" name="search" id="search" placeholder="Search...">
-														<span class="input-group-btn">
-															<button type="submit" class="btn btn-primary btn-lg">
-																<i class="fa fa-search"></i>
-															</button>
-														</span>
-													</div>
-												</form>
-											</div>
-										</div>
-										<table class="table table-hover" style="width:80%">
+										<table class="table table-hover" width="80%">
 											<thead>
 												<tr>
 												<th>번호</th>
@@ -268,6 +310,9 @@
 												</ul>
 											</div>
 											<button type="button" class="btn btn-primary" onclick="doAction('W')">글쓰기</button>
+										</div>
+										<div class="center">
+											<button type="button" class="btn btn-primary" onclick="doAction('L')">목록</button>
 										</div>
 									</div>
 								</div>
@@ -278,10 +323,6 @@
 			<br>
 			</div>
 		</div>
-		
-		<footer id="footer">
-			<jsp:include page="/resources/include/bottom.jsp"/>
-		</footer>
 	</div>
 	
 	<!-- Vendor -->
