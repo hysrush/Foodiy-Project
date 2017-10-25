@@ -6,6 +6,7 @@
 		<div class="col-sm-6 align-left">
 			<div class="featured-box featured-box-primary align-left mt-xlg">
 				<div class="box-content">
+					<h4 class="heading-primary text-uppercase mb-md">비회원</h4>
 					<form action="/" id="frmSignIn" method="post">
 						<div class="row">
 							<div class="form-group">
@@ -18,8 +19,7 @@
 						<div class="row">
 							<div class="form-group">
 								<div class="col-md-12">
-									<label>Password</label> <input type="password" value=""
-										class="form-control input-lg">
+									<label>Password</label> <input type="password" value="" class="form-control input-lg">
 								</div>
 							</div>
 						</div>
