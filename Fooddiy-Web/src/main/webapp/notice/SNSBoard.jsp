@@ -139,7 +139,7 @@
 									<div class="testimonial testimonial-style-3">
 										<div class="testimonial-author">
 											<div class="testimonial-author-thumbnail">
-												<img src="img/clients/client-1.png" class="img-responsive img-circle" alt="">
+												<img src="${ pageContext.request.contextPath }/resources/img/clients/client-1.png" class="img-responsive img-circle" alt="">
 											</div>
 												<p><strong>hysrush</strong></p>
 										</div>
@@ -148,7 +148,7 @@
 										<a href="SNSBoard-Modal.html" data-ajax-on-modal>
 											<span class="thumb-info thumb-info-lighten">
 												<span class="thumb-info-wrapper">
-													<img src="img/products/product-1.png" class="img-responsive" alt="">
+													<img src="${ pageContext.request.contextPath }/resources/img/products/product-1.png" class="img-responsive" alt="">
 												</span>
 											</span>
 										</a>
@@ -168,7 +168,7 @@
 									<div class="testimonial testimonial-style-3">
 										<div class="testimonial-author">
 											<div class="testimonial-author-thumbnail">
-												<img src="img/clients/client-1.png" class="img-responsive img-circle" alt="">
+												<img src="${ pageContext.request.contextPath }/resources/img/clients/client-1.png" class="img-responsive img-circle" alt="">
 											</div>
 												<p><strong>hysrush</strong></p>
 										</div>
@@ -177,7 +177,7 @@
 										<a href="SNSBoard-Modal.html" data-ajax-on-modal>
 											<span class="thumb-info thumb-info-lighten">
 												<span class="thumb-info-wrapper">
-													<img src="img/products/product-1.png" class="img-responsive" alt="">
+													<img src="${ pageContext.request.contextPath }/resources/img/products/product-1.png" class="img-responsive" alt="">
 												</span>
 											</span>
 										</a>
