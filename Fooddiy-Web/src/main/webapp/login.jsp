@@ -80,8 +80,14 @@
 			</section>
 			<div class="container">
 				<div class="row">
+					<div class="col-md-3">
+						<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+
+						</aside>
+					</div>
+
+					<!-- START -->
 					<div class="col-md-9">
-						<!-- START -->
 						<div class="row">
 							<div class="col-md-12">
 								<div class="tabs tabs-bottom tabs-center tabs-simple">

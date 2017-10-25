@@ -10,7 +10,7 @@
 					<div class="col-sm-6">
 						<div class="featured-box featured-box-primary align-left mt-xlg">
 							<div class="box-content">
-								<h4 class="heading-primary text-uppercase mb-md">회원</h4>
+								<h4 class="heading-primary text-uppercase mb-md">비회원</h4>
 								<form action="/" id="frmSignIn" method="post">
 									<div class="row">
 										<div class="form-group">
@@ -37,7 +37,6 @@
 													<option>011</option>
 													<option>019</option>
 												</select>&nbsp; <input type="text" value=""> - <input type="text" value=""> 
-												<input type="button" value="Login" class="btn btn-primary pull-right mb-xl">
 											</div>
 										</div>
 									</div>

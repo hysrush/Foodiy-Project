@@ -7,7 +7,7 @@
 			<!-- 로고  -->
 			<div class="header-column">
 				<div class="header-logo">
-					<a href="index.jsp"> <img alt="Porto" width="111" height="54"
+					<a href="${ pageContext.request.contextPath }/index.jsp"> <img alt="Porto" width="111" height="54"
 						data-sticky-width="82" data-sticky-height="40"
 						data-sticky-top="33" src="${ pageContext.request.contextPath }/resources/img/Subway-logo.jpg">
 					</a>
@@ -17,7 +17,7 @@
 				<div class="header-row">
 					<nav class="header-nav-top">
 						<ul class="nav nav-pills">
-							<li class="hidden-xs"><a href="about-us.html"> <!-- <i class="fa fa-angle-right"></i> -->
+							<li class="hidden-xs"><a href="장바구니"> <!-- <i class="fa fa-angle-right"></i> -->
 									장바구니&nbsp;<img
 									alt="${ pageContext.request.contextPath }/장바구니.do"
 									src="${ pageContext.request.contextPath }/resources/img/binCartImg.png"
@@ -40,7 +40,7 @@
 						<nav>
 							<ul class="nav nav-pills" id="mainNav">
 								<li class="dropdown active"><a class="dropdown-toggle"
-									href="index.jsp"> Menu </a>
+									href="${ pageContext.request.contextPath }/menu/menu.jsp"> Menu </a>
 									<ul class="dropdown-menu">
 										<li><a href="index.html">전체 메뉴</a></li>
 										<li class="dropdown-submenu"><a href="index-classic.html">세트 메뉴</a>
@@ -100,10 +100,9 @@
 										</li>
 									</ul>
 								</li>
-								<li class="dropdown"><a class="dropdown-toggle" href="#">EVENT</a>
+								<li class="dropdown"><a class="dropdown-toggle" href="${ pageContext.request.contextPath}/event/eventPage.jsp">EVENT</a>
 									<ul class="dropdown-menu">
-										<li><a href="#">Brand EVENT</a></li>
-										<li><a href="#">Over EVENT</a></li>
+										<li><a href="${ pageContext.request.contextPath }/event/stroreEventPage.jsp">Brand EVENT</a></li>
 									</ul>
 								</li>
 								<li class="dropdown"><a class="dropdown-toggle" href="#">Community</a>
@@ -116,7 +115,7 @@
 									</ul></li>
 								<!-- 회원 로그인하면 My page -->
 								<c:if test="${ not empty userVO }">
-									<li class="dropdown"><a class="dropdown-toggle" href="#">My
+									<li class="dropdown"><a class="dropdown-toggle" href="${ pageContext.request.contextPath }/member/memberDetail.jsp">My
 											Page</a>
 										<ul class="dropdown-menu">
 											<li><a href="contact-us.html">회원 정보</a></li>
@@ -127,7 +126,7 @@
 								</c:if>
 								<!-- 비회원 로그인하면 주문내역 조회 -->
 								<c:if test="${ not empty nonMember }">
-									<li class="dropdown"><a class="dropdown-toggle" href="#">주문내역조회</a></li>
+									<li class="dropdown"><a class="dropdown-toggle" href="${ pageContext.request.contextPath }/주문내역조회">주문내역조회</a></li>
 								</c:if>
 								
 								<c:choose>
@@ -149,9 +148,7 @@
 															<div class="col-md-8">
 																<div class="user-avatar">
 																	<div class="img-thumbnail">
-																		<img
-																			src="${ pageContext.request.contextPath }/img/clients/client-1.jpg"
-																			alt="">
+																		<img src="${ pageContext.request.contextPath }/img/clients/client-1.jpg" alt="">
 																	</div>
 																	<p>
 																		<strong>${ userVO.id }</strong> <span>${ 등급 }</span>
@@ -160,7 +157,7 @@
 															</div>
 															<div class="col-md-4">
 																<ul class="list-account-options">
-																	<li><a href="#">My Page</a></li>
+																	<li><a href="${ pageContext.request.contextPath }/member/memberDetail.jsp">My Page</a></li>
 																	<li><a href="#">Log Out</a></li>
 																</ul>
 															</div>

@@ -6,7 +6,7 @@
 		<div class="col-sm-6 align-left">
 			<div class="featured-box featured-box-primary align-left mt-xlg">
 				<div class="box-content">
-					<h4 class="heading-primary text-uppercase mb-md">비회원</h4>
+					<h4 class="heading-primary text-uppercase mb-md">회원</h4>
 					<form action="/" id="frmSignIn" method="post">
 						<div class="row">
 							<div class="form-group">
@@ -35,9 +35,7 @@
 								<a href="#">ID 찾기</a>&nbsp; <a href="#"> Password 찾기</a>
 							</div>
 							<div class="col-md-6">
-								<input type="submit" value="Login"
-									class="btn btn-primary pull-right mb-xl"
-									data-loading-text="Loading...">
+								<input type="submit" value="Login" class="btn btn-primary pull-right mb-xl" data-loading-text="Loading...">
 							</div>
 						</div>
 					</form>
