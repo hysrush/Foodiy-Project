@@ -160,7 +160,7 @@
 									<div class="center">
 										<h4>1:1 문의하기</h4>
 										<hr>
-										<form:form commandName="boardVO" method="POST" >
+										<form commandName="boardVO" method="POST" >
 											<table class="table table-bordered" width="80%">
 												<tr>
 													<div class="form-group" align="left">
@@ -271,7 +271,7 @@
 												<form:hidden path="writer" value="admin"/>
 												<!-- <input type="hidden" id="writer" value="admin"> -->
 											</table>
-										</form:form>
+										</form>
 									</div>
 									<div class="center">
 										<button type="submit" class="btn btn-default">등록</button>
