@@ -75,12 +75,7 @@
 				</div>
 			</section>
 	<div class="col-md-12">
-=======
-
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 	<div class="col-md-12">
-
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 		<div role="main" class="main">
 			<div class="container">
 				<div class="row">
