@@ -110,7 +110,7 @@
 									<ul class="dropdown-menu">
 										<li><a href="#">공지사항</a></li>
 										<li><a href="#">자주하는 질문</a></li>
-										<li><a href="${ pageContext.request.contextPath }/board/suggestion.jsp">1:1 문의</a></li>
+										<li><a href="${ pageContext.request.contextPath }/notice/suggestion.jsp">1:1 문의</a></li>
 										<li><a href="#"
 											data-thumb-preview="${ pageContext.request.contextPath }/resources/img/previews/subway-sns.jpg">SNS</a></li>
 									</ul></li>
