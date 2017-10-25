@@ -235,18 +235,17 @@
 															<label for="email">장소</label>
 														</td>
 														<td>
-															<label style="width: 30%; float: left;">
+															<div style="float: left;">
 																<input type="radio" name="optionRadios" id="optionRadio" value="" checked="checked">매장 방문
 																<input type="radio" name="optionRadios" id="optionRadio" value="" >매장 방문 외
-															</label>
-															<br>
-															<div style="width: 30%; float: left;">
+															</div>
+															<div style="float: left;">
 																<label for="email" style="float: left;">방문매장&nbsp;&nbsp;</label>
 																<button type="button" class="btn btn-info mr-xs mb-sm" style="float: left;">매장찾기</button>
 															</div>
-															<div style="width: 30%; float: left;">
+															<div style="float: left;">
 																<label for="email" style="float: left;">방문일&nbsp;&nbsp;</label>
-																<div class="input-group date" style="width: 30%; float: left;">
+																<div class="input-group date" style="width: 40%; float: left;">
 	            													<input type="text" class="form-control">
 	            													<span class="input-group-addon" id="testDatepicker"><i class="glyphicon glyphicon-calendar"></i></span>
 	       														</div>
@@ -260,14 +259,11 @@
 															<label for="title">제목</label>
 														</td>
 														<td>
-<<<<<<< HEAD
 															<input path="title" type="text" class="form-control" id="exampleInputEmail1" placeholder="title"/>
 															<%-- <form:errors path="title" class="form-control"></form:errors> --%>
-=======
 															<form type="text" class="form-control" id="exampleInputEmail1">
 															<%-- <form:form errors path="title" class="form-control"></form:errors> --%>
 															</form>
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 														</td>
 													</div>
 												</tr>
@@ -277,11 +273,8 @@
 															<label for="content">내용</label>
 														</td>
 														<td>
-<<<<<<< HEAD
 															<textarea path="content" class="form-control" rows="5" id="comment" placeholder="contents"></textarea>
-=======
 															<form type="textarea" path="content" class="form-control" rows="5" id="comment" placeholder="contents"/>
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 															<%-- <form:errors path="content" class="form-control"></form:errors> --%>
 														</td>
 													</div>
@@ -298,12 +291,7 @@
 														</td>
 													</div>
 												</tr>
-<<<<<<< HEAD
-=======
-												<%-- <form:hidden path="writer" value="admin"/> --%>
-												<input type="hidden" id="writer" value="admin">
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
-											</table>
+												</table>
 										</form>
 									</div>
 									<section class="section section-default">
