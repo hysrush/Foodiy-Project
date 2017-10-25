@@ -1,91 +1,93 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Fooddiy-Order</title>
 
 <!-- Favicon -->
-<link rel="shortcut icon"
-	href="${ pageContext.request.contextPath }/resources/img/favicon.ico"
-	type="image/x-icon" />
-<link rel="apple-touch-icon"
-	href="${ pageContext.request.contextPath }/resources/img/apple-touch-icon.png">
+		<link rel="shortcut icon" href="${ pageContext.request.contextPath}/resources/img/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="${ pageContext.request.contextPath}/resources/img/apple-touch-icon.png">
 
-<!-- Mobile Metas -->
-<meta name="viewport"
-	content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<!-- Web Fonts  -->
-<link
-	href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light"
-	rel="stylesheet" type="text/css">
+		<!-- Web Fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
 
-<!-- Vendor CSS -->
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/vendor/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/vendor/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/vendor/animate/animate.min.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/vendor/simple-line-icons/css/simple-line-icons.min.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/vendor/owl.carousel/assets/owl.carousel.min.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/vendor/owl.carousel/assets/owl.theme.default.min.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/vendor/magnific-popup/magnific-popup.min.css">
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/animate/animate.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/magnific-popup.min.css">
 
-<!-- Theme CSS -->
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/css/theme.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/css/theme-elements.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/css/theme-blog.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/css/theme-shop.css">
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-elements.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-blog.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-shop.css">
 
-<!-- Current Page CSS -->
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/vendor/rs-plugin/css/settings.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/vendor/rs-plugin/css/layers.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/vendor/rs-plugin/css/navigation.css">
+		<!-- Current Page CSS -->
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/settings.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/layers.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/navigation.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/css/component.css">
 
-<!-- Skin CSS -->
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/css/skins/skin-shop-1.css">
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/skins/default.css">
 
-<!-- Demo CSS -->
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/css/demos/demo-shop-1.css">
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/custom.css">
 
-<!-- Theme Custom CSS -->
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/css/custom.css">
-
-<!-- Head Libs -->
-<script
-	src="${ pageContext.request.contextPath }/resources/vendor/modernizr/modernizr.min.js"></script>
-</head>
+		<!-- Head Libs -->
+		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
 
 
 <body>
+	<div class="body">
+		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
+			<jsp:include page="/resources/include/top.jsp"/>
+		</header>
 
+<<<<<<< HEAD
 	<div class="col-md-12">
-
+=======
+		<div role="main" class="main">
+			<section class="page-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="breadcrumb">
+								<li><a href="#">Home</a></li>
+								<li class="active">Menu</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<h1>Menu</h1>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+ 	<div class="col-md-12">
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 
 		<div role="main" class="main">
 			<div class="container">
-
 				<div class="row">
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 					<div class="col-md-3">
+<<<<<<< HEAD
 						<aside class="sidebar"> <br>
 						<br>
 						<br>
@@ -112,125 +114,133 @@
 							<li><h4>
 									<a href="#">사이드 음료</a>
 								</h4></li>
+=======
+						<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+				<h4 class="heading-primary">MENU</h4>
+			<ul class="nav nav-list mb-xlg">
+				<li><a href="#">전체메뉴</a></li>
+				<li class="active"><a href="#">프리미엄</a></li>
+				<li><a href="#">베스트</a></li>
+				<li><a href="#">신제품</a></li>
+				<li><a href="#">사이드 음료</a></li>
+			</ul>
+
+			<div class="tabs mb-xlg">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#popularPosts" data-toggle="tab"><i
+							class="fa fa-star"></i> Popular</a></li>
+					<li><a href="#recentPosts" data-toggle="tab">Recent</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="popularPosts">
+						<ul class="simple-post-list">
+							<li>
+								<div class="post-image">
+									<div class="img-thumbnail">
+										<a href="blog-post.html"> <img
+											src="img/blog/blog-thumb-1.jpg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="post-info">
+									<a href="blog-post.html">Nullam Vitae Nibh Un Odiosters</a>
+									<div class="post-meta">Jan 10, 2017</div>
+								</div>
+							</li>
+							<li>
+								<div class="post-image">
+									<div class="img-thumbnail">
+										<a href="blog-post.html"> <img
+											src="img/blog/blog-thumb-2.jpg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="post-info">
+									<a href="blog-post.html">Vitae Nibh Un Odiosters</a>
+									<div class="post-meta">Jan 10, 2017</div>
+								</div>
+							</li>
+							<li>
+								<div class="post-image">
+									<div class="img-thumbnail">
+										<a href="blog-post.html"> <img
+											src="img/blog/blog-thumb-3.jpg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="post-info">
+									<a href="blog-post.html">Odiosters Nullam Vitae</a>
+									<div class="post-meta">Jan 10, 2017</div>
+								</div>
+							</li>
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 						</ul>
-
-						<div class="tabs mb-xlg">
-							<ul class="nav nav-tabs">
-								<li class="active"><a href="#popularPosts"
-									data-toggle="tab"><i class="fa fa-star"></i> Popular</a></li>
-								<li><a href="#recentPosts" data-toggle="tab">Recent</a></li>
-							</ul>
-							<div class="tab-content">
-								<div class="tab-pane active" id="popularPosts">
-									<ul class="simple-post-list">
-										<li>
-											<div class="post-image">
-												<div class="img-thumbnail">
-													<a href="blog-post.html"> <img
-														src="img/blog/blog-thumb-1.jpg" alt="">
-													</a>
-												</div>
-											</div>
-											<div class="post-info">
-												<a href="blog-post.html">Nullam Vitae Nibh Un Odiosters</a>
-												<div class="post-meta">Jan 10, 2017</div>
-											</div>
-										</li>
-										<li>
-											<div class="post-image">
-												<div class="img-thumbnail">
-													<a href="blog-post.html"> <img
-														src="img/blog/blog-thumb-2.jpg" alt="">
-													</a>
-												</div>
-											</div>
-											<div class="post-info">
-												<a href="blog-post.html">Vitae Nibh Un Odiosters</a>
-												<div class="post-meta">Jan 10, 2017</div>
-											</div>
-										</li>
-										<li>
-											<div class="post-image">
-												<div class="img-thumbnail">
-													<a href="blog-post.html"> <img
-														src="img/blog/blog-thumb-3.jpg" alt="">
-													</a>
-												</div>
-											</div>
-											<div class="post-info">
-												<a href="blog-post.html">Odiosters Nullam Vitae</a>
-												<div class="post-meta">Jan 10, 2017</div>
-											</div>
-										</li>
-									</ul>
+					</div>
+					<div class="tab-pane" id="recentPosts">
+						<ul class="simple-post-list">
+							<li>
+								<div class="post-image">
+									<div class="img-thumbnail">
+										<a href="blog-post.html"> <img
+											src="img/blog/blog-thumb-2.jpg" alt="">
+										</a>
+									</div>
 								</div>
-								<div class="tab-pane" id="recentPosts">
-									<ul class="simple-post-list">
-										<li>
-											<div class="post-image">
-												<div class="img-thumbnail">
-													<a href="blog-post.html"> <img
-														src="img/blog/blog-thumb-2.jpg" alt="">
-													</a>
-												</div>
-											</div>
-											<div class="post-info">
-												<a href="blog-post.html">Vitae Nibh Un Odiosters</a>
-												<div class="post-meta">Jan 10, 2017</div>
-											</div>
-										</li>
-										<li>
-											<div class="post-image">
-												<div class="img-thumbnail">
-													<a href="blog-post.html"> <img
-														src="img/blog/blog-thumb-3.jpg" alt="">
-													</a>
-												</div>
-											</div>
-											<div class="post-info">
-												<a href="blog-post.html">Odiosters Nullam Vitae</a>
-												<div class="post-meta">Jan 10, 2017</div>
-											</div>
-										</li>
-										<li>
-											<div class="post-image">
-												<div class="img-thumbnail">
-													<a href="blog-post.html"> <img
-														src="img/blog/blog-thumb-1.jpg" alt="">
-													</a>
-												</div>
-											</div>
-											<div class="post-info">
-												<a href="blog-post.html">Nullam Vitae Nibh Un Odiosters</a>
-												<div class="post-meta">Jan 10, 2017</div>
-											</div>
-										</li>
-									</ul>
+								<div class="post-info">
+									<a href="blog-post.html">Vitae Nibh Un Odiosters</a>
+									<div class="post-meta">Jan 10, 2017</div>
 								</div>
-							</div>
-						</div>
+							</li>
+							<li>
+								<div class="post-image">
+									<div class="img-thumbnail">
+										<a href="blog-post.html"> <img
+											src="img/blog/blog-thumb-3.jpg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="post-info">
+									<a href="blog-post.html">Odiosters Nullam Vitae</a>
+									<div class="post-meta">Jan 10, 2017</div>
+								</div>
+							</li>
+							<li>
+								<div class="post-image">
+									<div class="img-thumbnail">
+										<a href="blog-post.html"> <img
+											src="img/blog/blog-thumb-1.jpg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="post-info">
+									<a href="blog-post.html">Nullam Vitae Nibh Un Odiosters</a>
+									<div class="post-meta">Jan 10, 2017</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
-						<hr>
+			<hr>
 
+<<<<<<< HEAD
 						<!-- 						<h4 class="heading-primary">About Us</h4>
+=======
+			<!-- 						<h4 class="heading-primary">About Us</h4>
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 						<p>Nulla nunc dui, tristique in semper vel, congue sed ligula.
 							Nam dolor ligula, faucibus id sodales in, auctor fringilla
 							libero. Nulla nunc dui, tristique in semper vel. Nam dolor
 							ligula, faucibus id sodales in, auctor fringilla libero.</p> -->
 
-						</aside>
-					</div>
-
-
-					<div class="col-md-9">
-
-						<h1>
-							<strong>메뉴</strong>
-						</h1>
-
-						<div role="main" class="main shop">
-
+			</aside>
+		</div>
+		<div class="col-md-9">
+			<div class="row">
+			<div role="main" class="main shop">
 							<div class="container">
+<<<<<<< HEAD
 
 								<div class="row">
 									<div class="col-md-12">
@@ -244,10 +254,18 @@
 											</h2>
 											<p>PREMIUM MENU</p>
 										</div>
+=======
+									<div class="col-md-6">
+										<h2 class="mb-none">
+											<strong>프리미엄</strong>
+										</h2>
+										<p>PREMIUM MENU</p>
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 									</div>
 
 									<div class="row">
 
+<<<<<<< HEAD
 										<div class="masonry-loader masonry-loader-showing">
 											<ul class="products product-thumb-info-list"
 												data-plugin-masonry>
@@ -276,7 +294,37 @@
 																	</ins>
 															</span>
 														</a>
+=======
+									<div class="masonry-loader masonry-loader-showing">
+										<ul class="products product-thumb-info-list"
+											data-plugin-masonry>
+											<li class="col-md-3 col-sm-6 col-xs-12 product" ><a
+												data-toggle="modal" data-target="#defaultModal">
+													<span class="onsale">hit!</span>
+											</a> <span class="product-thumb-info"> 
+											<a		href="#" class="add-to-cart-product"> 
+											<span><i class="fa fa-shopping-cart"></i> 장바구니 담기</span>
+												</a> <a  data-toggle="modal" data-target="#defaultModal" > <span
+														class="product-thumb-info-image"> <span
+															class="product-thumb-info-act">
+															
+<<<<<<< HEAD
+															
+															 <span class="product-thumb-info-act-left"><em>View</em></span>
+																<span class="product-thumb-info-act-right"><em><i
+																		class="fa fa-plus"></i> Details</em></span>
+=======
+															<i class="fa fa-plus"></i> 
+															 <span
+																class="product-thumb-info-act-left"><em>상세</em></span>
+																
+																<span class="product-thumb-info-act-right"><em>보기</em></span>
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
+														</span> <img alt="" class="img-responsive"
+															src="${ pageContext.request.contextPath }/resources/img/products/스테이크_치즈.jpg">
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 													</span>
+<<<<<<< HEAD
 												</span></li>
 												<li class="col-md-3 col-sm-6 col-xs-12 product"><span
 													class="product-thumb-info"> <a href="shop-cart.html"
@@ -366,11 +414,119 @@
 																	<span class="amount">3,200</span>
 															</span>
 														</a>
+=======
+												</a> <span class="product-thumb-info-content"> <a
+														data-toggle="modal" data-target="#defaultModal"S>
+															<h4>스테이크&치즈</h4>
+															<div class="menu">
+																고기를 좋아하는 모든분께 사랑받는 메뉴입니다. <br>
+															</div> 
+															<span class="price"> <ins>
+																<span class="amount">3,200</span>
+															</ins>
+														</span>
+													</a>
+												</span>
+											</span></li>
+											<li class="col-md-3 col-sm-6 col-xs-12 product"><span
+												class="product-thumb-info"> <a href="shop-cart.html"
+													class="add-to-cart-product"> <span><i
+															class="fa fa-shopping-cart"></i> 장바구니 담기</span>
+												</a> <a href="shop-product-sidebar.html"> <span
+														class="product-thumb-info-image"> <span
+															class="product-thumb-info-act"> <span
+																class="product-thumb-info-act-left"><em>View</em></span>
+																<span class="product-thumb-info-act-right"><em><i
+																		class="fa fa-plus"></i> Details</em></span>
+														</span> <img alt="" class="img-responsive"
+															src="${ pageContext.request.contextPath }/resources/img/products/로스트_비프.jpg">
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 													</span>
+<<<<<<< HEAD
 												</span></li>
 											</ul>
 										</div>
 
+=======
+												</a> <span class="product-thumb-info-content"> <a
+														href="shop-product-sidebar.html">
+															<h4>로스트 비프</h4> <span> 겹겹이 쌓인 맛있는 훈제쇠소기에 신선한 야채와
+																소스가 곁들여집니다. </span> <span class="price"> <span
+																class="amount">3200</span>
+														</span>
+													</a>
+												</span>
+											</span></li>
+											<li class="col-md-3 col-sm-6 col-xs-12 product"><span
+												class="product-thumb-info"> <a href="shop-cart.html"
+													class="add-to-cart-product"> <span><i
+															class="fa fa-shopping-cart"></i> 장바구니 담기</span>
+												</a> <a href="shop-product-sidebar.html"> <span
+														class="product-thumb-info-image"> <span
+															class="product-thumb-info-act"> <span
+																class="product-thumb-info-act-left"><em>View</em></span>
+																<span class="product-thumb-info-act-right"><em><i
+																		class="fa fa-plus"></i> Details</em></span>
+														</span> <img alt="" class="img-responsive"
+															src="${ pageContext.request.contextPath }/resources/img/products/서브웨이_멜트.jpg">
+													</span>
+												</a> <span class="product-thumb-info-content"> <a
+														href="shop-product-sidebar.html">
+															<h4>써브웨이 멜트</h4> <span> 부드러운 슬라이스 터키, 햄, 바삭한 베이컨,
+																녹은치즈와 야채소스의 갓 구운 샌드위치 </span> <span class="price"> <span
+																class="amount">3,200</span>
+														</span>
+													</a>
+												</span>
+											</span></li>
+											<li class="col-md-3 col-sm-6 col-xs-12 product"><a
+												href="shop-product-sidebar.html"> <span class="onsale">Sale!</span>
+											</a> <span class="product-thumb-info"> <a
+													href="shop-cart.html" class="add-to-cart-product"> <span><i
+															class="fa fa-shopping-cart"></i> 장바구니 담기</span>
+												</a> <a href="shop-product-sidebar.html"> <span
+														class="product-thumb-info-image"> <span
+															class="product-thumb-info-act"> <span
+																class="product-thumb-info-act-left"><em>View</em></span>
+																<span class="product-thumb-info-act-right"><em><i
+																		class="fa fa-plus"></i> Details</em></span>
+														</span> <img alt="" class="img-responsive"
+															src="${ pageContext.request.contextPath }/resources/img/products/로스트치킨.jpg">
+													</span>
+												</a> <span class="product-thumb-info-content"> <a
+														href="shop-product-sidebar.html">
+															<h4>로스트치킨</h4> <span> 갓 구운 빵에 오븐에서 구워낸 치킨과 신선한 야채와
+																소스가 곁들여집니다. </span> <span class="price"> <ins>
+																	<span class="amount">3,200</span>
+																</ins>
+														</span>
+													</a>
+												</span>
+											</span></li>
+											<li class="col-md-3 col-sm-6 col-xs-12 product"><span
+												class="product-thumb-info"> <a href="shop-cart.html"
+													class="add-to-cart-product"> <span><i
+															class="fa fa-shopping-cart"></i> 장바구니 담기</span>
+												</a> <a href="shop-product-sidebar.html"> <span
+														class="product-thumb-info-image"> <span
+															class="product-thumb-info-act"> <span
+																class="product-thumb-info-act-left"><em>View</em></span>
+																<span class="product-thumb-info-act-right"><em><i
+																		class="fa fa-plus"></i> Details</em></span>
+														</span> <img alt="" class="img-responsive"
+															src="${ pageContext.request.contextPath }/resources/img/products/치킨_베이컨랜치.jpg">
+													</span>
+												</a> <span class="product-thumb-info-content"> <a
+														href="shop-product-sidebar.html">
+															<h4>치킨 베이컨랜치</h4> <span> 살짝 녹은 아메리칸 치즈, 부드러운 순살치킨,
+																베이컨, 양상추 토마토, 양파, 피망 등이 듬뿍 </span> <span class="price">
+																<span class="amount">3,200</span>
+														</span>
+												</a>
+												</span>
+											</span></li>
+										</ul>
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 									</div>
 
 									<div class="row">
@@ -711,8 +867,17 @@
 							</div>
 
 						</div>
+<<<<<<< HEAD
 
 
+=======
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 
 					</div>
 					<div class="modal-footer">
@@ -720,8 +885,16 @@
 					</div>
 				</div>
 			</div>
+<<<<<<< HEAD
 		</div>
 
+=======
+			<footer id="footer">
+				<jsp:include page="/resources/include/bottom.jsp"/>
+			</footer>
+		</div> 
+		
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 
 
 		<!-- Vendor -->
