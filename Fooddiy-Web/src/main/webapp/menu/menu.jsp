@@ -252,12 +252,11 @@
 														class="product-thumb-info-image"> <span
 															class="product-thumb-info-act">
 															
-															
+															<i class="fa fa-plus"></i> 
 															 <span
-																class="product-thumb-info-act-left"><em>View</em></span>
+																class="product-thumb-info-act-left"><em>상세</em></span>
 																
-																<span class="product-thumb-info-act-right"><em><i
-																		class="fa fa-plus"></i> Details</em></span>
+																<span class="product-thumb-info-act-right"><em>보기</em></span>
 														</span> <img alt="" class="img-responsive"
 															src="${ pageContext.request.contextPath }/resources/img/products/스테이크_치즈.jpg">
 													</span>
