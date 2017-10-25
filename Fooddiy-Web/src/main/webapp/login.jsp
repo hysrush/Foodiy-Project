@@ -97,7 +97,7 @@
 											<a href="#memberLogin" data-toggle="tab" aria-expanded="true"> 회원 로그인</a>
 										</li>
 										<li class="">
-											<a href="#nonmemberLogin" data-toggle="tab" aria-expanded="false"> 비회원 로그인</a>
+											<a href="#nonLogin" data-toggle="tab" aria-expanded="false"> 비회원 로그인</a>
 										</li>
 									</ul>
 									<!-- 회원 로그인 -->
@@ -106,11 +106,11 @@
 												<jsp:include page="/resources/include/login/memberLogin.jsp"/>
 										</div>
 										<!--  비회원 로그인    -->
-										<div class="tab-pane" id="nonmemberLogin">
+										<div class="tab-pane" id="nonLogin">
 											<jsp:include page="/resources/include/login/nonmemberLogin.jsp"/>
 										</div>
-								
 									</div>
+								</div>
 							</div>
 						</div>
 					</div>
