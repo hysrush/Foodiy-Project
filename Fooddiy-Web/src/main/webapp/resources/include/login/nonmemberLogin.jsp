@@ -6,7 +6,6 @@
 		<div class="col-md-12">
 			<div class="featured-boxes">
 				<div class="row">
-					
 					<div class="col-sm-6">
 						<div class="featured-box featured-box-primary align-left mt-xlg">
 							<div class="box-content">

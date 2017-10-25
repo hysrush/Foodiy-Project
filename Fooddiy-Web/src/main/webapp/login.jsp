@@ -100,17 +100,17 @@
 											<a href="#nonmemberLogin" data-toggle="tab" aria-expanded="false"> 비회원 로그인</a>
 										</li>
 									</ul>
-
-									<div class="tab-content">
-										<div class="tab-pane active" id="memberLogin">
-											<jsp:include page="/resources/include/login/memberLogin.jsp"/>
+									<!-- 회원 로그인 -->
+										<div class="tab-content">
+											<div class="tab-pane active" id="memberLogin">
+												<jsp:include page="/resources/include/login/memberLogin.jsp"/>
 										</div>
-
 										<!--  비회원 로그인    -->
 										<div class="tab-pane" id="nonmemberLogin">
 											<jsp:include page="/resources/include/login/nonmemberLogin.jsp"/>
 										</div>
-								</div>
+								
+									</div>
 							</div>
 						</div>
 					</div>
