@@ -1,57 +1,31 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
-<%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>    
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>    
 <!DOCTYPE html>
 <html>
 <head>
 
-<<<<<<< HEAD
 	<!-- Basic -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">	
-=======
-<!-- Basic -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 
-<<<<<<< HEAD
-	<title> | 1:1 문의 | </title>	
-=======
 		<title> | 로그인 | </title>	
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 
-	<meta name="keywords" content="HTML5 Template" />
-	<meta name="description" content="Porto - Responsive HTML5 Template">
-	<meta name="author" content="okler.net">
+		<meta name="keywords" content="HTML5 Template" />
+		<meta name="description" content="Porto - Responsive HTML5 Template">
+		<meta name="author" content="okler.net">
 
-<<<<<<< HEAD
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="<%= request.getContextPath() %>/resources/img/favicon.ico" type="image/x-icon" />
-	<link rel="apple-touch-icon" href="<%= request.getContextPath() %>/resources/img/apple-touch-icon.png">
-=======
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="${ pageContext.request.contextPath}/resources/img/favicon.ico" type="image/x-icon" />
 		<link rel="apple-touch-icon" href="${ pageContext.request.contextPath}/resources/img/apple-touch-icon.png">
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 
-	<!-- Mobile Metas -->
-	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<!-- Web Fonts  -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+		<!-- Web Fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
 
-<<<<<<< HEAD
-	<!-- Vendor CSS -->
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/vendor/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/vendor/animate/animate.min.css">
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/vendor/simple-line-icons/css/simple-line-icons.min.css">
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/vendor/owl.carousel/assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/vendor/owl.carousel/assets/owl.theme.default.min.css">
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/vendor/magnific-popup/magnific-popup.min.css">
-=======
 		<!-- Vendor CSS -->
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/font-awesome/css/font-awesome.min.css">
@@ -60,15 +34,7 @@
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.carousel.min.css">
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.theme.default.min.css">
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/magnific-popup.min.css">
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 
-<<<<<<< HEAD
-	<!-- Theme CSS -->
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/theme.css">
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/theme-elements.css">
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/theme-blog.css">
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/theme-shop.css">
-=======
 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme.css">
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-elements.css">
@@ -80,64 +46,23 @@
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/layers.css">
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/navigation.css">
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/css/component.css">
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 
-<<<<<<< HEAD
-	<!-- Skin CSS -->
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/skins/default.css">
-=======
 		<!-- Skin CSS -->
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/skins/default.css">
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 
-<<<<<<< HEAD
-	<!-- Theme Custom CSS -->
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/custom.css">
-=======
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/custom.css">
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 
-<<<<<<< HEAD
-	<!-- Head Libs -->
-	<script src="<%= request.getContextPath() %>/resources/vendor/modernizr/modernizr.min.js"></script>
-	
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> 
-	
-	<!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	
-	<!-- 달력 css -->
-	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-  	<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/js/bootstrap-datepicker.kr.js" charset="UTF-8"></script>
-	<link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/resources/css/datepicker3.css" />
-    <link rel="stylesheet" href="<%= request.getContextPath() %>/resources/jquery-ui-1.12.1/jquery-ui.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker3.min.css">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
-
-
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-=======
 		<!-- Head Libs -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
 		
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 <script type="text/javascript">
 	function doAction(type) {
 		switch (type) {
 		case 'L':
 			location.href = "<%= request.getContextPath() %>/notice/list.do";
 			break;
-		default:		
+		default:
 			break;
 		}
 	}
@@ -145,26 +70,19 @@
 	function submit() {
 		document.getElementById("dForm").submit();
 	}
-</script>
-
-<!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
-<script src="<%= request.getContextPath() %>/resources/vendor/bootstrap/js/bootstrap.min.js">
-	$(document).ready(function(){
-		$('.input-group.date').datepicker({
-	        calendarWeeks: false,
-	        todayHighlight: true,
-	        autoclose: true,
-	        format: "yyyy/mm/dd",
-	        language: "kr"
-	    });
-		
+	
+	$('#dateRangePicker').datepicker({
+		 format: "yyyy-mm-dd",
+		 language: "kr"
 	});
 </script>
 </head>
 <body>
 
 	<div class="body">
-			
+		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
+			<jsp:include page="/resources/include/top.jsp" />
+		</header>
 		<div role="main" class="main">
 		
 			<section class="page-header">
@@ -226,10 +144,10 @@
 									<div class="center">
 										<h4>1:1 문의하기</h4>
 										<hr>
-										<form commandName="boardVO" method="POST" >
-											<table class="table table-bordered" width="80%">
+										<form:form commandName="boardVO" method="POST" >
+											<table class="table table-bordered" style="width:80%">
 												<tr>
-													<div class="form-group" align="left">
+													<!-- <div class="form-group" align="left"> -->
 														<td>
 															<label for="">분야</label>
 														</td>
@@ -243,10 +161,10 @@
 																<option value="">기타</option>
 															</select>
 														</td>
-													</div>
+													<!-- </div> -->
 												</tr>
 												<tr>
-													<div class="form-group" align="left">
+													<!-- <div class="form-group" align="left"> -->
 														<td>
 															<label for="email">답변 메일</label>
 														</td>
@@ -255,7 +173,7 @@
 															@
 															<input path="#" type="text" class="form-control" id="emailAdd" placeholder="로그인회원emailAdd"/>
 														</td>
-													</div>
+													<!-- </div> -->
 												</tr>
 												<tr>
 													<div class="form-group" align="left">
@@ -279,7 +197,7 @@
 													</div>
 												</tr>
 												<tr>
-													<div class="form-group" align="left">
+													<!-- <div class="form-group" align="left"> -->
 														<td>
 															<label for="email">장소</label>
 														</td>
@@ -295,13 +213,13 @@
 															<label for="email">방문일</label>
 															<div class="input-group date">
             													<input type="text" class="form-control">
-            													<span class="input-group-addon" id="testDatepicker"><i class="glyphicon glyphicon-calendar"></i></span>
+            													<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
        														</div>
        													</td>
-													</div>
+													<!-- </div> -->
 												</tr>
 												<tr>
-													<div class="form-group" align="left">
+													<!-- <div class="form-group" align="left"> -->
 														<td>
 															<label for="title">제목</label>
 														</td>
@@ -309,10 +227,10 @@
 															<form:input path="title" type="text" class="form-control" id="exampleInputEmail1" placeholder="title"/>
 															<form:errors path="title" class="form-control"></form:errors>
 														</td>
-													</div>
+													<!-- </div> -->
 												</tr>
 												<tr>
-													<div class="form-group" align="left">
+													<!-- <div class="form-group" align="left"> -->
 														<td>
 															<label for="content">내용</label>
 														</td>
@@ -320,10 +238,10 @@
 															<form:textarea path="content" class="form-control" rows="5" id="comment" placeholder="contents"/>
 															<form:errors path="content" class="form-control"></form:errors>
 														</td>
-													</div>
+													<!-- </div> -->
 												</tr>
 												<tr>
-													<div class="form-group" align="left">
+													<!-- <div class="form-group" align="left"> -->
 														<td>
 															<label for="content">파일첨부</label>
 														</td>
@@ -332,30 +250,12 @@
 															파일첨부는 아래의 파일만 등록이 가능하며 최대 5개(1개당 최대2MB), 총 10MB까지 등록이 가능합니다.<br>
 															(등록 가능 확장자 : jpg, jpeg, png, gif, zip, doc, docx, ppt, pptx, xls, xlsx, hwp)
 														</td>
-													</div>
+													<!-- </div> -->
 												</tr>
 												<form:hidden path="writer" value="admin"/>
 												<!-- <input type="hidden" id="writer" value="admin"> -->
 											</table>
-										</form>
-									</div>
-									<section class="section section-default">
-										<div class="row">
-											<div class="col-md-12">
-												<p class="mb-none" style="padding: 10px;">
-													고객이 동의한 개인정보취급방침에 따라 홈페이지 가입 시에 등록한 전화번호 또는 
-													고객의 소리 본문에 고객이 직접 불만처리를 위해 기재한 개인정보를 활용하여 처리할 수 있습니다.
-												</p>
-											</div>
-										</div>
-									</section>
-									<div class="col-md-12">
-										<div style="float: right;">
-											<label>
-												<input type="radio" name="optionRadios" id="optionRadio" value="" >동의
-												<input type="radio" name="optionRadios" id="optionRadio" value=""  checked="checked">동의안함
-											</label>
-										</div>
+										</form:form>
 									</div>
 									<div class="center">
 										<button type="submit" class="btn btn-default">등록</button>
@@ -420,40 +320,44 @@
 						</div>
 					</div>
 				</div>
-			<br>
 			</div>
 		</div>
+		
+		<footer id="footer">
+			<jsp:include page="/resources/include/bottom.jsp"/>
+		</footer>
+		
 	</div>
 	
 	<!-- Vendor -->
-	<script src="<%= request.getContextPath() %>/resources/vendor/jquery/jquery.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/jquery.easing/jquery.easing.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/jquery-cookie/jquery-cookie.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/common/common.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/jquery.validation/jquery.validation.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/jquery.gmap/jquery.gmap.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/isotope/jquery.isotope.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/owl.carousel/owl.carousel.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/vide/vide.min.js"></script>
-	
-	
-	<!-- Theme Base, Components and Settings -->
-	<script src="<%= request.getContextPath() %>/resources/js/theme.js"></script>
-	
-	<!-- Theme Custom -->
-	<script src="<%= request.getContextPath() %>/resources/js/custom.js"></script>
-	
-	<!-- 달력 -->
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <script type='text/javascript' src='https://code.jquery.com/jquery-1.8.3.js'></script>
-	
-	<!-- Theme Initialization Files -->
-	<script src="<%= request.getContextPath() %>/resources/js/theme.init.js"></script>
-	
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easing/jquery.easing.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery-cookie/jquery-cookie.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/common/common.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.validation/jquery.validation.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/isotope/jquery.isotope.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/owl.carousel.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/vide/vide.min.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="${ pageContext.request.contextPath}/resources/js/theme.js"></script>
+		
+		<!-- Current Page Vendor and Views -->
+		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/js/views/view.home.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="${ pageContext.request.contextPath}/resources/js/custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
 </body>
 </html>

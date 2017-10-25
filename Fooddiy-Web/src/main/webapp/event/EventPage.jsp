@@ -8,7 +8,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title>Fooddiy-Order</title>	
+		<title> | EVENT | </title>	
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -75,7 +75,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<h1>이벤트 페이지</h1>
+								<h1>Events</h1>
 							</div>
 						</div>
 					</div>
@@ -89,10 +89,8 @@
 
 									<h4 class="heading-primary">이벤트</h4>
 								<ul class="nav nav-list mb-xlg">
-									<li><a href="#">브랜드 이벤트</a></li>
-									<li class="active">
-										<a href="#">점포별 이벤트</a>
-									</li>
+									<li class="active"><a href="${ pageContext.request.contextPath }/event/EventPage.jsp">브랜드 이벤트</a></li>
+									<li class=""><a href="${ pageContext.request.contextPath }/event/StoreEventPage.jsp">점포별 이벤트</a></li>
 								</ul>
 							</aside>
 						</div>
@@ -192,5 +190,37 @@
 				<jsp:include page="/resources/include/bottom.jsp"/>
 			</footer>
 		</div>
+		
+		<!-- Vendor -->
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easing/jquery.easing.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery-cookie/jquery-cookie.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/common/common.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.validation/jquery.validation.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/isotope/jquery.isotope.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/owl.carousel.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/vide/vide.min.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="${ pageContext.request.contextPath}/resources/js/theme.js"></script>
+		
+		<!-- Current Page Vendor and Views -->
+		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/js/views/view.home.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="${ pageContext.request.contextPath}/resources/js/custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
+		
 	</body>
 </html>
