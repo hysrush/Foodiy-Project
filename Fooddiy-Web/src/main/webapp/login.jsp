@@ -110,6 +110,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 		<footer id="footer">
 			<jsp:include page="/resources/include/bottom.jsp"/>
 		</footer>
