@@ -274,7 +274,7 @@
 														</td>
 														<td>
 															<textarea path="content" class="form-control" rows="5" id="comment" placeholder="contents"></textarea>
-															<form type="textarea" path="content" class="form-control" rows="5" id="comment" placeholder="contents"/>
+															<%-- <form type="textarea" path="content" class="form-control" rows="5" id="comment" placeholder="contents"/> --%>
 															<%-- <form:errors path="content" class="form-control"></form:errors> --%>
 														</td>
 													</div>
