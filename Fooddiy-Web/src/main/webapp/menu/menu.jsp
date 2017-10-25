@@ -70,13 +70,49 @@
 
 
 <body>
+<<<<<<< HEAD
+=======
+	<div class="body">
+		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
+			<jsp:include page="/resources/include/top.jsp"/>
+		</header>
+		</header>
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 
 	<div class="col-md-12">
+<<<<<<< HEAD
 
+
+=======
 
 		<div role="main" class="main">
+			<section class="page-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="breadcrumb">
+								<li><a href="#">Home</a></li>
+								<li class="active">Menu</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<h1>Menu</h1>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+ 	<div class="col-md-12">
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
+		<div role="main" class="main">
 			<div class="container">
+<<<<<<< HEAD
 
+=======
+				<div class="row">
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 				<div class="row">
 
 
@@ -239,9 +275,20 @@
 											</h2>
 											<p>PREMIUM MENU</p>
 										</div>
+										</div>
+<<<<<<< HEAD
+=======
+									<div class="col-md-6">
+										<h2 class="mb-none">
+											<strong>프리미엄</strong>
+										</h2>
+										<p>PREMIUM MENU</p>
+
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 									</div>
 
 									<div class="row">
+
 
 										<div class="masonry-loader masonry-loader-showing">
 											<ul class="products product-thumb-info-list"
@@ -272,7 +319,40 @@
 																	</ins>
 															</span>
 														</a>
+<<<<<<< HEAD
+=======
+
+									<div class="masonry-loader masonry-loader-showing">
+										<ul class="products product-thumb-info-list"
+											data-plugin-masonry>
+											<li class="col-md-3 col-sm-6 col-xs-12 product" ><a
+												data-toggle="modal" data-target="#defaultModal">
+													<span class="onsale">hit!</span>
+											</a> <span class="product-thumb-info"> 
+											<a		href="#" class="add-to-cart-product"> 
+											<span><i class="fa fa-shopping-cart"></i> 장바구니 담기</span>
+												</a> <a  data-toggle="modal" data-target="#defaultModal" > <span
+														class="product-thumb-info-image"> <span
+															class="product-thumb-info-act">
+											 <span class="product-thumb-info-act-left"><em>View</em></span>
+															
+															
+															 <span class="product-thumb-info-act-left"><em>View</em></span>
+																<span class="product-thumb-info-act-right"><em><i
+																		class="fa fa-plus"></i> Details</em></span>
+
+															<i class="fa fa-plus"></i> 
+															 <span
+																class="product-thumb-info-act-left"><em>상세</em></span>
+																
+																<span class="product-thumb-info-act-right"><em>보기</em></span>
+
+														</span> <img alt="" class="img-responsive"
+															src="${ pageContext.request.contextPath }/resources/img/products/스테이크_치즈.jpg">
+
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 													</span>
+
 												</span></li>
 												<li class="col-md-3 col-sm-6 col-xs-12 product"><span
 													class="product-thumb-info"> <a href="shop-cart.html"
@@ -362,7 +442,36 @@
 																	<span class="amount">3,200</span>
 															</span>
 														</a>
+<<<<<<< HEAD
+=======
+												</a> <span class="product-thumb-info-content"> <a
+														data-toggle="modal" data-target="#defaultModal"S>
+															<h4>스테이크&치즈</h4>
+															<div class="menu">
+																고기를 좋아하는 모든분께 사랑받는 메뉴입니다. <br>
+															</div> 
+															<span class="price"> <ins>
+																<span class="amount">3,200</span>
+															</ins>
+														</span>
+													</a>
+												</span>
+											</span></li>
+											<li class="col-md-3 col-sm-6 col-xs-12 product"><span
+												class="product-thumb-info"> <a href="shop-cart.html"
+													class="add-to-cart-product"> <span><i
+															class="fa fa-shopping-cart"></i> 장바구니 담기</span>
+												</a> <a href="shop-product-sidebar.html"> <span
+														class="product-thumb-info-image"> <span
+															class="product-thumb-info-act"> <span
+																class="product-thumb-info-act-left"><em>View</em></span>
+																<span class="product-thumb-info-act-right"><em><i
+																		class="fa fa-plus"></i> Details</em></span>
+														</span> <img alt="" class="img-responsive"
+															src="${ pageContext.request.contextPath }/resources/img/products/로스트_비프.jpg">
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 													</span>
+
 												</span></li>
 											</ul>
 										</div>
@@ -616,8 +725,17 @@
 							</div>
 
 						</div>
+<<<<<<< HEAD
 
 
+=======
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 
 					</div>
 					<div class="modal-footer">
@@ -626,8 +744,15 @@
 				</div>
 			</div>
 		</div>
+<<<<<<< HEAD
 
 
+=======
+			<footer id="footer">
+				<jsp:include page="/resources/include/bottom.jsp"/>
+			</footer>
+		</div> 
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 
 		<!-- Vendor -->
 		<script
