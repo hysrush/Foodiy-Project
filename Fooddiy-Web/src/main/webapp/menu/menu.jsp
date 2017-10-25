@@ -53,9 +53,7 @@
 			<jsp:include page="/resources/include/top.jsp"/>
 		</header>
 
-<<<<<<< HEAD
 	<div class="col-md-12">
-=======
 		<div role="main" class="main">
 			<section class="page-header">
 				<div class="container">
@@ -76,18 +74,13 @@
 			</section>
 			
  	<div class="col-md-12">
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 
 		<div role="main" class="main">
 			<div class="container">
 				<div class="row">
-<<<<<<< HEAD
 
 
-=======
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 					<div class="col-md-3">
-<<<<<<< HEAD
 						<aside class="sidebar"> <br>
 						<br>
 						<br>
@@ -114,7 +107,6 @@
 							<li><h4>
 									<a href="#">사이드 음료</a>
 								</h4></li>
-=======
 						<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
 				<h4 class="heading-primary">MENU</h4>
 			<ul class="nav nav-list mb-xlg">
@@ -173,7 +165,6 @@
 									<div class="post-meta">Jan 10, 2017</div>
 								</div>
 							</li>
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 						</ul>
 					</div>
 					<div class="tab-pane" id="recentPosts">
@@ -224,7 +215,6 @@
 
 			<hr>
 
-<<<<<<< HEAD
 						<!-- 						<h4 class="heading-primary">About Us</h4>
 =======
 			<!-- 						<h4 class="heading-primary">About Us</h4>
@@ -240,7 +230,6 @@
 			<div class="row">
 			<div role="main" class="main shop">
 							<div class="container">
-<<<<<<< HEAD
 
 								<div class="row">
 									<div class="col-md-12">
@@ -254,18 +243,15 @@
 											</h2>
 											<p>PREMIUM MENU</p>
 										</div>
-=======
 									<div class="col-md-6">
 										<h2 class="mb-none">
 											<strong>프리미엄</strong>
 										</h2>
 										<p>PREMIUM MENU</p>
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 									</div>
 
 									<div class="row">
 
-<<<<<<< HEAD
 										<div class="masonry-loader masonry-loader-showing">
 											<ul class="products product-thumb-info-list"
 												data-plugin-masonry>
@@ -294,7 +280,6 @@
 																	</ins>
 															</span>
 														</a>
-=======
 									<div class="masonry-loader masonry-loader-showing">
 										<ul class="products product-thumb-info-list"
 											data-plugin-masonry>
@@ -308,23 +293,18 @@
 														class="product-thumb-info-image"> <span
 															class="product-thumb-info-act">
 															
-<<<<<<< HEAD
 															
 															 <span class="product-thumb-info-act-left"><em>View</em></span>
 																<span class="product-thumb-info-act-right"><em><i
 																		class="fa fa-plus"></i> Details</em></span>
-=======
 															<i class="fa fa-plus"></i> 
 															 <span
 																class="product-thumb-info-act-left"><em>상세</em></span>
 																
 																<span class="product-thumb-info-act-right"><em>보기</em></span>
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 														</span> <img alt="" class="img-responsive"
 															src="${ pageContext.request.contextPath }/resources/img/products/스테이크_치즈.jpg">
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 													</span>
-<<<<<<< HEAD
 												</span></li>
 												<li class="col-md-3 col-sm-6 col-xs-12 product"><span
 													class="product-thumb-info"> <a href="shop-cart.html"
@@ -440,14 +420,11 @@
 																		class="fa fa-plus"></i> Details</em></span>
 														</span> <img alt="" class="img-responsive"
 															src="${ pageContext.request.contextPath }/resources/img/products/로스트_비프.jpg">
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 													</span>
-<<<<<<< HEAD
 												</span></li>
 											</ul>
 										</div>
 
-=======
 												</a> <span class="product-thumb-info-content"> <a
 														href="shop-product-sidebar.html">
 															<h4>로스트 비프</h4> <span> 겹겹이 쌓인 맛있는 훈제쇠소기에 신선한 야채와
@@ -526,7 +503,6 @@
 												</span>
 											</span></li>
 										</ul>
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 									</div>
 
 									<div class="row">
@@ -877,7 +853,6 @@
 		</div>
 	</div>
 </div>
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 
 					</div>
 					<div class="modal-footer">
@@ -885,16 +860,13 @@
 					</div>
 				</div>
 			</div>
-<<<<<<< HEAD
 		</div>
 
-=======
 			<footer id="footer">
 				<jsp:include page="/resources/include/bottom.jsp"/>
 			</footer>
 		</div> 
 		
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 
 
 		<!-- Vendor -->
