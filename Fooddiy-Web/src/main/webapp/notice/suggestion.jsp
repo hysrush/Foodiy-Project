@@ -308,7 +308,7 @@
 									<div class="center">
 										<h4>나의 문의내역</h4>
 										<hr>
-										<table class="table table-hover" width="80%">
+										<%-- <table class="table table-hover" width="80%">
 											<thead>
 												<tr>
 												<th>번호</th>
@@ -331,7 +331,7 @@
 													</tr>
 												</c:forEach>
 											</tbody>
-										</table>
+										</table> --%>
 										<div class="center">
 											<div class="col-md-12">
 												<ul class="pagination pull-center">
