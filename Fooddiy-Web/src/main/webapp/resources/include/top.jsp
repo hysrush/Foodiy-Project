@@ -7,7 +7,7 @@
 			<!-- 로고  -->
 			<div class="header-column">
 				<div class="header-logo">
-					<a href="${ pageContext.request.contextPath }/index.jsp"> <img alt="Porto" width="111" height="54"
+					<a href="index.jsp"> <img alt="Porto" width="111" height="54"
 						data-sticky-width="82" data-sticky-height="40"
 						data-sticky-top="33" src="${ pageContext.request.contextPath }/resources/img/Subway-logo.jpg">
 					</a>
@@ -17,7 +17,7 @@
 				<div class="header-row">
 					<nav class="header-nav-top">
 						<ul class="nav nav-pills">
-							<li class="hidden-xs"><a href="장바구니"> <!-- <i class="fa fa-angle-right"></i> -->
+							<li class="hidden-xs"><a href="about-us.html"> <!-- <i class="fa fa-angle-right"></i> -->
 									장바구니&nbsp;<img
 									alt="${ pageContext.request.contextPath }/장바구니.do"
 									src="${ pageContext.request.contextPath }/resources/img/binCartImg.png"
@@ -40,10 +40,10 @@
 						<nav>
 							<ul class="nav nav-pills" id="mainNav">
 								<li class="dropdown active"><a class="dropdown-toggle"
-									href="${ pageContext.request.contextPath }/menu/menu.jsp"> Menu </a>
+									href="index.jsp"> Menu </a>
 									<ul class="dropdown-menu">
-										<li><a href="${ pageContext.request.contextPath }/menu/menu.jsp">전체 메뉴</a></li>
-										<li class="dropdown-submenu"><a href="${ pageContext.request.contextPath }/menu/menu.jsp">세트 메뉴</a>
+										<li><a href="index.html">전체 메뉴</a></li>
+										<li class="dropdown-submenu"><a href="index-classic.html">세트 메뉴</a>
 											<ul class="dropdown-menu">
 												<li><a href="index-classic.html"
 													data-thumb-preview="${ pageContext.request.contextPath }/resources/img/previews/spicy.jpg">스파이시 이탈리안</a></li>
@@ -61,7 +61,7 @@
 													data-thumb-preview="${ pageContext.request.contextPath}/resources/img/previews/preview-corporate-hosting.jpg">바나나킥</a></li>
 											</ul></li>
 										<li class="dropdown-submenu"><a
-											href="${ pageContext.request.contextPath }/menu/menu.jsp">신제품<span class="tip tip-dark">NEW</span></a>
+											href="index-corporate.html">신제품<span class="tip tip-dark">NEW</span></a>
 											<ul class="dropdown-menu">
 												<li><a href="index-corporate.html"
 													data-thumb-preview="${ pageContext.request.contextPath}/resources/img/previews/preview-corporate.jpg">Corporate
@@ -100,23 +100,23 @@
 										</li>
 									</ul>
 								</li>
-								<li class="dropdown"><a class="dropdown-toggle" href="${ pageContext.request.contextPath}/event/EventPage.jsp">EVENT</a>
+								<li class="dropdown"><a class="dropdown-toggle" href="#">EVENT</a>
 									<ul class="dropdown-menu">
-										<li><a href="${ pageContext.request.contextPath }/event/EventPage.jsp">브랜드 이벤트</a></li>
-										<li><a href="${ pageContext.request.contextPath }/event/StoreEventPage.jsp">점포별 이벤트</a></li>
+										<li><a href="#">Brand EVENT</a></li>
+										<li><a href="#">Over EVENT</a></li>
 									</ul>
 								</li>
-								<li class="dropdown"><a class="dropdown-toggle" href="${ pageContext.request.contextPath }/notice/qna.jsp">Community</a>
+								<li class="dropdown"><a class="dropdown-toggle" href="#">Community</a>
 									<ul class="dropdown-menu">
-										<li><a href="${ pageContext.request.contextPath }/notice/qna.jsp">자주하는 질문</a></li>
-										<li><a href="${ pageContext.request.contextPath }/notice/noticeList.jsp">공지사항</a></li>
-										<li><a href="${ pageContext.request.contextPath }/notice/qna.jsp">1:1 문의</a></li>
-										<li><a href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"
+										<li><a href="#">공지사항</a></li>
+										<li><a href="#">자주하는 질문</a></li>
+										<li><a href="${ pageContext.request.contextPath }/notice/suggestion.jsp">1:1 문의</a></li>
+										<li><a href="#"
 											data-thumb-preview="${ pageContext.request.contextPath }/resources/img/previews/subway-sns.jpg">SNS</a></li>
 									</ul></li>
 								<!-- 회원 로그인하면 My page -->
 								<c:if test="${ not empty userVO }">
-									<li class="dropdown"><a class="dropdown-toggle" href="${ pageContext.request.contextPath }/member/memberDetail.jsp">My
+									<li class="dropdown"><a class="dropdown-toggle" href="#">My
 											Page</a>
 										<ul class="dropdown-menu">
 											<li><a href="contact-us.html">회원 정보</a></li>
@@ -127,13 +127,13 @@
 								</c:if>
 								<!-- 비회원 로그인하면 주문내역 조회 -->
 								<c:if test="${ not empty nonMember }">
-									<li class="dropdown"><a class="dropdown-toggle" href="${ pageContext.request.contextPath }/주문내역조회">주문내역조회</a></li>
+									<li class="dropdown"><a class="dropdown-toggle" href="#">주문내역조회</a></li>
 								</c:if>
 								
 								<c:choose>
 									<c:when test="${ empty userVO }">
 										<li class="dropdown dropdown-mega dropdown-mega-signin signin" id="headerAccount">
-											<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/login.jsp">
+											<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/memberLogin.jsp">
 												<i class="fa fa-user"></i> Sign In</a>
 										</li>
 									</c:when>
@@ -149,7 +149,9 @@
 															<div class="col-md-8">
 																<div class="user-avatar">
 																	<div class="img-thumbnail">
-																		<img src="${ pageContext.request.contextPath }/img/clients/client-1.jpg" alt="">
+																		<img
+																			src="${ pageContext.request.contextPath }/img/clients/client-1.jpg"
+																			alt="">
 																	</div>
 																	<p>
 																		<strong>${ userVO.id }</strong> <span>${ 등급 }</span>
@@ -158,7 +160,7 @@
 															</div>
 															<div class="col-md-4">
 																<ul class="list-account-options">
-																	<li><a href="${ pageContext.request.contextPath }/member/memberDetail.jsp">My Page</a></li>
+																	<li><a href="#">My Page</a></li>
 																	<li><a href="#">Log Out</a></li>
 																</ul>
 															</div>
