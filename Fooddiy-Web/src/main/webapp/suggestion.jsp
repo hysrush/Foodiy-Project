@@ -145,7 +145,7 @@
 										<h4>1:1 문의하기</h4>
 										<hr>
 										<form:form commandName="boardVO" method="POST" >
-											<table class="table table-bordered" width="80%">
+											<table class="table table-bordered" style="width:80%">
 												<tr>
 													<!-- <div class="form-group" align="left"> -->
 														<td>
@@ -320,9 +320,13 @@
 						</div>
 					</div>
 				</div>
-			<br>
 			</div>
 		</div>
+		
+		<footer id="footer">
+			<jsp:include page="/resources/include/bottom.jsp"/>
+		</footer>
+		
 	</div>
 	
 	<!-- Vendor -->
