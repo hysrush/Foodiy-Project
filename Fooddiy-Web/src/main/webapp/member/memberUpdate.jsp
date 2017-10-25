@@ -3,13 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
 <!-- Basic -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title>Fooddiy-Order</title>	
+		<title> | MyPage | </title>	
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -70,7 +68,25 @@
 			<jsp:include page="/resources/include/top.jsp"/>
 		</header>
 		<!-- ---------------------------------------------------------------------------------------------- -->
-			<div class="container" style="">
+			<div role="main" class="main">
+				<section class="page-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="breadcrumb">
+									<li class="active">Mypage</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<h1>회원정보수정</h1>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+			<div class="container">
 
 				<div class="row">
 					<div style="width: 600px">
@@ -199,6 +215,7 @@
 							</div>
 						</div>
 					</div>
+				</div>
 			</div>
 		<!-- ---------------------------------------------------------------------------------------------- -->
 		<footer id="footer">

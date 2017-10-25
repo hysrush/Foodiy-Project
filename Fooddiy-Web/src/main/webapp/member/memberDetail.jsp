@@ -3,14 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-
 		<!-- Basic -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title>Fooddiy-Order</title>	
+		<title> | MyPage | </title>	
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -56,7 +53,6 @@
 		<!-- Head Libs -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
 
-<!-- Head Libs -->
 <script
 	src="${ pageContext.request.contextPath }/resources/vendor/modernizr/modernizr.min.js"></script>
 
@@ -75,6 +71,24 @@
 			<jsp:include page="/resources/include/top.jsp"/>
 		</header>
 		<!-- ---------------------------------------------------------------------------------------------- -->
+		<div role="main" class="main">
+				<section class="page-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="breadcrumb">
+									<li class="active">Mypage</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<h1>회원정보 디테일</h1>
+							</div>
+						</div>
+					</div>
+				</section>
+				
 				<div class="container">
 
 					<div class="row">
@@ -91,7 +105,9 @@
 									<li><a href="#">나만의 메뉴</a></li>
 									<li><a href="#">나의 문의사항</a></li>
 								</ul>
-		</aside></div></div>
+							</aside>
+						</div>
+					</div>
 		
 		<div class="container">
 			<div class="row">
@@ -176,7 +192,8 @@
 													<form id="demo-form" class="form-horizontal mb-lg" novalidate="novalidate">
 														<div class="form-group mt-lg">
 															<div class="col-sm-9">
-																<input type="password" name="name" class="form-control" placeholder="password" required/>
+																<input type="password" name="password" class="form-control" placeholder="password" required/>
+																<!-- 비밀번호 맞으면 이동 아니면 다시 입력 문구 만들기 -->
 															</div>
 														</div>
 													
@@ -191,7 +208,7 @@
 									</div>
 							</div>
 						</div>
-
+					</div>
 
 
 		<!-- ---------------------------------------------------------------------------------------------- -->
