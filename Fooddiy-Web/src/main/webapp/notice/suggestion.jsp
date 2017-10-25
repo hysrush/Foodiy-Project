@@ -1,55 +1,60 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
-<%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>    
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>    
+<!DOCTYPE html>
 <html>
 <head>
+<!-- Basic -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-	<!-- Basic -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+		<title> | 1:1 문의 | </title>	
 
-	<title> | 1:1 문의 | </title>	
+		<meta name="keywords" content="HTML5 Template" />
+		<meta name="description" content="Porto - Responsive HTML5 Template">
+		<meta name="author" content="okler.net">
 
-	<meta name="keywords" content="HTML5 Template" />
-	<meta name="description" content="Porto - Responsive HTML5 Template">
-	<meta name="author" content="okler.net">
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="${ pageContext.request.contextPath}/resources/img/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="${ pageContext.request.contextPath}/resources/img/apple-touch-icon.png">
 
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="<%= request.getContextPath() %>/resources/img/favicon.ico" type="image/x-icon" />
-	<link rel="apple-touch-icon" href="<%= request.getContextPath() %>/resources/img/apple-touch-icon.png">
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<!-- Mobile Metas -->
-	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- Web Fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
 
-	<!-- Web Fonts  -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/animate/animate.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/magnific-popup.min.css">
 
-	<!-- Vendor CSS -->
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/vendor/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/vendor/animate/animate.min.css">
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/vendor/simple-line-icons/css/simple-line-icons.min.css">
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/vendor/owl.carousel/assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/vendor/owl.carousel/assets/owl.theme.default.min.css">
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/vendor/magnific-popup/magnific-popup.min.css">
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-elements.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-blog.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-shop.css">
 
-	<!-- Theme CSS -->
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/theme.css">
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/theme-elements.css">
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/theme-blog.css">
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/theme-shop.css">
+		<!-- Current Page CSS -->
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/settings.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/layers.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/navigation.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/css/component.css">
 
-	<!-- Skin CSS -->
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/skins/default.css">
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/skins/default.css">
 
-	<!-- Theme Custom CSS -->
-	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/custom.css">
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/custom.css">
 
-	<!-- Head Libs -->
-	<script src="<%= request.getContextPath() %>/resources/vendor/modernizr/modernizr.min.js"></script>
-	
+		<!-- Head Libs -->
+		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
+		
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	
@@ -71,9 +76,6 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
 
-
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
 <script type="text/javascript">
 	function doAction(type) {
 		switch (type) {
@@ -105,9 +107,10 @@
 </script>
 </head>
 <body>
-
+	<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
+		<jsp:include page="/resources/include/top.jsp" />
+	</header>
 	<div class="body">
-			
 		<div role="main" class="main">
 		
 			<section class="page-header">
@@ -115,23 +118,20 @@
 					<div class="row">
 						<div class="col-md-12">
 							<ul class="breadcrumb">
-								<li><a href="#">Home</a></li>
-								<li class="active">고객센터</li>
+								<li><a href="${ pageContext.request.contextPath}/notice/qna.jsp">커뮤니티</a></li>
+								<li class="active">1:1 문의</li>
 							</ul>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<h1>1:1 문의</h1>
+							<h1> 1:1 문의 </h1>
 						</div>
 					</div>
 				</div>
 			</section>
 		
 			<div class="container">
-
-				<h2>고객센터 > <strong>1:1 문의</strong></h2>
-				
 				<section class="section section-default">
 					<div class="container">
 						<div class="row">
@@ -147,8 +147,6 @@
 					</div>
 				</section>
 				
-				<hr>
-				
 				<div class="row">
 					<div class="col-md-12">
 						<div class="row">
@@ -156,10 +154,10 @@
 								<div class="tabs tabs-vertical tabs-left tabs-navigation">
 									<ul class="nav nav-tabs col-sm-3">
 										<li class="active">
-											<a href="#tabsNavigation1" data-toggle="tab"><i class="fa fa-group"></i>1:1 문의하기</a>
+											<a href="#tabsNavigation1" data-toggle="tab"><i class="fa fa-group"></i>1:1 문의하기&nbsp;&nbsp;</a>
 										</li>
 										<li>
-											<a href="#tabsNavigation2" data-toggle="tab"><i class="fa fa-file"></i>나의 문의내역</a>
+											<a href="#tabsNavigation2" data-toggle="tab"><i class="fa fa-file"></i>나의 문의내역&nbsp;&nbsp;</a>
 										</li>
 									</ul>
 								</div>
@@ -169,7 +167,7 @@
 									<div class="center">
 										<h4>1:1 문의하기</h4>
 										<hr>
-										<form commandName="boardVO" method="POST" >
+										<form method="POST" >
 											<table class="table table-bordered" width="80%">
 												<tr>
 													<div class="form-group" align="left">
@@ -249,8 +247,9 @@
 															<label for="title">제목</label>
 														</td>
 														<td>
-															<form:input path="title" type="text" class="form-control" id="exampleInputEmail1" placeholder="title"/>
-															<form:errors path="title" class="form-control"></form:errors>
+															<form type="text" class="form-control" id="exampleInputEmail1">
+															<%-- <form:form errors path="title" class="form-control"></form:errors> --%>
+															</form>
 														</td>
 													</div>
 												</tr>
@@ -260,8 +259,8 @@
 															<label for="content">내용</label>
 														</td>
 														<td>
-															<form:textarea path="content" class="form-control" rows="5" id="comment" placeholder="contents"/>
-															<form:errors path="content" class="form-control"></form:errors>
+															<form type="textarea" path="content" class="form-control" rows="5" id="comment" placeholder="contents"/>
+															<%-- <form:errors path="content" class="form-control"></form:errors> --%>
 														</td>
 													</div>
 												</tr>
@@ -277,8 +276,8 @@
 														</td>
 													</div>
 												</tr>
-												<form:hidden path="writer" value="admin"/>
-												<!-- <input type="hidden" id="writer" value="admin"> -->
+												<%-- <form:hidden path="writer" value="admin"/> --%>
+												<input type="hidden" id="writer" value="admin">
 											</table>
 										</form>
 									</div>
@@ -366,37 +365,41 @@
 			<br>
 			</div>
 		</div>
+		
+		<footer id="footer">
+			<jsp:include page="/resources/include/bottom.jsp"/>
+		</footer>
 	</div>
-	
-	<!-- Vendor -->
-	<script src="<%= request.getContextPath() %>/resources/vendor/jquery/jquery.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/jquery.easing/jquery.easing.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/jquery-cookie/jquery-cookie.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/common/common.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/jquery.validation/jquery.validation.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/jquery.gmap/jquery.gmap.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/isotope/jquery.isotope.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/owl.carousel/owl.carousel.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/vendor/vide/vide.min.js"></script>
-	
-	
-	<!-- Theme Base, Components and Settings -->
-	<script src="<%= request.getContextPath() %>/resources/js/theme.js"></script>
-	
-	<!-- Theme Custom -->
-	<script src="<%= request.getContextPath() %>/resources/js/custom.js"></script>
-	
-	<!-- 달력 -->
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <script type='text/javascript' src='https://code.jquery.com/jquery-1.8.3.js'></script>
-	
-	<!-- Theme Initialization Files -->
-	<script src="<%= request.getContextPath() %>/resources/js/theme.init.js"></script>
-	
+
+		<!-- Vendor -->
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easing/jquery.easing.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery-cookie/jquery-cookie.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/common/common.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.validation/jquery.validation.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/isotope/jquery.isotope.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/owl.carousel.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/vide/vide.min.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="${ pageContext.request.contextPath}/resources/js/theme.js"></script>
+		
+		<!-- Current Page Vendor and Views -->
+		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/js/views/view.home.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="${ pageContext.request.contextPath}/resources/js/custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
 </body>
 </html>

@@ -55,9 +55,8 @@
 		
 </head>
 <body>
-
 		<div class="body">
-				<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
+			<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
 				<jsp:include page="/resources/include/top.jsp" />
 			</header>
 			<div role="main" class="main">
@@ -97,9 +96,6 @@
 							</div>
 						</div>
 					</section>
-
-					<hr>
-
 					<div class="row">
 						<div class="col-md-12">
 							<div class="tabs tabs-bottom tabs-center tabs-simple">

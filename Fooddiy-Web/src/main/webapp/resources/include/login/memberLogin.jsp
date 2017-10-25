@@ -39,6 +39,14 @@
 							</div>
 						</div>
 					</form>
+					
+						<div class="col-md-6 pull-right">
+							<ul class="social-icons">
+								<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+								<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+								<li class="social-icons-linkedin"><a href="http://www.naver.com/" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							</ul>
+						</div>
 				</div>
 			</div>
 		</div>
