@@ -36,10 +36,11 @@
 							</div>
 							<div class="col-md-6">
 								<input type="submit" value="Login" class="btn btn-primary pull-right mb-xl" data-loading-text="Loading...">
+								<!-- 로그인 되면 index로 이동 아니면 alert창 뜨고 다시 입력 -->
 							</div>
 						</div>
 					</form>
-					
+					<!-- API 로그인 -->
 						<div class="col-md-6 pull-right">
 							<ul class="social-icons">
 								<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
