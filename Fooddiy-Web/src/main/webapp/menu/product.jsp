@@ -3,22 +3,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title> | Menu | </title>
-
-		<!-- Basic -->
+	
+	<!-- Basic -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title>Shop | Porto - Responsive HTML5 Template 5.7.2</title>	
+		<title> | Menu | </title>	
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
 		<meta name="author" content="okler.net">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="${ pageContext.request.contextPath }/resources/img/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="${ pageContext.request.contextPath }/resources/img/apple-touch-icon.png">
+		<link rel="shortcut icon" href="/Fooddiy/resources/img/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="/Fooddiy/resources/img/apple-touch-icon.png">
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -27,29 +25,34 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
 
 		<!-- Vendor CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/vendor/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/vendor/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/vendor/animate/animate.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/vendor/simple-line-icons/css/simple-line-icons.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/vendor/owl.carousel/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/vendor/owl.carousel/assets/owl.theme.default.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/vendor/magnific-popup/magnific-popup.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/animate/animate.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/magnific-popup.min.css">
 
 		<!-- Theme CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/css/theme.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/css/theme-elements.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/css/theme-blog.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/css/theme-shop.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-elements.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-blog.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-shop.css">
+
+		<!-- Current Page CSS -->
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/settings.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/layers.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/navigation.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/css/component.css">
 
 		<!-- Skin CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/css/skins/default.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/skins/default.css">
 
 		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/css/custom.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/custom.css">
 
 		<!-- Head Libs -->
-		<script src="${ pageContext.request.contextPath }/resources/vendor/modernizr/modernizr.min.js"></script>
-
+		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
 </head>
 <body>
 <div class="body">
@@ -337,6 +340,10 @@
 				</div>
 
 			</div>
+			
+		<footer id="footer">
+			<jsp:include page="/resources/include/bottom.jsp"/>
+		</footer>
 
 		</div>
 
