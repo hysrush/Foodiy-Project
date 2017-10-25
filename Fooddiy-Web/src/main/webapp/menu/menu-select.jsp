@@ -85,7 +85,6 @@
 <body>
 	<div class="col-md-12">
 
-
 		<div role="main" class="main">
 			<div class="container">
 
