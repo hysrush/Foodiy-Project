@@ -26,7 +26,7 @@
 		<div class="col-md-4">
 
 			<span class="img-thumbnail">
-				<img alt="" class="img-responsive" src="img/products/product-1.png"> <!--  DB 첨부 이미지 값 -->
+				<img alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/products/product-1.png"> <!--  DB 첨부 이미지 값 -->
 			</span>
 				<a href="#" class="btn btn-primary btn-icon"><i class="fa fa-external-link"></i>장바구니로!</a>
 				<button type="button" class="mb-xs mt-xs mr-xs btn btn-borders btn-info"><i class="fa fa-thumbs-up"></i> </button>
@@ -54,7 +54,7 @@
 					<div class="testimonial-arrow-down"></div>
 						<div class="testimonial-author">
 							<div class="testimonial-author-thumbnail">
-								<img src="img/clients/client-1.png" class="img-responsive img-circle" alt="">
+								<img src="${ pageContext.request.contextPath }/resources/img/clients/client-1.png" class="img-responsive img-circle" alt="">
 							</div>
 								<p><strong>hysrush</strong></p>
 						</div>
@@ -101,7 +101,7 @@
 									<div class="testimonial-arrow-down"></div>
 										<div class="testimonial-author">
 											<div class="testimonial-author-thumbnail">
-												<img src="img/clients/client-10.jpg" class="img-responsive img-circle" alt="">
+												<img src="${ pageContext.request.contextPath}/resources/img/clients/client-10.jpg" class="img-responsive img-circle" alt="">
 											</div>
 												<p><strong>kkiceama</strong></p>
 											<span class="pull-right">

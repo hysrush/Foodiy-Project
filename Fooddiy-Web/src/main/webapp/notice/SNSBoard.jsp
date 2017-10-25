@@ -116,7 +116,7 @@
 										</div>
 									</div>
 									<span class="product-thumb-info">
-										<a href="SNSBoard-Modal.html" data-ajax-on-modal>
+										<a href="${ pageContext.request.contextPath }/notice/SNSBoard-Modal.jsp" data-ajax-on-modal>
 											<span class="thumb-info thumb-info-lighten">
 												<span class="thumb-info-wrapper">
 													<img src="${ pageContext.request.contextPath }/resources/img/products/product-1.png" class="img-responsive" alt="">
@@ -124,7 +124,7 @@
 											</span>
 										</a>
 											<span class="product-thumb-info-content">
-											<a href="shop-product-sidebar.html">
+											<a href="${ pageContext.request.contextPath }/notice/SNSBoard-Modal.jsp">
 												<span>
 													<button type="button" class="mb-xs mt-xs mr-xs btn btn-borders btn-info"><i class="fa fa-thumbs-up"></i> </button>
 												</span>
@@ -145,7 +145,7 @@
 										</div>
 									</div>
 									<span class="product-thumb-info">
-										<a href="SNSBoard-Modal.html" data-ajax-on-modal>
+										<a href="${ pageContext.request.contextPath }/notice/SNSBoard-Modal.jsp" data-ajax-on-modal>
 											<span class="thumb-info thumb-info-lighten">
 												<span class="thumb-info-wrapper">
 													<img src="${ pageContext.request.contextPath }/resources/img/products/product-1.png" class="img-responsive" alt="">
@@ -153,7 +153,7 @@
 											</span>
 										</a>
 											<span class="product-thumb-info-content">
-											<a href="shop-product-sidebar.html">
+											<a href="${ pageContext.request.contextPath }/notice/SNSBoard-Modal.jsp">
 												<span>
 													<button type="button" class="mb-xs mt-xs mr-xs btn btn-borders btn-info"><i class="fa fa-thumbs-up"></i> </button>
 												</span>
@@ -174,7 +174,7 @@
 										</div>
 									</div>
 									<span class="product-thumb-info">
-										<a href="SNSBoard-Modal.html" data-ajax-on-modal>
+										<a href="${ pageContext.request.contextPath }/notice/SNSBoard-Modal.jsp" data-ajax-on-modal>
 											<span class="thumb-info thumb-info-lighten">
 												<span class="thumb-info-wrapper">
 													<img src="${ pageContext.request.contextPath }/resources/img/products/product-1.png" class="img-responsive" alt="">
@@ -196,16 +196,16 @@
 									<div class="testimonial testimonial-style-3">
 										<div class="testimonial-author">
 											<div class="testimonial-author-thumbnail">
-												<img src="img/clients/client-1.png" class="img-responsive img-circle" alt="">
+												<img src="${ pageContext.request.contextPath }/resources/img/clients/client-1.png" class="img-responsive img-circle" alt="">
 											</div>
 												<p><strong>hysrush</strong></p>
 										</div>
 									</div>
 									<span class="product-thumb-info">
-										<a href="SNSBoard-Modal.html" data-ajax-on-modal>
+										<a href="${ pageContext.request.contextPath }/notice/SNSBoard-Modal.jsp" data-ajax-on-modal>
 											<span class="thumb-info thumb-info-lighten">
 												<span class="thumb-info-wrapper">
-													<img src="img/products/product-1.png" class="img-responsive" alt="">
+													<img src="${ pageContext.request.contextPath }/resources/img/products/product-1.png" class="img-responsive" alt="">
 												</span>
 											</span>
 										</a>
@@ -224,16 +224,16 @@
 									<div class="testimonial testimonial-style-3">
 										<div class="testimonial-author">
 											<div class="testimonial-author-thumbnail">
-												<img src="img/clients/client-1.png" class="img-responsive img-circle" alt="">
+												<img src="${ pageContext.request.contextPath }/resources/img/clients/client-1.png" class="img-responsive img-circle" alt="">
 											</div>
 												<p><strong>hysrush</strong></p>
 										</div>
 									</div>
 									<span class="product-thumb-info">
-										<a href="SNSBoard-Modal.html" data-ajax-on-modal>
+										<a href="${ pageContext.request.contextPath }/notice/SNSBoard-Modal.jsp" data-ajax-on-modal>
 											<span class="thumb-info thumb-info-lighten">
 												<span class="thumb-info-wrapper">
-													<img src="img/products/product-1.png" class="img-responsive" alt="">
+													<img src="${ pageContext.request.contextPath }/resources/img/products/product-1.png" class="img-responsive" alt="">
 												</span>
 											</span>
 										</a>
@@ -252,16 +252,16 @@
 									<div class="testimonial testimonial-style-3">
 										<div class="testimonial-author">
 											<div class="testimonial-author-thumbnail">
-												<img src="img/clients/client-1.png" class="img-responsive img-circle" alt="">
+												<img src="${ pageContext.request.contextPath }/resources/img/clients/client-1.png" class="img-responsive img-circle" alt="">
 											</div>
 												<p><strong>hysrush</strong></p>
 										</div>
 									</div>
 									<span class="product-thumb-info">
-										<a href="SNSBoard-Modal.html" data-ajax-on-modal>
+										<a href="${ pageContext.request.contextPath }/notice/SNSBoard-Modal.jsp" data-ajax-on-modal>
 											<span class="thumb-info thumb-info-lighten">
 												<span class="thumb-info-wrapper">
-													<img src="img/products/product-1.png" class="img-responsive" alt="">
+													<img src="${ pageContext.request.contextPath }/resources/img/products/product-1.png" class="img-responsive" alt="">
 												</span>
 											</span>
 										</a>
@@ -321,8 +321,8 @@
 		
 		<!-- Theme Initialization Files -->
 		<script src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
-
-		<!-- Examples -->
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqatUi4ICaA6KBVjyOxul0QKP4F_H7-mY"></script>
+		
+		<!-- 모달창 띄우는 js -->
+		<script src="${ pageContext.request.contextPath}/resources/js/examples/examples.portfolio.js"></script>
 	</body>
 </html>
