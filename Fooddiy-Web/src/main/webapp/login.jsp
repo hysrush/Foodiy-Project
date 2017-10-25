@@ -8,7 +8,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title>Fooddiy-Order</title>	
+		<title> | 로그인 | </title>	
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -68,12 +68,13 @@
 						<div class="col-md-12">
 							<ul class="breadcrumb">
 								<li><a href="#">Sign In</a></li>
+								<li>Login</li>
 							</ul>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<h1>Login</h1>
+							<h1>로그인</h1>
 						</div>
 					</div>
 				</div>
