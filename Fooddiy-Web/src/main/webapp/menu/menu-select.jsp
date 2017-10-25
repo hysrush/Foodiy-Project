@@ -1,143 +1,96 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-<!-- Basic -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<title>Demo Shop 1 | Porto - Responsive HTML5 Template 5.7.2</title>
-
-<meta name="keywords" content="HTML5 Template" />
-<meta name="description" content="Porto - Responsive HTML5 Template">
-<meta name="author" content="okler.net">
+<title>Fooddiy-Order</title>
 
 <!-- Favicon -->
-<link rel="shortcut icon"
-	href="${ pageContext.request.contextPath }/resources/img/favicon.ico"
-	type="image/x-icon" />
-<link rel="apple-touch-icon"
-	href="${ pageContext.request.contextPath }/resources/img/apple-touch-icon.png">
+		<link rel="shortcut icon" href="${ pageContext.request.contextPath}/resources/img/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="${ pageContext.request.contextPath}/resources/img/apple-touch-icon.png">
 
-<!-- Mobile Metas -->
-<meta name="viewport"
-	content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<!-- Web Fonts  -->
-<link
-	href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light"
-	rel="stylesheet" type="text/css">
+		<!-- Web Fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
 
-<!-- Vendor CSS -->
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/vendor/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/vendor/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/vendor/animate/animate.min.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/vendor/simple-line-icons/css/simple-line-icons.min.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/vendor/owl.carousel/assets/owl.carousel.min.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/vendor/owl.carousel/assets/owl.theme.default.min.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/vendor/magnific-popup/magnific-popup.min.css">
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/animate/animate.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/magnific-popup.min.css">
 
-<!-- Theme CSS -->
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/css/theme.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/css/theme-elements.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/css/theme-blog.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/css/theme-shop.css">
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-elements.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-blog.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-shop.css">
 
-<!-- Current Page CSS -->
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/vendor/rs-plugin/css/settings.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/vendor/rs-plugin/css/layers.css">
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/vendor/rs-plugin/css/navigation.css">
+		<!-- Current Page CSS -->
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/settings.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/layers.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/navigation.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/css/component.css">
 
-<!-- Skin CSS -->
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/css/skins/skin-shop-1.css">
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/skins/default.css">
 
-<!-- Demo CSS -->
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/css/demos/demo-shop-1.css">
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/custom.css">
 
-<!-- Theme Custom CSS -->
-<link rel="stylesheet"
-	href="${ pageContext.request.contextPath }/resources/css/custom.css">
-
-<!-- Head Libs -->
-<script
-	src="${ pageContext.request.contextPath }/resources/vendor/modernizr/modernizr.min.js"></script>
+		<!-- Head Libs -->
+		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
 
 </head>
 <body>
+	<div class="body">
+		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
+			<jsp:include page="/resources/include/top.jsp"/>
+		</header>
 	<div class="col-md-12">
-
-
+		<div role="main" class="main">
+			<section class="page-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="breadcrumb">
+								<li><a href="#">Home</a></li>
+								<li class="active">Menu</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<h1>Menu</h1>
+						</div>
+					</div>
+				</div>
+			</section>
+	<div class="col-md-12">
 		<div role="main" class="main">
 			<div class="container">
-
 				<div class="row">
-
-
 					<div class="col-md-3">
-						<aside class="sidebar"> <br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-
+					<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
 						<h4 class="heading-primary">MENU</h4>
 						<ul class="nav nav-list mb-xlg">
-							<li><h4>
-									<a href="#">빵 선택</a>
-								</h4></li>
-							<li class="active"><h4>
-									<a href="#">토핑 추가</a>
-								</h4></li>
-							<li><h4>
-									<a href="#">야채 선택</a>
-								</h4></li>
-							<li><h4>
-									<a href="#">소스 선택</a>
-								</h4></li>
-							<li><h4>
-									<a href="#">사이드/음료</a>
-								</h4></li>
+							<li><a href="#">빵 선택</a></li>
+							<li class="active"><a href="#">토핑 추가</a></li>
+							<li><a href="#">야채 선택</a></li>
+							<li><a href="#">소스 선택</a></li>
+							<li><a href="#">사이드/음료</a></li>
 						</ul>
 						</aside>
 					</div>
-
-
 					<div class="col-md-9">
-
-						<h1>
-							<strong>메뉴</strong>
-						</h1>
-
 						<div role="main" class="main shop">
 
 							<div class="container">
-
-								<div class="row">
-									<div class="col-md-12">
-										<hr class="tall">
-									</div>
 
 									<div class="row">
 										<div class="col-md-6">
@@ -259,22 +212,23 @@
 												</li>
 											</ul>
 										</div>
-
 									</div>
-
-								</div>
-
 							</div>
 						</div>
-
 					</div>
-
 				</div>
-
+			</div>
+			</div>
+			</div>
+</div>
 
 				<!--모달  -->
 			</div>
-		</div>
+			
+		<footer id="footer">
+			<jsp:include page="/resources/include/bottom.jsp"/>
+		</footer>
+	</div>
 
 		<!-- Vendor -->
 		<script
