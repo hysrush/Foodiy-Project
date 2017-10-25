@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title> | Menu | </title>
 
 		<!-- Basic -->
 		<meta charset="utf-8">
@@ -53,9 +53,11 @@
 </head>
 <body>
 <div class="body">
+		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
+			<jsp:include page="/resources/include/top.jsp" />
+		</header>
 
 			<div role="main" class="main shop">
-
 				<div class="container">
 
 					<div class="row">
