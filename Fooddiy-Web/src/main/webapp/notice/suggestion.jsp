@@ -192,9 +192,19 @@
 															<label for="email">답변 메일</label>
 														</td>
 														<td>
-															<input path="#" type="text" class="form-control" id="emailID" placeholder="로그인회원emailID"/>
-															@
-															<input path="#" type="text" class="form-control" id="emailAdd" placeholder="로그인회원emailAdd"/>
+															<input style="width: 30%; float: left;" path="#" type="text" class="form-control" id="emailID" placeholder="로그인회원emailID"/>
+															<span style="float: left;">&nbsp;&nbsp;@&nbsp;&nbsp;</span>
+															<input style="width: 30%; float: left;" path="#" type="text" class="form-control" id="emailAdd" placeholder="로그인회원emailAdd"/>
+															<span style="float: left;">&nbsp;&nbsp;</span>
+															<select class="form-control" style="width: 30%; float: left;" >
+																<option value="">직접입력</option>
+																<option value="">gmail.com</option>
+																<option value="">hanmail.net</option>
+																<option value="">hotmail.com</option>
+																<option value="">nate.com</option>
+																<option value="">naver.com</option>
+																<option value="">yahoo.co.kr</option>
+															</select>
 														</td>
 													</div>
 												</tr>
@@ -204,7 +214,7 @@
 															<label for="email">연락처</label>
 														</td>
 														<td>
-															<select class="form-control">
+															<select class="form-control" style="width: 30%; float: left;">
 																<option value="">010</option>
 																<option value="">011</option>
 																<option value="">016</option>
@@ -212,10 +222,10 @@
 																<option value="">018</option>
 																<option value="">019</option>
 															</select>
-															-
-															<input path="#" type="text" class="form-control" id="phone2" placeholder="중간번호"/>
-															-
-															<input path="#" type="text" class="form-control" id="phone3" placeholder="마지막번호"/>
+															<span style="float: left;">&nbsp;&nbsp;-&nbsp;&nbsp;</span>
+															<input path="#" type="text" class="form-control" id="phone2" placeholder="중간번호" style="width: 30%; float: left;"/>
+															<span style="float: left;">&nbsp;&nbsp;-&nbsp;&nbsp;</span>
+															<input path="#" type="text" class="form-control" id="phone3" placeholder="마지막번호" style="width: 30%; float: left;"/>
 														</td>
 													</div>
 												</tr>
@@ -225,19 +235,22 @@
 															<label for="email">장소</label>
 														</td>
 														<td>
-															<label>
+															<label style="width: 30%; float: left;">
 																<input type="radio" name="optionRadios" id="optionRadio" value="" checked="checked">매장 방문
 																<input type="radio" name="optionRadios" id="optionRadio" value="" >매장 방문 외
 															</label>
 															<br>
-															<label for="email">방문매장</label>
-															<button type="button" class="btn btn-info mr-xs mb-sm">매장찾기</button>
-															&nbsp;&nbsp;&nbsp;
-															<label for="email">방문일</label>
-															<div class="input-group date">
-            													<input type="text" class="form-control">
-            													<span class="input-group-addon" id="testDatepicker"><i class="glyphicon glyphicon-calendar"></i></span>
-       														</div>
+															<div style="width: 30%; float: left;">
+																<label for="email" style="float: left;">방문매장&nbsp;&nbsp;</label>
+																<button type="button" class="btn btn-info mr-xs mb-sm" style="float: left;">매장찾기</button>
+															</div>
+															<div style="width: 30%; float: left;">
+																<label for="email" style="float: left;">방문일&nbsp;&nbsp;</label>
+																<div class="input-group date" style="width: 30%; float: left;">
+	            													<input type="text" class="form-control">
+	            													<span class="input-group-addon" id="testDatepicker"><i class="glyphicon glyphicon-calendar"></i></span>
+	       														</div>
+															</div>
        													</td>
 													</div>
 												</tr>
@@ -247,9 +260,14 @@
 															<label for="title">제목</label>
 														</td>
 														<td>
+<<<<<<< HEAD
+															<input path="title" type="text" class="form-control" id="exampleInputEmail1" placeholder="title"/>
+															<%-- <form:errors path="title" class="form-control"></form:errors> --%>
+=======
 															<form type="text" class="form-control" id="exampleInputEmail1">
 															<%-- <form:form errors path="title" class="form-control"></form:errors> --%>
 															</form>
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 														</td>
 													</div>
 												</tr>
@@ -259,7 +277,11 @@
 															<label for="content">내용</label>
 														</td>
 														<td>
+<<<<<<< HEAD
+															<textarea path="content" class="form-control" rows="5" id="comment" placeholder="contents"></textarea>
+=======
 															<form type="textarea" path="content" class="form-control" rows="5" id="comment" placeholder="contents"/>
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 															<%-- <form:errors path="content" class="form-control"></form:errors> --%>
 														</td>
 													</div>
@@ -276,8 +298,11 @@
 														</td>
 													</div>
 												</tr>
+<<<<<<< HEAD
+=======
 												<%-- <form:hidden path="writer" value="admin"/> --%>
 												<input type="hidden" id="writer" value="admin">
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 											</table>
 										</form>
 									</div>
