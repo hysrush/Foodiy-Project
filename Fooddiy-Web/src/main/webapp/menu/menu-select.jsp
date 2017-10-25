@@ -48,9 +48,7 @@
 
 </head>
 <body>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
 	<div class="body">
 		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
 			<jsp:include page="/resources/include/top.jsp"/>
@@ -75,12 +73,9 @@
 				</div>
 			</section>
 	<div class="col-md-12">
-=======
 
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 	<div class="col-md-12">
 
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 		<div role="main" class="main">
 			<div class="container">
 				<div class="row">
