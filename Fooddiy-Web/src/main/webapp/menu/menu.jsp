@@ -51,17 +51,11 @@
 	<div class="body">
 		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
 			<jsp:include page="/resources/include/top.jsp"/>
-<<<<<<< HEAD
 		</header>
-=======
 		</header>
 
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 	<div class="col-md-12">
-<<<<<<< HEAD
 
-=======
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 		<div role="main" class="main">
 			<section class="page-header">
 				<div class="container">
@@ -82,24 +76,13 @@
 			</section>
 			
  	<div class="col-md-12">
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 		<div role="main" class="main">
 			<div class="container">
-<<<<<<< HEAD
 				<div class="row">
-=======
 				<div class="row">
 
 
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 					<div class="col-md-3">
-<<<<<<< HEAD
-
-=======
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 						<aside class="sidebar"> <br>
 						<br>
 						<br>
@@ -261,28 +244,19 @@
 												<strong>프리미엄</strong>
 											</h2>
 											<p>PREMIUM MENU</p>
-<<<<<<< HEAD
 										</div>
-=======
 										</div>
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 									<div class="col-md-6">
 										<h2 class="mb-none">
 											<strong>프리미엄</strong>
 										</h2>
 										<p>PREMIUM MENU</p>
-<<<<<<< HEAD
 
-=======
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 									</div>
 
 									<div class="row">
 
-<<<<<<< HEAD
 
-=======
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 										<div class="masonry-loader masonry-loader-showing">
 											<ul class="products product-thumb-info-list"
 												data-plugin-masonry>
@@ -311,10 +285,7 @@
 																	</ins>
 															</span>
 														</a>
-<<<<<<< HEAD
 
-=======
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 									<div class="masonry-loader masonry-loader-showing">
 										<ul class="products product-thumb-info-list"
 											data-plugin-masonry>
@@ -327,39 +298,24 @@
 												</a> <a  data-toggle="modal" data-target="#defaultModal" > <span
 														class="product-thumb-info-image"> <span
 															class="product-thumb-info-act">
-<<<<<<< HEAD
 											 <span class="product-thumb-info-act-left"><em>View</em></span>
-=======
 															
 															
 															 <span class="product-thumb-info-act-left"><em>View</em></span>
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 																<span class="product-thumb-info-act-right"><em><i
 																		class="fa fa-plus"></i> Details</em></span>
-<<<<<<< HEAD
 
-=======
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 															<i class="fa fa-plus"></i> 
 															 <span
 																class="product-thumb-info-act-left"><em>상세</em></span>
 																
 																<span class="product-thumb-info-act-right"><em>보기</em></span>
-<<<<<<< HEAD
 
-=======
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 														</span> <img alt="" class="img-responsive"
 															src="${ pageContext.request.contextPath }/resources/img/products/스테이크_치즈.jpg">
-<<<<<<< HEAD
 
-=======
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 													</span>
-<<<<<<< HEAD
 
-=======
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 												</span></li>
 												<li class="col-md-3 col-sm-6 col-xs-12 product"><span
 													class="product-thumb-info"> <a href="shop-cart.html"
@@ -475,10 +431,7 @@
 														</span> <img alt="" class="img-responsive"
 															src="${ pageContext.request.contextPath }/resources/img/products/로스트_비프.jpg">
 													</span>
-<<<<<<< HEAD
 
-=======
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 												</span></li>
 											</ul>
 										</div>
@@ -915,20 +868,11 @@
 				</div>
 			</div>
 		</div>
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 			<footer id="footer">
 				<jsp:include page="/resources/include/bottom.jsp"/>
 			</footer>
 		</div> 
-		
-<<<<<<< HEAD
-=======
 
-
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 		<!-- Vendor -->
 		<script
 			src="${ pageContext.request.contextPath }/resources/vendor/jquery/jquery.min.js"></script>
