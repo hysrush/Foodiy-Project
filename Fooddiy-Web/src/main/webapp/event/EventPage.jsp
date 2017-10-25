@@ -89,9 +89,9 @@
 
 									<h4 class="heading-primary">이벤트</h4>
 								<ul class="nav nav-list mb-xlg">
-									<li><a href="#">브랜드 이벤트</a></li>
-									<li class="active">
-										<a href="#">점포별 이벤트</a>
+									<li class="active"><a href="#">브랜드 이벤트</a></li>
+									<li class="${ pageContext.request.contextPath }/event/EventPage.jsp">
+										<a href="${ pageContext.request.contextPath }/event/StoreEventPage.jsp">점포별 이벤트</a>
 									</li>
 								</ul>
 							</aside>

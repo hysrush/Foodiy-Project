@@ -16,8 +16,8 @@
 		<meta name="author" content="okler.net">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="/Fooddiy/resources/img/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="/Fooddiy/resources/img/apple-touch-icon.png">
+		<link rel="shortcut icon" href="${ pageContext.request.contextPath}/resources/img/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="${ pageContext.request.contextPath}/resources/img/apple-touch-icon.png">
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -92,16 +92,13 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<h1>Subway 소식</h1>
+							<h1>고객센터 > <strong>Subway 소식</strong></h1>
 						</div>
 					</div>
 				</div>
 			</section>
 		
 			<div class="container">
-
-				<h2>고객센터 > <strong>Subway 소식</strong></h2>
-				
 				<section class="section section-default">
 					<div class="container">
 						<div class="row">

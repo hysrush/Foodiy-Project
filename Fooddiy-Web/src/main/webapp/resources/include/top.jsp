@@ -42,8 +42,8 @@
 								<li class="dropdown active"><a class="dropdown-toggle"
 									href="${ pageContext.request.contextPath }/menu/menu.jsp"> Menu </a>
 									<ul class="dropdown-menu">
-										<li><a href="index.html">전체 메뉴</a></li>
-										<li class="dropdown-submenu"><a href="index-classic.html">세트 메뉴</a>
+										<li><a href="${ pageContext.request.contextPath }/menu/menu.jsp">전체 메뉴</a></li>
+										<li class="dropdown-submenu"><a href="${ pageContext.request.contextPath }/menu/menu.jsp">세트 메뉴</a>
 											<ul class="dropdown-menu">
 												<li><a href="index-classic.html"
 													data-thumb-preview="${ pageContext.request.contextPath }/resources/img/previews/spicy.jpg">스파이시 이탈리안</a></li>
@@ -61,7 +61,7 @@
 													data-thumb-preview="${ pageContext.request.contextPath}/resources/img/previews/preview-corporate-hosting.jpg">바나나킥</a></li>
 											</ul></li>
 										<li class="dropdown-submenu"><a
-											href="index-corporate.html">신제품<span class="tip tip-dark">NEW</span></a>
+											href="${ pageContext.request.contextPath }/menu/menu.jsp">신제품<span class="tip tip-dark">NEW</span></a>
 											<ul class="dropdown-menu">
 												<li><a href="index-corporate.html"
 													data-thumb-preview="${ pageContext.request.contextPath}/resources/img/previews/preview-corporate.jpg">Corporate
@@ -100,17 +100,18 @@
 										</li>
 									</ul>
 								</li>
-								<li class="dropdown"><a class="dropdown-toggle" href="${ pageContext.request.contextPath}/event/eventPage.jsp">EVENT</a>
+								<li class="dropdown"><a class="dropdown-toggle" href="${ pageContext.request.contextPath}/event/EventPage.jsp">EVENT</a>
 									<ul class="dropdown-menu">
-										<li><a href="${ pageContext.request.contextPath }/event/stroreEventPage.jsp">Brand EVENT</a></li>
+										<li><a href="${ pageContext.request.contextPath }/event/EventPage.jsp">브랜드 이벤트</a></li>
+										<li><a href="${ pageContext.request.contextPath }/event/StoreEventPage.jsp">점포별 이벤트</a></li>
 									</ul>
 								</li>
-								<li class="dropdown"><a class="dropdown-toggle" href="#">Community</a>
+								<li class="dropdown"><a class="dropdown-toggle" href="${ pageContext.request.contextPath }/notice/qna.jsp">Community</a>
 									<ul class="dropdown-menu">
-										<li><a href="#">공지사항</a></li>
-										<li><a href="#">자주하는 질문</a></li>
-										<li><a href="#">1:1 문의</a></li>
-										<li><a href="#"
+										<li><a href="${ pageContext.request.contextPath }/notice/qna.jsp">자주하는 질문</a></li>
+										<li><a href="${ pageContext.request.contextPath }/notice/noticeList.jsp">공지사항</a></li>
+										<li><a href="${ pageContext.request.contextPath }/notice/qna.jsp">1:1 문의</a></li>
+										<li><a href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"
 											data-thumb-preview="${ pageContext.request.contextPath }/resources/img/previews/subway-sns.jpg">SNS</a></li>
 									</ul></li>
 								<!-- 회원 로그인하면 My page -->
