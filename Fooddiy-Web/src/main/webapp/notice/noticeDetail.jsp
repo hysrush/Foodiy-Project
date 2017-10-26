@@ -98,7 +98,7 @@
 				</div>
 			</section>
 		
-				<div class="row">
+			<div class="container">
 				<section class="section section-default">
 					<div class="container">
 						<div class="row">
