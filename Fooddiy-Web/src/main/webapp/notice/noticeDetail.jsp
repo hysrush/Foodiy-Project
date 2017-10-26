@@ -98,7 +98,7 @@
 				</div>
 			</section>
 		
-			<div class="container">
+				<div class="row">
 				<section class="section section-default">
 					<div class="container">
 						<div class="row">
@@ -111,8 +111,6 @@
 						</div>
 					</div>
 				</section>
-				
-				<hr>
 				
 				<div class="row">
 					<div class="col-md-12">
@@ -229,7 +227,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+	</div>
 		
 		<footer id="footer">
 			<jsp:include page="/resources/include/bottom.jsp"/>

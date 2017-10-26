@@ -22,8 +22,7 @@
 									<div class="row">
 										<div class="form-group">
 											<div class="col-md-12">
-												<label>Password</label> <input type="text" value=""
-													class="form-control input-lg">
+												<label>Password</label> <input type="text" value="" class="form-control input-lg">
 											</div>
 										</div>
 									</div>

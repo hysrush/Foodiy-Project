@@ -15,7 +15,7 @@
 									<div class="row">
 										<div class="form-group">
 											<div class="col-md-12">
-												<input type="text" value="주문 번호를 입력하세요" size="60px">
+												<input type="text" class="form-control" value="주문 번호를 입력하세요" size="60px">
 											</div>
 										</div>
 									</div>

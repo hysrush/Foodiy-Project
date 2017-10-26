@@ -13,8 +13,7 @@
 								<h4 class="heading-primary text-uppercase mb-md">비회원</h4>
 								<div class="row">
 									<div class="col-md-12">
-										<label>이용약관 및 개인정보수집 및이용에 모두 동의합니다.</label>
-										<input type="checkbox" id=""/><br/><br/>
+										<label>이용약관 및 개인정보수집 및이용에 모두 동의합니다. <input type="checkbox" id=""/><br/><br/></label>
 									</div>
 								</div>
 								<form action="/" id="frmSignIn" method="post">
