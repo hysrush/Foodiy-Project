@@ -67,8 +67,8 @@
 						<div class="row">
 							<div class="col-md-12">
 								<ul class="breadcrumb">
-									<li><a href="#">Home</a></li>
-									<li class="active">Board</li>
+									<li><a href="${ pageContext.request.contextPath }/notice/qna.jsp">커뮤니티</a></li>
+									<li class="active">SNS</li>
 								</ul>
 							</div>
 						</div>
@@ -284,7 +284,7 @@
 							<!-- END -->
 						</div>
 					</div>
-				
+				</div>
 			<footer id="footer">
 				<jsp:include page="/resources/include/bottom.jsp"/>
 			</footer>

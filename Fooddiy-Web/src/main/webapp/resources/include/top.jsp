@@ -120,7 +120,7 @@
 										<li><a href="${ pageContext.request.contextPath }/notice/qna.jsp">자주하는 질문</a></li>
 										<li><a href="${ pageContext.request.contextPath }/notice/noticeList.jsp">공지사항</a></li>
 										<li><a href="${ pageContext.request.contextPath }/notice/suggestion.jsp">1:1 문의</a></li>
-										<li><a href="#"
+										<li><a href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"
 											data-thumb-preview="${ pageContext.request.contextPath }/resources/img/previews/subway-sns.jpg">SNS</a></li>
 									</ul></li>
 								<!-- 회원 로그인하면 My page -->

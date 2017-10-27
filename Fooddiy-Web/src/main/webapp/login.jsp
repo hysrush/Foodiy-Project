@@ -54,6 +54,22 @@
 		<!-- Head Libs -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
 		
+		<script src="${ pageContext.request.contextPath}/resources/js/jquery-3.2.1.min.js"></script>
+<script>
+	
+	$(document).ready(function(){
+		
+		$("#check").click(function(){
+
+			location.href="${pageContext.request.contextPath}/menu/menu.jsp"; 
+		});
+		
+		$("#signUp").click(function(){
+
+			location.href="${pageContext.request.contextPath}/member/signUp.jsp"; 
+		});
+	});
+</script>
 </head>
 <body>
 	<div class="body">
@@ -83,7 +99,6 @@
 				<div class="row">
 					<div class="col-md-3">
 						<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
-
 						</aside>
 					</div>
 
@@ -97,7 +112,7 @@
 											<a href="#memberLogin" data-toggle="tab" aria-expanded="true"> 회원 로그인</a>
 										</li>
 										<li class="">
-											<a href="#nonmemberLogin" data-toggle="tab" aria-expanded="false"> 비회원 로그인</a>
+											<a href="#nonLogin" data-toggle="tab" aria-expanded="false"> 비회원 로그인</a>
 										</li>
 									</ul>
 									<!-- 회원 로그인 -->
@@ -106,11 +121,11 @@
 												<jsp:include page="/resources/include/login/memberLogin.jsp"/>
 										</div>
 										<!--  비회원 로그인    -->
-										<div class="tab-pane" id="nonmemberLogin">
+										<div class="tab-pane" id="nonLogin">
 											<jsp:include page="/resources/include/login/nonmemberLogin.jsp"/>
 										</div>
-								
 									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -122,7 +137,6 @@
 	<footer id="footer">
 			<jsp:include page="/resources/include/bottom.jsp"/>
 	</footer>
-	</div>
 	
 	<!-- Vendor -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>

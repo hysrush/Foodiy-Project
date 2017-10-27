@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Basic -->
+	<!-- Basic -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
@@ -54,7 +54,7 @@
 
 		<!-- Head Libs -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
-		
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	
@@ -166,7 +166,6 @@
 								<div class="tab-pane tab-pane-navigation active" id="tabsNavigation1">
 									<div class="center">
 										<h4>1:1 문의하기</h4>
-										<hr>
 										<form method="POST" >
 											<table class="table table-bordered" width="80%">
 												<tr>
@@ -319,7 +318,6 @@
 								<div class="tab-pane tab-pane-navigation" id="tabsNavigation2">
 									<div class="center">
 										<h4>나의 문의내역</h4>
-										<hr>
 										<table class="table table-hover" width="80%">
 											<thead>
 												<tr>
@@ -375,7 +373,6 @@
 						</div>
 					</div>
 				</div>
-			<br>
 			</div>
 		</div>
 		

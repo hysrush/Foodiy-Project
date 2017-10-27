@@ -8,7 +8,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title> | 로그인 | </title>	
+		<title> | 커뮤니티 | </title>	
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -80,8 +80,7 @@
 						<div class="col-md-12">
 							<ul class="breadcrumb">
 								<li><a href="#">커뮤니티</a></li>
-								<li><a href="#">고객센터</a></li>
-								<li class="active">Subway 소식</li>
+								<li class="active">공지사항</li>
 							</ul>
 						</div>
 					</div>
@@ -106,8 +105,6 @@
 						</div>
 					</div>
 				</section>
-				
-				<hr>
 				
 				<div class="row">
 					<div class="col-md-12">
