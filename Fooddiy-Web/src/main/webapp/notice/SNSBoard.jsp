@@ -87,14 +87,14 @@
 						<div class="col-md-2">
 							<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
 
-								<h4 class="heading-primary"><strong>Filter</strong> By</h4>
+								<h4 class="heading-primary"><strong>커뮤니티 </strong></h4>
 
 								<ul class="nav nav-list mb-xlg sort-source" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
-									<li data-option-value="*" class="active"><a href="#">Show All</a></li>
-									<li data-option-value=".websites"><a href="#">Websites</a></li>
-									<li data-option-value=".logos"><a href="#">Logos</a></li>
-									<li data-option-value=".brands"><a href="#">Brands</a></li>
-									<li data-option-value=".medias"><a href="#">Medias</a></li>
+									
+									<li data-option-value=".websites"><a href="#">자주하는 질문</a></li>
+									<li data-option-value=".logos"><a href="#">공지사항</a></li>
+									<li data-option-value=".brands"><a href="#">1:1 문의</a></li>
+									<li data-option-value=".medias"><a href="#">SNS게시판</a></li>
 								</ul>
 
 							</aside>
