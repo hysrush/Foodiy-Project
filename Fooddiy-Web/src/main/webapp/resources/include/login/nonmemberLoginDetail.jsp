@@ -16,7 +16,7 @@
 										<label>이용약관 및 개인정보수집 및이용에 모두 동의합니다. <input type="checkbox" id=""/><br/><br/></label>
 									</div>
 								</div>
-								<form action="/" id="frmSignIn" method="post">
+								<form action="주문내역 조회에 저장"id="phnumber" method="post">
 									<div class="row">
 										<div class="form-group">
 											<div class="col-md-12">
@@ -39,6 +39,8 @@
 											
 										</div>
 									</div>
+								</form>
+								<form action="발송한 인증번호와 맞는지 확인" id="phno" method="post">
 									<div class="row">
 										<div class="form-group">
 											<div class="col-md-12">
@@ -51,8 +53,8 @@
 									</div>
 								</form>
 								<div class="row mt-xlg">
-									<div class="col-md-6">
-										<button id="pnum" class="btn btn-primary mb-xl mt-xlg">확인</button>
+									<div class="col-md-6 pull-right">
+										<button id="check" class="btn btn-primary mb-xl mt-xlg">확인</button>
 									</div>
 								</div>
 							</div>
