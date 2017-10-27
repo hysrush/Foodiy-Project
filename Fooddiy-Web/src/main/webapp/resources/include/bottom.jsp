@@ -48,8 +48,8 @@
 		<!-- 매장찾기 -->
 		<div class="col-md-4">
 			<ul class="nav nav-pills">
-				<li><a href=""><i class="fa fa-angle-right"></i> 매장찾기</a></li>
-				<li><a href=""><i class="fa fa-angle-right"></i> 점주페이지</a></li>
+				<li><a href="${ pageContext.request.contextPath}/event/FindStore.jsp"><i class="fa fa-angle-right"></i> 매장찾기</a></li>
+				<li><a href="${ pageContext.request.contextPath}/event/FindStore.jsp"><i class="fa fa-angle-right"></i> 점주페이지</a></li>
 			</ul>
 
 		</div>
@@ -59,7 +59,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-1">
-				<a href="index.html" class="logo"> <img
+				<a href="${ pageContext.request.contextPath}/index.jsp" class="logo"> <img
 					alt="Porto Website Template" class="img-responsive"
 					src="${ pageContext.request.contextPath}/resources/img/logo-footer.png">
 				</a>
