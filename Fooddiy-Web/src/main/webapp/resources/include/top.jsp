@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<div class="header-body" style="background-color: lightgreen;">
+<div class="header-body" style="background-color:green;">
 	<div class="header-container container" >
 		<div class="header-row">
 			<!-- 로고  -->
