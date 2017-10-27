@@ -51,7 +51,7 @@
 			</div>
 				<div class="testimonial testimonial-style-3">
 							
-					<div class="testimonial-arrow-down"></div>
+					
 						<div class="testimonial-author">
 							<div class="testimonial-author-thumbnail">
 								<img src="${ pageContext.request.contextPath }/resources/img/clients/client-1.png" class="img-responsive img-circle" alt="">
@@ -98,7 +98,7 @@
 								</div>
 							<div class="comment">
 								<div class="testimonial testimonial-style-3">
-									<div class="testimonial-arrow-down"></div>
+									
 										<div class="testimonial-author">
 											<div class="testimonial-author-thumbnail">
 												<img src="${ pageContext.request.contextPath}/resources/img/clients/client-10.jpg" class="img-responsive img-circle" alt="">
