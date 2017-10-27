@@ -105,7 +105,7 @@
 									<div class="row">
 
 										<div class="masonry-loader masonry-loader-showing">
-											<ul class="products product-thumb-info-list" data-plugin-masonry>
+											<ul class="products product-thumb-info-list" id = "breadSelect" data-plugin-masonry>
 												<li class="col-md-3 col-sm-6 col-xs-12 product">
 													<span class="product-thumb-info"> 
 														<a href="#" class="add-to-cart-product"> 
@@ -297,9 +297,30 @@
 						});
 					}
 				}); */
+			
+
+
 				
-				
-				$("li").each(function () {
+ 				$('#breadSelect >').each(function () {
+					$(this).click(function () {
+						$(this).addClass("selected");	
+						$(this).siblings().children().css({
+							'border-width' : '0px'
+						});
+						$(this).siblings().removeClass("selected");
+						
+						$(this).children().css({
+							
+							'border-style' : 'solid',
+							'border-width' : '1px',
+							'border-color': 'green'
+							
+						});
+						
+					});
+				});  
+					
+/*  				$('product-thumb-info').each(function () {
 					$(this).click(function () {
 						$(this).addClass("selected");	
 						$(this).siblings().children().css({
@@ -316,9 +337,31 @@
 						});
 						
 					});
+				});  */
+
+				});
+			
+			
+				
+				
+/* 				$('.products product-thumb-info-list li').click(function{
+					
+						$(this).addClass("selected");	
+						$(this).siblings().children().css({
+							'border-width' : '0px'
+						});
+						$(this).siblings().removeClass("selected");
+						
+						$(this).children().css({
+							
+							'border-style' : 'solid',
+							'border-width' : '2px',
+							'border-color': 'red'
+						
+						});
 				});
 					
-				});
+				}); */
 				
 		</script>
 		

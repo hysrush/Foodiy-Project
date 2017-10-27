@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title> | 로그인 | </title>	
+		<title> | 자주묻는 질문 | </title>	
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -120,7 +120,7 @@
 									<div class="tab-pane active" id="tabsNavigationSimple1">
 										<div class="center">
 											<h4>푸디오더</h4>
-											<div class="col-md-8">
+											<div class="col-md-12">
 												<div class="toggle toggle-primary" data-plugin-toggle data-plugin-options="{ 'isAccordion': true }">
 													<section class="toggle">
 														<label>Q. 온라인 주문은 몇 시부터 가능하나요?</label>
@@ -214,7 +214,7 @@
 									<div class="tab-pane" id="tabsNavigationSimple2">
 										<div class="center">
 											<h4>멤버십</h4>
-											<div class="col-md-8">
+											<div class="col-md-12">
 												<div class="toggle toggle-primary" data-plugin-toggle data-plugin-options="{ 'isAccordion': true }">
 													<section class="toggle">
 														<label>Q. 온라인 주문은 몇 시부터 가능하나요?</label>
@@ -308,7 +308,7 @@
 									<div class="tab-pane" id="tabsNavigationSimple3">
 										<div class="center">
 											<h4>포인트</h4>
-											<div class="col-md-8">
+											<div class="col-md-12">
 												<div class="toggle toggle-primary" data-plugin-toggle data-plugin-options="{ 'isAccordion': true }">
 													<section class="toggle">
 														<label>Q. 온라인 주문은 몇 시부터 가능하나요?</label>
@@ -402,7 +402,7 @@
 									<div class="tab-pane" id="tabsNavigationSimple4">
 										<div class="center">
 											<h4>단체주문</h4>
-											<div class="col-md-8">
+											<div class="col-md-12">
 												<div class="toggle toggle-primary" data-plugin-toggle data-plugin-options="{ 'isAccordion': true }">
 													<section class="toggle">
 														<label>Q. 온라인 주문은 몇 시부터 가능하나요?</label>
@@ -496,7 +496,7 @@
 									<div class="tab-pane" id="tabsNavigationSimple5">
 										<div class="center">
 											<h4>회원정보</h4>
-											<div class="col-md-8">
+											<div class="col-md-12">
 												<div class="toggle toggle-primary" data-plugin-toggle data-plugin-options="{ 'isAccordion': true }">
 													<section class="toggle">
 														<label>Q. 온라인 주문은 몇 시부터 가능하나요?</label>

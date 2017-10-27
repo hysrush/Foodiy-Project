@@ -5,11 +5,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Basic -->
+	<!-- Basic -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title> | 1:1 문의 | </title>	
+		<title>Fooddiy-Order</title>	
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -54,7 +54,7 @@
 
 		<!-- Head Libs -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
-		
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	
@@ -166,7 +166,6 @@
 								<div class="tab-pane tab-pane-navigation active" id="tabsNavigation1">
 									<div class="center">
 										<h4>1:1 문의하기</h4>
-										<hr>
 										<form method="POST" >
 											<table class="table table-bordered" width="80%">
 												<tr>
@@ -274,7 +273,7 @@
 														</td>
 														<td>
 															<textarea path="content" class="form-control" rows="5" id="comment" placeholder="contents"></textarea>
-															<form type="textarea" path="content" class="form-control" rows="5" id="comment" placeholder="contents"/>
+															<%-- <form type="textarea" path="content" class="form-control" rows="5" id="comment" placeholder="contents"/> --%>
 															<%-- <form:errors path="content" class="form-control"></form:errors> --%>
 														</td>
 													</div>
@@ -319,7 +318,6 @@
 								<div class="tab-pane tab-pane-navigation" id="tabsNavigation2">
 									<div class="center">
 										<h4>나의 문의내역</h4>
-										<hr>
 										<table class="table table-hover" width="80%">
 											<thead>
 												<tr>
@@ -375,7 +373,6 @@
 						</div>
 					</div>
 				</div>
-			<br>
 			</div>
 		</div>
 		
