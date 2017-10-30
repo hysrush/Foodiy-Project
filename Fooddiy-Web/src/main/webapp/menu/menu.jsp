@@ -1,58 +1,82 @@
-http://bootstrapk.com/css/#tables<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+http://bootstrapk.com/css/#tables<%@ page language="java"
+	contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <!-- Basic -->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title> | 로그인 | </title>	
+<title>| 로그인 |</title>
 
-		<meta name="keywords" content="HTML5 Template" />
-		<meta name="description" content="Porto - Responsive HTML5 Template">
-		<meta name="author" content="okler.net">
+<meta name="keywords" content="HTML5 Template" />
+<meta name="description" content="Porto - Responsive HTML5 Template">
+<meta name="author" content="okler.net">
 
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="${ pageContext.request.contextPath}/resources/img/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="${ pageContext.request.contextPath}/resources/img/apple-touch-icon.png">
+<!-- Favicon -->
+<link rel="shortcut icon"
+	href="${ pageContext.request.contextPath}/resources/img/favicon.ico"
+	type="image/x-icon" />
+<link rel="apple-touch-icon"
+	href="${ pageContext.request.contextPath}/resources/img/apple-touch-icon.png">
 
-		<!-- Mobile Metas -->
-		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- Mobile Metas -->
+<meta name="viewport"
+	content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<!-- Web Fonts  -->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+<!-- Web Fonts  -->
+<link
+	href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light"
+	rel="stylesheet" type="text/css">
 
-		<!-- Vendor CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/animate/animate.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/simple-line-icons/css/simple-line-icons.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.theme.default.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/magnific-popup.min.css">
+<!-- Vendor CSS -->
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/animate/animate.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/simple-line-icons/css/simple-line-icons.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.carousel.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.theme.default.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/magnific-popup.min.css">
 
-		<!-- Theme CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-elements.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-blog.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-shop.css">
+<!-- Theme CSS -->
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/css/theme.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/css/theme-elements.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/css/theme-blog.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/css/theme-shop.css">
 
-		<!-- Current Page CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/settings.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/layers.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/navigation.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/css/component.css">
+<!-- Current Page CSS -->
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/settings.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/layers.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/navigation.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/css/component.css">
 
-		<!-- Skin CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/skins/default.css">
+<!-- Skin CSS -->
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/css/skins/default.css">
 
-		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/custom.css">
+<!-- Theme Custom CSS -->
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/css/custom.css">
 
-		<!-- Head Libs -->
-		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
-		
+<!-- Head Libs -->
+<script
+	src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
+
 </head>
 <body>
 	<div class="body">
@@ -62,33 +86,34 @@ http://bootstrapk.com/css/#tables<%@ page language="java" contentType="text/html
 		</header>
 		<div role="main" class="main">
 			<section class="page-header">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<ul class="breadcrumb">
-									<li><a href="#">Menu</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<h1>전체메뉴</h1>
-							</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="breadcrumb">
+								<li><a href="#">Menu</a></li>
+							</ul>
 						</div>
 					</div>
-				</section>
+					<div class="row">
+						<div class="col-md-12">
+							<h1>전체메뉴</h1>
+						</div>
+					</div>
+				</div>
+			</section>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3">
-						<aside class="sidebar"> <br>
-						<h4 class="heading-primary">MENU</h4>
-						<ul class="nav nav-list mb-xlg">
-							<li><a href="#">전체메뉴</a></li>
-							<li class="active"><a href="#">프리미엄</a></li>
-							<li><a href="#">베스트</a></li>
-							<li><a href="#">신제품</a></li>
-							<li><a href="#">사이드 음료</a></li>
-						</ul>
+						<aside class="sidebar">
+							<br>
+							<h4 class="heading-primary">MENU</h4>
+							<ul class="nav nav-list mb-xlg">
+								<li><a href="#">전체메뉴</a></li>
+								<li class="active"><a href="#">프리미엄</a></li>
+								<li><a href="#">베스트</a></li>
+								<li><a href="#">신제품</a></li>
+								<li><a href="#">사이드 음료</a></li>
+							</ul>
 						</aside>
 					</div>
 					<div class="col-md-9">
@@ -113,126 +138,88 @@ http://bootstrapk.com/css/#tables<%@ page language="java" contentType="text/html
 									<div class="row">
 
 										<div class="masonry-loader masonry-loader-showing">
-											<ul class="products product-thumb-info-list"
-												data-plugin-masonry>
-												<li class="col-md-3 col-sm-6 col-xs-12 product"><a
-													data-toggle="modal" data-target="#defaultModal"> <span
-														class="onsale">hit!</span>
-												</a> <span class="product-thumb-info"> <a href="#"
-														class="add-to-cart-product"> <span><i
-																class="fa fa-shopping-cart"></i> 장바구니 담기</span>
-													</a> <a data-toggle="modal" data-target="#defaultModal"> <span
-															class="product-thumb-info-image"> <span
-																class="product-thumb-info-act"> <span
-																	class="product-thumb-info-act-left"><em>View</em></span>
-
-																	<span class="product-thumb-info-act-right"><em><i
-																			class="fa fa-plus"></i> Details</em></span>
-															</span> <img alt="" class="img-responsive"
-																src="${ pageContext.request.contextPath }/resources/img/products/스테이크_치즈.jpg">
-														</span>
-													</a> <span class="product-thumb-info-content"> <a
-															data-toggle="modal" data-target="#defaultModal" S>
+											<ul class="products product-thumb-info-list" data-plugin-masonry>
+												<li class="col-md-4 col-sm-6 col-xs-6 product" >
+													<span class="product-thumb-info" > 
+														<a data-toggle="modal" data-target="#defaultModal" >
+															 <span class="product-thumb-info-image">
+															 	<img alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/products/스테이크_치즈.jpg"  />
+															</span>
+														</a> 
+														<span class="product-thumb-info-content"> 
+															<a data-toggle="modal" data-target="#defaultModal">
 																<h4>스테이크&치즈</h4>
-																<div class="menu">
-																	고기를 좋아하는 모든분께 사랑받는 메뉴입니다. <br>
-																</div> <span class="price"> <ins>
-																		<span class="amount">3,200</span>
-																	</ins>
-															</span>
-														</a>
-													</span>
-												</span></li>
-												<li class="col-md-3 col-sm-6 col-xs-12 product"><span
-													class="product-thumb-info"> <a href="shop-cart.html"
-														class="add-to-cart-product"> <span><i
-																class="fa fa-shopping-cart"></i> 장바구니 담기</span>
-													</a> <a href="shop-product-sidebar.html"> <span
-															class="product-thumb-info-image"> <span
-																class="product-thumb-info-act"> <span
-																	class="product-thumb-info-act-left"><em>View</em></span>
-																	<span class="product-thumb-info-act-right"><em><i
-																			class="fa fa-plus"></i> Details</em></span>
-															</span> <img alt="" class="img-responsive"
-																src="${ pageContext.request.contextPath }/resources/img/products/로스트_비프.jpg">
+															</a>
 														</span>
-													</a> <span class="product-thumb-info-content"> <a
-															href="shop-product-sidebar.html">
-																<h4>로스트 비프</h4> <span> 겹겹이 쌓인 맛있는 훈제쇠소기에 신선한 야채와
-																	소스가 곁들여집니다. </span> <span class="price"> <span
-																	class="amount">3200</span>
-															</span>
-														</a>
 													</span>
-												</span></li>
-												<li class="col-md-3 col-sm-6 col-xs-12 product"><span
-													class="product-thumb-info"> <a href="shop-cart.html"
-														class="add-to-cart-product"> <span><i
-																class="fa fa-shopping-cart"></i> 장바구니 담기</span>
-													</a> <a href="shop-product-sidebar.html"> <span
-															class="product-thumb-info-image"> <span
-																class="product-thumb-info-act"> <span
-																	class="product-thumb-info-act-left"><em>View</em></span>
-																	<span class="product-thumb-info-act-right"><em><i
-																			class="fa fa-plus"></i> Details</em></span>
-															</span> <img alt="" class="img-responsive"
-																src="${ pageContext.request.contextPath }/resources/img/products/서브웨이_멜트.jpg">
+
+												</li>
+												<li class="col-md-4 col-sm-6 col-xs-6 product" >
+													<span class="product-thumb-info" > 
+														<a data-toggle="modal" data-target="#defaultModal" >
+															 <span class="product-thumb-info-image">
+															 	<img alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/products/치킨_베이컨랜치.jpg"  />
+															</span>
+														</a> 
+														<span class="product-thumb-info-content"> 
+															<a data-toggle="modal" data-target="#defaultModal">
+																<h4>치킨 베이컨</h4>
+															</a>
 														</span>
-													</a> <span class="product-thumb-info-content"> <a
-															href="shop-product-sidebar.html">
-																<h4>써브웨이 멜트</h4> <span> 부드러운 슬라이스 터키, 햄, 바삭한 베이컨,
-																	녹은치즈와 야채소스의 갓 구운 샌드위치 </span> <span class="price"> <span
-																	class="amount">3,200</span>
-															</span>
-														</a>
 													</span>
-												</span></li>
-												<li class="col-md-3 col-sm-6 col-xs-12 product"><a
-													href="shop-product-sidebar.html"> <span class="onsale">Sale!</span>
-												</a> <span class="product-thumb-info"> <a
-														href="shop-cart.html" class="add-to-cart-product"> <span><i
-																class="fa fa-shopping-cart"></i> 장바구니 담기</span>
-													</a> <a href="shop-product-sidebar.html"> <span
-															class="product-thumb-info-image"> <span
-																class="product-thumb-info-act"> <span
-																	class="product-thumb-info-act-left"><em>View</em></span>
-																	<span class="product-thumb-info-act-right"><em><i
-																			class="fa fa-plus"></i> Details</em></span>
-															</span> <img alt="" class="img-responsive"
-																src="${ pageContext.request.contextPath }/resources/img/products/로스트치킨.jpg">
+
+												</li>
+												<li class="col-md-4 col-sm-6 col-xs-6 product" >
+													<span class="product-thumb-info" > 
+														<a data-toggle="modal" data-target="#defaultModal" >
+															 <span class="product-thumb-info-image">
+															 	<img alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/products/로스트_비프.jpg"  />
+															</span>
+														</a> 
+														<span class="product-thumb-info-content"> 
+															<a data-toggle="modal" data-target="#defaultModal">
+																<h4>로스트비프</h4>
+															</a>
 														</span>
-													</a> <span class="product-thumb-info-content"> <a
-															href="shop-product-sidebar.html">
-																<h4>로스트치킨</h4> <span> 갓 구운 빵에 오븐에서 구워낸 치킨과 신선한
-																	야채와 소스가 곁들여집니다. </span> <span class="price"> <ins>
-																		<span class="amount">3,200</span>
-																	</ins>
-															</span>
-														</a>
 													</span>
-												</span></li>
-												<li class="col-md-3 col-sm-6 col-xs-12 product"><span
-													class="product-thumb-info"> <a href="shop-cart.html"
-														class="add-to-cart-product"> <span><i
-																class="fa fa-shopping-cart"></i> 장바구니 담기</span>
-													</a> <a href="shop-product-sidebar.html"> <span
-															class="product-thumb-info-image"> <span
-																class="product-thumb-info-act"> <span
-																	class="product-thumb-info-act-left"><em>View</em></span>
-																	<span class="product-thumb-info-act-right"><em><i
-																			class="fa fa-plus"></i> Details</em></span>
-															</span> <img alt="" class="img-responsive"
-																src="${ pageContext.request.contextPath }/resources/img/products/치킨_베이컨랜치.jpg">
+
+												</li>
+												<li class="col-md-4 col-sm-6 col-xs-6 product" >
+													<span class="product-thumb-info" > 
+														<a data-toggle="modal" data-target="#defaultModal" >
+															 <span class="product-thumb-info-image">
+															 	<img alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/products/로스트치킨.jpg"  />
+															</span>
+														</a> 
+														<span class="product-thumb-info-content"> 
+															<a data-toggle="modal" data-target="#defaultModal">
+																<h4>로스트치킨</h4>
+															</a>
 														</span>
-													</a> <span class="product-thumb-info-content"> <a
-															href="shop-product-sidebar.html">
-																<h4>치킨 베이컨랜치</h4> <span> 살짝 녹은 아메리칸 치즈, 부드러운
-																	순살치킨, 베이컨, 양상추 토마토, 양파, 피망 등이 듬뿍 </span> <span class="price">
-																	<span class="amount">3,200</span>
-															</span>
-														</a>
 													</span>
-												</span></li>
+
+												</li>
+												
+												
+												<li class="col-md-4 col-sm-6 col-xs-6 product" >
+													<span class="product-thumb-info" > 
+														<a data-toggle="modal" data-target="#defaultModal" >
+															 <span class="product-thumb-info-image">
+															 	<img alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/products/서브웨이_멜트.jpg"  />
+															</span>
+														</a> 
+														<span class="product-thumb-info-content"> 
+															<a data-toggle="modal" data-target="#defaultModal">
+																<h4>서브웨이 멜트</h4>
+															</a>
+														</span>
+													</span>
+
+												</li>
+												
+												
+												
+												
 											</ul>
 										</div>
 									</div>
@@ -340,7 +327,8 @@ http://bootstrapk.com/css/#tables<%@ page language="java" contentType="text/html
 										<div class="col-md-12">
 											<div class="tabs tabs-product">
 												<ul class="nav nav-tabs">
-													<li class="active"><a href="#productInfo" data-toggle="tab">영양 정보</a></li>
+													<li class="active"><a href="#productInfo"
+														data-toggle="tab">영양 정보</a></li>
 												</ul>
 												<div class="tab-content">
 													<div class="tab-pane active" id="productInfo">
@@ -487,62 +475,62 @@ http://bootstrapk.com/css/#tables<%@ page language="java" contentType="text/html
 						</div>
 					</div>
 
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
 			</div>
+		</div>
 		<footer id="footer">
-			<jsp:include page="/resources/include/bottom.jsp"/>
+			<jsp:include page="/resources/include/bottom.jsp" />
 		</footer>
-		
+
 	</div>
 
 
 
-		<!-- Vendor -->
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/jquery/jquery.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/jquery.easing/jquery.easing.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/jquery-cookie/jquery-cookie.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/common/common.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/jquery.validation/jquery.validation.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/jquery.gmap/jquery.gmap.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/isotope/jquery.isotope.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/owl.carousel/owl.carousel.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/vide/vide.min.js"></script>
+	<!-- Vendor -->
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/jquery/jquery.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/jquery.easing/jquery.easing.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/jquery-cookie/jquery-cookie.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/common/common.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/jquery.validation/jquery.validation.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/isotope/jquery.isotope.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/owl.carousel/owl.carousel.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/vide/vide.min.js"></script>
 
-		<!-- Theme Base, Components and Settings -->
-		<script
-			src="${ pageContext.request.contextPath }/resources/js/theme.js"></script>
+	<!-- Theme Base, Components and Settings -->
+	<script
+		src="${ pageContext.request.contextPath }/resources/js/theme.js"></script>
 
-		<!-- Theme Custom -->
-		<script
-			src="${ pageContext.request.contextPath }/resources/js/custom.js"></script>
+	<!-- Theme Custom -->
+	<script
+		src="${ pageContext.request.contextPath }/resources/js/custom.js"></script>
 
-		<!-- Theme Initialization Files -->
-		<script
-			src="${ pageContext.request.contextPath }/resources/js/theme.init.js"></script>
+	<!-- Theme Initialization Files -->
+	<script
+		src="${ pageContext.request.contextPath }/resources/js/theme.init.js"></script>
 
-		
+
 </body>
 </html>
