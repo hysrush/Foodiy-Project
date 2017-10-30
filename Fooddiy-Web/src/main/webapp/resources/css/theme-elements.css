@@ -4094,13 +4094,17 @@ hr.pattern.pattern-2:after, .divider.pattern.pattern-2:after {
 	.sort-destination.isotope.full-width {
 		overflow: hidden !important;
 	}
+	
+	/* .sort-destination.full-width .isotope-item {
+		width: 50%;
+	} */
 
 	.isotope-hidden {
 		display: none !important;
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) {	
 	.isotope-item {
 		position: static !important;
 		text-align: center;
@@ -4150,11 +4154,36 @@ hr.pattern.pattern-2:after, .divider.pattern.pattern-2:after {
 	}
 }
 
-@media (max-width: 479px) {
+@media (max-width: 479px) {	
+	.col-xs-6.isotope-item:nth-child(2n+1) {
+		clear: both;
+	}
+
+	.col-xs-4.isotope-item:nth-child(3n+1) {
+		clear: both;
+	}
+
+	.col-xs-3.isotope-item:nth-child(4n+1) {
+		clear: both;
+	}
+
+	.col-xs-1-5.isotope-item:nth-child(5n+1) {
+		clear: both;
+	}
+
+	.col-xs-2.isotope-item:nth-child(6n+1) {
+		clear: both;
+	}
+
+	.sort-destination.full-width .isotope-item:nth-child(5n+1) {
+		clear: both;
+	}
 	.sort-destination, .isotope-item {
 		margin-left: auto !important;
 		margin-right: auto !important;
 	}
+	
+	
 
 	.sort-destination.full-width .isotope-item,
 	.sort-source-wrapper + .sort-destination.full-width .isotope-item {
@@ -4162,7 +4191,7 @@ hr.pattern.pattern-2:after, .divider.pattern.pattern-2:after {
 		clear: both;
 		float: none;
 		width: auto;
-	}
+	}	
 }
 /* Sort Loading */
 .sort-destination-loader {
