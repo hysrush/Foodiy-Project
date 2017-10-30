@@ -132,30 +132,10 @@
 							<div
 								class="sort-destination-loader sort-destination-loader-showing">
 								<ul class="portfolio-list sort-destination"
-									data-sort-id="portfolio">
-									<li class="col-xs-6 col-sm-6 col-md-4 isotope-item brands">
-										<div class="portfolio-item" data-toggle="modal"
-											data-target="#largeModal">
-											<!-- modal로 넘어가는 부분 -->
-											<!-- <a href="portfolio-single-small-slider.html"> -->
-											<span class="thumb-info thumb-info-lighten"> <span
-												class="thumb-info-wrapper"> <img
-													src="${ pageContext.request.contextPath }/resources/img/projects/project.jpg"
-													class="img-responsive" alt=""> <span
-													class="thumb-info-title"> <span
-														class="thumb-info-inner">Presentation</span> <span
-														class="thumb-info-type">Brand</span>
-												</span> <span class="thumb-info-action"> <span
-														class="thumb-info-action-icon"><i
-															class="fa fa-link"></i></span>
-												</span>
-											</span>
-											</span> </a>
-										</div>
-									</li>									
-									<li class="col-xs-6 col-sm-6 col-md-4 isotope-item logos">
-										<div class="portfolio-item">
-											<a href="portfolio-single-small-slider.html"> <span
+									data-sort-id="portfolio">																	
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
+										<div class="portfolio-item" data-toggle="modal" data-target="#largeModal">
+											 <span
 												class="thumb-info thumb-info-lighten"> <span
 													class="thumb-info-wrapper"> <img
 														src="${ pageContext.request.contextPath }/resources/img/projects/project-2.jpg"
@@ -172,7 +152,7 @@
 											</a>
 										</div>
 									</li>
-									<li class="col-xs-6 col-sm-6 col-md-4 isotope-item brands">
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item brands">
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -191,7 +171,7 @@
 											</a>
 										</div>
 									</li>
-									<li class="col-xs-6 col-sm-6 col-md-4 isotope-item logos">
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -210,7 +190,7 @@
 											</a>
 										</div>
 									</li>
-									<li class="col-xs-6 col-sm-6 col-md-4 isotope-item brands">
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item brands">
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -229,7 +209,7 @@
 											</a>
 										</div>
 									</li>
-									<li class="col-xs-6 col-sm-6 col-md-4 isotope-item websites">
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item websites">
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -248,7 +228,7 @@
 											</a>
 										</div>
 									</li>
-									<li class="col-xs-6 col-sm-6 col-md-4 isotope-item medias">
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item medias">
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -267,7 +247,7 @@
 											</a>
 										</div>
 									</li>									
-									<li class="col-xs-6 col-sm-6 col-md-4 isotope-item websites">
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item websites">
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -286,7 +266,7 @@
 											</a>
 										</div>
 									</li>
-									<li class="col-xs-6 col-sm-6 col-md-4 isotope-item medias">
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item medias">
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -305,7 +285,7 @@
 											</a>
 										</div>
 									</li>
-									<li class="col-xs-6 col-sm-6 col-md-4 isotope-item websites">
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item websites">
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -324,7 +304,7 @@
 											</a>
 										</div>
 									</li>
-									<li class="col-xs-6 col-sm-6 col-md-4 isotope-item websites">
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item websites">
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
