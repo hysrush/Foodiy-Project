@@ -53,6 +53,17 @@ http://bootstrapk.com/css/#tables<%@ page language="java" contentType="text/html
 		<!-- Head Libs -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
 		
+		
+			<style>
+		.fixed {
+		  position: fixed;
+		  top: 100px;
+		  right: 0;
+		  width: 200px;
+		  background-color: white;
+		}
+		
+	</style>
 </head>
 <body>
 	<div class="body">
@@ -89,6 +100,17 @@ http://bootstrapk.com/css/#tables<%@ page language="java" contentType="text/html
 							<li><a href="#">신제품</a></li>
 							<li><a href="#">사이드 음료</a></li>
 						</ul>
+
+						
+
+						<hr>
+
+						<!-- 						<h4 class="heading-primary">About Us</h4>
+						<p>Nulla nunc dui, tristique in semper vel, congue sed ligula.
+							Nam dolor ligula, faucibus id sodales in, auctor fringilla
+							libero. Nulla nunc dui, tristique in semper vel. Nam dolor
+							ligula, faucibus id sodales in, auctor fringilla libero.</p> -->
+
 						</aside>
 					</div>
 					<div class="col-md-9">
@@ -234,6 +256,16 @@ http://bootstrapk.com/css/#tables<%@ page language="java" contentType="text/html
 													</span>
 												</span></li>
 											</ul>
+											
+											
+									<div class = "fixed" style="border-style: solid; border-width: 1px; border-color: red; ">
+								
+					
+						               
+					
+								    </div>
+											
+											
 										</div>
 									</div>
 
@@ -478,6 +510,8 @@ http://bootstrapk.com/css/#tables<%@ page language="java" contentType="text/html
 														</span>
 													</span></li>
 												</ul>
+												
+												
 											</div>
 										</div>
 									</div>
