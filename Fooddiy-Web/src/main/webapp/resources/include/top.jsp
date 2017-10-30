@@ -1,14 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<div class="header-body">
-	<div class="header-container container">
+<div class="header-body" style="background-color: green;">
+	<div class="header-container container" >
 		<div class="header-row">
 			<!-- 로고  -->
 			<div class="header-column">
-				<div class="header-logo">
-					<a href="${ pageContext.request.contextPath}/index.jsp"> <img alt="Porto" width="111" height="54"
-						data-sticky-width="82" data-sticky-height="40"
+				<div class="header-logo hidden-xs">
+					<a href="${ pageContext.request.contextPath}/index.jsp">
+					<img alt="Porto" width="111" height="54" data-sticky-width="82" data-sticky-height="40"
 						data-sticky-top="33" src="${ pageContext.request.contextPath }/resources/img/Subway-logo.jpg">
 					</a>
 				</div>
@@ -27,10 +27,18 @@
 					</nav>
 				</div>
 				<div class="header-row">
-					<div class="header-nav">
+					<div class="header-nav" >
 					<!-- 웹사이트 크기 변경시 아이콘 변경해 주는 태그 -->
-						<button class="btn header-btn-collapse-nav" data-toggle="collapse"
-							data-target=".header-nav-main">
+						<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main" style="background-color: gray;">
+							<i class="fa fa-cart-plus"></i>
+						</button>
+						<div class="btn header-btn-collapse-nav" style="background-color: rgba(255,255,255,0);">
+							<a href="${ pageContext.request.contextPath}/index.jsp"> 
+								<img alt="Porto" width="111" height="54" data-sticky-width="82" data-sticky-height="40" style="border-radius:50%;"
+								data-sticky-top="33" src="${ pageContext.request.contextPath }/resources/img/Subway-logo.jpg">
+							</a>
+						</div>
+						<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main">
 							<i class="fa fa-bars"></i>
 						</button>
 					</div>
