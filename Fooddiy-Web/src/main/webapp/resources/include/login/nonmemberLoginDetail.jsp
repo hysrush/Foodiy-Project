@@ -20,41 +20,51 @@
 									<div class="row">
 										<div class="form-group">
 											<div class="col-md-12">
-												<label>이름</label> <input type="text" id="name" value=""/>
+												<label>이름</label> <input type="text" id="name" value="" class="form-control"/>
 											</div>
 										</div>
 									</div>
 									<div class="row">
 										<div class="form-group">
-											<div class="col-md-12">
+											<div class="col-md-3">
 												<label>전화 번호</label>&nbsp;
-												<select>
+												<select class="form-control">
 													<option>010</option>
 													<option>011</option>
 													<option>019</option>
-												</select>&nbsp; <input type="text" value=""> - <input type="text" value="">
-												<input type="submit" value="인증번호" id="pno" 
-												class="btn btn-primary pull-right" data-loading-text="Loading..."/>
+												</select>
+											</div><br/>
+											<div class="col-md-3">
+												 <input type="text" value="" class="form-control">
 											</div>
-											
+											<div class="col-md-3">
+												<input type="text" value="" class="form-control">
+											</div>
+											<div class="col-md-3">
+												<input type="submit" value="인증번호" id="pno" 
+												class="btn btn-info pull-right form-control" data-loading-text="Loading..."/>
+											</div>
 										</div>
 									</div>
 								</form>
 								<form action="발송한 인증번호와 맞는지 확인" id="phno" method="post">
 									<div class="row">
 										<div class="form-group">
-											<div class="col-md-12">
+											<div class="col-md-6">
 												<label>인증번호</label>&nbsp;
-												<input type="text" name="Pno"/>
+												<input type="text" name="Pno" class="form-control"/>
+											</div><br/>
+											<div class="col-md-6">
 												<input type="submit" value="인증확인" id="pnum"
-												class="btn btn-primary pull-right mb-xl" data-loading-text="Loading..."/>
+												class="btn btn-info pull-right mb-xl" data-loading-text="Loading..."/>
 											</div>
 										</div>
 									</div>
 								</form>
 								<div class="row mt-xlg">
-									<div class="col-md-6 pull-right">
-										<button id="check" class="btn btn-primary mb-xl mt-xlg">확인</button>
+									<div class="col-md-12">
+										<input type="submit" value="확인"
+										 class="btn btn-info mb-md form-control"/>
 									</div>
 								</div>
 							</div>

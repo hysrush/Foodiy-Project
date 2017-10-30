@@ -62,17 +62,9 @@
 	href="${ pageContext.request.contextPath }/resources/css/custom.css">
 
 <!-- Head Libs -->
-<script src="${ pageContext.request.contextPath }/resources/vendor/modernizr/modernizr.min.js"></script>
-<script src="${ pageContext.request.contextPath }/resources/js/jquery-3.2.1.min.js"></script>
-<script>
-	$(document).ready(function(){
-		
-		$("#okay").click(function(){
-	
-			location.href="${pageContext.request.contextPath}/member/memberDetail.jsp"; 
-		});
-	});
-</script>
+<script
+	src="${ pageContext.request.contextPath }/resources/vendor/modernizr/modernizr.min.js"></script>
+
 <style type="text/css">
 #div01 {
 	width: 70px;
@@ -91,16 +83,13 @@
 			<jsp:include page="/resources/include/top.jsp"/>
 		</header>
 		<!-- ---------------------------------------------------------------------------------------------- -->
-			
-			
-			
-				<section class="page-header">
+		<section class="page-header">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12">
 								<ul class="breadcrumb">
-									<li><a href="#">Home</a></li>
-									<li class="active">Pages</li>
+									<li><a href="${ pageContext.request.contextPath}/member/memberDetail.jsp">My Page</a></li>
+									<li class="active">나의 문의사항</li>
 								</ul>
 							</div>
 						</div>
@@ -111,140 +100,114 @@
 						</div>
 					</div>
 				</section>
-			
-			
-			<div class="container" style="">
-				<div class="row">
+				
+			<div class="container">
+				
+
+					<div class="row">
 					<div style="width: 600px">
-						<div style="margin-top: 10%" class="col-md-3">
+						<div style="margin-top: 2%; margin-right: 10%" class="col-md-3">
 							<aside  class="sidebar">
 
 								<h3 class="heading-primary">Categories</h3>
 								<ul class="nav nav-list mb-xlg">
-									<li class="active"><a href="${ pageContext.request.contextPath}/member/memberDetail.jsp">내 정보</a></li>
+									<li><a href="${ pageContext.request.contextPath}/member/memberDetail.jsp">내 정보</a></li>
 									<li> <a href="${ pageContext.request.contextPath}/member/Latest-Order.jsp">최근 주문 내역</a></li>
 									<li><a href="${ pageContext.request.contextPath}/member/myMenu.jsp">나만의 메뉴</a></li>
-									<li><a href="${ pageContext.request.contextPath}/member/myQnA.jsp">나의 문의사항</a></li>
+									<li class="active"><a href="${ pageContext.request.contextPath}/member/myQnA.jsp">나의 문의사항</a></li>
 								</ul>
-							</aside>
-						</div>
-					</div>
-					
-				<div class="col-md-4">
-					<img src="${ pageContext.request.contextPath }/resources/img/projects/project-4.jpg" class="img-responsive" alt="" style="margin-left: 20%; margin-top: 20%; width: 300px;">
-				</div>
-				
-						<div class="col-md-5" style="margin-top: 6%; margin-left: 3%">
+		</aside></div></div>
+		
+			
+			<div role="main" class="main shop">
 
-							<div class="panel-group" id="accordion">
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-												내정보
-											</a>
-										</h4>
+				<div class="container">
+
+
+						<div class="col-md-12r">
+
+
+							<div class="featured-boxes">
+									<div class="col-sm-9">
+										<div class="featured-box featured-box-primary align-left mt-xlg">
+											<div class="box-content">
+												<h4  style="width: 50px; float: left;" class="heading-primary text-uppercase mb-md">번호</h4>
+												<h4 align="center" style="width: 340px; float: left;" class="heading-primary text-uppercase mb-md">제목</h4>
+												<h4 style="width: 100px; float: left;" class="heading-primary text-uppercase mb-md">등록일</h4>
+												<h4 style="width: 100px; float: left;" class="heading-primary text-uppercase mb-md">답변여부</h4>
+												<table class="cart-totals">
+													<tbody>
+														<tr class="cart-subtotal">
+															<th>
+																<strong >1</strong>
+															</th>
+															<td align="center" style="width: 300px">
+																<span class="amount">문의 합니다.</span>
+															</td>
+															<td align="right">
+																<span class="amount">2017-10-29</span>
+															</td>
+															<td align="center">
+																<button style="width: 100px; height: 30px; font-size: 14px" type="button" class="btn  btn-info"> 접수완료 </button>
+															</td>
+														</tr>
+														<tr class="shipping">
+															<th>
+																2															</th>
+															<td align="center" style="width: 300px">
+																칭찬합니다<input type="hidden" value="free_shipping" id="shipping_method" name="shipping_method">
+															</td>
+															<td align="right">
+																<span > 2017.09-28<input type="hidden" value="free_shipping" id="shipping_method" name="shipping_method"></span>
+															</td>
+															<td align="center">
+																<button style="background-color:orange; width: 100px; height: 30px; font-size: 14px" type="button" class="btn  btn-info">답변완료 </button>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>	
+										<div align="right" style="float: right;" class="col-md-8">
+											<button style=" width: 100px; height: 30px; font-size: 14px" type="button" class="btn  btn-info">  글쓰기 </button>
+										</div><br/><br/>
+									<div class="header-search hidden-xs">
+										<form id="searchForm" action="page-search-results.html" method="get">
+											<div  class="input-group">
+												<input style="width: 400px; float: right;" type="text" class="form-control" name="q" id="q" placeholder="Search..." required>
+												<span style="" class="input-group-btn">
+													<button  class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+												</span>
+											</div>
+										</form>
+										
 									</div>
-									<div id="collapseOne" class="accordion-body collapse in">
-										<div class="panel-body">
-											<form action="/" id="frmBillingAddress" method="post">
-												<div class="row">
-													<div class="form-group">
-														<div class="col-md-12">
-															<label>이름</label>
-															<input type="text" value="" class="form-control">
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="form-group">
-														<div class="col-md-12">
-															<label>비밀번호</label>
-															<input type="text" value="" class="form-control">
-														</div>
-												</div>
-
-												
-													</div>
-												<div class="row">
-													<div class="form-group">
-														<div class="col-md-12">
-															<label>비밀번호 확인</label>
-															<input type="text" value="" class="form-control">
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="form-group">
-														<div class="col-md-12">
-															<label>전화번호 </label>
-															<input type="text" value="" class="form-control">
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="form-group">
-														<div class="col-md-6">
-															<label>E-mail </label>
-															<input type="text" value="" class="form-control">
-														</div>
-														<div class="row">
-													<div class="form-group">
-														<div class="col-md-6">
-															<label></label><br/>
-															<select class="form-control">
-																<option value="">-이메일 선택 -</option>
-															</select>
-														</div>
-													</div>
-												</div>
-														
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-md-12">
-														
-													
-													</div>
-												</div>
-											</form>
-										</div>
 									</div>
 								</div>
-						</div>	
-						
-							<div style="margin-top: 12%; ">
-							<div class="row">
-									<input style="margin-left: 73%" type="submit" value="저장" class="btn btn-info" data-toggle="modal" data-target="#formModal"/>
-													<button type="button" class="btn btn-info" data-dismiss="modal">취소</button>
-									<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-													<h3 class="modal-title" id="formModalLabel"><strong>회원정보 수정</strong></h3>
-												</div>
-												<div class="modal-body">
-												<h4>정말로 수정 하시겠습니까?</h4>
-													
-												</div>
-												<div class="modal-footer" >
-													<button type="button" class="btn btn-default" data-dismiss="modal">취소</button>
-													<button id="okay" type="button" class="btn btn-default" data-dismiss="modal">확인</button>
-												</div>
-											</div>
-										</div>
-									</div>
-							
 							</div>
+							</div>
+						</div>
+						
+	
 
-					</div>
-					</div>
-					</div>
-					</div>					
+			
+				<div class="row">
+								<div align="center" class="col-md-12">
+									<ul  class="pagination pull-center">
+										<li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
+										<li class="active"><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+									</ul>
+								</div>
+							</div>
+		</div>
+	</div>
 </div>
-		<!-- ---------------------------------------------------------------------------------------------- -->
-		<div>
+
+	<!-- ---------------------------------------------------------------------------------------------- -->
+	<div>
 		<footer id="footer">
 			<jsp:include page="/resources/include/bottom.jsp"/>
 		</footer>

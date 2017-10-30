@@ -21,19 +21,26 @@
 									</div>
 									<div class="row">
 										<div class="form-group">
-											<div class="col-md-12">
-												<select>
+											<div class="col-md-4">
+												<label>전화번호</label>
+												<select class="form-control">
 													<option>010</option>
 													<option>011</option>
 													<option>019</option>
-												</select>&nbsp; <input type="text" value=""> - <input type="text" value="">
+												</select>
+											</div><br/>
+											<div class="col-md-4">
+												<input type="text" value="" class="form-control">
+											</div>
+											<div class="col-md-4">
+												<input type="text" value="" class="form-control">
 											</div>
 										</div>
 									</div>
 									<div class="row mt-xlg">
-										<div class="col-md-6">
+										<div class="col-md-12">
 											<input type="submit" value=" 조회하기 " id="pno" 
-												class="btn btn-primary mb-md form-control" data-loading-text="Loading..."/>
+												class="btn btn-info mb-md form-control" data-loading-text="Loading..."/>
 										</div>
 									</div>
 								</form>

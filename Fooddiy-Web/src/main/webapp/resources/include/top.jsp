@@ -123,16 +123,16 @@
 											data-thumb-preview="${ pageContext.request.contextPath }/resources/img/previews/subway-sns.jpg">SNS</a></li>
 									</ul></li>
 								<!-- 회원 로그인하면 My page -->
-								<c:if test="${ not empty userVO }">
-									<li class="dropdown"><a class="dropdown-toggle" href="#">My
-											Page</a>
+								<%-- <c:if test="${ not empty userVO }"> --%>
+									<li class="dropdown"><a class="dropdown-toggle" 
+									href="${ pageContext.request.contextPath}/member/memberDetail.jsp">My Page</a>
 										<ul class="dropdown-menu">
-											<li><a href="contact-us.html">회원 정보</a></li>
-											<li><a href="contact-us-advanced.php">최근 주문 내역</a></li>
-											<li><a href="contact-us.html">My Menu</a></li>
-											<li><a href="contact-us-advanced.php">My Order List</a></li>
+											<li><a href="${ pageContext.request.contextPath}/member/memberDetail.jsp">회원 정보</a></li>
+											<li><a href="${ pageContext.request.contextPath}/member/Latest-Order.jsp">최근 주문 내역</a></li>
+											<li><a href="${ pageContext.request.contextPath}/member/myMenu.jsp">나만의 메뉴</a></li>
+											<li><a href="${ pageContext.request.contextPath}/member/myQnA.jsp">나의 문의사항</a></li>
 										</ul></li>
-								</c:if>
+								<%-- </c:if> --%>
 								<!-- 비회원 로그인하면 주문내역 조회 -->
 								<c:if test="${ not empty nonMember }">
 									<li class="dropdown"><a class="dropdown-toggle" href="#">주문내역조회</a></li>
@@ -141,7 +141,7 @@
 								<c:choose>
 									<c:when test="${ empty userVO }">
 										<li class="dropdown dropdown-mega dropdown-mega-signin signin" id="headerAccount">
-											<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/login.jsp">
+											<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/member/login.jsp">
 												<i class="fa fa-user"></i> Sign In</a>
 										</li>
 									</c:when>
