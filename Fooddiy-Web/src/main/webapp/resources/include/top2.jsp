@@ -5,47 +5,36 @@
 	<div class="header-container container" >
 		<div class="header-row">
 			<!-- 로고  -->
-			<div class="header-column">
-				<div class="header-logo hidden-xs">
+			<div class="header-column header-column-center">
+				<div class="header-logo" style="padding: 0px;">
 					<a href="${ pageContext.request.contextPath}/index.jsp">
-					<img alt="Porto" width="111" height="54" data-sticky-width="82" data-sticky-height="40"
-						data-sticky-top="33" src="${ pageContext.request.contextPath }/resources/img/Subway-logo.jpg">
+					<img alt="Porto" style="margin: 0px; border-radius:50%;" width="111" height="54" src="${ pageContext.request.contextPath }/resources/img/Subway-logo.jpg">
 					</a>
 				</div>
 			</div>
 			<div class="header-column">
+				<nav class="header-nav-top hidden-xs">
+					<ul class="nav nav-pills">
+						<li class="hidden-xs"><a href="about-us.html"> <!-- <i class="fa fa-angle-right"></i> -->
+								장바구니&nbsp;<img
+								alt="${ pageContext.request.contextPath }/장바구니.do"
+								src="${ pageContext.request.contextPath }/resources/img/binCartImg.png"
+								style="width: 20px; height: 20px;"></a>
+						</li>
+					</ul>
+				</nav>
 				<div class="header-row">
-					<nav class="header-nav-top">
-						<ul class="nav nav-pills">
-							<li class="hidden-xs"><a href="about-us.html"> <!-- <i class="fa fa-angle-right"></i> -->
-									장바구니&nbsp;<img
-									alt="${ pageContext.request.contextPath }/장바구니.do"
-									src="${ pageContext.request.contextPath }/resources/img/binCartImg.png"
-									style="width: 20px; height: 20px;"></a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				<div class="header-row">
-					<div class="header-nav" >
-					<!-- 웹사이트 크기 변경시 아이콘 변경해 주는 태그 -->
+					<div class="header-nav header-nav-stripe">
+						<!-- 웹사이트 크기 변경시 아이콘 변경해 주는 태그 -->
 						<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main" style="background-color: gray;">
 							<i class="fa fa-cart-plus"></i>
 						</button>
-						<div class="btn header-btn-collapse-nav" style="background-color: rgba(255,255,255,0);">
-							<a href="${ pageContext.request.contextPath}/index.jsp"> 
-								<img alt="Porto" width="111" height="54" data-sticky-width="82" data-sticky-height="40" style="border-radius:50%;"
-								data-sticky-top="33" src="${ pageContext.request.contextPath }/resources/img/Subway-logo.jpg">
-							</a>
-						</div>
-						<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main">
+						<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main" style="float: left;">
 							<i class="fa fa-bars"></i>
 						</button>
-					</div>
 					<!-- Menu공간  -->
-					<div
-						class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
-						<nav>
+					<div class="header-nav-main header-nav-main-square header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse" >
+						<nav style="background-color: white;">
 							<ul class="nav nav-pills" id="mainNav">
 								<li class="dropdown active"><a class="dropdown-toggle"
 									href="${ pageContext.request.contextPath}/menu/menu.jsp"> Menu </a>
@@ -181,6 +170,7 @@
 								</c:choose>
 							</ul>
 						</nav>
+					</div>
 					</div>
 				</div>
 			</div>
