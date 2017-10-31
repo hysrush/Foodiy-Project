@@ -131,8 +131,7 @@
 						<div class="row">
 							<div
 								class="sort-destination-loader sort-destination-loader-showing">
-								<ul class="portfolio-list sort-destination"
-									data-sort-id="portfolio">
+								<ul class="portfolio-list sort-destination" data-sort-id="portfolio">
 									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item brands">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
@@ -157,11 +156,12 @@
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 =======
+=======
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 									data-sort-id="portfolio">																	
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
 										<div class="portfolio-item" data-toggle="modal" data-target="#largeModal">
 											 <span
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 												class="thumb-info thumb-info-lighten"> <span
 													class="thumb-info-wrapper"> <img
 														src="${ pageContext.request.contextPath }/resources/img/projects/project-2.jpg"
@@ -172,18 +172,13 @@
 													</span> <span class="thumb-info-action"> <span
 															class="thumb-info-action-icon"><i
 																class="fa fa-link"></i></span>
-																
 													</span>
 												</span>
 											</span>
 											</a>
 										</div>
 									</li>
-<<<<<<< HEAD
-									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item brands">
-=======
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item brands">
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -202,11 +197,7 @@
 											</a>
 										</div>
 									</li>
-<<<<<<< HEAD
-									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item logos">
-=======
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -225,11 +216,7 @@
 											</a>
 										</div>
 									</li>
-<<<<<<< HEAD
-									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item brands">
-=======
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item brands">
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -248,11 +235,7 @@
 											</a>
 										</div>
 									</li>
-<<<<<<< HEAD
-									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item websites">
-=======
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item websites">
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -271,11 +254,7 @@
 											</a>
 										</div>
 									</li>
-<<<<<<< HEAD
-									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item medias">
-=======
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item medias">
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -294,11 +273,7 @@
 											</a>
 										</div>
 									</li>									
-<<<<<<< HEAD
-									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item websites">
-=======
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item websites">
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -317,11 +292,7 @@
 											</a>
 										</div>
 									</li>
-<<<<<<< HEAD
-									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item medias">
-=======
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item medias">
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -340,11 +311,7 @@
 											</a>
 										</div>
 									</li>
-<<<<<<< HEAD
-									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item websites">
-=======
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item websites">
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -363,11 +330,7 @@
 											</a>
 										</div>
 									</li>
-<<<<<<< HEAD
-									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item websites">
-=======
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item websites">
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -504,33 +467,12 @@
 								<div class="row">
 									<div class="col-md-12">
 										<div class="tabs tabs-product">
-											<ul class="nav nav-tabs">
-												<li class="active"><a href="#productDescription"
-													data-toggle="tab">Description</a></li>
-												<li><a href="#productInfo" data-toggle="tab">Aditional
-														Information</a></li>
-												<li><a href="#productReviews" data-toggle="tab">Reviews
-														(2)</a></li>
+											<ul class="nav nav-tabs">												
+												<li class="active"><a href="#productInfo" data-toggle="tab">Aditional
+														Information</a></li>												
 											</ul>
-											<div class="tab-content">
-												<div class="tab-pane active" id="productDescription">
-													<p>Vestibulum ante ipsum primis in faucibus orci luctus
-														et ultrices posuere cubilia Curae; Lorem ipsum dolor sit
-														amet, consectetur adipiscing elit. Fusce sagittis, massa
-														fringilla consequat blandit, mauris ligula porta nisi, non
-														tristique enim sapien vel nisl. Suspendisse vestibulum
-														lobortis dapibus. Vestibulum ante ipsum primis in faucibus
-														orci luctus et ultrices posuere cubilia Curae; Praesent
-														nec tempus nibh. Donec mollis commodo metus et fringilla.
-														Etiam venenatis, diam id adipiscing convallis, nisi eros
-														lobortis tellus, feugiat adipiscing ante ante sit amet
-														dolor. Vestibulum vehicula scelerisque facilisis. Sed
-														faucibus placerat bibendum. Maecenas sollicitudin commodo
-														justo, quis hendrerit leo consequat ac. Proin sit amet
-														risus sapien, eget interdum dui. Proin justo sapien,
-														varius sit amet hendrerit id, egestas quis mauris.</p>
-												</div>
-												<div class="tab-pane" id="productInfo">
+											<div class="tab-content">												
+												<div class="tab-pane active" id="productInfo">
 													<table class="table table-striped mt-xl">
 														<tbody>
 															<tr>
@@ -547,85 +489,7 @@
 															</tr>
 														</tbody>
 													</table>
-												</div>
-												<div class="tab-pane" id="productReviews">
-													<ul class="comments">
-														<li>
-															<div class="comment">
-																<div class="img-thumbnail">
-																	<img class="avatar" alt=""
-																		src="${ pageContext.request.contextPath }/resources/img/avatars/avatar-2.jpg">
-																</div>
-																<div class="comment-block">
-																	<div class="comment-arrow"></div>
-																	<span class="comment-by"> <strong>John
-																			Doe</strong> <span class="pull-right">
-																			<div title="Rated 5.00 out of 5" class="star-rating">
-																				<span style="width: 100%"><strong
-																					class="rating">5.00</strong> out of 5</span>
-																			</div>
-																	</span>
-																	</span>
-																	<p>Lorem ipsum dolor sit amet, consectetur
-																		adipiscing elit. Nam viverra euismod odio, gravida
-																		pellentesque urna varius vitae, gravida pellentesque
-																		urna varius vitae. Lorem ipsum dolor sit amet,
-																		consectetur adipiscing elit. Nam viverra euismod odio,
-																		gravida pellentesque urna varius vitae. Sed dui lorem,
-																		adipiscing in adipiscing et, interdum nec metus.
-																		Mauris ultricies, justo eu convallis placerat, felis
-																		enim ornare nisi, vitae mattis nulla ante id dui.</p>
-																</div>
-															</div>
-														</li>
-													</ul>
-													<hr class="tall">
-													<h4 class="heading-primary">Add a review</h4>
-													<div class="row">
-														<div class="col-md-12">
-
-															<form action="" id="submitReview" method="post">
-																<div class="row">
-																	<div class="form-group">
-																		<div class="col-md-6">
-																			<label>Your name *</label> <input type="text"
-																				value="" data-msg-required="Please enter your name."
-																				maxlength="100" class="form-control" name="name"
-																				id="name">
-																		</div>
-																		<div class="col-md-6">
-																			<label>Your email address *</label> <input
-																				type="email" value=""
-																				data-msg-required="Please enter your email address."
-																				data-msg-email="Please enter a valid email address."
-																				maxlength="100" class="form-control" name="email"
-																				id="email">
-																		</div>
-																	</div>
-																</div>
-																<div class="row">
-																	<div class="form-group">
-																		<div class="col-md-12">
-																			<label>Review *</label>
-																			<textarea maxlength="5000"
-																				data-msg-required="Please enter your message."
-																				rows="10" class="form-control" name="message"
-																				id="message"></textarea>
-																		</div>
-																	</div>
-																</div>
-																<div class="row">
-																	<div class="col-md-12">
-																		<input type="submit" value="Submit Review"
-																			class="btn btn-primary"
-																			data-loading-text="Loading...">
-																	</div>
-																</div>
-															</form>
-														</div>
-
-													</div>
-												</div>
+												</div>												
 											</div>
 										</div>
 									</div>
