@@ -148,7 +148,13 @@ http://bootstrapk.com/css/#tables<%@ page language="java"
 														</a> 
 														<span class="product-thumb-info-content"> 
 															<a data-toggle="modal" data-target="#defaultModal">
-																<h4>스테이크&치즈</h4>
+																<div style="text-align: left;">
+																	<h5>스테이크&치즈</h5>
+																	<strong>3200원</strong>
+																</div>
+																<div>
+																	<button type="button" class="btn btn-success mr-xs mb-sm">Success</button>
+																</div>
 															</a>
 														</span>
 													</span>
@@ -163,7 +169,11 @@ http://bootstrapk.com/css/#tables<%@ page language="java"
 														</a> 
 														<span class="product-thumb-info-content"> 
 															<a data-toggle="modal" data-target="#defaultModal">
-																<h4>치킨 베이컨</h4>
+																<div style="text-align: center;">
+																	<h5>치킨베이컨</h5>
+																	<strong>3200원</strong>
+																</div>
+																
 															</a>
 														</span>
 													</span>
@@ -178,7 +188,10 @@ http://bootstrapk.com/css/#tables<%@ page language="java"
 														</a> 
 														<span class="product-thumb-info-content"> 
 															<a data-toggle="modal" data-target="#defaultModal">
-																<h4>로스트비프</h4>
+																<div style="text-align: center;">
+																	<h5>로스트 비프</h5>
+																	<strong>3200원</strong>
+																</div>
 															</a>
 														</span>
 													</span>
@@ -193,7 +206,10 @@ http://bootstrapk.com/css/#tables<%@ page language="java"
 														</a> 
 														<span class="product-thumb-info-content"> 
 															<a data-toggle="modal" data-target="#defaultModal">
-																<h4>로스트치킨</h4>
+																<div style="text-align: center;">
+																	<h5>로스트 치킨</h5>
+																	<strong>3200원</strong>
+																</div>
 															</a>
 														</span>
 													</span>
@@ -210,7 +226,10 @@ http://bootstrapk.com/css/#tables<%@ page language="java"
 														</a> 
 														<span class="product-thumb-info-content"> 
 															<a data-toggle="modal" data-target="#defaultModal">
-																<h4>서브웨이 멜트</h4>
+																<div style="text-align: center;">
+																	<h5>서브웨이 멜트</h5>
+																	<strong>3200원</strong>
+																</div>
 															</a>
 														</span>
 													</span>
