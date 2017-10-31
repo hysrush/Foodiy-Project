@@ -148,12 +148,12 @@ http://bootstrapk.com/css/#tables<%@ page language="java"
 														</a> 
 														<span class="product-thumb-info-content"> 
 															<a data-toggle="modal" data-target="#defaultModal">
-																<div style="text-align: left;">
-																	<h5>스테이크&치즈</h5>
-																	<strong>3200원</strong>
-																</div>
 																<div>
-																	<button type="button" class="btn btn-success mr-xs mb-sm">Success</button>
+																
+																	<div clsss = ""style="text-align: left; width: 100px">
+																		<h5>스테이크&치즈</h5>
+																		<strong>3200원</strong>
+																	</div>
 																</div>
 															</a>
 														</span>

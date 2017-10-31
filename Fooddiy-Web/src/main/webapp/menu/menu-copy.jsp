@@ -132,7 +132,6 @@
 							<div
 								class="sort-destination-loader sort-destination-loader-showing">
 								<ul class="portfolio-list sort-destination"
-<<<<<<< HEAD
 									data-sort-id="portfolio">
 									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item brands">
 										<div class="portfolio-item" data-toggle="modal"

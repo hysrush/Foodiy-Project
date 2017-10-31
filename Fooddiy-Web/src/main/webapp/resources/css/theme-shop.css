@@ -715,7 +715,8 @@ Theme Version:	5.7.2
 }
 
 .product-thumb-info .product-thumb-info-content {
-	padding: 15px;
+	/* padding: 15px; */
+	padding: 0px;
 	text-align: left;
 	display: block;
 }
