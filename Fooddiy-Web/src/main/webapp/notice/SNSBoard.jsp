@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title>Fooddiy-Order</title>	
+		<title> | SNS | </title>	
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -56,8 +56,8 @@
 	</head>
 	<body>
 		<div class="body">
-			<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
-				<jsp:include page="/resources/include/top.jsp" />
+			<header id="header" class="header-no-min-height header-mobile-nav-only header-flex" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0'}">
+				<jsp:include page="/resources/include/top2.jsp"/>
 			</header>
 
 			<div role="main" class="main">
@@ -81,29 +81,30 @@
 				</section>
 
 				
+<<<<<<< HEAD
 				<div class= "container">
 					<div class="row">
-		
-						<div class="col-md-2">
+						<div class="col-md-2 hidden-xs hidden-sm">
 							<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
-
 								<h4 class="heading-primary"><strong>커뮤니티 </strong></h4>
+=======
+				<div class="container">
+				<div class="row">
+					<div class="col-md-2 hidden-xs">
+						<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+							<h4 class="heading-primary"><strong>커뮤니티 </strong></h4>
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 
-								<ul class="nav nav-list mb-xlg sort-source" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
-									
-									<li data-option-value=".websites"><a href="#">자주하는 질문</a></li>
-									<li data-option-value=".logos"><a href="#">공지사항</a></li>
-									<li data-option-value=".brands"><a href="#">1:1 문의</a></li>
-									<li data-option-value=".medias"><a href="#">SNS게시판</a></li>
-								</ul>
-
-							</aside>
-						</div>
-						
-							<!--  -->
-							
-							<div class="row">
-
+							<ul class="nav nav-list mb-xlg sort-source" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
+								<li><a href="${ pageContext.request.contextPath }/notice/qna.jsp">자주하는 질문</a></li>
+								<li><a href="${ pageContext.request.contextPath }/notice/noticeList.jsp">공지사항</a></li>
+								<li><a href="${ pageContext.request.contextPath }/notice/suggestion.jsp">1:1 문의</a></li>
+								<li class="active"><a href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">SNS게시판</a></li>
+							</ul>
+						</aside>
+					</div>
+						<!-- START! -->
+						<div class="row">
 						<div class="sort-destination-loader sort-destination-loader-showing">
 							<ul class="portfolio-list sort-destination popup-gallery-ajax" data-sort-id="portfolio">
 								<li class="col-md-4 col-sm-10 col-xs-12 isotope-item brands">
@@ -291,7 +292,7 @@
 	
 		</div>
 
-	<!-- Vendor -->
+		<!-- Vendor -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easing/jquery.easing.min.js"></script>

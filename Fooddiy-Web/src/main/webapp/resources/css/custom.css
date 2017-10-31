@@ -1,1 +1,71 @@
 /* Add here all your CSS customizations */
+
+.shop table.cart .product-add-ingredient {
+	width: 40%;
+}
+
+.shop table.cart td.price_info {
+	text-align: center;
+}
+	
+.shop table.cart td.price_info p.all_price {
+	font-size: 20px;	
+}
+
+.shop table.cart td.price_info p.all_price strong.price_all {
+	color: red;
+}
+
+.shop .actions-continue{
+	
+	text-align: center;
+}
+
+.shop .actions-continue .cart-submit,
+.shop .actions-continue .cart-button {
+		
+	width : 200px;
+	height: 50px;
+	
+}
+
+/* Responsive */
+@media ( max-width : 991px) {
+	.shop .actions-continue {
+		float: none;
+	}
+	
+	.shop .cart-submit, .shop .cart-button {
+		width:100px;
+	}
+	
+ 	.shop table.cart th.product-add-ingredient, .shop table.cart td.product-add-ingredient
+	{
+		display: none;
+	} 
+	
+	.shop table.cart .product-name {
+		width: 169px;
+	}
+	
+	
+	.shop table.cart td.price_info {
+		text-align: center;
+	}
+	
+	.shop table.cart td.price_info p.all_price {
+		font-size: 20px;
+	}
+	.shop table.cart td.price_info p.all_price strong.price_all {
+		color: red;
+	}
+	
+	.shop .actions-continue .cart-submit,
+	.shop .actions-continue .cart-button {
+		
+		width : 150px;
+		height : 40px;
+	}
+	
+	
+}

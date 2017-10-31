@@ -557,8 +557,9 @@ Theme Version:	5.7.2
 }
 
 .shop table.cart .product-name {
-	width: 60%;
+	width: 20%;
 }
+
 
 .shop table.cart .quantity {
 	top: 10px;
@@ -719,6 +720,10 @@ Theme Version:	5.7.2
 	padding: 0px;
 	text-align: left;
 	display: block;
+}
+.tit {
+	style="text-align: left; width: 100px"
+	
 }
 
 .product-thumb-info .product-thumb-info-caption {
