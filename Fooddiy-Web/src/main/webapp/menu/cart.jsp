@@ -58,16 +58,7 @@
 
 			<div role="main" class="main shop">
 
-				<div class="container">
-					
-					<div class="row">
-						<div class="col-md-6">
-							<h2 class="mb-none">
-								<strong>장바구니</strong>
-							</h2>
-						</div>
-					</div>		
-					
+				<div class="container">				
 					<div class="row">
 						<div class="col-md-12">
 							<hr class="tall">
@@ -79,6 +70,16 @@
 
 							<div class="featured-boxes">
 								<div class="row">
+								
+									<div class="row">
+										<div class="col-md-6">
+											<h2 class="mb-none">
+												<strong>장바구니</strong>
+											</h2>
+										</div>
+									</div>	
+									
+									
 										
 									<ul class="comment_list mt25">
 										<li>주문서를 작성하기 전에 선택하신 상품명, 수량 및 가격이 정확한지 확인해 주세요.</li>
