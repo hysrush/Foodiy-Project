@@ -82,7 +82,7 @@
 	<div class="body">
 		<header id="header"
 			data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
-			<jsp:include page="/resources/include/top.jsp" />
+			<jsp:include page="/resources/include/top2.jsp" />
 		</header>
 		<div role="main" class="main">
 			<section class="page-header">
