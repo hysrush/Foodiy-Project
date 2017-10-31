@@ -149,7 +149,7 @@
 															<a data-toggle="modal" data-target="#defaultModal">
 																<div>
 																
-																	<div clsss = ""style="text-align: left; width: 100px">
+																	<div clsss = "tit" >
 																		<h5>스테이크&치즈</h5>
 																		<strong>3200원</strong>
 																	</div>
