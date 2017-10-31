@@ -87,10 +87,10 @@
 							<h4 class="heading-primary"><strong>커뮤니티 </strong></h4>
 
 							<ul class="nav nav-list mb-xlg sort-source" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
-								<li data-option-value=".websites"><a href="${ pageContext.request.contextPath }/notice/qna.jsp">자주하는 질문</a></li>
-								<li data-option-value=".logos"><a href="${ pageContext.request.contextPath }/notice/noticeList.jsp">공지사항</a></li>
-								<li data-option-value=".brands"><a href="${ pageContext.request.contextPath }/notice/suggestion.jsp">1:1 문의</a></li>
-								<li data-option-value=".medias"><a href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">SNS게시판</a></li>
+									<li class="active"><a href="${ pageContext.request.contextPath }/notice/qna.jsp">자주하는 질문</a></li>
+									<li><a href="${ pageContext.request.contextPath }/notice/noticeList.jsp">공지사항</a></li>
+									<li><a href="${ pageContext.request.contextPath }/notice/suggestion.jsp">1:1 문의</a></li>
+									<li><a href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">SNS게시판</a></li>
 							</ul>
 						</aside>
 					</div>
