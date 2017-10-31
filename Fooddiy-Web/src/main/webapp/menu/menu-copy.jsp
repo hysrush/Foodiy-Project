@@ -154,11 +154,7 @@
 									</li>									
 									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item logos">
 										<div class="portfolio-item">
-											<a href="portfolio-single-small-slider.html"> <span
-=======
-=======
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
-									data-sort-id="portfolio">																	
+											<a href="portfolio-single-small-slider.html"> <span data-sort-id="portfolio">																	
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
 										<div class="portfolio-item" data-toggle="modal" data-target="#largeModal">
 											 <span
