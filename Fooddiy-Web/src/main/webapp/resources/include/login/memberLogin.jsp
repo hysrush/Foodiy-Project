@@ -38,32 +38,34 @@
 											</span>
 										</div>
 										<div class="col-md-6 pull-right">
-											<input type="submit" value="Login" class="btn btn-primary pull-right mb-xl" data-loading-text="Loading...">
+											<input type="submit" value="Login" class="btn btn-info pull-right mb-xl" data-loading-text="Loading...">
 										</div>
 									</div>
 								</form>
 								<!-- API 로그인 -->
 								<div class="row">		
-									<div class="col-md-6 pull-right">
-										<ul class="social-icons">
-											<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-											<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-											<li class="social-icons-linkedin"><a href="http://www.naver.com/" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-										</ul>
+									<div class="col-md-4">
+										<a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+									</div>
+									<div class="col-md-4">
+										<a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+									</div>
+									<div class="col-md-4">
+										<a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
 									</div>
 								</div>
-								<div class="row">		
-									<div class="col-md-6 pull-right">
-										<button id="signUp" class="btn btn-primary mb-xl mt-xlg">회원 가입</button>
+								<div class="row mt-xlg">
+									<div class="col-md-12">
+										<input type="button" value="회원가입" id="signUp" class="btn btn-info mb-md form-control"/>
 									</div>
 								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 </div>
 
 

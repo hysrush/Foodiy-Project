@@ -132,6 +132,7 @@
 							<div
 								class="sort-destination-loader sort-destination-loader-showing">
 								<ul class="portfolio-list sort-destination"
+<<<<<<< HEAD
 									data-sort-id="portfolio">
 									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item brands">
 										<div class="portfolio-item" data-toggle="modal"
@@ -156,6 +157,12 @@
 									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item logos">
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
+=======
+									data-sort-id="portfolio">																	
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
+										<div class="portfolio-item" data-toggle="modal" data-target="#largeModal">
+											 <span
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 												class="thumb-info thumb-info-lighten"> <span
 													class="thumb-info-wrapper"> <img
 														src="${ pageContext.request.contextPath }/resources/img/projects/project-2.jpg"
@@ -173,7 +180,11 @@
 											</a>
 										</div>
 									</li>
+<<<<<<< HEAD
 									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item brands">
+=======
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item brands">
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -192,7 +203,11 @@
 											</a>
 										</div>
 									</li>
+<<<<<<< HEAD
 									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item logos">
+=======
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -211,7 +226,11 @@
 											</a>
 										</div>
 									</li>
+<<<<<<< HEAD
 									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item brands">
+=======
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item brands">
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -230,7 +249,11 @@
 											</a>
 										</div>
 									</li>
+<<<<<<< HEAD
 									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item websites">
+=======
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item websites">
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -249,7 +272,11 @@
 											</a>
 										</div>
 									</li>
+<<<<<<< HEAD
 									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item medias">
+=======
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item medias">
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -268,7 +295,11 @@
 											</a>
 										</div>
 									</li>									
+<<<<<<< HEAD
 									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item websites">
+=======
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item websites">
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -287,7 +318,11 @@
 											</a>
 										</div>
 									</li>
+<<<<<<< HEAD
 									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item medias">
+=======
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item medias">
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -306,7 +341,11 @@
 											</a>
 										</div>
 									</li>
+<<<<<<< HEAD
 									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item websites">
+=======
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item websites">
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span
@@ -325,7 +364,11 @@
 											</a>
 										</div>
 									</li>
+<<<<<<< HEAD
 									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item websites">
+=======
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item websites">
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 										<div class="portfolio-item">
 											<a href="portfolio-single-small-slider.html"> <span
 												class="thumb-info thumb-info-lighten"> <span

@@ -67,9 +67,9 @@
 <script>
 	$(document).ready(function(){
 		
-		$("#okay").click(function(){
+		$("#start").click(function(){
 	
-			location.href="${pageContext.request.contextPath}/member/memberDetail.jsp"; 
+			location.href="${pageContext.request.contextPath}/index.jsp"; 
 		});
 	});
 </script>
@@ -83,168 +83,69 @@
 </style>
 
 </head>
-
-
 <body>
 	<div class="body">
 		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
 			<jsp:include page="/resources/include/top.jsp"/>
 		</header>
 		<!-- ---------------------------------------------------------------------------------------------- -->
-			
-			
-			
+		
 				<section class="page-header">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12">
 								<ul class="breadcrumb">
-									<li><a href="#">Home</a></li>
-									<li class="active">Pages</li>
+									<li><a href="${ pageContext.request.contextPath}/member/memberDetail.jsp">My Page</a></li>
+									<li class="active">회원 탈퇴</li>
 								</ul>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<h1>Left Sidebar</h1>
+								<h1>회원 탈퇴</h1>
 							</div>
 						</div>
 					</div>
 				</section>
+				<div style="margin-left: 47%; margin-top: 3%" class="col-md-3 col-sm-4 sample-icon">
+					<a><i style="color:orange; font-size: 120px;" class="fa fa-check-circle-o"></i> </a>
+				</div><br/><br/>
+		
+		
+		<div class="container" style="margin-left: 41%; margin-top: 10%;" >
 			
-			
-			<div class="container" style="">
-				<div class="row">
-					<div style="width: 600px">
-						<div style="margin-top: 10%" class="col-md-3">
-							<aside  class="sidebar">
-
-								<h3 class="heading-primary">Categories</h3>
-								<ul class="nav nav-list mb-xlg">
-									<li class="active"><a href="${ pageContext.request.contextPath}/member/memberDetail.jsp">내 정보</a></li>
-									<li> <a href="${ pageContext.request.contextPath}/member/Latest-Order.jsp">최근 주문 내역</a></li>
-									<li><a href="${ pageContext.request.contextPath}/member/myMenu.jsp">나만의 메뉴</a></li>
-									<li><a href="${ pageContext.request.contextPath}/member/myQnA.jsp">나의 문의사항</a></li>
-								</ul>
-							</aside>
+			<h2>
+				<strong>회원탈퇴</strong>가 완료되었습니다.
+			</h2>
+		</div>
+					<div class="row">
+						<div class="col-md-12">
+							<hr class="tall">
 						</div>
 					</div>
-					
-				<div class="col-md-4">
-					<img src="${ pageContext.request.contextPath }/resources/img/projects/project-4.jpg" class="img-responsive" alt="" style="margin-left: 20%; margin-top: 20%; width: 300px;">
-				</div>
+		
+				<div class="row">
+						<div style="margin-left: 30%" class="col-md-5 center">
+							<h1 class="mb-sm small">그동안 저희 홈페이지를 용해 주셔서 감사합니다.</h1>
+							<p class="lead">보다 나은 서비스로 다시 찾아 뵙겠습니다.</p>
+						</div>
+					</div>
 				
-						<div class="col-md-5" style="margin-top: 6%; margin-left: 3%">
-
-							<div class="panel-group" id="accordion">
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-												내정보
-											</a>
-										</h4>
-									</div>
-									<div id="collapseOne" class="accordion-body collapse in">
-										<div class="panel-body">
-											<form action="/" id="frmBillingAddress" method="post">
-												<div class="row">
-													<div class="form-group">
-														<div class="col-md-12">
-															<label>이름</label>
-															<input type="text" value="" class="form-control">
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="form-group">
-														<div class="col-md-12">
-															<label>비밀번호</label>
-															<input type="text" value="" class="form-control">
-														</div>
-												</div>
-
-												
-													</div>
-												<div class="row">
-													<div class="form-group">
-														<div class="col-md-12">
-															<label>비밀번호 확인</label>
-															<input type="text" value="" class="form-control">
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="form-group">
-														<div class="col-md-12">
-															<label>전화번호 </label>
-															<input type="text" value="" class="form-control">
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="form-group">
-														<div class="col-md-6">
-															<label>E-mail </label>
-															<input type="text" value="" class="form-control">
-														</div>
-														<div class="row">
-													<div class="form-group">
-														<div class="col-md-6">
-															<label></label><br/>
-															<select class="form-control">
-																<option value="">-이메일 선택 -</option>
-															</select>
-														</div>
-													</div>
-												</div>
-														
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-md-12">
-														
-													
-													</div>
-												</div>
-											</form>
-										</div>
-									</div>
-								</div>
-						</div>	
 						
-							<div style="margin-top: 12%; ">
-							<div class="row">
-									<input style="margin-left: 73%" type="submit" value="저장" class="btn btn-info" data-toggle="modal" data-target="#formModal"/>
-													<button type="button" class="btn btn-info" data-dismiss="modal">취소</button>
-									<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-													<h3 class="modal-title" id="formModalLabel"><strong>회원정보 수정</strong></h3>
-												</div>
-												<div class="modal-body">
-												<h4>정말로 수정 하시겠습니까?</h4>
-													
-												</div>
-												<div class="modal-footer" >
-													<button type="button" class="btn btn-default" data-dismiss="modal">취소</button>
-													<button id="okay" type="button" class="btn btn-default" data-dismiss="modal">확인</button>
-												</div>
-											</div>
-										</div>
-									</div>
-							
-							</div>
+					<div class="row">
+						<div class="col-md-12">
+							<hr class="tall">
+						</div>
+					</div>
 
-					</div>
-					</div>
-					</div>
-					</div>					
-</div>
-		<!-- ---------------------------------------------------------------------------------------------- -->
-		<div>
+			<div style="margin-bottom:5% ; margin-left: 47%" class="col-md-8">
+				<button id="start" style="width: 130px; height: 40px; font-size: 20px" type="button" class="btn  btn-info">  첫화면 </button>
+			</div>
+		</div>
+
+
+	<!-- ---------------------------------------------------------------------------------------------- -->
+	<div>
 		<footer id="footer">
 			<jsp:include page="/resources/include/bottom.jsp"/>
 		</footer>

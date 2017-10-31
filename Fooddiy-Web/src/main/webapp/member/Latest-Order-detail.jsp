@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<!DOCTYPE html">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -62,17 +62,9 @@
 	href="${ pageContext.request.contextPath }/resources/css/custom.css">
 
 <!-- Head Libs -->
-<script src="${ pageContext.request.contextPath }/resources/vendor/modernizr/modernizr.min.js"></script>
-<script src="${ pageContext.request.contextPath }/resources/js/jquery-3.2.1.min.js"></script>
-<script>
-	$(document).ready(function(){
-		
-		$("#okay").click(function(){
-	
-			location.href="${pageContext.request.contextPath}/member/memberDetail.jsp"; 
-		});
-	});
-</script>
+<script
+	src="${ pageContext.request.contextPath }/resources/vendor/modernizr/modernizr.min.js"></script>
+
 <style type="text/css">
 #div01 {
 	width: 70px;
@@ -93,14 +85,13 @@
 		<!-- ---------------------------------------------------------------------------------------------- -->
 			
 			
-			
 				<section class="page-header">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12">
 								<ul class="breadcrumb">
-									<li><a href="#">Home</a></li>
-									<li class="active">Pages</li>
+									<li><a href="${ pageContext.request.contextPath}/member/memberDetail.jsp">My Page</a></li>
+									<li class="active">최근 주문 내역</li>
 								</ul>
 							</div>
 						</div>
@@ -111,140 +102,146 @@
 						</div>
 					</div>
 				</section>
-			
-			
-			<div class="container" style="">
-				<div class="row">
+				
+			<div class="container">
+				
+
+					<div class="row">
 					<div style="width: 600px">
-						<div style="margin-top: 10%" class="col-md-3">
+						<div style="margin-top: 2%" class="col-md-3">
 							<aside  class="sidebar">
 
 								<h3 class="heading-primary">Categories</h3>
 								<ul class="nav nav-list mb-xlg">
-									<li class="active"><a href="${ pageContext.request.contextPath}/member/memberDetail.jsp">내 정보</a></li>
-									<li> <a href="${ pageContext.request.contextPath}/member/Latest-Order.jsp">최근 주문 내역</a></li>
+									<li><a href="${ pageContext.request.contextPath}/member/memberDetail.jsp">내 정보</a></li>
+									<li class="active">
+										<a href="${ pageContext.request.contextPath}/member/Latest-Order.jsp">최근 주문 내역</a>
+									</li>
 									<li><a href="${ pageContext.request.contextPath}/member/myMenu.jsp">나만의 메뉴</a></li>
 									<li><a href="${ pageContext.request.contextPath}/member/myQnA.jsp">나의 문의사항</a></li>
 								</ul>
-							</aside>
-						</div>
-					</div>
-					
-				<div class="col-md-4">
-					<img src="${ pageContext.request.contextPath }/resources/img/projects/project-4.jpg" class="img-responsive" alt="" style="margin-left: 20%; margin-top: 20%; width: 300px;">
-				</div>
-				
-						<div class="col-md-5" style="margin-top: 6%; margin-left: 3%">
+		</aside></div></div>
+		
+			
+			<div role="main" class="main shop">
 
-							<div class="panel-group" id="accordion">
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-												내정보
-											</a>
-										</h4>
-									</div>
-									<div id="collapseOne" class="accordion-body collapse in">
-										<div class="panel-body">
-											<form action="/" id="frmBillingAddress" method="post">
-												<div class="row">
-													<div class="form-group">
-														<div class="col-md-12">
-															<label>이름</label>
-															<input type="text" value="" class="form-control">
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="form-group">
-														<div class="col-md-12">
-															<label>비밀번호</label>
-															<input type="text" value="" class="form-control">
-														</div>
-												</div>
+				<div class="container">
 
-												
-													</div>
-												<div class="row">
-													<div class="form-group">
-														<div class="col-md-12">
-															<label>비밀번호 확인</label>
-															<input type="text" value="" class="form-control">
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="form-group">
-														<div class="col-md-12">
-															<label>전화번호 </label>
-															<input type="text" value="" class="form-control">
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="form-group">
-														<div class="col-md-6">
-															<label>E-mail </label>
-															<input type="text" value="" class="form-control">
-														</div>
-														<div class="row">
-													<div class="form-group">
-														<div class="col-md-6">
-															<label></label><br/>
-															<select class="form-control">
-																<option value="">-이메일 선택 -</option>
-															</select>
-														</div>
-													</div>
-												</div>
-														
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-md-12">
-														
-													
-													</div>
-												</div>
-											</form>
-										</div>
-									</div>
-								</div>
-						</div>	
-						
-							<div style="margin-top: 12%; ">
-							<div class="row">
-									<input style="margin-left: 73%" type="submit" value="저장" class="btn btn-info" data-toggle="modal" data-target="#formModal"/>
-													<button type="button" class="btn btn-info" data-dismiss="modal">취소</button>
-									<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-													<h3 class="modal-title" id="formModalLabel"><strong>회원정보 수정</strong></h3>
-												</div>
-												<div class="modal-body">
-												<h4>정말로 수정 하시겠습니까?</h4>
-													
-												</div>
-												<div class="modal-footer" >
-													<button type="button" class="btn btn-default" data-dismiss="modal">취소</button>
-													<button id="okay" type="button" class="btn btn-default" data-dismiss="modal">확인</button>
-												</div>
+
+						<div class="col-md-2r">
+
+
+							<div class="featured-boxes">
+									<div class="col-sm-5">
+										<div class="featured-box featured-box-primary align-left mt-xlg">
+											<div class="box-content">
+												<h4 class="heading-primary text-uppercase mb-md">주문정보</h4>
+												<table class="cart-totals">
+													<tbody>
+														<tr class="cart-subtotal">
+															<th>
+																<strong>주문번호</strong>
+															</th>
+															<td>
+																<strong><span class="amount">BDNSY07276</span></strong>
+															</td>
+														</tr>
+														<tr class="shipping">
+															<th>
+																주문시간															</th>
+															<td>
+																2017.11.02 / 오후 7:21<input type="hidden" value="free_shipping" id="shipping_method" name="shipping_method">
+															</td>
+														</tr>
+														<tr class="shipping">
+															<th>
+																<strong>결제방법</strong>
+															</th>
+															<td>
+																<span class="amount">카드</span>
+															</td>
+														</tr>
+														<tr class="shipping">
+															<th>
+																결제금액															</th>
+															<td>
+																12,600원<input type="hidden" value="free_shipping" id="shipping_method" name="shipping_method">
+															</td>
+														</tr>
+													</tbody>
+												</table>
 											</div>
 										</div>
 									</div>
-							
+								</div>
 							</div>
+							<div class="featured-boxes">
+									<div class="col-sm-5">
+										<div class="featured-box featured-box-primary align-left mt-xlg">
+											<div class="box-content">
+												<h4 class="heading-primary text-uppercase mb-md">주문내역</h4>
+												<table class="cart-totals">
+													<tbody>
+														<tr class="cart-subtotal">
+															<th>
+																<strong>스테이크 & 치즈</strong>
+															</th>
+															<td>
+																<strong><span class="amount">12,800원</span></strong>
+															</td>
+														</tr>
+														<tr class="shipping">
+															<th>
+																가격
+															</th>
+															<td>
+																9,800원(30cm)<input type="hidden" value="free_shipping" id="shipping_method" name="shipping_method">
+															</td>
+														</tr>
+														<tr class="shipping">
+															<th>
+																추가선택
+															</th>
+															<td>
+																베이컨 +1<input type="hidden" value="free_shipping" id="shipping_method" name="shipping_method">
+															</td>
+														</tr>
+														<tr class="shipping">
+															<th>
+																요구사항
+															</th>
+															<td>
+																양상추 +1, 할라피뇨 -1<input type="hidden" value="free_shipping" id="shipping_method" name="shipping_method">
+															</td>
+														</tr>
+														<tr class="shipping">
+															<th>
+																수량
+															</th>
+															<td>
+															1개<input type="hidden" value="free_shipping" id="shipping_method" name="shipping_method">
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-					</div>
-					</div>
-					</div>
-					</div>					
-</div>
-		<!-- ---------------------------------------------------------------------------------------------- -->
-		<div>
+				</div>
+
+
+			<div style="margin-bottom:5% ; margin-left: 47%" class="col-md-8">
+				<button style="width: 130px; height: 40px; font-size: 20px" type="button" class="btn  btn-info">  첫화면 </button>
+			</div>
+		</div>
+
+	<!-- ---------------------------------------------------------------------------------------------- -->
+	<div>
 		<footer id="footer">
 			<jsp:include page="/resources/include/bottom.jsp"/>
 		</footer>
