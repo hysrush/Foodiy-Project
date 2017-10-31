@@ -126,455 +126,361 @@
 						<h2>프리미엄</h2>
 						<ul class="nav nav-pills sort-source" data-sort-id="portfolio"
 							data-option-key="filter"
-							data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">							
-						</ul>						
+							data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
+						</ul>
 						<div class="row">
 							<div
 								class="sort-destination-loader sort-destination-loader-showing">
 								<ul class="portfolio-list sort-destination"
-									data-sort-id="portfolio">																	
+									data-sort-id="portfolio">
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
-										<div class="portfolio-item" data-toggle="modal" data-target="#largeModal">
-											 <span
-												class="thumb-info thumb-info-lighten"> <span
-													class="thumb-info-wrapper"> <img
-														src="${ pageContext.request.contextPath }/resources/img/projects/project-2.jpg"
-														class="img-responsive" alt=""> <span
-														class="thumb-info-title"> <span
-															class="thumb-info-inner">Identity</span> <span
-															class="thumb-info-type">Logo</span>
-													</span> <span class="thumb-info-action"> <span
-															class="thumb-info-action-icon"><i
-																class="fa fa-link"></i></span>
-													</span>
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten">
+											<span class="thumb-info-wrapper">
+											<img src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
+													class="img-responsive" alt="" style="margin-top:50px; margin-bottom:50px">
+													<span class="thumb-info-title">
+													<span class="thumb-info-inner">스테이크 & 치즈</span>
+													<span class="thumb-info-type">6,100</span>
 												</span>
+												<span class="thumb-info-action">
+												<span class="thumb-info-action-icon"><i class="fa fa-shopping-basket"></i></span></span>
 											</span>
-											</a>
-										</div>
-									</li>
-									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item brands">
-										<div class="portfolio-item">
-											<a href="portfolio-single-small-slider.html"> <span
-												class="thumb-info thumb-info-lighten"> <span
-													class="thumb-info-wrapper"> <img
-														src="${ pageContext.request.contextPath }/resources/img/projects/project-3.jpg"
-														class="img-responsive" alt=""> <span
-														class="thumb-info-title"> <span
-															class="thumb-info-inner">Watch Mockup</span> <span
-															class="thumb-info-type">Brand</span>
-													</span> <span class="thumb-info-action"> <span
-															class="thumb-info-action-icon"><i
-																class="fa fa-link"></i></span>
-													</span>
-												</span>
 											</span>
-											</a>
 										</div>
 									</li>
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
-										<div class="portfolio-item">
-											<a href="portfolio-single-small-slider.html"> <span
-												class="thumb-info thumb-info-lighten"> <span
-													class="thumb-info-wrapper"> <img
-														src="${ pageContext.request.contextPath }/resources/img/projects/project-4.jpg"
-														class="img-responsive" alt=""> <span
-														class="thumb-info-title"> <span
-															class="thumb-info-inner">Three Bottles</span> <span
-															class="thumb-info-type">Logo</span>
-													</span> <span class="thumb-info-action"> <span
-															class="thumb-info-action-icon"><i
-																class="fa fa-link"></i></span>
-													</span>
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten">
+											<span class="thumb-info-wrapper">
+											<img src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
+													class="img-responsive" alt="" style="margin-top:50px; margin-bottom:50px">
+													<span class="thumb-info-title">
+													<span class="thumb-info-inner">스테이크 & 치즈</span>
+													<span class="thumb-info-type">6,100</span>
 												</span>
+												<span class="thumb-info-action">
+												<span class="thumb-info-action-icon"><i class="fa fa-shopping-basket"></i></span></span>
 											</span>
-											</a>
+											</span>
 										</div>
 									</li>
-									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item brands">
-										<div class="portfolio-item">
-											<a href="portfolio-single-small-slider.html"> <span
-												class="thumb-info thumb-info-lighten"> <span
-													class="thumb-info-wrapper"> <img
-														src="${ pageContext.request.contextPath }/resources/img/projects/project-5.jpg"
-														class="img-responsive" alt=""> <span
-														class="thumb-info-title"> <span
-															class="thumb-info-inner">Company T-Shirt</span> <span
-															class="thumb-info-type">Brand</span>
-													</span> <span class="thumb-info-action"> <span
-															class="thumb-info-action-icon"><i
-																class="fa fa-link"></i></span>
-													</span>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten">
+											<span class="thumb-info-wrapper">
+											<img src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
+													class="img-responsive" alt="" style="margin-top:50px; margin-bottom:50px">
+													<span class="thumb-info-title">
+													<span class="thumb-info-inner">스테이크 & 치즈</span>
+													<span class="thumb-info-type">6,100</span>
 												</span>
+												<span class="thumb-info-action">
+												<span class="thumb-info-action-icon"><i class="fa fa-shopping-basket"></i></span></span>
 											</span>
-											</a>
+											</span>
 										</div>
 									</li>
-									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item websites">
-										<div class="portfolio-item">
-											<a href="portfolio-single-small-slider.html"> <span
-												class="thumb-info thumb-info-lighten"> <span
-													class="thumb-info-wrapper"> <img
-														src="${ pageContext.request.contextPath }/resources/img/projects/project-6.jpg"
-														class="img-responsive" alt=""> <span
-														class="thumb-info-title"> <span
-															class="thumb-info-inner">Mobile Mockup</span> <span
-															class="thumb-info-type">Website</span>
-													</span> <span class="thumb-info-action"> <span
-															class="thumb-info-action-icon"><i
-																class="fa fa-link"></i></span>
-													</span>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten">
+											<span class="thumb-info-wrapper">
+											<img src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
+													class="img-responsive" alt="" style="margin-top:50px; margin-bottom:50px">
+													<span class="thumb-info-title">
+													<span class="thumb-info-inner">스테이크 & 치즈</span>
+													<span class="thumb-info-type">6,100</span>
 												</span>
+												<span class="thumb-info-action">
+												<span class="thumb-info-action-icon"><i class="fa fa-shopping-basket"></i></span></span>
 											</span>
-											</a>
+											</span>
 										</div>
 									</li>
-									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item medias">
-										<div class="portfolio-item">
-											<a href="portfolio-single-small-slider.html"> <span
-												class="thumb-info thumb-info-lighten"> <span
-													class="thumb-info-wrapper"> <img
-														src="${ pageContext.request.contextPath }/resources/img/projects/project-7.jpg"
-														class="img-responsive" alt=""> <span
-														class="thumb-info-title"> <span
-															class="thumb-info-inner">Porto Label</span> <span
-															class="thumb-info-type">Media</span>
-													</span> <span class="thumb-info-action"> <span
-															class="thumb-info-action-icon"><i
-																class="fa fa-link"></i></span>
-													</span>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten">
+											<span class="thumb-info-wrapper">
+											<img src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
+													class="img-responsive" alt="" style="margin-top:50px; margin-bottom:50px">
+													<span class="thumb-info-title">
+													<span class="thumb-info-inner">스테이크 & 치즈</span>
+													<span class="thumb-info-type">6,100</span>
 												</span>
+												<span class="thumb-info-action">
+												<span class="thumb-info-action-icon"><i class="fa fa-shopping-basket"></i></span></span>
 											</span>
-											</a>
-										</div>
-									</li>									
-									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item websites">
-										<div class="portfolio-item">
-											<a href="portfolio-single-small-slider.html"> <span
-												class="thumb-info thumb-info-lighten"> <span
-													class="thumb-info-wrapper"> <img
-														src="${ pageContext.request.contextPath }/resources/img/projects/project-24.jpg"
-														class="img-responsive" alt=""> <span
-														class="thumb-info-title"> <span
-															class="thumb-info-inner">Tablet Screen</span> <span
-															class="thumb-info-type">Website</span>
-													</span> <span class="thumb-info-action"> <span
-															class="thumb-info-action-icon"><i
-																class="fa fa-link"></i></span>
-													</span>
-												</span>
 											</span>
-											</a>
-										</div>
-									</li>
-									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item medias">
-										<div class="portfolio-item">
-											<a href="portfolio-single-small-slider.html"> <span
-												class="thumb-info thumb-info-lighten"> <span
-													class="thumb-info-wrapper"> <img
-														src="${ pageContext.request.contextPath }/resources/img/projects/project-25.jpg"
-														class="img-responsive" alt=""> <span
-														class="thumb-info-title"> <span
-															class="thumb-info-inner">Black Watch</span> <span
-															class="thumb-info-type">Media</span>
-													</span> <span class="thumb-info-action"> <span
-															class="thumb-info-action-icon"><i
-																class="fa fa-link"></i></span>
-													</span>
-												</span>
-											</span>
-											</a>
-										</div>
-									</li>
-									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item websites">
-										<div class="portfolio-item">
-											<a href="portfolio-single-small-slider.html"> <span
-												class="thumb-info thumb-info-lighten"> <span
-													class="thumb-info-wrapper"> <img
-														src="${ pageContext.request.contextPath }/resources/img/projects/project-26.jpg"
-														class="img-responsive" alt=""> <span
-														class="thumb-info-title"> <span
-															class="thumb-info-inner">Monitor Mockup</span> <span
-															class="thumb-info-type">Website</span>
-													</span> <span class="thumb-info-action"> <span
-															class="thumb-info-action-icon"><i
-																class="fa fa-link"></i></span>
-													</span>
-												</span>
-											</span>
-											</a>
-										</div>
-									</li>
-									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item websites">
-										<div class="portfolio-item">
-											<a href="portfolio-single-small-slider.html"> <span
-												class="thumb-info thumb-info-lighten"> <span
-													class="thumb-info-wrapper"> <img
-														src="${ pageContext.request.contextPath }/resources/img/projects/project-27.jpg"
-														class="img-responsive" alt=""> <span
-														class="thumb-info-title"> <span
-															class="thumb-info-inner">Porto Screens</span> <span
-															class="thumb-info-type">Website</span>
-													</span> <span class="thumb-info-action"> <span
-															class="thumb-info-action-icon"><i
-																class="fa fa-link"></i></span>
-													</span>
-												</span>
-											</span>
-											</a>
 										</div>
 									</li>									
 								</ul>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<div class="container">
+
+		<footer id="footer">
+			<jsp:include page="/resources/include/bottom.jsp" />
+		</footer>
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<!-- 모달들 -->
+	<div class="modal fade" id="largeModal" tabindex="-1" role="dialog"
+		aria-labelledby="largeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="largeModalLabel">Large Modal Title</h4>
+				</div>
+				<div class="modal-body shop">
+
+					<!-- 모달 속 상세내용 -->
+
+
+
+					<div class="row">
+						<div class="col-md-12">
+							<!-- <hr class="tall"> -->
+						</div>
 					</div>
 
-				</div>
+					<div class="row">
+						<div class="col-md-6">
 
-			</div>
+							<div class="owl-carousel owl-theme"
+								data-plugin-options="{'items': 1}">
+								<div>
+									<div class="thumbnail" style="margin-top:90px; margin-bottom:90px">
+										<img alt="" class="img-responsive img-rounded" 
+											src="${ pageContext.request.contextPath }/resources/img/products/steak_and_cheese.jpg">
+									</div>
+								</div>								
+							</div>
 
-			<div class="container">
-
-				<footer id="footer">
-					<jsp:include page="/resources/include/bottom.jsp" />
-				</footer>
-
-			</div>
-
-
-
-
-
-
-
-
-
-
-			<!-- 모달들 -->
-			<div class="modal fade" id="largeModal" tabindex="-1" role="dialog"
-				aria-labelledby="largeModalLabel" aria-hidden="true">
-				<div class="modal-dialog modal-lg">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal"
-								aria-hidden="true">&times;</button>
-							<h4 class="modal-title" id="largeModalLabel">Large Modal
-								Title</h4>
 						</div>
-						<!-- <div class="modal-body"> -->
-						
-						<!-- 모달 속 상세내용 -->
-							<div class="col-md-12">
 
-								<div class="row">
-									<div class="col-md-6">
+						<div class="col-md-6">
 
-										<div class="owl-carousel owl-theme"
-											data-plugin-options="{'items': 1, 'margin': 10}">
-											<div>
-												<img alt="" height="300" class="img-responsive"
-													src="${ pageContext.request.contextPath }/resources/img/products/product-7.jpg">
-											</div>
-											<div>
-												<img alt="" height="300" class="img-responsive"
-													src="${ pageContext.request.contextPath }/resources/img/products/product-7-2.jpg">
-											</div>
-											<div>
-												<img alt="" height="300" class="img-responsive"
-													src="${ pageContext.request.contextPath }/resources/img/products/product-7-3.jpg">
-											</div>
-										</div>
+							<div class="summary entry-summary">
 
-									</div>
+								<h1 class="mb-none">
+									<strong>스테이크 & 치즈</strong>
+								</h1>
 
-									<div class="col-md-6">
-
-										<div class="summary entry-summary">
-
-											<h1 class="mb-none">
-												<strong>Blue Ladies Handbag</strong>
-											</h1>
-
-											<div class="review_num">
-												<span class="count" itemprop="ratingCount">2</span> reviews
-											</div>
-
-											<div title="Rated 5.00 out of 5" class="star-rating">
-												<span style="width: 100%"><strong class="rating">5.00</strong>
-													out of 5</span>
-											</div>
-
-											<p class="price">
-												<span class="amount">$22</span>
-											</p>
-
-											<p class="taller">푸짐한 스테이크</p>
-
-											<form enctype="multipart/form-data" method="post"
-												class="cart">
-												<div class="quantity">
-													<input type="button" class="minus" value="-">
-													<input type="text" class="input-text qty text" title="Qty"
-														value="1" name="quantity" min="1" step="1"> <input
-														type="button" class="plus" value="+">
-												</div>
-												<button href="#" class="btn btn-primary btn-icon">Add
-													to cart</button>
-											</form>
-
-											<div class="product_meta">
-												<span class="posted_in">Categories: <a rel="tag"
-													href="#">Accessories</a>, <a rel="tag" href="#">Bags</a>.
-												</span>
-											</div>
-
-										</div>
-
-
-									</div>
+								<div class="review_num">
+									<span class="count" itemprop="ratingCount">4</span> reviews
 								</div>
 
-								<div class="row">
-									<div class="col-md-12">
-										<div class="tabs tabs-product">
-											<ul class="nav nav-tabs">												
-												<li class="active"><a href="#productInfo" data-toggle="tab">Aditional
-														Information</a></li>												
-											</ul>
-											<div class="tab-content">												
-												<div class="tab-pane active" id="productInfo">
-													<table class="table table-striped mt-xl">
-														<tbody>
-															<tr>
-																<th>Size:</th>
-																<td>Unique</td>
-															</tr>
-															<tr>
-																<th>Colors</th>
-																<td>Red, Blue</td>
-															</tr>
-															<tr>
-																<th>Material</th>
-																<td>100% Leather</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>												
-											</div>
-										</div>
-									</div>
+								<div title="Rated 5.00 out of 5" class="star-rating">
+									<span style="width: 100%"><strong class="rating">4.50</strong>
+										out of 5</span>
 								</div>
 
-								<hr class="tall">
+								<p class="price">
+									<span class="amount">6,100원</span>
+								</p>
 
-								<h4 class="mb-md text-uppercase">
-									Related <strong>Products</strong>
-								</h4>
+								<p class="taller">푸짐한 스테이크에 살짝 녹은 치즈가 듬뿍! 보기만 해도 왜 사랑받는지 
+								아실 수 있을거에요. <br>스테이크의 달콤한 풍미와 풍부한 식감으로 모든 이들을 잡아끄는 맛입니다.</p>
 
-								<div class="row">
+								<form enctype="multipart/form-data" method="post" class="cart">
+									<div class="quantity">
+										<input type="button" class="minus" value="-"> <input
+											type="text" class="input-text qty text" title="Qty" value="1"
+											name="quantity" min="1" step="1"> <input
+											type="button" class="plus" value="+">
+									</div>
+									<button href="#" class="btn btn-primary btn-icon">담기</button>
+									<button href="#" class="btn btn-primary btn-icon">사기</button>
+								</form>
 
-									<ul class="products product-thumb-info-list">
-										<li class="col-sm-3 col-xs-12 product"><a
-											href="shop-product-sidebar.html"> <span class="onsale">Sale!</span>
-										</a> <span class="product-thumb-info"> <a
-												href="shop-cart.html" class="add-to-cart-product"> <span><i
-														class="fa fa-shopping-cart"></i> Add to Cart</span>
-											</a> <a href="shop-product-sidebar.html"> <span
-													class="product-thumb-info-image"> <span
-														class="product-thumb-info-act"> <span
-															class="product-thumb-info-act-left"><em>View</em></span>
-															<span class="product-thumb-info-act-right"><em><i
-																	class="fa fa-plus"></i> Details</em></span>
-													</span> <img alt="" class="img-responsive"
-														src="${ pageContext.request.contextPath }/resources/img/products/product-1.jpg">
-												</span>
-											</a> <span class="product-thumb-info-content"> <a
-													href="shop-product-sidebar.html">
-														<h4>Photo Camera</h4> <span class="price"> <del>
-																<span class="amount">$325</span>
-															</del> <ins>
-																<span class="amount">$299</span>
-															</ins>
-													</span>
-												</a>
-											</span>
-										</span></li>
-										<li class="col-sm-3 col-xs-12 product"><span
-											class="product-thumb-info"> <a href="shop-cart.html"
-												class="add-to-cart-product"> <span><i
-														class="fa fa-shopping-cart"></i> Add to Cart</span>
-											</a> <a href="shop-product-sidebar.html"> <span
-													class="product-thumb-info-image"> <span
-														class="product-thumb-info-act"> <span
-															class="product-thumb-info-act-left"><em>View</em></span>
-															<span class="product-thumb-info-act-right"><em><i
-																	class="fa fa-plus"></i> Details</em></span>
-													</span> <img alt="" class="img-responsive"
-														src="${ pageContext.request.contextPath }/resources/img/products/product-2.jpg">
-												</span>
-											</a> <span class="product-thumb-info-content"> <a
-													href="shop-product-sidebar.html">
-														<h4>Golf Bag</h4> <span class="price"> <span
-															class="amount">$72</span>
-													</span>
-												</a>
-											</span>
-										</span></li>
-										<li class="col-sm-3 col-xs-12 product"><span
-											class="product-thumb-info"> <a href="shop-cart.html"
-												class="add-to-cart-product"> <span><i
-														class="fa fa-shopping-cart"></i> Add to Cart</span>
-											</a> <a href="shop-product-sidebar.html"> <span
-													class="product-thumb-info-image"> <span
-														class="product-thumb-info-act"> <span
-															class="product-thumb-info-act-left"><em>View</em></span>
-															<span class="product-thumb-info-act-right"><em><i
-																	class="fa fa-plus"></i> Details</em></span>
-													</span> <img alt="" class="img-responsive"
-														src="${ pageContext.request.contextPath }/resources/img/products/product-3.jpg">
-												</span>
-											</a> <span class="product-thumb-info-content"> <a
-													href="shop-product-sidebar.html">
-														<h4>Workout</h4> <span class="price"> <span
-															class="amount">$60</span>
-													</span>
-												</a>
-											</span>
-										</span></li>
-										<li class="col-sm-3 col-xs-12 product"><span
-											class="product-thumb-info"> <a href="shop-cart.html"
-												class="add-to-cart-product"> <span><i
-														class="fa fa-shopping-cart"></i> Add to Cart</span>
-											</a> <a href="shop-product-sidebar.html"> <span
-													class="product-thumb-info-image"> <span
-														class="product-thumb-info-act"> <span
-															class="product-thumb-info-act-left"><em>View</em></span>
-															<span class="product-thumb-info-act-right"><em><i
-																	class="fa fa-plus"></i> Details</em></span>
-													</span> <img alt="" class="img-responsive"
-														src="${ pageContext.request.contextPath }/resources/img/products/product-4.jpg">
-												</span>
-											</a> <span class="product-thumb-info-content"> <a
-													href="shop-product-sidebar.html">
-														<h4>Luxury bag</h4> <span class="price"> <span
-															class="amount">$199</span>
-													</span>
-												</a>
-											</span>
-										</span></li>
-									</ul>
-
+								<div class="product_meta">
+									<span class="posted_in">Categories: <a rel="tag"
+										href="#">Steak</a>, <a rel="tag" href="#">Cheese</a>.
+									</span>
 								</div>
 
 							</div>
-						<!-- </div> -->
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default"
-								data-dismiss="modal">Close</button>
+
+
 						</div>
 					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="tabs tabs-product">
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#productInfo"
+										data-toggle="tab">Aditional Information</a></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane active" id="productInfo">
+										<table class="table table-striped mt-xl">
+											<tbody>
+												<tr>
+													<th>Size:</th>
+													<td>Unique</td>
+												</tr>
+												<tr>
+													<th>Colors</th>
+													<td>Red, Blue</td>
+												</tr>
+												<tr>
+													<th>Material</th>
+													<td>100% Leather</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<hr class="tall">
+
+							<h4 class="mb-md text-uppercase">
+								Related <strong>Products</strong>
+							</h4>
+
+							<div class="row">
+
+								<ul class="team-list sort-destination" data-sort-id="team">
+									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item leadership">
+										<span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
+											<span class="thumb-info-wrapper"> <a
+												href="about-me.html"> <img
+													src="${ pageContext.request.contextPath }/resources/img/team/team-1.jpg"
+													class="img-responsive" alt=""> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">John Doe</span> <span
+														class="thumb-info-type">CEO</span>
+												</span>
+											</a>
+										</span> <span class="thumb-info-caption"> <span
+												class="thumb-info-caption-text">Lorem ipsum dolor sit
+													amet, consectetur adipiscing elit. Cras ac ligula mi, non
+													suscipitaccumsan.</span> <span class="thumb-info-social-icons">
+													<a target="_blank" href="http://www.facebook.com"><i
+														class="fa fa-facebook"></i><span>Facebook</span></a> <a
+													href="http://www.twitter.com"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+													<a href="http://www.linkedin.com"><i
+														class="fa fa-linkedin"></i><span>Linkedin</span></a>
+											</span>
+										</span>
+									</span>
+									</li>
+									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item marketing">
+										<span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
+											<span class="thumb-info-wrapper"> <a
+												href="about-me.html"> <img
+													src="${ pageContext.request.contextPath }/resources/img/team/team-2.jpg"
+													class="img-responsive" alt=""> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">Jessica Doe</span> <span
+														class="thumb-info-type">Marketing</span>
+												</span>
+											</a>
+										</span> <span class="thumb-info-caption"> <span
+												class="thumb-info-caption-text">Lorem ipsum dolor sit
+													amet, consectetur adipiscing elit. Cras ac ligula mi, non
+													suscipitaccumsan.</span> <span class="thumb-info-social-icons">
+													<a target="_blank" href="http://www.facebook.com"><i
+														class="fa fa-facebook"></i><span>Facebook</span></a> <a
+													href="http://www.twitter.com"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+													<a href="http://www.linkedin.com"><i
+														class="fa fa-linkedin"></i><span>Linkedin</span></a>
+											</span>
+										</span>
+									</span>
+									</li>
+									<li
+										class="col-md-3 col-sm-6 col-xs-12 isotope-item development">
+										<span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
+											<span class="thumb-info-wrapper"> <a
+												href="about-me.html"> <img
+													src="${ pageContext.request.contextPath }/resources/img/team/team-3.jpg"
+													class="img-responsive" alt=""> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">Rick Edward Doe</span> <span
+														class="thumb-info-type">Developer</span>
+												</span>
+											</a>
+										</span> <span class="thumb-info-caption"> <span
+												class="thumb-info-caption-text">Lorem ipsum dolor sit
+													amet, consectetur adipiscing elit. Cras ac ligula mi, non
+													suscipitaccumsan.</span> <span class="thumb-info-social-icons">
+													<a target="_blank" href="http://www.facebook.com"><i
+														class="fa fa-facebook"></i><span>Facebook</span></a> <a
+													href="http://www.twitter.com"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+													<a href="http://www.linkedin.com"><i
+														class="fa fa-linkedin"></i><span>Linkedin</span></a>
+											</span>
+										</span>
+									</span>
+									</li>
+									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item design">
+										<span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
+											<span class="thumb-info-wrapper"> <a
+												href="about-me.html"> <img
+													src="${ pageContext.request.contextPath }/resources/img/team/team-4.jpg"
+													class="img-responsive" alt=""> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">Melinda Doe</span> <span
+														class="thumb-info-type">Design</span>
+												</span>
+											</a>
+										</span> <span class="thumb-info-caption"> <span
+												class="thumb-info-caption-text">Lorem ipsum dolor sit
+													amet, consectetur adipiscing elit. Cras ac ligula mi, non
+													suscipitaccumsan.</span> <span class="thumb-info-social-icons">
+													<a target="_blank" href="http://www.facebook.com"><i
+														class="fa fa-facebook"></i><span>Facebook</span></a> <a
+													href="http://www.twitter.com"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+													<a href="http://www.linkedin.com"><i
+														class="fa fa-linkedin"></i><span>Linkedin</span></a>
+											</span>
+										</span>
+									</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
 			</div>
+		</div>
+	</div>
 
 
 
@@ -586,46 +492,46 @@
 
 
 
-			<!-- Vendor -->
-			<script
-				src="${ pageContext.request.contextPath }/resources/vendor/jquery/jquery.min.js"></script>
-			<script
-				src="${ pageContext.request.contextPath }/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
-			<script
-				src="${ pageContext.request.contextPath }/resources/vendor/jquery.easing/jquery.easing.min.js"></script>
-			<script
-				src="${ pageContext.request.contextPath }/resources/vendor/jquery-cookie/jquery-cookie.min.js"></script>
-			<script
-				src="${ pageContext.request.contextPath }/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
-			<script
-				src="${ pageContext.request.contextPath }/resources/vendor/common/common.min.js"></script>
-			<script
-				src="${ pageContext.request.contextPath }/resources/vendor/jquery.validation/jquery.validation.min.js"></script>
-			<script
-				src="${ pageContext.request.contextPath }/resources/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
-			<script
-				src="${ pageContext.request.contextPath }/resources/vendor/jquery.gmap/jquery.gmap.min.js"></script>
-			<script
-				src="${ pageContext.request.contextPath }/resources/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
-			<script
-				src="${ pageContext.request.contextPath }/resources/vendor/isotope/jquery.isotope.min.js"></script>
-			<script
-				src="${ pageContext.request.contextPath }/resources/vendor/owl.carousel/owl.carousel.min.js"></script>
-			<script
-				src="${ pageContext.request.contextPath }/resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-			<script
-				src="${ pageContext.request.contextPath }/resources/vendor/vide/vide.min.js"></script>
+	<!-- Vendor -->
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/jquery/jquery.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/jquery.easing/jquery.easing.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/jquery-cookie/jquery-cookie.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/common/common.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/jquery.validation/jquery.validation.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/isotope/jquery.isotope.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/owl.carousel/owl.carousel.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath }/resources/vendor/vide/vide.min.js"></script>
 
-			<!-- Theme Base, Components and Settings -->
-			<script
-				src="${ pageContext.request.contextPath }/resources/js/theme.js"></script>
+	<!-- Theme Base, Components and Settings -->
+	<script
+		src="${ pageContext.request.contextPath }/resources/js/theme.js"></script>
 
-			<!-- Theme Custom -->
-			<script
-				src="${ pageContext.request.contextPath }/resources/js/custom.js"></script>
+	<!-- Theme Custom -->
+	<script
+		src="${ pageContext.request.contextPath }/resources/js/custom.js"></script>
 
-			<!-- Theme Initialization Files -->
-			<script
-				src="${ pageContext.request.contextPath }/resources/js/theme.init.js"></script>
+	<!-- Theme Initialization Files -->
+	<script
+		src="${ pageContext.request.contextPath }/resources/js/theme.init.js"></script>
 </body>
 </html>
