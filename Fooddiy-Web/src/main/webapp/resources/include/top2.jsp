@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<div class="header-body" style="background-color: green;">
+<div class="header-body" style="background-color: green; min-width: 150px;">
 	<div class="header-container container" >
 		<div class="header-row">
 			<!-- 로고  -->
@@ -13,9 +13,9 @@
 				</div>
 			</div>
 			<div class="header-column">
-				<nav class="header-nav-top hidden-xs">
+				<nav class="header-nav-top hidden-xs hidden-sm">
 					<ul class="nav nav-pills">
-						<li class="hidden-xs"><a href="about-us.html"> <!-- <i class="fa fa-angle-right"></i> -->
+						<li class="hidden-xs hidden-sm"><a href="about-us.html"> <!-- <i class="fa fa-angle-right"></i> -->
 								장바구니&nbsp;<img
 								alt="${ pageContext.request.contextPath }/장바구니.do"
 								src="${ pageContext.request.contextPath }/resources/img/binCartImg.png"

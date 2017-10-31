@@ -58,7 +58,7 @@
 	function doAction(type) {
 		switch (type) {
 		case 'W':
-			location.href = "<%= request.getContextPath() %>/notice/write.do";
+			location.href = ${ pageContext.request.contextPath} +"/notice/write.jsp";
 			break;
 		default:
 			break;
@@ -68,12 +68,12 @@
 </head>
 <body>
 	<div class="body">
-		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
-			<jsp:include page="/resources/include/top.jsp" />
+		<header id="header" class="header-no-min-height header-mobile-nav-only header-flex" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0'}">
+				<jsp:include page="/resources/include/top2.jsp"/>
 		</header>
-		
+
 		<div role="main" class="main">
-		
+
 			<section class="page-header">
 				<div class="container">
 					<div class="row">
@@ -91,53 +91,58 @@
 					</div>
 				</div>
 			</section>
-		
+
 			<div class="container">
-				<section class="section section-default">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<h4 class="mb-none">Subway 공지사항과 보도자료입니다.</h4><br>
-								<p class="mb-none">
-									Subway 공지사항과 보도자료입니다.
-								</p>
-							</div>
-						</div>
-					</div>
-				</section>
-				
+
 				<div class="row">
-					<div class="col-md-12">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="tabs tabs-vertical tabs-left tabs-navigation">
-									<ul class="nav nav-tabs col-sm-3">
-										<li class="active">
-											<a href="#tabsNavigation1" data-toggle="tab"><i class="fa fa-group"></i>공지사항</a>
-										</li>
-										<li>
-											<a href="#tabsNavigation2" data-toggle="tab"><i class="fa fa-file"></i>보도자료</a>
-										</li>
-									</ul>
+					<div class="col-md-2 hidden-xs">
+						<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+							<h4 class="heading-primary"><strong>커뮤니티 </strong></h4>
+
+							<ul class="nav nav-list mb-xlg sort-source" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
+								<li data-option-value=".websites"><a href="${ pageContext.request.contextPath }/notice/qna.jsp">자주하는 질문</a></li>
+								<li data-option-value=".logos"><a href="${ pageContext.request.contextPath }/notice/noticeList.jsp">공지사항</a></li>
+								<li data-option-value=".brands"><a href="${ pageContext.request.contextPath }/notice/suggestion.jsp">1:1 문의</a></li>
+								<li data-option-value=".medias"><a href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">SNS게시판</a></li>
+							</ul>
+						</aside>
+					</div>
+					<!-- START! -->
+					<div class="col-md-10">
+						<section class="section section-default">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-12">
+										<h4 class="mb-none">Subway 공지사항과 보도자료입니다.</h4>
+										<br>
+										<p class="mb-none">Subway 공지사항과 보도자료입니다.</p>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-8">
-								<div class="tab-pane tab-pane-navigation active" id="tabsNavigation1">
+						</section>
+						<div class="tabs tabs-bottom tabs-center tabs-simple">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#tabsNavigationSimple1"
+									data-toggle="tab">공지사항</a></li>
+								<li><a href="#tabsNavigationSimple2" data-toggle="tab">보도자료</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane active" id="tabsNavigationSimple1">
 									<div class="center">
 										<h4>공지사항</h4>
-										<hr>
 										<div class="col-md-12">
 											<div class="col-md-3" style="float: left;">
 												<select class="form-control">
-														<option value="title">제목</option>
-														<option value="content">내용</option>
-														<option value="title+content">제목+내용</option>
+													<option value="title">제목</option>
+													<option value="content">내용</option>
+													<option value="title+content">제목+내용</option>
 												</select>
 											</div>
 											<div class="col-md-3">
 												<form action="">
 													<div class="input-group input-group-lg">
-														<input class="form-control" type="text" name="search" id="search" placeholder="Search...">
+														<input class="form-control" type="text" name="search" id="search" placeholder="Search..."> 
 														<span class="input-group-btn">
 															<button type="submit" class="btn btn-primary btn-lg">
 																<i class="fa fa-search"></i>
@@ -146,71 +151,54 @@
 													</div>
 												</form>
 											</div>
-										</div>
-										<table class="table table-hover" style="width:80%">
-											<thead>
-												<tr>
-												<th>번호</th>
-												<th>제목</th>
-												<th>작성일</th>
-												<th>조회수</th>
-												</tr>
-											</thead>
-											<tbody>
-												<c:forEach items="${ noticeList }" var="notice">
+											<table class="table table-hover" width="80%">
+												<thead>
 													<tr>
-														<td>${ notice.no }</td>
-														<td>
-															<a href="${ pageContext.request.contextPath }/notice/${ notice.no }/detail.do">
-															<c:out value="${ notice.title }"/>
-															</a>
-														</td>
-														<td>${ notice.regDate }</td>
-														<td>${ notice.viewCnt }</td>
+													<th>번호</th>
+													<th>제목</th>
+													<th>작성일</th>
+													<th>조회수</th>
 													</tr>
-												</c:forEach>
-											</tbody>
-										</table>
-										<div class="center">
-											<div class="col-md-12">
-												<ul class="pagination pull-center">
-													<li>
-														<a href="#"><i class="fa fa-chevron-left"></i></a>
-													</li>
-													<li class="active">
-														<a href="#">1</a>
-													</li>
-													<li>
-														<a href="#">2</a>
-													</li>
-													<li>
-														<a href="#">3</a>
-													</li>
-													<li>
-														<a href="#"><i class="fa fa-chevron-right"></i></a>
-													</li>
-												</ul>
+												</thead>
+												<tbody>
+												</tbody>
+											</table>
+											<div class="center">
+												<div class="col-md-12">
+													<ul class="pagination pull-center">
+														<li><a href="#"><i class="fa fa-chevron-left"></i></a>
+														</li>
+														<li class="active"><a href="#">1</a></li>
+														<li><a href="#">2</a></li>
+														<li><a href="#">3</a></li>
+														<li><a href="#"><i class="fa fa-chevron-right"></i></a>
+														</li>
+													</ul>
+												</div>
+												<button type="button" class="btn btn-primary"
+													onclick="doAction('W')">글쓰기</button>
 											</div>
-											<button type="button" class="btn btn-primary" onclick="doAction('W')">글쓰기</button>
+											<div class="center">
+												<button type="button" class="btn btn-primary" onclick="doAction('L')">목록</button>
+											</div>
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane tab-pane-navigation" id="tabsNavigation2">
+								<div class="tab-pane" id="tabsNavigationSimple2">
 									<div class="center">
 										<h4>보도자료</h4>
-										<hr>
 										<div class="col-md-12">
-											<div class="col-md-3" style="float: left;;">
+											<div class="col-md-3" style="float: left;">
 												<select class="form-control">
-														<option value="title">제목</option>
-														<option value="content">내용</option>
-														<option value="title+content">제목+내용</option>
+													<option value="title">제목</option>
+													<option value="content">내용</option>
+													<option value="title+content">제목+내용</option>
 												</select>
 											</div>
 											<div class="col-md-3">
 												<form action="">
 													<div class="input-group input-group-lg">
-														<input class="form-control" type="text" name="search" id="search" placeholder="Search...">
+														<input class="form-control" type="text" name="search" id="search" placeholder="Search..."> 
 														<span class="input-group-btn">
 															<button type="submit" class="btn btn-primary btn-lg">
 																<i class="fa fa-search"></i>
@@ -219,68 +207,52 @@
 													</div>
 												</form>
 											</div>
-										</div>
-										<table class="table table-hover" style="width:80%">
-											<thead>
-												<tr>
-												<th>번호</th>
-												<th>제목</th>
-												<th>작성일</th>
-												<th>조회수</th>
-												</tr>
-											</thead>
-											<tbody>
-												<c:forEach items="${ noticeList }" var="notice">
+											<table class="table table-hover" width="80%">
+												<thead>
 													<tr>
-														<td>${ notice.no }</td>
-														<td>
-															<a href="${ pageContext.request.contextPath }/notice/${ notice.no }/detail.do">
-															<c:out value="${ notice.title }"/>
-															</a>
-														</td>
-														<td>${ notice.regDate }</td>
-														<td>${ notice.viewCnt }</td>
+													<th>번호</th>
+													<th>제목</th>
+													<th>작성일</th>
+													<th>조회수</th>
 													</tr>
-												</c:forEach>
-											</tbody>
-										</table>
-										<div class="center">
-											<div class="col-md-12">
-												<ul class="pagination pull-center">
-													<li>
-														<a href="#"><i class="fa fa-chevron-left"></i></a>
-													</li>
-													<li class="active">
-														<a href="#">1</a>
-													</li>
-													<li>
-														<a href="#">2</a>
-													</li>
-													<li>
-														<a href="#">3</a>
-													</li>
-													<li>
-														<a href="#"><i class="fa fa-chevron-right"></i></a>
-													</li>
-												</ul>
+												</thead>
+												<tbody>
+												</tbody>
+											</table>
+											<div class="center">
+												<div class="col-md-12">
+													<ul class="pagination pull-center">
+														<li><a href="#"><i class="fa fa-chevron-left"></i></a>
+														</li>
+														<li class="active"><a href="#">1</a></li>
+														<li><a href="#">2</a></li>
+														<li><a href="#">3</a></li>
+														<li><a href="#"><i class="fa fa-chevron-right"></i></a>
+														</li>
+													</ul>
+												</div>
+												<button type="button" class="btn btn-primary"
+													onclick="doAction('W')">글쓰기</button>
 											</div>
-											<button type="button" class="btn btn-primary" onclick="doAction('W')">글쓰기</button>
+											<div class="center">
+												<button type="button" class="btn btn-primary" onclick="doAction('L')">목록</button>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						<br>
 					</div>
 				</div>
-			<br>
 			</div>
 		</div>
-		
+
 		<footer id="footer">
-			<jsp:include page="/resources/include/bottom.jsp"/>
+			<jsp:include page="/resources/include/bottom.jsp" />
 		</footer>
 	</div>
-	
+
 	<!-- Vendor -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
