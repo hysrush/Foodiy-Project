@@ -408,11 +408,7 @@
 												<span class="amount">$22</span>
 											</p>
 
-											<p class="taller">Lorem ipsum dolor sit amet, consectetur
-												adipiscing elit. Sed tempus nibh sed elimttis adipiscing.
-												Fusce in hendrerit purus. Lorem ipsum dolor sit amet,
-												consectetur adipiscing elit. Sed tempus nibh sed elimttis
-												adipiscing. Fusce in hendrerit purus.</p>
+											<p class="taller">푸짐한 스테이크</p>
 
 											<form enctype="multipart/form-data" method="post"
 												class="cart">
