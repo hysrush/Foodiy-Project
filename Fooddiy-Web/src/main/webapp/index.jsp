@@ -53,20 +53,27 @@
 		
 		<!-- Head Libs -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
+		
+		<!-- 이미지 캐러셀 -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 	<body>
+	<div class="body">
 		<!-- <header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}"> -->
 		<header id="header" class="header-no-min-height header-mobile-nav-only header-flex" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0'}">
 				<jsp:include page="/resources/include/top2.jsp"/>
 		</header>
-		<div class="body">
+		
+			<!-- Slider부분 -->
 			<jsp:include page="/resources/include/slider.jsp"/>
-		</div>
+		
 		<footer id="footer">
 			<jsp:include page="/resources/include/bottom.jsp"/>
 		</footer>
-
+	</div>
 		<!-- Vendor -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.appear/jquery.appear.min.js"></script>

@@ -105,7 +105,7 @@
 									<div class="row">
 
 										<div class="masonry-loader masonry-loader-showing">
-											<ul class="products product-thumb-info-list" id = "breadSelect" data-plugin-masonry>
+											<ul class="products product-thumb-info-list" id="breadSelect" data-plugin-masonry>
 												<li class="col-md-3 col-sm-6 col-xs-12 product">
 													<span class="product-thumb-info"> 
 														<a href="#" class="add-to-cart-product"> 
@@ -274,94 +274,73 @@
 			src="${ pageContext.request.contextPath }/resources/js/theme.init.js"></script>
 
 		<script>
-			
-			$(document).ready(function() {
-				
-				
-				//	$('h1').hide();			//특정태그를 숨기는 명령어
-				//	$('#h01').hide();		//id = "h01"인 태그를 숨기는 명령어
-				//	$('.h01').hide(); 		//class = "h01"인 태그들 모두를 숨기는 명령어
-				//	$('h1.h01').hide();		//h1태그중에 class = "h01"인 태그를 모두 숨기는 명령어
-				//	$('*').hide();			//모든 태그를 숨기는 명령어 -> body태그만 숨겨지는것이 아니라 모든 파일에 있는 모든 태그에 적용된다
-				//	$('h1:first').hide(1000);	//css처럼 접근할 수 있다.
-				//	$('h1:last').hide(1000);
-				
-/* 				
-				$('.product-thumb-info').on({
-					"click" : function() {						
-						$(this).css({
-							
-							'border-style' : 'solid',
-							'border-width' : '2px',
-							'border-color': 'red'
-						});
-					}
-				}); */
-			
+        
+        $(document).ready(function() {
+           
+           
+           //   $('h1').hide();         //특정태그를 숨기는 명령어
+           //   $('#h01').hide();      //id = "h01"인 태그를 숨기는 명령어
+           //   $('.h01').hide();       //class = "h01"인 태그들 모두를 숨기는 명령어
+           //   $('h1.h01').hide();      //h1태그중에 class = "h01"인 태그를 모두 숨기는 명령어
+           //   $('*').hide();         //모든 태그를 숨기는 명령어 -> body태그만 숨겨지는것이 아니라 모든 파일에 있는 모든 태그에 적용된다
+           //   $('h1:first').hide(1000);   //css처럼 접근할 수 있다.
+           //   $('h1:last').hide(1000);
+           
+/*             
+           $('.product-thumb-info').on({
+              "click" : function() {                  
+                 $(this).css({
+                    
+                    'border-style' : 'solid',
+                    'border-width' : '2px',
+                    'border-color': 'red'
+                 });
+              }
+           }); */
+        
 
 
-				
- 				$('#breadSelect >').each(function () {
-					$(this).click(function () {
-						$(this).addClass("selected");	
-						$(this).siblings().children().css({
-							'border-width' : '0px'
-						});
-						$(this).siblings().removeClass("selected");
-						
-						$(this).children().css({
-							
-							'border-style' : 'solid',
-							'border-width' : '1px',
-							'border-color': 'green'
-							
-						});
-						
-					});
-				});  
-					
-/*  				$('product-thumb-info').each(function () {
-					$(this).click(function () {
-						$(this).addClass("selected");	
-						$(this).siblings().children().css({
-							'border-width' : '0px'
-						});
-						$(this).siblings().removeClass("selected");
-						
-						$(this).children().css({
-							
-							'border-style' : 'solid',
-							'border-width' : '2px',
-							'border-color': 'red'
-							
-						});
-						
-					});
-				});  */
+           
+            $('#breadSelect >').each(function () {
+              $(this).click(function () {
+                 $(this).addClass("selected");   
+                 $(this).siblings().children().css({
+                    'border-width' : '0px'
+                 });
+                 $(this).siblings().removeClass("selected");
+                 
+                 $(this).children().css({
+                    
+                    'border-style' : 'solid',
+                    'border-width' : '1px',
+                    'border-color': 'green'
+                    
+                 });
+                 
+              });
+           });  
+              
+/*              $('product-thumb-info').each(function () {
+              $(this).click(function () {
+                 $(this).addClass("selected");   
+                 $(this).siblings().children().css({
+                    'border-width' : '0px'
+                 });
+                 $(this).siblings().removeClass("selected");
+                 
+                 $(this).children().css({
+                    
+                    'border-style' : 'solid',
+                    'border-width' : '2px',
+                    'border-color': 'red'
+                    
+                 });
+                 
+              });
+           });  */
 
-				});
-			
-			
+           });	
 				
-				
-/* 				$('.products product-thumb-info-list li').click(function{
-					
-						$(this).addClass("selected");	
-						$(this).siblings().children().css({
-							'border-width' : '0px'
-						});
-						$(this).siblings().removeClass("selected");
-						
-						$(this).children().css({
-							
-							'border-style' : 'solid',
-							'border-width' : '2px',
-							'border-color': 'red'
-						
-						});
-				});
-					
-				}); */
 				
 		</script>
 		

@@ -54,27 +54,12 @@
 
 		<!-- Head Libs -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
-
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> 
-	
-	<!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	
-	<!-- 달력 css -->
-	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-  	<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script>
-	<script src="<%= request.getContextPath() %>/resources/js/bootstrap-datepicker.kr.js" charset="UTF-8"></script>
-	<link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/resources/css/datepicker3.css" />
-    <link rel="stylesheet" href="<%= request.getContextPath() %>/resources/jquery-ui-1.12.1/jquery-ui.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker3.min.css">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> 
 
 <script type="text/javascript">
 	function doAction(type) {
@@ -92,25 +77,12 @@
 	}
 </script>
 
-<!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
-<script src="<%= request.getContextPath() %>/resources/vendor/bootstrap/js/bootstrap.min.js">
-	$(document).ready(function(){
-		$('.input-group.date').datepicker({
-	        calendarWeeks: false,
-	        todayHighlight: true,
-	        autoclose: true,
-	        format: "yyyy/mm/dd",
-	        language: "kr"
-	    });
-		
-	});
-</script>
 </head>
 <body>
-	<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
-		<jsp:include page="/resources/include/top.jsp" />
-	</header>
 	<div class="body">
+		<header id="header" class="header-no-min-height header-mobile-nav-only header-flex" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0'}">
+				<jsp:include page="/resources/include/top2.jsp"/>
+		</header>
 		<div role="main" class="main">
 		
 			<section class="page-header">
@@ -132,44 +104,52 @@
 			</section>
 		
 			<div class="container">
-				<section class="section section-default">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<h4 class="mb-none">귀한 말씀 들려 주십시오. 작은 소리도 듣겠습니다.</h4><br>
-								<p class="mb-none">
-									Subway에서는 고객 여러분의 즐겁고 행복한 시간을 위해 정성을 다하고 있습니다.<br>
-									만족스러운 서비스였는지, 불만스러운 점은 없으셨는지 귀한 의견을 들려주시기 바랍니다. 보다 나은 서비스로 보답하겠습니다.<br>
-									[ 1:1 문의 운영시간 ] 월~금 09:00~17:00 (토/일요일, 공휴일 휴무) / 접수하신 글은 3개월만 보관됩니다.
-								</p>
-							</div>
-						</div>
-					</div>
-				</section>
-				
 				<div class="row">
-					<div class="col-md-12">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="tabs tabs-vertical tabs-left tabs-navigation">
-									<ul class="nav nav-tabs col-sm-3">
-										<li class="active">
-											<a href="#tabsNavigation1" data-toggle="tab"><i class="fa fa-group"></i>1:1 문의하기&nbsp;&nbsp;</a>
-										</li>
-										<li>
-											<a href="#tabsNavigation2" data-toggle="tab"><i class="fa fa-file"></i>나의 문의내역&nbsp;&nbsp;</a>
-										</li>
-									</ul>
+					<div class="col-md-2 hidden-xs">
+						<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+							<h4 class="heading-primary"><strong>커뮤니티 </strong></h4>
+
+							<ul class="nav nav-list mb-xlg sort-source" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
+								<li data-option-value=".websites"><a href="${ pageContext.request.contextPath }/notice/qna.jsp">자주하는 질문</a></li>
+								<li data-option-value=".logos"><a href="${ pageContext.request.contextPath }/notice/noticeList.jsp">공지사항</a></li>
+								<li data-option-value=".brands"><a href="${ pageContext.request.contextPath }/notice/suggestion.jsp">1:1 문의</a></li>
+								<li data-option-value=".medias"><a href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">SNS게시판</a></li>
+							</ul>
+						</aside>
+					</div>
+					<!-- START! -->
+					<div class="col-md-10">
+						<section class="section section-default">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-10">
+										<h4 class="mb-none">귀한 말씀 들려 주십시오. 작은 소리도 듣겠습니다.</h4><br>
+										<p class="mb-none">
+											Subway에서는 고객 여러분의 즐겁고 행복한 시간을 위해 정성을 다하고 있습니다.<br>
+											만족스러운 서비스였는지, 불만스러운 점은 없으셨는지 귀한 의견을 들려주시기 바랍니다. 보다 나은 서비스로 보답하겠습니다.<br>
+											[ 1:1 문의 운영시간 ] 월~금 09:00~17:00 (토/일요일, 공휴일 휴무) / 접수하신 글은 3개월만 보관됩니다.
+										</p>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-8">
-								<div class="tab-pane tab-pane-navigation active" id="tabsNavigation1">
+						</section>
+						<div class="tabs tabs-bottom tabs-center tabs-simple">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<a href="#tabsNavigationSimple1" data-toggle="tab">1:1 문의하기</a>
+								</li>
+								<li>
+									<a href="#tabsNavigationSimple2" data-toggle="tab">나의 문의내역</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane active" id="tabsNavigationSimple1">
 									<div class="center">
 										<h4>1:1 문의하기</h4>
-										<form method="POST" >
-											<table class="table table-bordered" width="80%">
-												<tr>
-													<div class="form-group" align="left">
+										<div class="form-group" align="left">
+											<form method="POST">
+												<table class="table table-bordered" width="80%">
+													<tr>
 														<td>
 															<label for="">분야</label>
 														</td>
@@ -183,10 +163,8 @@
 																<option value="">기타</option>
 															</select>
 														</td>
-													</div>
-												</tr>
-												<tr>
-													<div class="form-group" align="left">
+													</tr>
+													<tr>
 														<td>
 															<label for="email">답변 메일</label>
 														</td>
@@ -205,10 +183,8 @@
 																<option value="">yahoo.co.kr</option>
 															</select>
 														</td>
-													</div>
-												</tr>
-												<tr>
-													<div class="form-group" align="left">
+													</tr>
+													<tr>
 														<td>
 															<label for="email">연락처</label>
 														</td>
@@ -226,10 +202,8 @@
 															<span style="float: left;">&nbsp;&nbsp;-&nbsp;&nbsp;</span>
 															<input path="#" type="text" class="form-control" id="phone3" placeholder="마지막번호" style="width: 30%; float: left;"/>
 														</td>
-													</div>
-												</tr>
-												<tr>
-													<div class="form-group" align="left">
+													</tr>
+													<tr>
 														<td>
 															<label for="email">장소</label>
 														</td>
@@ -250,10 +224,8 @@
 	       														</div>
 															</div>
        													</td>
-													</div>
-												</tr>
-												<tr>
-													<div class="form-group" align="left">
+													</tr>
+													<tr>
 														<td>
 															<label for="title">제목</label>
 														</td>
@@ -264,10 +236,8 @@
 															<%-- <form:form errors path="title" class="form-control"></form:errors> --%>
 															</form>
 														</td>
-													</div>
-												</tr>
-												<tr>
-													<div class="form-group" align="left">
+													</tr>
+													<tr>
 														<td>
 															<label for="content">내용</label>
 														</td>
@@ -276,10 +246,8 @@
 															<%-- <form type="textarea" path="content" class="form-control" rows="5" id="comment" placeholder="contents"/> --%>
 															<%-- <form:errors path="content" class="form-control"></form:errors> --%>
 														</td>
-													</div>
-												</tr>
-												<tr>
-													<div class="form-group" align="left">
+													</tr>
+													<tr>
 														<td>
 															<label for="content">파일첨부</label>
 														</td>
@@ -288,10 +256,10 @@
 															파일첨부는 아래의 파일만 등록이 가능하며 최대 5개(1개당 최대2MB), 총 10MB까지 등록이 가능합니다.<br>
 															(등록 가능 확장자 : jpg, jpeg, png, gif, zip, doc, docx, ppt, pptx, xls, xlsx, hwp)
 														</td>
-													</div>
-												</tr>
+													</tr>
 												</table>
-										</form>
+											</form>
+										</div>
 									</div>
 									<section class="section section-default">
 										<div class="row">
@@ -315,7 +283,7 @@
 										<button type="submit" class="btn btn-default">등록</button>
 									</div>
 								</div>
-								<div class="tab-pane tab-pane-navigation" id="tabsNavigation2">
+								<div class="tab-pane" id="tabsNavigationSimple2">
 									<div class="center">
 										<h4>나의 문의내역</h4>
 										<table class="table table-hover" width="80%">
@@ -328,18 +296,6 @@
 												</tr>
 											</thead>
 											<tbody>
-												<c:forEach items="${ noticeList }" var="notice">
-													<tr>
-														<td>${ notice.no }</td>
-														<td>
-															<a href="${ pageContext.request.contextPath }/notice/${ notice.no }/detail.do">
-															<c:out value="${ notice.title }"/>
-															</a>
-														</td>
-														<td>${ notice.regDate }</td>
-														<td>${ notice.viewCnt }</td>
-													</tr>
-												</c:forEach>
 											</tbody>
 										</table>
 										<div class="center">
@@ -381,35 +337,36 @@
 		</footer>
 	</div>
 
-		<!-- Vendor -->
-		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easing/jquery.easing.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery-cookie/jquery-cookie.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/common/common.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.validation/jquery.validation.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.gmap/jquery.gmap.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/isotope/jquery.isotope.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/owl.carousel.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/vide/vide.min.js"></script>
-		
-		<!-- Theme Base, Components and Settings -->
-		<script src="${ pageContext.request.contextPath}/resources/js/theme.js"></script>
-		
-		<!-- Current Page Vendor and Views -->
-		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/js/views/view.home.js"></script>
-		
-		<!-- Theme Custom -->
-		<script src="${ pageContext.request.contextPath}/resources/js/custom.js"></script>
-		
-		<!-- Theme Initialization Files -->
-		<script src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
+	<!-- Vendor -->
+	<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
+	<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
+	<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easing/jquery.easing.min.js"></script>
+	<script src="${ pageContext.request.contextPath}/resources/vendor/jquery-cookie/jquery-cookie.min.js"></script>
+	<script src="${ pageContext.request.contextPath}/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="${ pageContext.request.contextPath}/resources/vendor/common/common.min.js"></script>
+	<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.validation/jquery.validation.min.js"></script>
+	<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+	<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+	<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+	<script src="${ pageContext.request.contextPath}/resources/vendor/isotope/jquery.isotope.min.js"></script>
+	<script src="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/owl.carousel.min.js"></script>
+	<script src="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="${ pageContext.request.contextPath}/resources/vendor/vide/vide.min.js"></script>
+	
+	<!-- Theme Base, Components and Settings -->
+	<script src="${ pageContext.request.contextPath}/resources/js/theme.js"></script>
+	
+	<!-- Current Page Vendor and Views -->
+	<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<script src="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
+	<script src="${ pageContext.request.contextPath}/resources/js/views/view.home.js"></script>
+	
+	<!-- Theme Custom -->
+	<script src="${ pageContext.request.contextPath}/resources/js/custom.js"></script>
+	
+	<!-- Theme Initialization Files -->
+	<script src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
+	
 </body>
 </html>

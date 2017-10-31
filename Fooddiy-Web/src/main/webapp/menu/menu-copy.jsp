@@ -80,9 +80,8 @@
 </head>
 <body>
 	<div class="body">
-		<header id="header"
-			data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
-			<jsp:include page="/resources/include/top.jsp" />
+		<header id="header" class="header-no-min-height header-mobile-nav-only header-flex" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0'}">
+				<jsp:include page="/resources/include/top2.jsp"/>
 		</header>
 		<div role="main" class="main">
 			<section class="page-header">
@@ -131,30 +130,8 @@
 						<div class="row">
 							<div
 								class="sort-destination-loader sort-destination-loader-showing">
-								<ul class="portfolio-list sort-destination" data-sort-id="portfolio">
-									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item brands">
-										<div class="portfolio-item" data-toggle="modal"
-											data-target="#largeModal">
-											<!-- modal로 넘어가는 부분 -->
-											<!-- <a href="portfolio-single-small-slider.html"> -->
-											<span class="thumb-info thumb-info-lighten"> <span
-												class="thumb-info-wrapper"> <img
-													src="${ pageContext.request.contextPath }/resources/img/projects/project.jpg"
-													class="img-responsive" alt=""> <span
-													class="thumb-info-title"> <span
-														class="thumb-info-inner">Presentation</span> <span
-														class="thumb-info-type">Brand</span>
-												</span> <span class="thumb-info-action"> <span
-														class="thumb-info-action-icon"><i
-															class="fa fa-link"></i></span>
-												</span>
-											</span>
-											</span> </a>
-										</div>
-									</li>									
-									<li class="col-xs-3 col-sm-6 col-md-4 isotope-item logos">
-										<div class="portfolio-item">
-											<a href="portfolio-single-small-slider.html"> <span data-sort-id="portfolio">																	
+								<ul class="portfolio-list sort-destination"
+									data-sort-id="portfolio">																	
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
 										<div class="portfolio-item" data-toggle="modal" data-target="#largeModal">
 											 <span
@@ -430,11 +407,7 @@
 												<span class="amount">$22</span>
 											</p>
 
-											<p class="taller">Lorem ipsum dolor sit amet, consectetur
-												adipiscing elit. Sed tempus nibh sed elimttis adipiscing.
-												Fusce in hendrerit purus. Lorem ipsum dolor sit amet,
-												consectetur adipiscing elit. Sed tempus nibh sed elimttis
-												adipiscing. Fusce in hendrerit purus.</p>
+											<p class="taller">푸짐한 스테이크</p>
 
 											<form enctype="multipart/form-data" method="post"
 												class="cart">
