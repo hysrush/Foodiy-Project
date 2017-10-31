@@ -73,9 +73,8 @@
 </head>
 <body>
 	<div class="body">
-		<header id="header"
-			data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
-			<jsp:include page="/resources/include/top2.jsp" />
+		<header id="header" class="header-no-min-height header-mobile-nav-only header-flex" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0'}">
+				<jsp:include page="/resources/include/top2.jsp"/>
 		</header>
 
 		<div role="main" class="main">
@@ -101,7 +100,7 @@
 			<div class="container">
 
 				<div class="row">
-					<div class="col-md-2">
+					<div class="col-md-2 hidden-xs">
 						<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
 							<h4 class="heading-primary"><strong>커뮤니티 </strong></h4>
 
