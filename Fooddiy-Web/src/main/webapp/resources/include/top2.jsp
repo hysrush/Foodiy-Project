@@ -38,7 +38,7 @@
 							<ul class="nav nav-pills" id="mainNav">
 								<li class="dropdown active"><a class="dropdown-toggle" href="#"> Menu </a>
 									<ul class="dropdown-menu">
-										<li><a href="${ pageContext.request.contextPath}/menu/menu.jsp">전체 메뉴</a></li>
+										<li><a href="${ pageContext.request.contextPath}/menu/menu2.jsp">전체 메뉴</a></li>
 										<li class="dropdown-submenu"><a href="#">세트 메뉴</a>
 											<ul class="dropdown-menu">
 												<li><a href="index-classic.html"
