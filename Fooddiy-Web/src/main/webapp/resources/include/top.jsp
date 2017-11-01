@@ -144,6 +144,10 @@
 											<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/member/login.jsp">
 												<i class="fa fa-user"></i> Sign In</a>
 										</li>
+										<li class="dropdown dropdown-mega dropdown-mega-signin signin" id="headerAccount">
+											<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/member/signUp.jsp">
+												<i class="fa fa-user"></i> Sign UP</a>
+										</li>
 									</c:when>
 									<c:otherwise>
 										<li
