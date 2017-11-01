@@ -107,7 +107,7 @@
 								<h4 class="heading-primary">MENU</h4>
 								<ul class="nav nav-list mb-xlg">
 									<li class="active"><a href="#">전체메뉴</a></li>
-									<li class="active"><a href="#">프리미엄</a></li>
+									<li><a href="#">프리미엄</a></li>
 									<li><a href="#">베스트</a></li>
 									<li><a href="#">신제품</a></li>
 									<li><a href="#">사이드 음료</a></li>
