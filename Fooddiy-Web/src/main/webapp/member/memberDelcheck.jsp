@@ -112,15 +112,15 @@
 					</div>
 				</section>
 		
-		
-		<div style="margin-left: 32%; margin-top: 5%; margin-bottom: 5%" class="container">
+		<div align="left" class="container">
+		<div style="margin-left: 7%; margin-top: 5%; margin-bottom: 5%" class="container">
 
 			<h2>
 				<strong>회원탈퇴</strong>
 			</h2>
 
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-md-8 col-sm-12 col-xs-12">
 					<p class="lead">회원탈퇴 회원탈퇴 전 안내사항을 꼭 확인해주세요. 탈퇴 후 회원님의 이용정보가
 						삭제되어 복구 불가능하오니 신중히 선택하시기 바랍니다. <br/><br/><h4><strong>탈퇴 안내</strong></h4> 회원탈퇴를 신청하기 전에 안내 사항을 꼭
 						확인해주세요. 사용하고 계신 아이디(hysrush)는 탈퇴 할 경우 <strong class="heading-secondary">재사용 및 복구</strong>가 불가능합니다. 탈퇴한 아이디는 본인과
@@ -143,7 +143,7 @@
 			</div>
 		</div>
 	</div>
-
+</div>
 
 	<!-- ---------------------------------------------------------------------------------------------- -->
 	<div>

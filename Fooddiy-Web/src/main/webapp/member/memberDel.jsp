@@ -24,6 +24,19 @@
 		<!-- Web Fonts  -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
 
+<<<<<<< HEAD
+<!-- Vendor CSS -->
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath }/resources/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath }/resources/vendor/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath }/resources/vendor/animate/animate.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath }/resources/vendor/simple-line-icons/css/simple-line-icons.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath }/resources/vendor/owl.carousel/assets/owl.carousel.min.css">
+=======
 		<!-- Vendor CSS -->
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/font-awesome/css/font-awesome.min.css">
@@ -32,6 +45,7 @@
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.carousel.min.css">
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.theme.default.min.css">
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/magnific-popup.min.css">
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 
 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme.css">
@@ -102,10 +116,10 @@
 			
 			
 			<div class="row">
-						<div class="col-md-12">
+						<div class="c col-sm-11 col-xs-11">
 							<div class="featured-boxes">
 								<div class="row">
-									<div style="margin-left: 34%; margin-top: 5%; margin-bottom: 5%" class="col-sm-4">
+									<div  style=" margin-left: 10%; margin-top: 5%; margin-bottom: 5%" class="col-md-4">
 										<div class="featured-box featured-box-primary align-left mt-xlg">
 											 <div class="box-content">
 												<h4 class="heading-primary text-uppercase mb-md">안전한 회원탈퇴를 위해 아이디와 비밀번호를 입력하세요.</h4>
