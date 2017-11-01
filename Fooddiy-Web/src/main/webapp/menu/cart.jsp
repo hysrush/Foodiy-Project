@@ -52,18 +52,14 @@
 	<div class="body">
 			<header id="header"
 				data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
-				<jsp:include page="/resources/include/top.jsp" />
+				<jsp:include page="/resources/include/top3.jsp" />
 			</header>
 
 
 			<div role="main" class="main shop">
 
 				<div class="container">				
-					<div class="row">
-						<div class="col-md-12">
-							<hr class="tall">
-						</div>
-					</div>
+
 
 					<div class="row">
 						<div class="col-md-12">
@@ -72,13 +68,18 @@
 								<div class="row">
 								
 									<div class="row">
-										<div class="col-md-6">
+										<div class="col-md-6 cart-title">
 											<h2 class="mb-none">
 												<strong>장바구니</strong>
 											</h2>
 										</div>
 									</div>	
 									
+									<div class = "row">
+										<div class="col-md-12">
+											<hr style="size: 90%">
+										</div>
+									</div>
 									
 										
 									<ul class="comment_list mt25">
