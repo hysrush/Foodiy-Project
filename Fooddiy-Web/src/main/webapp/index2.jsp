@@ -54,7 +54,7 @@
 		<!-- 이미지 캐러셀 -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 		
 		<!-- Head Libs -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
@@ -100,9 +100,10 @@
 		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 		<script src="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/js/views/view.home.js"></script>
 		
 		<!-- Current Page Vendor and Views -->
-		<script src="${ pageContext.request.contextPath}/resources/js/views/view.contact.js"></script>
+		 <script src="${ pageContext.request.contextPath}/resources/js/views/view.contact.js"></script> 
 
 		<!-- Demo -->
 		<script src="${ pageContext.request.contextPath}/resources/js/demos/demo-shop-9.js"></script>
@@ -112,6 +113,8 @@
 		
 		<!-- Theme Initialization Files -->
 		<script src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
+		
+		
 		
 	</body>
 </html>

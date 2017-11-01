@@ -224,66 +224,40 @@
 										<div class="row">
 											<div class="col-md-8">
 												<div class="row">
-													<div class="col-md-4">
-														<a href="demo-shop-9-category-4col.html" class="cat-img"><img
-															src="${ pageContext.request.contextPath}/resources/img/demos/shop/cat-tv.png" alt="Category Name"></a>
-
-														<a href="#" class="dropdown-mega-sub-title">베스트 SIGNATURE</a>
-														<ul class="dropdown-mega-sub-nav">
-															<li><a href="demo-shop-9-category-4col.html">TV,
-																	Audio</a></li>
-															<li><a href="demo-shop-9-category-4col.html">Computers
-																	&amp; Tablets</a></li>
-															<li><a href="demo-shop-9-category-4col.html">Home
-																	Office Equipments</a></li>
-															<li><a href="demo-shop-9-category-4col.html">GPS
-																	Navigation</a></li>
-															<li><a href="demo-shop-9-category-4col.html">Car
-																	Video, Audio &amp; GPS</a></li>
-															<li><a href="demo-shop-9-category-4col.html">Radios
-																	&amp; Clock Radios</a></li>
-														</ul>
+													<div class="col-md-3">
+														<a href="#" class="cat-img">
+														<img src="${ pageContext.request.contextPath}/resources/img/demos/shop/cat-tv.png" alt="Category Name"></a>
+														<a href="#" class="dropdown-mega-sub-title" style="font-size: 10pt; font-weight: bold;">클래식<br>CLASSICS</a>
 													</div>
-													<div class="col-md-4">
-														<a href="demo-shop-9-category-4col.html" class="cat-img"><img
-															src="${ pageContext.request.contextPath}/resources/img/demos/shop/cat-camera.png"
-															alt="Category Name"></a> <a
-															href="demo-shop-9-category-4col.html"
-															class="dropdown-mega-sub-title">Cameras</a>
-														<ul class="dropdown-mega-sub-nav">
-															<li><a href="demo-shop-9-category-4col.html">Cell
-																	Phones &amp; Accessories</a></li>
-															<li><a href="demo-shop-9-category-4col.html">Cameras
-																	&amp; Photo</a></li>
-															<li><a href="demo-shop-9-category-4col.html">Photo
-																	Accessories</a></li>
-															<li><a href="demo-shop-9-category-4col.html">IP
-																	Phones</a></li>
-															<li><a href="demo-shop-9-category-4col.html">Samsung
-																	Galaxy Phones</a></li>
-															<li><a href="demo-shop-9-category-4col.html">iPad
-																	&amp; Android Tablets</a></li>
-														</ul>
+													<div class="col-md-3">
+														<a href="#" class="cat-img">
+														<img src="${ pageContext.request.contextPath}/resources/img/demos/shop/cat-tv.png" alt="Category Name"></a>
+														<a href="#" class="dropdown-mega-sub-title" style="font-size: 10pt; font-weight: bold;">베스트<br>SIGNATURE</a>
 													</div>
-													<div class="col-md-4">
-														<a href="demo-shop-9-category-4col.html" class="cat-img"><img
-															src="${ pageContext.request.contextPath}/resources/img/demos/shop/cat-game.png" alt="Category Name"></a>
-														<a href="demo-shop-9-category-4col.html"
-															class="dropdown-mega-sub-title">Games</a>
-														<ul class="dropdown-mega-sub-nav">
-															<li><a href="demo-shop-9-category-4col.html">e-Book
-																	Readers</a></li>
-															<li><a href="demo-shop-9-category-4col.html">Video
-																	Games &amp; Consolers</a></li>
-															<li><a href="demo-shop-9-category-4col.html">Printers
-																	&amp; Scanners</a></li>
-															<li><a href="demo-shop-9-category-4col.html">Digital
-																	Picture Frames</a></li>
-															<li><a href="demo-shop-9-category-4col.html">3D
-																	Fashion Games</a></li>
-															<li><a href="demo-shop-9-category-4col.html">Game
-																	Machine &amp; Devices</a></li>
-														</ul>
+													<div class="col-md-3">
+														<a href="#" class="cat-img">
+														<img src="${ pageContext.request.contextPath}/resources/img/demos/shop/cat-tv.png" alt="Category Name"></a>
+														<a href="#" class="dropdown-mega-sub-title" style="font-size: 10pt; font-weight: bold;">추천메뉴<br>FAVORITES</a>
+													</div>
+													<div class="col-md-3">
+														<a href="#" class="cat-img">
+														<img src="${ pageContext.request.contextPath}/resources/img/demos/shop/cat-tv.png" alt="Category Name"></a>
+														<a href="#" class="dropdown-mega-sub-title" style="font-size: 10pt; font-weight: bold;">프리미엄<br>PREMIUM</a>
+													</div>
+													<div class="col-md-3">
+														<a href="#" class="cat-img">
+														<img src="${ pageContext.request.contextPath}/resources/img/demos/shop/cat-tv.png" alt="Category Name"></a>
+														<a href="#" class="dropdown-mega-sub-title" style="font-size: 10pt; font-weight: bold;">음료&추가<br>Drink&Extras</a>
+													</div>
+													<div class="col-md-3">
+														<a href="#" class="cat-img">
+														<img src="${ pageContext.request.contextPath}/resources/img/demos/shop/cat-tv.png" alt="Category Name"></a>
+														<a href="#" class="dropdown-mega-sub-title" style="font-size: 10pt; font-weight: bold;">찹샐러드<br>Chopped Salads</a>
+													</div>
+													<div class="col-md-3">
+														<a href="#" class="cat-img">
+														<img src="${ pageContext.request.contextPath}/resources/img/demos/shop/cat-tv.png" alt="Category Name"></a>
+														<a href="#" class="dropdown-mega-sub-title" style="font-size: 10pt; font-weight: bold;">아침식사<br>Breakfast</a>
 													</div>
 												</div>
 											</div>
