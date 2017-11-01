@@ -101,19 +101,18 @@
 				</div>
 			</section>
 			<div class="container">
-				<div class="row">
+				<div class="row">		
 					<div class="col-md-3">
-						<aside class="sidebar">
-							<br>
-							<h4 class="heading-primary">MENU</h4>
-							<ul class="nav nav-list mb-xlg">
-								<li><a href="#">전체메뉴</a></li>
-								<li class="active"><a href="#">프리미엄</a></li>
-								<li><a href="#">베스트</a></li>
-								<li><a href="#">신제품</a></li>
-								<li><a href="#">사이드 음료</a></li>
-							</ul>
-						</aside>
+							<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+								<h4 class="heading-primary">MENU</h4>
+								<ul class="nav nav-list mb-xlg">
+									<li class="active"><a href="#">전체메뉴</a></li>
+									<li class="active"><a href="#">프리미엄</a></li>
+									<li><a href="#">베스트</a></li>
+									<li><a href="#">신제품</a></li>
+									<li><a href="#">사이드 음료</a></li>
+								</ul>
+							</aside>
 					</div>
 					<div class="col-md-9">
 						<div role="main" class="main shop">
@@ -121,9 +120,8 @@
 							<div class="container">
 
 								<div class="row">
-									<div class="col-md-12">
-										<hr class="tall">
-									</div>
+									
+									
 
 									<div class="row">
 										<div class="col-md-6">
