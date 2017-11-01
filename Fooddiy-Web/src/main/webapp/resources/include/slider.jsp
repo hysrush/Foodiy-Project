@@ -53,7 +53,7 @@
 				<div class="col-xs-6 col-md-6">
 				<br/><br/><br/>
 				<!-- 슬라이드 시작 -->	 
-					<div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel" style="align:center; width:500px; position:inherit;">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="align:center; width:500px; position:inherit;">
 					               <ol class="carousel-indicators">
 					                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 					                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -146,7 +146,7 @@
 					</div><!-- 슬라이드 마침 -->
 					<hr/>
 					<!-- 2번째 슬라이드 시작 -->
-					<div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel" style="position:inherit; width:500px;">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="position:inherit; width:500px;">
 						<ol class="carousel-indicators">
 					    	<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
