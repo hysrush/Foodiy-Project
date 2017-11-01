@@ -80,8 +80,10 @@
 </head>
 <body>
 	<div class="body">
-		<header id="header" class="header-no-min-height header-mobile-nav-only header-flex" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0'}">
-				<jsp:include page="/resources/include/top2.jsp"/>
+		<header id="header"
+			class="header-no-min-height header-mobile-nav-only header-flex"
+			data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0'}">
+			<jsp:include page="/resources/include/top2.jsp" />
 		</header>
 		<div role="main" class="main">
 			<section class="page-header">
@@ -135,16 +137,17 @@
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
-											<span class="thumb-info thumb-info-lighten">
-											<span class="thumb-info-wrapper">
-											<img src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
-													class="img-responsive" alt="" style="margin-top:50px; margin-bottom:50px">
-													<span class="thumb-info-title">
-													<span class="thumb-info-inner">스테이크 & 치즈</span>
-													<span class="thumb-info-type">6,100</span>
-												</span>
-												<span class="thumb-info-action">
-												<span class="thumb-info-action-icon"><i class="fa fa-shopping-basket"></i></span></span>
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">스테이크 & 치즈</span> <span
+														class="thumb-info-type">6,100</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
+															class="fa fa-shopping-basket"></i></a></span></span>
 											</span>
 											</span>
 										</div>
@@ -152,16 +155,17 @@
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
-											<span class="thumb-info thumb-info-lighten">
-											<span class="thumb-info-wrapper">
-											<img src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
-													class="img-responsive" alt="" style="margin-top:50px; margin-bottom:50px">
-													<span class="thumb-info-title">
-													<span class="thumb-info-inner">스테이크 & 치즈</span>
-													<span class="thumb-info-type">6,100</span>
-												</span>
-												<span class="thumb-info-action">
-												<span class="thumb-info-action-icon"><i class="fa fa-shopping-basket"></i></span></span>
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">스테이크 & 치즈</span> <span
+														class="thumb-info-type">6,100</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><i
+															class="fa fa-shopping-basket"></i></span></span>
 											</span>
 											</span>
 										</div>
@@ -169,16 +173,17 @@
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
-											<span class="thumb-info thumb-info-lighten">
-											<span class="thumb-info-wrapper">
-											<img src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
-													class="img-responsive" alt="" style="margin-top:50px; margin-bottom:50px">
-													<span class="thumb-info-title">
-													<span class="thumb-info-inner">스테이크 & 치즈</span>
-													<span class="thumb-info-type">6,100</span>
-												</span>
-												<span class="thumb-info-action">
-												<span class="thumb-info-action-icon"><i class="fa fa-shopping-basket"></i></span></span>
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">스테이크 & 치즈</span> <span
+														class="thumb-info-type">6,100</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><i
+															class="fa fa-shopping-basket"></i></span></span>
 											</span>
 											</span>
 										</div>
@@ -186,16 +191,17 @@
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
-											<span class="thumb-info thumb-info-lighten">
-											<span class="thumb-info-wrapper">
-											<img src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
-													class="img-responsive" alt="" style="margin-top:50px; margin-bottom:50px">
-													<span class="thumb-info-title">
-													<span class="thumb-info-inner">스테이크 & 치즈</span>
-													<span class="thumb-info-type">6,100</span>
-												</span>
-												<span class="thumb-info-action">
-												<span class="thumb-info-action-icon"><i class="fa fa-shopping-basket"></i></span></span>
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">스테이크 & 치즈</span> <span
+														class="thumb-info-type">6,100</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><i
+															class="fa fa-shopping-basket"></i></span></span>
 											</span>
 											</span>
 										</div>
@@ -203,20 +209,21 @@
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
-											<span class="thumb-info thumb-info-lighten">
-											<span class="thumb-info-wrapper">
-											<img src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
-													class="img-responsive" alt="" style="margin-top:50px; margin-bottom:50px">
-													<span class="thumb-info-title">
-													<span class="thumb-info-inner">스테이크 & 치즈</span>
-													<span class="thumb-info-type">6,100</span>
-												</span>
-												<span class="thumb-info-action">
-												<span class="thumb-info-action-icon"><i class="fa fa-shopping-basket"></i></span></span>
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">스테이크 & 치즈</span> <span
+														class="thumb-info-type">6,100</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><i
+															class="fa fa-shopping-basket"></i></span></span>
 											</span>
 											</span>
 										</div>
-									</li>									
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -253,9 +260,9 @@
 						aria-hidden="true">&times;</button>
 					<h4 class="modal-title" id="largeModalLabel">MENU</h4>
 				</div>
-				<div class="modal-body shop">				
-				
-				
+				<div class="modal-body shop">
+
+
 
 					<!-- 모달 속 상세내용 -->
 
@@ -271,11 +278,12 @@
 							<div class="owl-carousel owl-theme"
 								data-plugin-options="{'items': 1}">
 								<div>
-									<div class="thumbnail" style="margin-top:90px; margin-bottom:90px">
-										<img alt="" class="img-responsive img-rounded" 
+									<div class="thumbnail"
+										style="margin-top: 90px; margin-bottom: 90px">
+										<img alt="" class="img-responsive img-rounded"
 											src="${ pageContext.request.contextPath }/resources/img/products/steak_and_cheese.jpg">
 									</div>
-								</div>								
+								</div>
 							</div>
 
 						</div>
@@ -302,8 +310,16 @@
 									<span class="amount">6,100원</span>
 								</p>
 
-								<p class="taller">푸짐한 스테이크에 살짝 녹은 치즈가 듬뿍! 보기만 해도 왜 사랑받는지 
-								아실 수 있을거에요. <br>스테이크의 달콤한 풍미와 풍부한 식감으로 모든 이들을 잡아끄는 맛입니다.</p>
+								<p class="taller">
+									푸짐한 스테이크에 살짝 녹은 치즈가 듬뿍! 보기만 해도 왜 사랑받는지 아실 수 있을거에요. <br>스테이크의
+									달콤한 풍미와 풍부한 식감으로 모든 이들을 잡아끄는 맛입니다.
+								</p>
+								<p class="inch">
+								<input type="radio" name="chk_info" value="HTML" ><span style="font-size:18px; margin-left:5px; margin-right:20px">15cm</span>
+								<input type="radio" name="chk_info" value="CSS" checked="checked"><span style="font-size:18px; margin-left:5px">30cm</span>
+								</p>
+
+								
 
 								<form enctype="multipart/form-data" method="post" class="cart">
 									<div class="quantity">
@@ -312,8 +328,7 @@
 											name="quantity" min="1" step="1"> <input
 											type="button" class="plus" value="+">
 									</div>
-									<button href="#" class="btn btn-primary btn-icon">담기</button>
-									<button href="#" class="btn btn-primary btn-icon">사기</button>
+									<button href="#" class="btn btn-primary btn-icon">주문하기</button>
 								</form>
 
 								<div class="product_meta">
@@ -362,7 +377,7 @@
 												<tr>
 													<th>탄수화물(g)</th>
 													<td>48.0</td>
-												</tr>												
+												</tr>
 											</tbody>
 										</table>
 									</div>
@@ -370,16 +385,16 @@
 							</div>
 						</div>
 					</div>
-					
-					
-					
+
+
+
 					<!-- SNS -->
 					<div class="row">
 						<div class="col-md-12">
 							<hr class="tall">
 
 							<h4 class="mb-md text-uppercase">
-								SNS <strong>Review</strong>
+								<strong>SNS</strong> Review
 							</h4>
 
 							<div class="row">
@@ -388,8 +403,9 @@
 									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item leadership">
 										<span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
 											<span class="thumb-info-wrapper"> <a
-												href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"> <img
-													src="${ pageContext.request.contextPath }/resources/img/team/team-1.jpg"
+												href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+													<img
+													src="${ pageContext.request.contextPath }/resources/img/sns/review01.jpg"
 													class="img-responsive" alt=""> <!-- <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">John Doe</span>
@@ -397,91 +413,95 @@
 												</span> -->
 											</a>
 										</span> <span class="thumb-info-caption"> <span
-												class="thumb-info-caption-text">Lorem ipsum dolor sit
-													amet, consectetur adipiscing elit. Cras ac ligula mi, non
-													suscipitaccumsan.</span> <span class="thumb-info-social-icons">
-													<a target="_blank" href="http://www.facebook.com"><i
+												class="thumb-info-caption-text">내 입맛대로 골라먹었어염 :)</span> <span
+												class="thumb-info-social-icons"> <a target="_blank"
+													href="http://www.facebook.com"><i
 														class="fa fa-facebook"></i><span>Facebook</span></a> <a
-													href="http://www.twitter.com"><i class="fa fa-twitter"></i><span>Twitter</span></a>
-													<a href="http://www.linkedin.com"><i
-														class="fa fa-linkedin"></i><span>Linkedin</span></a>
+													target="_blank" href="http://www.twitter.com"><i
+														class="fa fa-twitter"></i><span>Twitter</span></a> <a
+													target="_blank" href="http://www.instagram.com"><i
+														class="fa fa-instagram"></i><span>Instagram</span></a>
 											</span>
 										</span>
 									</span>
 									</li>
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item marketing">
+									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item leadership">
 										<span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
 											<span class="thumb-info-wrapper"> <a
-												href="about-me.html"> <img
-													src="${ pageContext.request.contextPath }/resources/img/team/team-2.jpg"
+												href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+													<img
+													src="${ pageContext.request.contextPath }/resources/img/sns/review01.jpg"
 													class="img-responsive" alt=""> <!-- <span
 													class="thumb-info-title"> <span
-														class="thumb-info-inner">Jessica Doe</span> <span
-														class="thumb-info-type">Marketing</span>
+														class="thumb-info-inner">John Doe</span>
+														<span class="thumb-info-type">CEO</span>
 												</span> -->
 											</a>
 										</span> <span class="thumb-info-caption"> <span
-												class="thumb-info-caption-text">Lorem ipsum dolor sit
-													amet, consectetur adipiscing elit. Cras ac ligula mi, non
-													suscipitaccumsan.</span> <span class="thumb-info-social-icons">
-													<a target="_blank" href="http://www.facebook.com"><i
+												class="thumb-info-caption-text">내 입맛대로 골라먹었어염 :)</span> <span
+												class="thumb-info-social-icons"> <a target="_blank"
+													href="http://www.facebook.com"><i
 														class="fa fa-facebook"></i><span>Facebook</span></a> <a
-													href="http://www.twitter.com"><i class="fa fa-twitter"></i><span>Twitter</span></a>
-													<a href="http://www.linkedin.com"><i
-														class="fa fa-linkedin"></i><span>Linkedin</span></a>
+													target="_blank" href="http://www.twitter.com"><i
+														class="fa fa-twitter"></i><span>Twitter</span></a> <a
+													target="_blank" href="http://www.instagram.com"><i
+														class="fa fa-instagram"></i><span>Instagram</span></a>
 											</span>
 										</span>
 									</span>
 									</li>
-									<li
-										class="col-md-3 col-sm-6 col-xs-12 isotope-item development">
+									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item leadership">
 										<span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
 											<span class="thumb-info-wrapper"> <a
-												href="about-me.html"> <img
-													src="${ pageContext.request.contextPath }/resources/img/team/team-3.jpg"
+												href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+													<img
+													src="${ pageContext.request.contextPath }/resources/img/sns/review01.jpg"
 													class="img-responsive" alt=""> <!-- <span
 													class="thumb-info-title"> <span
-														class="thumb-info-inner">Rick Edward Doe</span> <span
-														class="thumb-info-type">Developer</span>
+														class="thumb-info-inner">John Doe</span>
+														<span class="thumb-info-type">CEO</span>
 												</span> -->
 											</a>
 										</span> <span class="thumb-info-caption"> <span
-												class="thumb-info-caption-text">Lorem ipsum dolor sit
-													amet, consectetur adipiscing elit. Cras ac ligula mi, non
-													suscipitaccumsan.</span> <span class="thumb-info-social-icons">
-													<a target="_blank" href="http://www.facebook.com"><i
+												class="thumb-info-caption-text">내 입맛대로 골라먹었어염 :)</span> <span
+												class="thumb-info-social-icons"> <a target="_blank"
+													href="http://www.facebook.com"><i
 														class="fa fa-facebook"></i><span>Facebook</span></a> <a
-													href="http://www.twitter.com"><i class="fa fa-twitter"></i><span>Twitter</span></a>
-													<a href="http://www.linkedin.com"><i
-														class="fa fa-linkedin"></i><span>Linkedin</span></a>
+													target="_blank" href="http://www.twitter.com"><i
+														class="fa fa-twitter"></i><span>Twitter</span></a> <a
+													target="_blank" href="http://www.instagram.com"><i
+														class="fa fa-instagram"></i><span>Instagram</span></a>
 											</span>
 										</span>
 									</span>
 									</li>
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item design">
+									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item leadership">
 										<span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
 											<span class="thumb-info-wrapper"> <a
-												href="about-me.html"> <img
-													src="${ pageContext.request.contextPath }/resources/img/team/team-4.jpg"
+												href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+													<img
+													src="${ pageContext.request.contextPath }/resources/img/sns/review01.jpg"
 													class="img-responsive" alt=""> <!-- <span
 													class="thumb-info-title"> <span
-														class="thumb-info-inner">Melinda Doe</span> <span
-														class="thumb-info-type">Design</span>
+														class="thumb-info-inner">John Doe</span>
+														<span class="thumb-info-type">CEO</span>
 												</span> -->
 											</a>
 										</span> <span class="thumb-info-caption"> <span
-												class="thumb-info-caption-text">Lorem ipsum dolor sit
-													amet, consectetur adipiscing elit. Cras ac ligula mi, non
-													suscipitaccumsan.</span> <span class="thumb-info-social-icons">
-													<a target="_blank" href="http://www.facebook.com"><i
+												class="thumb-info-caption-text">내 입맛대로 골라먹었어염 :)</span> <span
+												class="thumb-info-social-icons"> <a target="_blank"
+													href="http://www.facebook.com"><i
 														class="fa fa-facebook"></i><span>Facebook</span></a> <a
-													href="http://www.twitter.com"><i class="fa fa-twitter"></i><span>Twitter</span></a>
-													<a href="http://www.linkedin.com"><i
-														class="fa fa-linkedin"></i><span>Linkedin</span></a>
+													target="_blank" href="http://www.twitter.com"><i
+														class="fa fa-twitter"></i><span>Twitter</span></a> <a
+													target="_blank" href="http://www.instagram.com"><i
+														class="fa fa-instagram"></i><span>Instagram</span></a>
 											</span>
 										</span>
 									</span>
 									</li>
+
+
 								</ul>
 							</div>
 						</div>
