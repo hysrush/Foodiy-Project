@@ -8,7 +8,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title> | 로그인 | </title>	
+		<title>Fooddiy-Order</title>	
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -46,98 +46,38 @@
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/css/component.css">
 
 		<!-- Skin CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/skins/default.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/skins/skin-shop-9.css"> 
 
 		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/custom.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/demos/demo-shop-9.css">
 
+		<!-- 이미지 캐러셀 -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
 		<!-- Head Libs -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
 		
-		<script src="${ pageContext.request.contextPath}/resources/js/jquery-3.2.1.min.js"></script>
-<script>
-	
-	$(document).ready(function(){
-		
-		$("#check").click(function(){
 
-			location.href="${pageContext.request.contextPath}/menu/menu.jsp"; 
-		});
-		
-		$("#signUp").click(function(){
-
-			location.href="${pageContext.request.contextPath}/member/signUp.jsp"; 
-		});
-	});
-</script>
 </head>
-<body>
+	<body>
 	<div class="body">
-		<header id="header" class="header-no-min-height header-mobile-nav-only header-flex" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0'}">
-				<jsp:include page="/resources/include/top2.jsp"/>
+		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 145, 'stickySetTop': '-145px', 'stickyChangeLogo': false}">
+				<jsp:include page="/resources/include/top-new.jsp"/>
 		</header>
-		<div role="main" class="main">
-			<section class="page-header">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<ul class="breadcrumb">
-								<li><a href="#">Sign In</a></li>
-								<li>Login</li>
-							</ul>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<h1>로그인</h1>
-						</div>
-					</div>
-				</div>
-			</section>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3">
-						<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
-						</aside>
-					</div>
-
-					<!-- START -->
-					<div class="col-md-9">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tabs tabs-bottom tabs-center tabs-simple">
-									<ul class="nav nav-tabs">
-										<li class="active">
-											<a href="#memberLogin" data-toggle="tab" aria-expanded="true"> 회원 로그인</a>
-										</li>
-										<li class="">
-											<a href="#nonLogin" data-toggle="tab" aria-expanded="false"> 비회원 로그인</a>
-										</li>
-									</ul>
-									<!-- 회원 로그인 -->
-										<div class="tab-content">
-											<div class="tab-pane active" id="memberLogin">
-												<jsp:include page="/resources/include/login/memberLogin.jsp"/>
-										</div>
-										<!--  비회원 로그인    -->
-										<div class="tab-pane" id="nonLogin">
-											<jsp:include page="/resources/include/login/nonmemberLogin.jsp"/>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<footer id="footer">
+			
+			<!-- Mobile menu 부분 -->
+			<jsp:include page="/resources/include/mobile-menu.jsp"/>
+			
+			<!-- Slider부분 -->
+			<jsp:include page="/resources/include/slider.jsp"/>
+		
+		<footer id="footer">
 			<jsp:include page="/resources/include/bottom.jsp"/>
-	</footer>
-	
-	<!-- Vendor -->
+		</footer>
+	</div>
+		<!-- Vendor -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -160,15 +100,18 @@
 		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 		<script src="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/js/views/view.home.js"></script>
+		
+		<!-- Current Page Vendor and Views -->
+		<script src="${ pageContext.request.contextPath}/resources/js/views/view.contact.js"></script>
+
+		<!-- Demo -->
+		<script src="${ pageContext.request.contextPath}/resources/js/demos/demo-shop-9.js"></script>
 		
 		<!-- Theme Custom -->
 		<script src="${ pageContext.request.contextPath}/resources/js/custom.js"></script>
 		
 		<!-- Theme Initialization Files -->
 		<script src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
-
-		<!-- Examples -->
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqatUi4ICaA6KBVjyOxul0QKP4F_H7-mY"></script>
-</body>
+		
+	</body>
 </html>

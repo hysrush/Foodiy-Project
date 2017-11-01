@@ -115,15 +115,13 @@
 		<div role="main" class="main shop">
 
 				<div class="container">
-
-
 						<div class="col-md-12r">
 
 							<div style="@media screen and (max-width:670px) " class="featured-boxes">
 									<div class="col-sm-9">
 										<div class="featured-box featured-box-primary align-left mt-xlg">
 											<div align="center" class="box-content">
-												<h4  style="width: 35px; float: left;"" class="heading-primary text-uppercase mb-md">번호</h4>
+												<h4  style="width: 35px; float: left;" class="heading-primary text-uppercase mb-md">번호</h4>
 												<h4 align="right" style="width: 130px; float: left;" class="heading-primary text-uppercase mb-md">메뉴사진</h4>
 												<h4 align="center" style="width: 250px; float: left;" class="heading-primary text-uppercase mb-md">제목</h4>
 												<h4 style="width: 100px; float: left;" class="heading-primary text-uppercase mb-md">날짜</h4>
@@ -261,10 +259,7 @@
 							</div>
 							</div>
 						</div>
-						
 	
-
-			
 				<div class="row">
 								<div align="center" class="col-md-12">
 									<ul  class="pagination pull-center">
@@ -277,10 +272,8 @@
 							</div>
 		</div>
 	</div>
-</div>
 
 	<!-- ---------------------------------------------------------------------------------------------- -->
-	<div>
 		<footer id="footer">
 			<jsp:include page="/resources/include/bottom.jsp"/>
 		</footer>
