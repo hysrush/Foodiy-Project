@@ -45,7 +45,7 @@
 								<!-- API 로그인 -->
 								<div class="row">		
 									<div class="col-md-4">
-										<a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+										<jsp:include page="/resources/include/login/kakaoLogin.jsp"/>
 									</div>
 									<div class="col-md-4">
 										<a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>

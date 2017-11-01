@@ -66,7 +66,7 @@
 		
 		$("#signUp").click(function(){
 
-			location.href="${pageContext.request.contextPath}/member/signUp.jsp"; 
+			location.href="${pageContext.request.contextPath}/sign/phoneCert.jsp"; 
 		});
 	});
 </script>
