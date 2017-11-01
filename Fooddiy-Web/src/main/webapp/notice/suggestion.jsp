@@ -80,8 +80,8 @@
 </head>
 <body>
 	<div class="body">
-		<header id="header" class="header-no-min-height header-mobile-nav-only header-flex" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0'}">
-				<jsp:include page="/resources/include/top2.jsp"/>
+		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 145, 'stickySetTop': '-145px', 'stickyChangeLogo': false}">
+				<jsp:include page="/resources/include/top-new.jsp"/>
 		</header>
 		<div role="main" class="main">
 			<section class="page-header">
