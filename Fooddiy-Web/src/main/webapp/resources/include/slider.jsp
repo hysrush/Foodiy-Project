@@ -52,13 +52,13 @@
 				</div>
 			
 				<br/><br/><br/>
-<<<<<<< HEAD
+
 				<div class="col-xs-6 col-md-6">					
 			<!--    응답하라 1988 슬라이드--> 
-=======
+
 				<!-- 슬라이드 시작 -->	 
 					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="align:center; width:500px; position:inherit;">
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
+
 					<div id="carousel-example-generic" class="carousel slide " data-ride="carousel" style="align:center; width:700px; position:inherit;">
 					   <ol class="carousel-indicators">
 					         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -154,10 +154,10 @@
 			
 				
 					<hr/>
-<<<<<<< HEAD
+
 					<!-- 슬라이드 끝 -->
 	
-=======
+
 					<!-- 2번째 슬라이드 시작 -->
 					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="position:inherit; width:500px;">
 					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="position:inherit; width:700px;">
@@ -236,7 +236,7 @@
 						</div><!-- carousel-inner close -->
 					</div><!-- 슬라이드 마침 -->
 			</div>
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
+
 				<div class="col-xs-6 col-md-3" style="margin:10px 0px">
 					<%-- <div>
 						<c:forEach items="${ sns }" begin="0" end="2">
