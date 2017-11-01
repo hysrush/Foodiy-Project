@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-				<!-- Basic -->
+		<!-- Basic -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
@@ -62,7 +62,6 @@
 
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/custom.css">
-		
 	</head>
 	<body>
 		<div class="body">
@@ -202,7 +201,7 @@
 		</div>
 	</div>
 
-		<!-- Vendor -->
+			<!-- Vendor -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -225,17 +224,18 @@
 		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 		<script src="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/js/views/view.home.js"></script>
+		
+		<!-- Current Page Vendor and Views -->
+		<script src="${ pageContext.request.contextPath}/resources/js/views/view.contact.js"></script>
+
+		<!-- Demo -->
+		<script src="${ pageContext.request.contextPath}/resources/js/demos/demo-shop-9.js"></script>
 		
 		<!-- Theme Custom -->
 		<script src="${ pageContext.request.contextPath}/resources/js/custom.js"></script>
 		
 		<!-- Theme Initialization Files -->
 		<script src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
-
-
-<!-- Examples -->
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqatUi4ICaA6KBVjyOxul0QKP4F_H7-mY"></script>
 		<script>
 			// Markers
 			$("#googlemapsMarkers").gMap({

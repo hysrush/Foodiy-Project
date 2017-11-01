@@ -278,7 +278,7 @@
 
 		</div>
 		
-				<!-- Vendor -->
+	=
 	<!-- Vendor -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
