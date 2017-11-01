@@ -15,8 +15,8 @@
 <meta name="author" content="okler.net">
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="shortcut icon" href="${ pageContext.request.contextPath}/resources/img/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="${ pageContext.request.contextPath}/resources/img/apple-touch-icon.png">
 
 <!-- Mobile Metas -->
 <meta name="viewport"
@@ -130,9 +130,9 @@
 						있다면 반드시 탈퇴 전 비공개 처리하거나 삭제하시기 바랍니다. 탈퇴 후에는 회원정보가 삭제되어 본인 여부를 확인할 수
 						있는 방법이 없어, 게시글을 임의로 삭제해드릴 수 없습니다.</p>
 					<div class="col-md-8">
-								<span class="member-box checkbox">
-									<label for="memberme">
-									<h5><input type="checkbox" id="member3" name="member3"><strong>안내사항을 모두 확인 했으며 이에 동의합니다.</strong></h5>
+								<span class="checkbox">
+									<label for="memberDel">
+									<h5><input type="checkbox" id="memberDel"><strong>안내사항을 모두 확인 했으며 이에 동의합니다.</strong></h5>
 									</label>
 								</span>
 						</div>
