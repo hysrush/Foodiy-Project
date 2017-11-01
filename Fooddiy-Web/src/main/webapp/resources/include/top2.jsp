@@ -123,7 +123,7 @@
 								<c:if test="${ not empty nonMember }">
 									<li class="dropdown"><a class="dropdown-toggle" href="#">주문내역조회</a></li>
 								</c:if>
-								
+								<!-- 회원 아닐때  -->
 								<c:choose>
 									<c:when test="${ empty userVO }">
 										<li class="dropdown dropdown-mega dropdown-mega-signin signin" id="headerAccount">
