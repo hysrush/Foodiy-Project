@@ -1,5 +1,13 @@
 /* Add here all your CSS customizations */
 
+
+.shop .cart-title {
+	
+	
+	margin : 10px;
+	margin-top: 20px;
+}
+
 .shop table.cart .product-add-ingredient {
 	width: 40%;
 }

@@ -14,27 +14,124 @@
 			</div>
 			<div class="header-column">
 				<nav class="header-nav-top hidden-xs hidden-sm">
-					<ul class="nav nav-pills">
-						<li class="hidden-xs hidden-sm">
-						
-						
-								<a href="about-us.html"> <!-- <i class="fa fa-angle-right"></i> -->
-								장바구니&nbsp;<img
-								alt="${ pageContext.request.contextPath }/장바구니.do"
-								src="${ pageContext.request.contextPath }/resources/img/binCartImg.png"
-								style="width: 20px; height: 20px;"></a>
-						</li>
-					</ul>
+									<div class="header-body">
+					<div class="header-container container">
+						<div class="header-row">
+							<div class="header-column">
+		
+								<div class="header-row">
+									<div class="header-nav">
+										<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main">
+											<i class="fa fa-bars"></i>
+										</button>
+										<div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
+											<nav>
+												<ul class="nav nav-pills" id="mainNav">
+													<li class="dropdown dropdown-mega dropdown-mega-shop">
+														<a class="dropdown-toggle" href="page-login.html">
+															<img width="50" height="50" src="${ pageContext.request.contextPath }/resources/img/binCartImg.png">
+														</a>
+														
+														<ul class="dropdown-menu">
+															<li>
+																<div class="dropdown-mega-content">
+																	<table class="cart">
+																		<tbody>
+																			<tr>
+																				<td class="product-thumbnail">
+																					<a href="shop-product-sidebar.html">
+																						<img width="100" height="100" alt="" class="img-responsive" src="${pageContext.request.contextPath}/resources/img/products/product-1.jpg">
+																					</a>
+																				</td>
+																				<td class="product-name">
+																					<a href="shop-product-sidebar.html">Photo Camera<br><span class="amount"><strong>$299</strong></span></a>
+																				</td>
+																				<td class="product-actions">
+																					<a title="Remove this item" class="remove" href="#">
+																						<i class="fa fa-times"></i>
+																					</a>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td class="actions" colspan="6">
+																					<div class="actions-continue">
+																						<button type="submit" class="btn btn-default">View All</button>
+																						<button type="submit" class="btn pull-right btn-primary">Proceed to Checkout <i class="fa fa-angle-right ml-xs"></i></button>
+																					</div>
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</li>
+														</ul>
+													</li>						
+												</ul>
+											</nav>
+										</div>
+										
+										
+										
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+				
+				
 				</nav>
 				<div class="header-row">
 					<div class="header-nav header-nav-stripe">
 						<!-- 웹사이트 크기 변경시 아이콘 변경해 주는 태그 -->
-						<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main" style="background-color: gray;">
+						<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-cart" style="background-color: gray;">
 							<i class="fa fa-cart-plus"></i>
 						</button>
 						<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main" style="float: left;">
 							<i class="fa fa-bars"></i>
 						</button>
+					
+					
+					<div class="header-cart collapse">
+						<nav style="background-color: white;">
+							<ul class="dropdown-menu">
+															<li>
+																<div class="dropdown-mega-content">
+																	<table class="cart">
+																		<tbody>
+																			<tr>
+																				<td class="product-thumbnail">
+																					<a href="shop-product-sidebar.html">
+																						<img width="100" height="100" alt="" class="img-responsive" src="${pageContext.request.contextPath}/resources/img/products/product-1.jpg">
+																					</a>
+																				</td>
+																				<td class="product-name">
+																					<a href="shop-product-sidebar.html">Photo Camera<br><span class="amount"><strong>$299</strong></span></a>
+																				</td>
+																				<td class="product-actions">
+																					<a title="Remove this item" class="remove" href="#">
+																						<i class="fa fa-times"></i>
+																					</a>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td class="actions" colspan="6">
+																					<div class="actions-continue">
+																						<button type="submit" class="btn btn-default">View All</button>
+																						<button type="submit" class="btn pull-right btn-primary">Proceed to Checkout <i class="fa fa-angle-right ml-xs"></i></button>
+																					</div>
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</li>
+							</ul>
+						</nav>
+					
+					</div>	
+						
 					<!-- Menu공간  -->
 					<div class="header-nav-main header-nav-main-square header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse" >
 						<nav style="background-color: white;">
