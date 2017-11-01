@@ -6,7 +6,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 
-<!-- Favicon -->
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+
+		<title>Fooddiy-Order</title>	
+
+		<meta name="keywords" content="HTML5 Template" />
+		<meta name="description" content="Porto - Responsive HTML5 Template">
+		<meta name="author" content="okler.net">
+
+		<!-- Favicon -->
 		<link rel="shortcut icon" href="${ pageContext.request.contextPath}/resources/img/favicon.ico" type="image/x-icon" />
 		<link rel="apple-touch-icon" href="${ pageContext.request.contextPath}/resources/img/apple-touch-icon.png">
 
@@ -38,20 +48,30 @@
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/css/component.css">
 
 		<!-- Skin CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/skins/default.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/skins/skin-shop-9.css"> 
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/demos/demo-shop-9.css">
+
+		<!-- 이미지 캐러셀 -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<!-- Head Libs -->
+		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
+
 
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/custom.css">
-
-		<!-- Head Libs -->
-		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
+		
 
 </head>
 </head>
 <body>
 	<div class="body">
-			<header id="header" class="header-no-min-height header-mobile-nav-only header-flex" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0'}">
-				<jsp:include page="/resources/include/top3.jsp"/>
+			<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 145, 'stickySetTop': '-145px', 'stickyChangeLogo': false}">
+				<jsp:include page="/resources/include/top-new.jsp"/>
 			</header>
 
 
@@ -258,49 +278,43 @@
 
 		</div>
 		
-				<!-- Vendor -->
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/jquery/jquery.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/jquery.easing/jquery.easing.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/jquery-cookie/jquery-cookie.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/common/common.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/jquery.validation/jquery.validation.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/jquery.gmap/jquery.gmap.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/isotope/jquery.isotope.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/owl.carousel/owl.carousel.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<script
-			src="${ pageContext.request.contextPath }/resources/vendor/vide/vide.min.js"></script>
-
+	=
+	<!-- Vendor -->
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easing/jquery.easing.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery-cookie/jquery-cookie.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/common/common.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.validation/jquery.validation.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/isotope/jquery.isotope.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/owl.carousel.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/vide/vide.min.js"></script>
+		
 		<!-- Theme Base, Components and Settings -->
-		<script
-			src="${ pageContext.request.contextPath }/resources/js/theme.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/js/theme.js"></script>
+		
+		<!-- Current Page Vendor and Views -->
+		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
+		
+		<!-- Current Page Vendor and Views -->
+		<script src="${ pageContext.request.contextPath}/resources/js/views/view.contact.js"></script>
 
+		<!-- Demo -->
+		<script src="${ pageContext.request.contextPath}/resources/js/demos/demo-shop-9.js"></script>
+		
 		<!-- Theme Custom -->
-		<script
-			src="${ pageContext.request.contextPath }/resources/js/custom.js"></script>
-
+		<script src="${ pageContext.request.contextPath}/resources/js/custom.js"></script>
+		
 		<!-- Theme Initialization Files -->
-		<script
-			src="${ pageContext.request.contextPath }/resources/js/theme.init.js"></script>
-
-		<script>
+		<script src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
+		
 	
 </body>
 </html>
