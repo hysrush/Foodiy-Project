@@ -81,11 +81,19 @@
 				</section>
 
 				
+<<<<<<< HEAD
+				<div class= "container">
+					<div class="row">
+						<div class="col-md-2 hidden-xs hidden-sm">
+							<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+								<h4 class="heading-primary"><strong>커뮤니티 </strong></h4>
+=======
 				<div class="container">
 				<div class="row">
 					<div class="col-md-2 hidden-xs">
 						<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
 							<h4 class="heading-primary"><strong>커뮤니티 </strong></h4>
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 
 							<ul class="nav nav-list mb-xlg sort-source" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
 								<li><a href="${ pageContext.request.contextPath }/notice/qna.jsp">자주하는 질문</a></li>
