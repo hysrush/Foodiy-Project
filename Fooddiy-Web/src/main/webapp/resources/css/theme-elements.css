@@ -5183,9 +5183,9 @@ html.boxed .pricing-table .plan, html.boxed .pricing-table h3 {
 	height: 50px;
 	line-height: 50px;
 	position: absolute;
-	right: -100px;
+	right: 0px;
 	text-align: center;
-	top: -100px;
+	top: 0px;
 	width: 50px;
 	z-index: 2;
 }
