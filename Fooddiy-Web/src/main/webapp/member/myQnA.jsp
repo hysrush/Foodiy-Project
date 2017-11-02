@@ -79,6 +79,8 @@
 		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 145, 'stickySetTop': '-145px', 'stickyChangeLogo': false}">
 				<jsp:include page="/resources/include/top-new.jsp"/>
 		</header>
+		<!-- Mobile menu 부분 -->
+			<jsp:include page="/resources/include/mobile-menu.jsp"/>
 		<!-- ---------------------------------------------------------------------------------------------- -->
 		<section class="page-header">
 					<div class="container">
@@ -125,27 +127,28 @@
 
 
 							<div class="featured-boxes">
-									<div class="col-sm-9">
+									<div class="col-sm-7  ">
 										<div class="featured-box featured-box-primary align-left mt-xlg">
 											<div class="box-content">
 												<h4  style="width: 50px; float: left;" class="heading-primary text-uppercase mb-md">번호</h4>
-												<h4 align="center" style="width: 340px; float: left;" class="heading-primary text-uppercase mb-md">제목</h4>
-												<h4 style="width: 100px; float: left;" class="heading-primary text-uppercase mb-md">등록일</h4>
+												<h4 align="center" style="width: 190px; float: left;" class="heading-primary text-uppercase mb-md">제목</h4>
+												<h4 style="margin-left:5%; width: 130px; float: left;" class="heading-primary text-uppercase mb-md">등록일</h4>
 												<h4 style="width: 100px; float: left;" class="heading-primary text-uppercase mb-md">답변여부</h4>
-												<table class="cart-totals">
+												<table class="cart-totals"> 
 													<tbody>
 														<tr class="cart-subtotal">
 															<th>
 																<strong >1</strong>
 															</th>
-															<td align="center" style="width: 300px">
+															<td class="col-md-4" align="center">
 																<span class="amount">문의 합니다.</span>
 															</td>
-															<td align="right">
-																<span class="amount">2017-10-29</span>
+															<td class="col-md-2" align="right">
+																<span class="amount ">2017-10-29</span>
 															</td>
 															<td align="center">
-																<button style="width: 100px; height: 30px; font-size: 14px" type="button" class="btn  btn-info"> 접수완료 </button>
+																<button style="margin-left:20%; width: 80px; height: 30px; font-size: 13px" type="button" class="btn  btn-info col-md-3"> 접수완료 </button>
+
 															</td>
 														</tr>
 														<tr class="shipping">
@@ -158,7 +161,7 @@
 																<span > 2017.09-28<input type="hidden" value="free_shipping" id="shipping_method" name="shipping_method"></span>
 															</td>
 															<td align="center">
-																<button style="background-color:orange; width: 100px; height: 30px; font-size: 14px" type="button" class="btn  btn-info">답변완료 </button>
+																<button style="background-color:orange; margin-left:20%; width: 80px; height: 30px; font-size: 13px" type="button" class="btn  btn-info col-md-3"> 답변완료 </button>
 															</td>
 														</tr>
 													</tbody>

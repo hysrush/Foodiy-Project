@@ -64,9 +64,16 @@
 </head>
 <body>
 	<div class="body">
+<<<<<<< HEAD
 		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 145, 'stickySetTop': '-145px', 'stickyChangeLogo': false}">
+=======
+		<header id="header" class="header-no-min-height header-mobile-nav-only header-flex" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0'}">
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 				<jsp:include page="/resources/include/top-new.jsp"/>
 		</header>
+		<!-- Mobile menu 부분 -->
+			<jsp:include page="/resources/include/mobile-menu.jsp"/>
+			
 		<div role="main" class="main">
 			<section class="page-header">
 				<div class="container">

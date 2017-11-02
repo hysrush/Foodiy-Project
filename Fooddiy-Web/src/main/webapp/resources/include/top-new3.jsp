@@ -78,7 +78,7 @@
 								<input type="text" class="form-control" name="q" id="q"
 									placeholder="Search..." required> <select id="cat"
 									name="cat">
-									<option value="">전체</option>
+									<option value="">All Categories</option>
 									<option value="4">Fashion</option>
 									<option value="12">- Women</option>
 									<option value="13">- Men</option>
@@ -111,7 +111,7 @@
 			<div class="header-column header-column-center">
 				<div class="header-logo">
 					<a href="${ pageContext.request.contextPath }/index2.jsp"> 
-						<img alt="Subway" style="margin: 0px;" width="220" height="95" src="${ pageContext.request.contextPath }/resources/img/subwayLOGO.jpg">
+						<img alt="Porto" style="margin: 0px; border-radius:50%;" width="111" height="54" src="${ pageContext.request.contextPath }/resources/img/Subway-logo.jpg">
 					</a>
 				</div>
 			</div>
@@ -129,7 +129,7 @@
 									class="cart-qty">2</span> <span class="cart-text">item(s)</span>
 							</span>
 							</a>
-							<div class="center" style="font-size: 9pt; font-weight: bold;">장바구니</div>
+							<div class="center">장바구니</div>
 							<div class="cart-dropdownmenu right">
 								<div class="dropdownmenu-wrapper">
 									<div class="cart-products">
@@ -140,18 +140,18 @@
 											<figure class="product-image-area">
 												<a href="demo-shop-9-product-details.html"
 													title="Product Name" class="product-image"> 
-													<img src="${ pageContext.request.contextPath }/resources/img/menu/mn-Steak-Cheese.jpg"
+													<img src="${ pageContext.request.contextPath}/resources/img/demos/shop/products/thumbs/cart-product1.jpg"
 													alt="Product Name">
 												</a>
 											</figure>
 											<div class="product-details-area">
 												<h2 class="product-name">
 													<a href="demo-shop-9-product-details.html"
-														title="Product Name">스테이크 & 치즈</a>
+														title="Product Name">Blue Women Top</a>
 												</h2>
 
 												<div class="cart-qty-price">
-													1 X <span class="product-price">6,100원</span>
+													1 X <span class="product-price">$65.00</span>
 												</div>
 											</div>
 										</div>
@@ -162,30 +162,31 @@
 											<figure class="product-image-area">
 												<a href="demo-shop-9-product-details.html"
 													title="Product Name" class="product-image"> 
-													<img src="${ pageContext.request.contextPath }/resources/img/menu/mn-Turkey-Breast.jpg"
+													<img src="${ pageContext.request.contextPath}/resources/img/demos/shop/products/thumbs/cart-product2.jpg"
 													alt="Product Name">
 												</a>
 											</figure>
 											<div class="product-details-area">
 												<h2 class="product-name">
 													<a href="demo-shop-9-product-details.html"
-														title="Product Name">터키 베이컨</a>
+														title="Product Name">Black Utility Top</a>
 												</h2>
 
 												<div class="cart-qty-price">
-													1 X <span class="product-price">5,300원</span>
+													1 X <span class="product-price">$39.00</span>
 												</div>
 											</div>
 										</div>
 									</div>
 
 									<div class="cart-totals">
-										Total: <span>11,400원</span>
+										Total: <span>$104.00</span>
 									</div>
 
 									<div class="cart-actions">
-										<a href="#" class="btn btn-primary" style="background-color: #0cc485;">바로주문</a>
-										<a href="${ pageContext.request.contextPath}/menu/cart.jsp" class="btn btn-primary" style="background-color: #eb2771;">장바구니</a>
+										<a href="demo-shop-9-cart.html" class="btn btn-primary">View
+											Cart</a> <a href="demo-shop-9-checkout.html"
+											class="btn btn-primary">Checkout</a>
 									</div>
 								</div>
 							</div>
@@ -195,15 +196,6 @@
 			</div>
 		</div>
 	</div>
-	
-	<script type="text/javascript" >
-		$(document).ready(function() {
-			$('.cart-dropdown-icon').click(function() {
-				$('.cart-dropdownmenu').toggle();
-			});
-		})
-	</script>
-	
 	<div class="header-container header-nav header-nav-center">
 		<div class="container">
 			<div class="header-nav-main">
@@ -212,7 +204,7 @@
 						<li class="">
 						<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/index2.jsp"> Home </a>
 						<li class="dropdown dropdown-mega active">
-						<a href="${ pageContext.request.contextPath }/menu/menu.jsp" class="dropdown-toggle">
+						<a href="demo-shop-9-category-4col.html" class="dropdown-toggle">
 								Menu
 						</a>
 							<ul class="dropdown-menu">
@@ -232,12 +224,6 @@
 										<div class="row">
 											<div class="col-md-8">
 												<div class="row">
-													<div class="col-md-3">
-														<a href="${ pageContext.request.contextPath}/menu/menu2.jsp" class="cat-img">
-														<img src="${ pageContext.request.contextPath}/resources/img/demos/shop/cat-tv.png" alt="Category Name"></a>
-														<a href="${ pageContext.request.contextPath}/menu/menu2.jsp" 
-															class="dropdown-mega-sub-title" style="font-size: 10pt; font-weight: bold;">전체메뉴<br>ALL MENU</a>
-													</div>
 													<div class="col-md-3">
 														<a href="#" class="cat-img">
 														<img src="${ pageContext.request.contextPath}/resources/img/demos/shop/cat-tv.png" alt="Category Name"></a>
@@ -296,22 +282,18 @@
 							</ul>
 						</li>
 						<li class="dropdown">
-<<<<<<< HEAD
-						<a href="${ pageContext.request.contextPath }/event/EventPage.jsp" class="dropdown-toggle">
-=======
-						<a href="#" class="dropdown-toggle">
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
+						<a href="demo-shop-9-category-4col.html" class="dropdown-toggle">
 								EVENT <span class="tip tip-new">New</span>
 						</a>
 							<ul class="dropdown-menu">
 								<li><a href="${ pageContext.request.contextPath}/event/EventPage.jsp">브랜드 EVENT</a></li>
-								<li><a href="${ pageContext.request.contextPath}/event/StoreEventPage.jsp">매장별 EVENT</a></li>
+								<li><a href="${ pageContext.request.contextPath}/event/EventPage.jsp">매장별 EVENT</a></li>
 							</ul>
 						</li>
-						<li class="dropdown"><a class="dropdown-toggle" href="${ pageContext.request.contextPath }/notice/qna.jsp">
+						<li class="dropdown"><a class="dropdown-toggle" href="#">
 								Community <span class="tip tip-hot">Hot!</span></a>
 							<ul class="dropdown-menu">
-								<li><a href="${ pageContext.request.contextPath }/notice/qna.jsp">자주묻는 질문</a></li>
+								<li><a href="${ pageContext.request.contextPath }/notice/qna.jsp">자주하는 질문</a></li>
 								<li><a href="${ pageContext.request.contextPath }/notice/noticeList.jsp">공지사항</a></li>
 								<li><a href="${ pageContext.request.contextPath }/notice/suggestion.jsp">1:1 문의</a></li>
 								<li><a href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"
@@ -319,7 +301,7 @@
 							</ul>
 						</li>
 						<!-- 회원 로그인하면 My page -->
-						<li class="dropdown"><a href="${ pageContext.request.contextPath }/member/memberDetail.jsp" class="dropdown-toggle">
+						<li class="dropdown"><a href="#" class="dropdown-toggle">
 								My Page </a>
 							<ul class="dropdown-menu">
 								<li><a href="${ pageContext.request.contextPath}/member/memberDetail.jsp">회원 정보</a></li>
@@ -335,14 +317,8 @@
 						<c:choose>
 							<c:when test="${ empty userVO }">
 								<li class="dropdown dropdown-mega dropdown-mega-signin signin" id="headerAccount">
-									<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/sign/login.jsp">
-										<i class="fa fa-user"></i> Sign IN
-									</a>
-								</li>
-								<li class="dropdown dropdown-mega dropdown-mega-signin signin" id="headerAccount">
-									<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/sign/phoneCert.jsp">
-										<i class="fa fa-user"></i> Sign UP
-									</a>
+									<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/member/login.jsp">
+										<i class="fa fa-user"></i> Sign In</a>
 								</li>
 							</c:when>
 							<c:otherwise>
