@@ -8,7 +8,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title> | MyPage | </title>
+<title> | 최극 주문 내역 | </title>
 
 <meta name="keywords" content="HTML5 Template" />
 <meta name="description" content="Porto - Responsive HTML5 Template">
@@ -91,6 +91,7 @@
 		<!-- Mobile menu 부분 -->
 			<jsp:include page="/resources/include/mobile-menu.jsp"/>
 		<!-- ---------------------------------------------------------------------------------------------- -->
+	<div role="main" class="main">
 	<section class="page-header">
 					<div class="container">
 						<div class="row">
@@ -103,6 +104,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-12">
+								<h1>내 정보</h1>
 							</div>
 						</div>
 					</div>
@@ -295,7 +297,7 @@
 							</div>
 		</div>
 	</div>
-
+	</div>
 	<!-- ---------------------------------------------------------------------------------------------- -->
 		<footer id="footer">
 			<jsp:include page="/resources/include/bottom.jsp"/>

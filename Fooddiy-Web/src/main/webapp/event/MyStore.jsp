@@ -8,7 +8,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title>Fooddiy-Order</title>	
+		<title> | 나만의 매장 | </title>	
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -98,11 +98,11 @@
 						<div class="col-md-3">
 							<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
 
-									<h4 class="heading-primary">매장찾기</h4>
+									<h4 class="heading-primary">매장 찾기</h4>
 								<ul class="nav nav-list mb-xlg">
-									<li><a href="#">My매장 </a></li>
-									<li class="active">
-										<a href="#">매장찾기</a>
+									<li class="active"><a href="${ pageContext.request.contextPath }/event/MyStore.jsp">My매장 </a></li>
+									<li>
+										<a href="${ pageContext.request.contextPath }/event/FindStore.jsp">매장찾기</a>
 									</li>
 								</ul>
 							</aside>

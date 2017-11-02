@@ -1,12 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<script src="${ pageContext.request.contextPath }/resources/js/jquery-3.2.1.mis.js"></script>
+<script>
+	function account(){
+		alert("가입 축하드립니다!");
+		location.href="${ pageContext.request.contextPath }/index2.jsp";
+	}
+
+</script>
 <!-- 회원 가입 -->
 <div class="featured-box featured-box-primary align-left mt-xlg">
 	<div class="box-content">
 		<div id="collapseOne" class="accordion-body collapse in">
 			<div class="panel-body">
-				<form action="/" id="frmBillingAddress" method="post">
+				<form action="javascript:account();" id="frmBillingAddress" method="post">
 					<div class="row">
 						<div class="form-group">
 							<div class="col-md-4">
@@ -117,10 +125,10 @@
 					</div>
 					<div class="row">
 						<div class="col-md-6">
-							<input type="button" id="" class="btn btn-info mb-md" value="가입">
+							<input type="submit" id="member" class="btn btn-info mb-md" value="가입">
 						</div>
 						<div class="col-md-6">
-							<input type="button" id="" class="btn btn-info mb-md" value="취소">
+							<input type="reset" class="btn btn-info mb-md" value="취소">
 						</div>
 					</div>
 				</form>

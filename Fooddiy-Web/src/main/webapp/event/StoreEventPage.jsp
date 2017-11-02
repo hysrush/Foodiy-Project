@@ -8,7 +8,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title>Fooddiy-Order</title>	
+		<title> | 매장별 이벤트 |  </title>	
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -88,7 +88,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<h1>이벤트 페이지</h1>
+								<h1>EVENT</h1>
 							</div>
 						</div>
 					</div>
@@ -102,9 +102,9 @@
 
 									<h4 class="heading-primary">이벤트</h4>
 								<ul class="nav nav-list mb-xlg">
-									<li><a href="#">브랜드 이벤트</a></li>
+									<li><a href="${ pageContext.request.contextPath }/event/EventPage.jsp">브랜드 이벤트</a></li>
 									<li class="active">
-										<a href="#">점포별 이벤트</a>
+										<a href="${ pageContext.request.contextPath }/event/StoreEventPage.jsp">점포별 이벤트</a>
 									</li>
 								</ul>
 							</aside>

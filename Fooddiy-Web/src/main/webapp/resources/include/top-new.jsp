@@ -124,7 +124,7 @@
 						</div>
 
 						<div class="cart-dropdown">
-							<a href="${ pageContext.request.contextPath}/menu/cart.jsp" class="cart-dropdown-icon"> 
+							<a href="#" class="cart-dropdown-icon"> 
 							<i class="minicart-icon"></i> <span class="cart-info"> <span
 									class="cart-qty">2</span> <span class="cart-text">item(s)</span>
 							</span>
@@ -140,18 +140,18 @@
 											<figure class="product-image-area">
 												<a href="demo-shop-9-product-details.html"
 													title="Product Name" class="product-image"> 
-													<img src="${ pageContext.request.contextPath}/resources/img/demos/shop/products/thumbs/cart-product1.jpg"
+													<img src="${ pageContext.request.contextPath }/resources/img/menu/mn-Steak-Cheese.jpg"
 													alt="Product Name">
 												</a>
 											</figure>
 											<div class="product-details-area">
 												<h2 class="product-name">
 													<a href="demo-shop-9-product-details.html"
-														title="Product Name">Blue Women Top</a>
+														title="Product Name">스테이크 & 치즈</a>
 												</h2>
 
 												<div class="cart-qty-price">
-													1 X <span class="product-price">$65.00</span>
+													1 X <span class="product-price">6,100원</span>
 												</div>
 											</div>
 										</div>
@@ -162,31 +162,30 @@
 											<figure class="product-image-area">
 												<a href="demo-shop-9-product-details.html"
 													title="Product Name" class="product-image"> 
-													<img src="${ pageContext.request.contextPath}/resources/img/demos/shop/products/thumbs/cart-product2.jpg"
+													<img src="${ pageContext.request.contextPath }/resources/img/menu/mn-Turkey-Breast.jpg"
 													alt="Product Name">
 												</a>
 											</figure>
 											<div class="product-details-area">
 												<h2 class="product-name">
 													<a href="demo-shop-9-product-details.html"
-														title="Product Name">Black Utility Top</a>
+														title="Product Name">터키 베이컨</a>
 												</h2>
 
 												<div class="cart-qty-price">
-													1 X <span class="product-price">$39.00</span>
+													1 X <span class="product-price">5,300원</span>
 												</div>
 											</div>
 										</div>
 									</div>
 
 									<div class="cart-totals">
-										Total: <span>$104.00</span>
+										Total: <span>11,400원</span>
 									</div>
 
 									<div class="cart-actions">
-										<a href="demo-shop-9-cart.html" class="btn btn-primary">View
-											Cart</a> <a href="demo-shop-9-checkout.html"
-											class="btn btn-primary">Checkout</a>
+										<a href="#" class="btn btn-primary" style="background-color: #0cc485;">바로주문</a>
+										<a href="${ pageContext.request.contextPath}/menu/cart.jsp" class="btn btn-primary" style="background-color: #eb2771;">장바구니</a>
 									</div>
 								</div>
 							</div>
@@ -197,15 +196,12 @@
 		</div>
 	</div>
 	
-	<script type="text/javascript">
-			$(document).ready(function() {
-		
-				$('.cart-dropdown-icon').click(function() {
-					$('.cart-dropdownmenu').toggle();
-					
-				});
-				
-			})
+	<script type="text/javascript" >
+		$(document).ready(function() {
+			$('.cart-dropdown-icon').click(function() {
+				$('.cart-dropdownmenu').toggle();
+			});
+		})
 	</script>
 	
 	<div class="header-container header-nav header-nav-center">
@@ -216,7 +212,7 @@
 						<li class="">
 						<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/index2.jsp"> Home </a>
 						<li class="dropdown dropdown-mega active">
-						<a href="demo-shop-9-category-4col.html" class="dropdown-toggle">
+						<a href="${ pageContext.request.contextPath }/menu/menu.jsp" class="dropdown-toggle">
 								Menu
 						</a>
 							<ul class="dropdown-menu">
@@ -300,6 +296,7 @@
 							</ul>
 						</li>
 						<li class="dropdown">
+						<a href="${ pageContext.request.contextPath }/event/EventPage.jsp" class="dropdown-toggle"></a>
 						<a href="#" class="dropdown-toggle">
 								EVENT <span class="tip tip-new">New</span>
 						</a>
@@ -308,7 +305,7 @@
 								<li><a href="${ pageContext.request.contextPath}/event/StoreEventPage.jsp">매장별 EVENT</a></li>
 							</ul>
 						</li>
-						<li class="dropdown"><a class="dropdown-toggle" href="#">
+						<li class="dropdown"><a class="dropdown-toggle" href="${ pageContext.request.contextPath }/notice/qna.jsp">
 								Community <span class="tip tip-hot">Hot!</span></a>
 							<ul class="dropdown-menu">
 								<li><a href="${ pageContext.request.contextPath }/notice/qna.jsp">자주묻는 질문</a></li>
@@ -319,7 +316,7 @@
 							</ul>
 						</li>
 						<!-- 회원 로그인하면 My page -->
-						<li class="dropdown"><a href="#" class="dropdown-toggle">
+						<li class="dropdown"><a href="${ pageContext.request.contextPath }/member/memberDetail.jsp" class="dropdown-toggle">
 								My Page </a>
 							<ul class="dropdown-menu">
 								<li><a href="${ pageContext.request.contextPath}/member/memberDetail.jsp">회원 정보</a></li>
@@ -336,7 +333,13 @@
 							<c:when test="${ empty userVO }">
 								<li class="dropdown dropdown-mega dropdown-mega-signin signin" id="headerAccount">
 									<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/sign/login.jsp">
-										<i class="fa fa-user"></i> Sign In</a>
+										<i class="fa fa-user"></i> Sign IN
+									</a>
+								</li>
+								<li class="dropdown dropdown-mega dropdown-mega-signin signin" id="headerAccount">
+									<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/sign/phoneCert.jsp">
+										<i class="fa fa-user"></i> Sign UP
+									</a>
 								</li>
 							</c:when>
 							<c:otherwise>
