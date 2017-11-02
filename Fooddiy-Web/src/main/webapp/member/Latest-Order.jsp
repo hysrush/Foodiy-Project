@@ -8,7 +8,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title> | MyPage | </title>
+<title> | 최극 주문 내역 | </title>
 
 <meta name="keywords" content="HTML5 Template" />
 <meta name="description" content="Porto - Responsive HTML5 Template">
@@ -84,13 +84,15 @@
 </head>
 <body>
 	<div class="body">
-		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 145, 'stickySetTop': '-145px', 'stickyChangeLogo': false}">
+		<header id="header"
+				data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 53, 'stickySetTop': '-53px', 'stickyChangeLogo': false}">
 				<jsp:include page="/resources/include/top-new.jsp"/>
 		</header>
 		
 		<!-- Mobile menu 부분 -->
 			<jsp:include page="/resources/include/mobile-menu.jsp"/>
 		<!-- ---------------------------------------------------------------------------------------------- -->
+	<div role="main" class="main">
 	<section class="page-header">
 					<div class="container">
 						<div class="row">
@@ -103,6 +105,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-12">
+								<h1>내 정보</h1>
 							</div>
 						</div>
 					</div>
@@ -131,38 +134,41 @@
 						<div class="col-md-12r">
 
 							<div style="@media screen and (max-width:670px) " class="featured-boxes">
-									<div class="col-sm-9">
+									<div class="col-md-8 col-xs-12">
 										<div class="featured-box featured-box-primary align-left mt-xlg">
-											<div align="center" class="box-content">
-												<h4  style="width: 35px; float: left;" class="heading-primary text-uppercase mb-md">번호</h4>
-												<h4 align="right" style="width: 130px; float: left;" class="heading-primary text-uppercase mb-md">메뉴사진</h4>
-												<h4 align="center" style="width: 250px; float: left;" class="heading-primary text-uppercase mb-md">제목</h4>
-												<h4 style="width: 100px; float: left;" class="heading-primary text-uppercase mb-md">날짜</h4>
-												<h4 align="right" style="width: 120px; float: left;" class="heading-primary text-uppercase mb-md">매장정보</h4>
-												<h4 align="right" style="width: 110px; float: left;" class="heading-primary text-uppercase mb-md">주문상태</h4>
+											<div  align="center" class="box-content">
+												<h4 align="left" style="font-size:100%; width: 35px; float: left;" class="heading-primary text-uppercase mb-md">번호</h4>
+												<h4  align="center" style="font-size:100%; width: 120px; float: left;" class="heading-primary text-uppercase mb-md">메뉴사진</h4>
+												<h4 align="center" style="font-size:100%; width: 200px; float: left;" class="heading-primary text-uppercase mb-md">제목</h4>
+												<h4 style="font-size:100%; width: 50px; float: left; margin-left: 7%" class="heading-primary text-uppercase mb-md">날짜</h4>
+												<h4 align="center" style="margin-left:4%; font-size:100%; width: 150px; float: left;" class="heading-primary text-uppercase mb-md">주문상태</h4>
+												</div> 
 												<table class="cart-totals">
 													<tbody>
 														<tr class="cart-subtotal">
+																
 															<th style="width: 66px">
 																<strong >1</strong>
 															</th>
 															<td style="width:20%;" style="" class="product-thumbnail">
 																	<a href="shop-product-sidebar.html">
-																		<img style="width:80%; height:100px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/products/product-1.jpg">
+																		<img style="width:100%; height:100px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/products/product-1.jpg">
 																	</a>
 																</td>
-															<td align="center" style="width: 150px">
+															<td align="center" style="width: 150px; font-size:80%;">
 																<span class="amount">선택한 재료 내용</span>
 															</td>
-															<td style="width: 200px" align="center">
+															<td style=" font-size:80%; width: 150px" align="center">
 																<span class="amount">2017-10-29</span>
 															</td>
-															<td style="width: 100px" align="left">
-																<span class="amount">역삼점</span>
+															<td align="left">
+																<button style="width: 60px; height: 30px; font-size: 12px" type="button" class="btn  btn-info"> 준비중 </button>
 															</td>
-															<td align="right">
-																<button style="width: 80px; height: 30px; font-size: 14px" type="button" class="btn  btn-info"> 준비중 </button>
-															</td>
+															<td  class="product-thumbnail">
+																	<a href="shop-product-sidebar.html">
+																		<img style="width:50%; height:40px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/rr.JPG">
+																	</a>
+																</td>
 														</tr>
 														<tr class="shipping">
 															<th style="width: 66px">
@@ -170,21 +176,23 @@
 															</th>
 															<td style="width:20%;" style="" class="product-thumbnail">
 																	<a href="shop-product-sidebar.html">
-																		<img style="width:80%; height:100px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/products/product-1.jpg">
+																		<img style="width:100%; height:100px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/products/product-1.jpg">
 																	</a>
 																</td>
-															<td align="center" style="width: 150px">
+															<td align="center" style=" font-size:80%; width: 150px">
 																<span class="amount">선택한 재료 내용</span>
 															</td>
-															<td style="width: 200px" align="center">
+															<td style=" font-size:80%; width: 200px" align="center">
 																<span class="amount">2017-10-29</span>
 															</td>
-															<td style="width: 100px" align="left">
-																<span class="amount">역삼점</span>
-															</td>
-															<td align="right">
+															<td align="left">
 																<button style="background-color:orange; width: 80px; height: 30px; font-size: 14px" type="button" class="btn  btn-info"> 주문완료 </button>
 															</td>
+															<td  class="product-thumbnail">
+																	<a href="shop-product-sidebar.html">
+																		<img style="width:50%; height:40px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/rr.JPG">
+																	</a>
+																</td>
 														</tr>
 														<tr class="shipping">
 															<th style="width: 66px">
@@ -192,21 +200,23 @@
 															</th>
 															<td style="width:20%;" style="" class="product-thumbnail">
 																	<a href="shop-product-sidebar.html">
-																		<img style="width:80%; height:100px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/products/product-1.jpg">
+																		<img style="width:100%; height:100px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/products/product-1.jpg">
 																	</a>
 																</td>
-															<td align="center" style="width: 150px">
+															<td align="center" style=" font-size:80%; width: 150px">
 																<span class="amount">선택한 재료 내용</span>
 															</td>
-															<td style="width: 200px" align="center">
+															<td style=" font-size:80%; width: 200px" align="center">
 																<span class="amount">2017-10-25</span>
 															</td>
-															<td style="width: 100px" align="left">
-																<span class="amount">강남점</span>
-															</td>
-															<td align="right">
+															<td align="left">
 																<button style="background-color:orange; width: 80px; height: 30px; font-size: 14px" type="button" class="btn  btn-info"> 주문완료 </button>
 															</td>
+															<td  class="product-thumbnail">
+																	<a href="shop-product-sidebar.html">
+																		<img style="width:50%; height:40px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/rr.JPG">
+																	</a>
+																</td>
 														</tr>
 														<tr class="shipping">
 															<th style="width: 66px">
@@ -214,21 +224,23 @@
 															</th>
 															<td style="width:20%;" style="" class="product-thumbnail">
 																	<a href="shop-product-sidebar.html">
-																		<img style="width:80%; height:100px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/products/product-1.jpg">
+																		<img style="width:100%; height:100px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/products/product-1.jpg">
 																	</a>
 																</td>
-															<td align="center" style="width: 150px">
+															<td align="center" style=" font-size:80%; width: 150px">
 																<span class="amount">선택한 재료 내용</span>
 															</td>
-															<td style="width: 200px" align="center">
+															<td style=" font-size:80%; width: 200px" align="center">
 																<span class="amount">2017-10-25</span>
 															</td>
-															<td style="width: 100px" align="left">
-																<span class="amount">강남점</span>
-															</td>
-															<td align="right">
+															<td align="left">
 																<button style="background-color:orange; width: 80px; height: 30px; font-size: 14px" type="button" class="btn  btn-info"> 주문완료 </button>
 															</td>
+															<td  class="product-thumbnail">
+																	<a href="shop-product-sidebar.html">
+																		<img style="width:50%; height:40px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/rr.JPG">
+																	</a>
+																</td>
 														</tr>
 														<tr class="shipping">
 															<th style="width: 66px">
@@ -236,25 +248,26 @@
 															</th>
 															<td style="width:20%;" style="" class="product-thumbnail">
 																	<a href="shop-product-sidebar.html">
-																		<img style="width:80%; height:100px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/products/product-1.jpg">
+																		<img style="width:100%; height:100px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/products/product-1.jpg">
 																	</a>
 																</td>
-															<td align="center" style="width: 150px">
+															<td align="center" style=" font-size:80%; width: 150px">
 																<span class="amount">선택한 재료 내용</span>
 															</td>
-															<td style="width: 200px" align="center">
+															<td style=" font-size:80%; width: 200px" align="center">
 																<span class="amount">2017-10-24</span>
 															</td>
-															<td style="width: 100px" align="left">
-																<span class="amount">강남점</span>
-															</td>
-															<td align="right">
+															<td align="left">
 																<button style="background-color:orange; width: 80px; height: 30px; font-size: 14px" type="button" class="btn  btn-info"> 주문완료 </button>
 															</td>
+															<td  class="product-thumbnail">
+																	<a href="shop-product-sidebar.html">
+																		<img style="width:50%; height:40px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/rr.JPG">
+																	</a>
+																</td>
 														</tr>
 													</tbody>
 												</table>
-											</div>
 										</div>	
 									<div class="header-search hidden-xs">
 										<form id="searchForm" action="page-search-results.html" method="get">
@@ -285,7 +298,7 @@
 							</div>
 		</div>
 	</div>
-
+	</div>
 	<!-- ---------------------------------------------------------------------------------------------- -->
 		<footer id="footer">
 			<jsp:include page="/resources/include/bottom.jsp"/>

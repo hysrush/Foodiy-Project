@@ -43,14 +43,18 @@
 									</div>
 								</form>
 								<!-- API 로그인 -->
-								<div class="row">		
-									<div class="col-md-6">
+								<div class="row mt-xlg">		
+									<div class="col-md-12">
 										<jsp:include page="/resources/include/login/kakaoLogin.jsp"/>
 									</div>
-									<div class="col-md-6">
+								</div>
+								<div class="row mt-xlg">
+									<div class="col-md-4">
 										<jsp:include page="/resources/include/login/facebookLogin.jsp"/>
 									</div>
-									<div class="col-md-4">
+								</div>
+								<div class="row mt-xlg">
+									<div class="col-md-12">
 										<jsp:include page="/resources/include/login/naverLogin.jsp"/>
 									</div>
 								</div>

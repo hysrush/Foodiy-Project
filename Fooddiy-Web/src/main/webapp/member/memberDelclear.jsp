@@ -8,7 +8,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title>Fooddiy-Order</title>	
+		<title> | 회원 탈퇴 | </title>	
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -84,7 +84,8 @@
 </head>
 <body>
 	<div class="body">
-		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 145, 'stickySetTop': '-145px', 'stickyChangeLogo': false}">
+		<header id="header"
+				data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 53, 'stickySetTop': '-53px', 'stickyChangeLogo': false}">
 				<jsp:include page="/resources/include/top-new.jsp"/>
 		</header>
 		<!-- Mobile menu 부분 -->
@@ -108,25 +109,28 @@
 						</div>
 					</div>
 				</section>
-				<div style="margin-left: 47%; margin-top: 3%" class="col-md-3 col-sm-4 sample-icon">
+				<div align="center" style="margin-left: 34%; margin-top: 3%" class="sample-icon col-md-3 col-sm-4 col-xs-3 ">
 					<a><i style="color:orange; font-size: 120px;" class="fa fa-check-circle-o"></i> </a>
-				</div><br/><br/>
+				</div><br/> 
 		
 		
-		<div class="container" style="margin-left: 41%; margin-top: 10%;" >
+		<div align="center" class="container col-md-8 col-sm-7 col-xs-8" style="margin-left: 14%; margin-top: 5%;" >
+			<div class="row">
 			
-			<h2>
-				<strong>회원탈퇴</strong>가 완료되었습니다.
+			<h2 >
+				<strong >회원탈퇴</strong>가 완료되었습니다.
 			</h2>
-		</div>
+		
 					<div class="row">
 						<div class="col-md-12">
 							<hr class="tall">
 						</div>
+					  </div>
 					</div>
-		
+					</div>
+		<div align="center" class="container">
 				<div class="row">
-						<div style="margin-left: 30%" class="col-md-5 center">
+						<div  class="col-md-11  col-xs-12 " style="margin-right: 0%;float: left;">
 							<h1 class="mb-sm small">그동안 저희 홈페이지를 용해 주셔서 감사합니다.</h1>
 							<p class="lead">보다 나은 서비스로 다시 찾아 뵙겠습니다.</p>
 						</div>
@@ -139,11 +143,12 @@
 						</div>
 					</div>
 
-			<div style="margin-bottom:5% ; margin-left: 47%" class="col-md-8">
-				<button id="start" style="width: 130px; height: 40px; font-size: 20px" type="button" class="btn  btn-info">  첫화면 </button>
+			<div align="right" style="margin-bottom:5% ; " class="col-md-7 col-xs-10">
+				<button style="width: 130px; height: 40px; margin-right:10%; font-size: 20px;" type="button" class="btn  btn-info">  첫화면 </button>
 			</div>
 		</div>
 
+</div>
 
 	<!-- ---------------------------------------------------------------------------------------------- -->
 	<div>

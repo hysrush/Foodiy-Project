@@ -2,14 +2,30 @@
 
 
 .shop .cart-title {
-	
-	
 	margin : 10px;
 	margin-top: 20px;
 }
 
+.shop table.cart .product-bread {
+	width: 15%;
+	font-size: 9pt;
+	color: gray;
+}
 .shop table.cart .product-add-ingredient {
-	width: 40%;
+	width: 15%;
+	font-size: 9pt;
+	color: gray;
+}
+.shop table.cart .product-sauce {
+	width: 15%;
+	font-size: 9pt;
+	color: gray;
+}
+.shop table.cart .product-quantity {
+	width: 15%;
+}
+.shop table.cart .product-subtotal {
+	width: 20%;
 }
 
 .shop table.cart td.price_info {
@@ -36,6 +52,22 @@
 	height: 50px;
 	
 }
+.body
+	{
+		min-width: 320px;
+	}
+ 	.shop table.cart th.product-bread, .shop table.cart td.product-bread
+	{
+		display: none;
+	}
+ 	.shop table.cart th.product-add-ingredient, .shop table.cart td.product-add-ingredient
+	{
+		display: none;
+	} 
+ 	.shop table.cart th.product-sauce, .shop table.cart td.product-sauce
+	{
+		display: none;
+	} 
 
 #lnb {
     position: relative;
@@ -66,13 +98,11 @@
     line-height: 40px;
     color: #222222;
 }
-a {
-    text-decoration: none;
-    color: inherit;
-}
+
 
 
 /* Responsive */
+/* 991  */
 @media ( max-width : 991px) {
 	.shop .actions-continue {
 		float: none;
@@ -82,15 +112,24 @@ a {
 		width:100px;
 	}
 	
- 	.shop table.cart th.product-add-ingredient, .shop table.cart td.product-add-ingredient
+ 	.shop table.cart td.product-bread
 	{
-		display: none;
+		font-size: 6pt;
+	} 
+	
+ 	.shop table.cart td.product-add-ingredient
+	{
+		font-size: 6pt;
+	} 
+	
+ 	.shop table.cart td.product-sauce
+	{
+		font-size: 6pt;
 	} 
 	
 	.shop table.cart .product-name {
 		width: 169px;
 	}
-	
 	
 	.shop table.cart td.price_info {
 		text-align: center;
@@ -105,12 +144,9 @@ a {
 	
 	.shop .actions-continue .cart-submit,
 	.shop .actions-continue .cart-button {
-		
 		width : 150px;
 		height : 40px;
 	}
-	
-	
 	
 	#lnb {
 		float: none;
@@ -149,9 +185,13 @@ a {
 	    right: 0;
 	    background: #ddd;
 	}
-		
+
 	
 }
+
+		
+	
+ 	
 
 
 

@@ -4,7 +4,7 @@
 <div class="mobile-nav">
 	<div class="mobile-nav-wrapper">
 		<ul class="mobile-side-menu">
-			<li><a href="demo-shop-9.html">Home</a></li>
+			<li><a href="${ pageContext.request.contextPath}/index2.jsp">Home</a></li>
 			<li><span class="mmenu-toggle"></span> <a href="#">Menu</a>
 				<ul>
 					<li><a href="${ pageContext.request.contextPath}/menu/menu2.jsp">전체메뉴 ALL MENU</a></li>
@@ -51,6 +51,9 @@
 				<c:when test="${ empty userVO }">
 					<li><a href="${ pageContext.request.contextPath }/sign/login.jsp">
 						<i class="fa fa-user"></i> Sign In</a>
+					</li>
+					<li><a href="${ pageContext.request.contextPath }/sign/phoneCert.jsp">
+						<i class="fa fa-user"></i> Sign Up</a>
 					</li>
 				</c:when>
 				<c:otherwise>

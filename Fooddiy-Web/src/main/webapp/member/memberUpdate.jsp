@@ -86,7 +86,8 @@
 
 <body>
 	<div class="body">
-		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 145, 'stickySetTop': '-145px', 'stickyChangeLogo': false}">
+		<header id="header"
+				data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 53, 'stickySetTop': '-53px', 'stickyChangeLogo': false}">
 				<jsp:include page="/resources/include/top-new.jsp"/>
 		</header>
 		<!-- Mobile menu 부분 -->
@@ -132,11 +133,11 @@
 						</div>
 					</div>
 					
-				<div class="col-md-4">
-					<img src="${ pageContext.request.contextPath }/resources/img/projects/project-4.jpg" class="img-responsive" alt="" style="margin-left: 20%; margin-top: 20%; width: 300px;">
+				<div class="col-md-4 ">
+					<img src="${ pageContext.request.contextPath }/resources/img/projects/project-4.jpg" class="img-responsive" alt="" style="margin-left: 7%; margin-top: 20%; width: 300px;">
 				</div>
 				
-						<div class="col-md-5" style="margin-top: 6%; margin-left: 3%">
+						<div class="col-md-5" style="margin-top: 6%; margin-left: 2%">
 
 							<div class="panel-group" id="accordion">
 								<div class="panel panel-default">
@@ -217,7 +218,7 @@
 						
 							<div style="margin-top: 12%; ">
 							<div class="row">
-									<input style="margin-left: 73%" type="submit" value="저장" class="btn btn-info" data-toggle="modal" data-target="#formModal"/>
+									<input style="margin-left: 63%" type="submit" value="저장" class="btn btn-info" data-toggle="modal" data-target="#formModal"/>
 													<button type="button" class="btn btn-info" data-dismiss="modal">취소</button>
 									<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
 										<div class="modal-dialog">
