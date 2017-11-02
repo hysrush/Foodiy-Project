@@ -66,17 +66,11 @@
 </head>
 <body>
 	<div class="body">
-			<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 40, 'stickySetTop': '-40px', 'stickyChangeLogo': false}">
-		<header id="header"
-				data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 53, 'stickySetTop': '-53px', 'stickyChangeLogo': false}">
+			
+			<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 53, 'stickySetTop': '-53px', 'stickyChangeLogo': false}">
 				<jsp:include page="/resources/include/top-new.jsp"/>
 			</header>
 			
-<%-- 		<header id="header" style="min-height: 250px;" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': false}">
-				<jsp:include page="/resources/include/top-new.jsp"/>
-			</header> --%>
-			
-		</header>
 		
 			<!-- Mobile menu 부분 -->
 			<jsp:include page="/resources/include/mobile-menu.jsp"/>
