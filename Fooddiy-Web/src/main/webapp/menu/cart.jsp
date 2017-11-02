@@ -1,3 +1,4 @@
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -9,6 +10,7 @@
 		<!-- Basic -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+
 
 		<title>Fooddiy-Order</title>	
 
@@ -70,10 +72,11 @@
 </head>
 <body>
 	<div class="body">
-			<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 145, 'stickySetTop': '-145px', 'stickyChangeLogo': false}">
+			<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 145, 'stickySetTop': '-145px', 'stickyChangeLogo': false}">
 				<jsp:include page="/resources/include/top-new.jsp"/>
 			</header>
-
+			<!-- Mobile menu 부분 -->
+			<jsp:include page="/resources/include/mobile-menu.jsp"/>
 
 			<div role="main" class="main shop">
 
@@ -153,6 +156,7 @@
 																</td>
 																<td class="product-add-ingredient">
 																	추가재료
+															
 																</td>
 																<td class="product-quantity">
 																	<form enctype="multipart/form-data" method="post" class="cart">
@@ -163,6 +167,7 @@
 																		</div>
 																	</form>
 																</td>
+																
 																<td class="product-subtotal">
 																	<span class="amount">$299</span>
 																</td>

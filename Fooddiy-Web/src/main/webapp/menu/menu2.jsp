@@ -3,70 +3,103 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<!-- Basic -->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title>Fooddiy-Order</title>	
+<title>Fooddiy-Order</title>
 
-		<meta name="keywords" content="HTML5 Template" />
-		<meta name="description" content="Porto - Responsive HTML5 Template">
-		<meta name="author" content="okler.net">
+<meta name="keywords" content="HTML5 Template" />
+<meta name="description" content="Porto - Responsive HTML5 Template">
+<meta name="author" content="okler.net">
 
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="${ pageContext.request.contextPath}/resources/img/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="${ pageContext.request.contextPath}/resources/img/apple-touch-icon.png">
+<!-- Favicon -->
+<link rel="shortcut icon"
+	href="${ pageContext.request.contextPath}/resources/img/favicon.ico"
+	type="image/x-icon" />
+<link rel="apple-touch-icon"
+	href="${ pageContext.request.contextPath}/resources/img/apple-touch-icon.png">
 
-		<!-- Mobile Metas -->
-		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- Mobile Metas -->
+<meta name="viewport"
+	content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<!-- Web Fonts  -->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+<!-- Web Fonts  -->
+<link
+	href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light"
+	rel="stylesheet" type="text/css">
 
-		<!-- Vendor CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/animate/animate.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/simple-line-icons/css/simple-line-icons.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.theme.default.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/magnific-popup.min.css">
+<!-- Vendor CSS -->
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/animate/animate.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/simple-line-icons/css/simple-line-icons.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.carousel.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.theme.default.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/magnific-popup.min.css">
 
-		<!-- Theme CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-elements.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-blog.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-shop.css">
+<!-- Theme CSS -->
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/css/theme.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/css/theme-elements.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/css/theme-blog.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/css/theme-shop.css">
 
-		<!-- Current Page CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/settings.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/layers.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/navigation.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/css/component.css">
+<!-- Current Page CSS -->
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/settings.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/layers.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/navigation.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/css/component.css">
 
-		<!-- Skin CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/skins/skin-shop-9.css"> 
+<!-- Skin CSS -->
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/css/skins/skin-shop-9.css">
 
-		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/demos/demo-shop-9.css">
+<!-- Theme Custom CSS -->
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/css/demos/demo-shop-9.css">
 
-		<!-- 이미지 캐러셀 -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		
-		<!-- Head Libs -->
-		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
+<!-- 이미지 캐러셀 -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Head Libs -->
+<script
+	src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
 
 
-		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/custom.css">
+<!-- Theme Custom CSS -->
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/css/custom.css">
 </head>
 <body>
 	<div class="body">
-		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 145, 'stickySetTop': '-145px', 'stickyChangeLogo': false}">
-				<jsp:include page="/resources/include/top-new.jsp"/>
+		<header id="header"
+			data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 145, 'stickySetTop': '-145px', 'stickyChangeLogo': false}">
+			<jsp:include page="/resources/include/top-new.jsp" />
 		</header>
+		
+		<!-- Mobile menu 부분 -->
+		<jsp:include page="/resources/include/mobile-menu.jsp"/>
+		
 		<div role="main" class="main">
 			<section class="page-header">
 				<div class="container">
@@ -90,116 +123,278 @@
 				<div class="row">
 
 					<div class="col-md-3">
-							<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
-								<h4 class="heading-primary">MENU</h4>
-								<ul class="nav nav-list mb-xlg">
-									<li class="active"><a href="#">전체메뉴</a></li>
-									<li><a href="#">프리미엄</a></li>
-									<li><a href="#">베스트</a></li>
-									<li><a href="#">신제품</a></li>
-									<li><a href="#">사이드 음료</a></li>
-								</ul>
-							</aside>
-					</div>
+						<aside class="sidebar hidden-sm hidden-xs" data-plugin-sticky
+							data-plugin-options="{ 'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}, 'items': 4 }">
+							<h4 class="heading-primary">MENU</h4>
+							<ul class="nav nav-list sort-source" data-sort-id="portfolio"
+								data-option-key="filter"
+								data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
+								<li data-option-value="*" class="active"><a href="#">전체메뉴</a></li>
+								<li data-option-value=".recommend"><a href="#">추천메뉴</a></li>
+								<li data-option-value=".premium"><a href="#">프리미엄</a></li>
+								<li data-option-value=".best"><a href="#">베스트</a></li>
+								<li data-option-value=".classic"><a href="#">클래식</a></li>
+								<li data-option-value=".breakfast"><a href="#">아침식사</a></li>
+								<li data-option-value=".salad"><a href="#">샐러드</a></li>
+								<li data-option-value=".addition"><a href="#">음료&추가메뉴</a></li>
+							</ul>
+						</aside>						
+					</div>					
 
 
 					<div class="col-md-9">
-						<h2>프리미엄</h2>
+						<aside class="sidebar hidden-md hidden-lg carouselmenu" data-plugin-sticky
+							data-plugin-options="{ 'maxWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+							<h4 class="heading-primary">MENU</h4>
+							<ul class="nav nav-list sort-source owl-carousel owl-theme" id="sidemenu" data-sort-id="portfolio"
+								data-option-key="filter"
+								data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*', 'items': 4}">
+								<li data-option-value="*" class="active"><a href="#">전체메뉴</a></li>
+								<li data-option-value=".recommend"><a href="#">추천메뉴</a></li>
+								<li data-option-value=".premium"><a href="#">프리미엄</a></li>
+								<li data-option-value=".best"><a href="#">베스트</a></li>
+								<li data-option-value=".classic"><a href="#">클래식</a></li>
+								<li data-option-value=".breakfast"><a href="#">아침식사</a></li>
+								<li data-option-value=".salad"><a href="#">샐러드</a></li>
+								<li data-option-value=".addition"><a href="#">음료&추가메뉴</a></li>
+							</ul>
+						</aside>
+						
+
 						<ul class="nav nav-pills sort-source" data-sort-id="portfolio"
 							data-option-key="filter"
-							data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
-						</ul>
+							data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}"></ul>
 						<div class="row">
 							<div
 								class="sort-destination-loader sort-destination-loader-showing">
 								<ul class="portfolio-list sort-destination"
 									data-sort-id="portfolio">
-									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item recommend">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
-													src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Meatball-Marinara.jpg"
 													class="img-responsive" alt=""
 													style="margin-top: 50px; margin-bottom: 50px"> <span
 													class="thumb-info-title"> <span
-														class="thumb-info-inner">스테이크 & 치즈</span> <span
-														class="thumb-info-type">6,100</span>
+														class="thumb-info-inner">미트볼</span> <span
+														class="thumb-info-type">4,900</span>
 												</span> <span class="thumb-info-action"> <span
-														class="thumb-info-action-icon"><a href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
-															class="fa fa-shopping-basket"></i></a></span></span>
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
+																class="fa fa-plus"></i></a></span></span>
 											</span>
 											</span>
 										</div>
 									</li>
-									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item recommend">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
-													src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Italian-BMT.jpg"
 													class="img-responsive" alt=""
 													style="margin-top: 50px; margin-bottom: 50px"> <span
 													class="thumb-info-title"> <span
-														class="thumb-info-inner">스테이크 & 치즈</span> <span
-														class="thumb-info-type">6,100</span>
+														class="thumb-info-inner">이탈리안 비엠티</span> <span
+														class="thumb-info-type">4,900</span>
 												</span> <span class="thumb-info-action"> <span
-														class="thumb-info-action-icon"><i
-															class="fa fa-shopping-basket"></i></span></span>
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
+																class="fa fa-plus"></i></a></span></span>
 											</span>
 											</span>
 										</div>
 									</li>
-									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item premium">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
-													src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Steak-Cheese.jpg"
 													class="img-responsive" alt=""
 													style="margin-top: 50px; margin-bottom: 50px"> <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">스테이크 & 치즈</span> <span
 														class="thumb-info-type">6,100</span>
 												</span> <span class="thumb-info-action"> <span
-														class="thumb-info-action-icon"><i
-															class="fa fa-shopping-basket"></i></span></span>
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
+																class="fa fa-plus"></i></a></span></span>
 											</span>
 											</span>
 										</div>
 									</li>
-									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item premium">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
-													src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Roast-Beef.jpg"
 													class="img-responsive" alt=""
 													style="margin-top: 50px; margin-bottom: 50px"> <span
 													class="thumb-info-title"> <span
-														class="thumb-info-inner">스테이크 & 치즈</span> <span
-														class="thumb-info-type">6,100</span>
+														class="thumb-info-inner">로스트 비프</span> <span
+														class="thumb-info-type">5,800</span>
 												</span> <span class="thumb-info-action"> <span
-														class="thumb-info-action-icon"><i
-															class="fa fa-shopping-basket"></i></span></span>
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
+																class="fa fa-plus"></i></a></span></span>
 											</span>
 											</span>
 										</div>
 									</li>
-									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item premium">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
-													src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Oven-Roasted-Chicken.jpg"
 													class="img-responsive" alt=""
 													style="margin-top: 50px; margin-bottom: 50px"> <span
 													class="thumb-info-title"> <span
-														class="thumb-info-inner">스테이크 & 치즈</span> <span
-														class="thumb-info-type">6,100</span>
+														class="thumb-info-inner">로스트 치킨</span> <span
+														class="thumb-info-type">5,800</span>
 												</span> <span class="thumb-info-action"> <span
-														class="thumb-info-action-icon"><i
-															class="fa fa-shopping-basket"></i></span></span>
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
+																class="fa fa-plus"></i></a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item premium">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Chicken-Bacon-Ranch-Melt.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">치킨 베이컨랜치</span> <span
+														class="thumb-info-type">5,800</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
+																class="fa fa-plus"></i></a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item best">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Spicy-Italian.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">스파이시 이탈리안</span> <span
+														class="thumb-info-type">5,300</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
+																class="fa fa-plus"></i></a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item best">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Turkey-Breast.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">터키 베이컨</span> <span
+														class="thumb-info-type">5,300</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
+																class="fa fa-plus"></i></a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item best">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Sweet-Onion-Chicken-Teriyaki.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">치킨 데리야끼</span> <span
+														class="thumb-info-type">5,300</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
+																class="fa fa-plus"></i></a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item best">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Subway-Club.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">써브웨이 클럽</span> <span
+														class="thumb-info-type">5,300</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
+																class="fa fa-plus"></i></a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item classic">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Classic-Tuna.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">참치</span> <span
+														class="thumb-info-type">4,500</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item classic">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Black-Forest-Ham.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">햄</span> <span
+														class="thumb-info-type">4,500</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
 											</span>
 											</span>
 										</div>
@@ -220,14 +415,6 @@
 		</footer>
 
 	</div>
-
-
-
-
-
-
-
-
 
 
 	<!-- 모달들 -->
@@ -261,7 +448,7 @@
 									<div class="thumbnail"
 										style="margin-top: 90px; margin-bottom: 90px">
 										<img alt="" class="img-responsive img-rounded"
-											src="${ pageContext.request.contextPath }/resources/img/products/steak_and_cheese.jpg">
+											src="${ pageContext.request.contextPath }/resources/img/menu_detail/steak_and_cheese.jpg">
 									</div>
 								</div>
 							</div>
@@ -295,11 +482,14 @@
 									달콤한 풍미와 풍부한 식감으로 모든 이들을 잡아끄는 맛입니다.
 								</p>
 								<p class="inch">
-								<input type="radio" name="chk_info" value="HTML" ><span style="font-size:18px; margin-left:5px; margin-right:20px">15cm</span>
-								<input type="radio" name="chk_info" value="CSS" checked="checked"><span style="font-size:18px; margin-left:5px">30cm</span>
+									<input type="radio" name="chk_info" value="HTML" checked="checked"><span
+										style="font-size: 18px; margin-left: 5px; margin-right: 20px">15cm</span>
+									<input type="radio" name="chk_info" value="CSS"
+										><span
+										style="font-size: 18px; margin-left: 5px">30cm</span>
 								</p>
 
-								
+
 
 								<form enctype="multipart/form-data" method="post" class="cart">
 									<div class="quantity">
@@ -498,49 +688,61 @@
 	</div>
 
 
+	<!-- Vendor -->
+	<script
+		src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath}/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath}/resources/vendor/jquery.easing/jquery.easing.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath}/resources/vendor/jquery-cookie/jquery-cookie.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath}/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath}/resources/vendor/common/common.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath}/resources/vendor/jquery.validation/jquery.validation.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath}/resources/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath}/resources/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath}/resources/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath}/resources/vendor/isotope/jquery.isotope.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/owl.carousel.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath}/resources/vendor/vide/vide.min.js"></script>
 
+	<!-- Theme Base, Components and Settings -->
+	<script src="${ pageContext.request.contextPath}/resources/js/theme.js"></script>
 
+	<!-- Current Page Vendor and Views -->
+	<script
+		src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<script
+		src="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
 
+	<!-- Current Page Vendor and Views -->
+	<script
+		src="${ pageContext.request.contextPath}/resources/js/views/view.contact.js"></script>
 
+	<!-- Demo -->
+	<script
+		src="${ pageContext.request.contextPath}/resources/js/demos/demo-shop-9.js"></script>
 
+	<!-- Theme Custom -->
+	<script
+		src="${ pageContext.request.contextPath}/resources/js/custom.js"></script>
 
-
-
-
-		<!-- Vendor -->
-		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easing/jquery.easing.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery-cookie/jquery-cookie.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/common/common.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.validation/jquery.validation.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.gmap/jquery.gmap.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/isotope/jquery.isotope.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/owl.carousel.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/vide/vide.min.js"></script>
-		
-		<!-- Theme Base, Components and Settings -->
-		<script src="${ pageContext.request.contextPath}/resources/js/theme.js"></script>
-		
-		<!-- Current Page Vendor and Views -->
-		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
-		
-		<!-- Current Page Vendor and Views -->
-		<script src="${ pageContext.request.contextPath}/resources/js/views/view.contact.js"></script>
-
-		<!-- Demo -->
-		<script src="${ pageContext.request.contextPath}/resources/js/demos/demo-shop-9.js"></script>
-		
-		<!-- Theme Custom -->
-		<script src="${ pageContext.request.contextPath}/resources/js/custom.js"></script>
-		
-		<!-- Theme Initialization Files -->
-		<script src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
+	<!-- Theme Initialization Files -->
+	<script
+		src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
 </body>
 </html>

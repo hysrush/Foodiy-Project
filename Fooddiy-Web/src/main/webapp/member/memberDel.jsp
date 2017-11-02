@@ -93,6 +93,9 @@
 		<header id="header" class="header-no-min-height header-mobile-nav-only header-flex" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0'}">
 				<jsp:include page="/resources/include/top2.jsp"/>
 		</header>
+		
+		<!-- Mobile menu 부분 -->
+			<jsp:include page="/resources/include/mobile-menu.jsp"/>
 		<!-- ---------------------------------------------------------------------------------------------- -->
 			
 			

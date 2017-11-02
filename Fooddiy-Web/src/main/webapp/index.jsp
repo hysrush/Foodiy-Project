@@ -94,7 +94,7 @@
 		
 		<!-- Current Page Vendor and Views -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
 		<script src="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
 		<script src="${ pageContext.request.contextPath}/resources/js/views/view.home.js"></script>
 		
@@ -103,6 +103,9 @@
 		
 		<!-- Theme Initialization Files -->
 		<script src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
+		
+		<!-- Examples -->
+		<script src="js/examples/examples.demos.js"></script>
 		
 	</body>
 </html>

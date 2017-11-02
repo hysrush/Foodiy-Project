@@ -46,15 +46,15 @@
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/css/component.css">
 
 		<!-- Skin CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/skins/default.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/skins/skin-shop-9.css"> 
 
 		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/custom.css">
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/demos/demo-shop-9.css">
 
 		<!-- Head Libs -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
-		
 		<script src="${ pageContext.request.contextPath}/resources/js/jquery-3.2.1.min.js"></script>
+		
 <script>
 	
 	$(document).ready(function(){
@@ -73,9 +73,13 @@
 </head>
 <body>
 	<div class="body">
-		<header id="header" class="header-no-min-height header-mobile-nav-only header-flex" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0'}">
-				<jsp:include page="/resources/include/top2.jsp"/>
+		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 145, 'stickySetTop': '-145px', 'stickyChangeLogo': false}">
+				<jsp:include page="/resources/include/top-new.jsp"/>
 		</header>
+		
+		<!-- Mobile menu 부분 -->
+		<jsp:include page="/resources/include/mobile-menu.jsp"/>
+		
 		<div role="main" class="main">
 			<section class="page-header">
 				<div class="container">
@@ -162,13 +166,20 @@
 		<script src="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
 		<script src="${ pageContext.request.contextPath}/resources/js/views/view.home.js"></script>
 		
+		<!-- Current Page Vendor and Views -->
+		 <script src="${ pageContext.request.contextPath}/resources/js/views/view.contact.js"></script> 
+
+		<!-- Demo -->
+		<script src="${ pageContext.request.contextPath}/resources/js/demos/demo-shop-9.js"></script>
+		
 		<!-- Theme Custom -->
 		<script src="${ pageContext.request.contextPath}/resources/js/custom.js"></script>
 		
 		<!-- Theme Initialization Files -->
 		<script src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
-
+		
 		<!-- Examples -->
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqatUi4ICaA6KBVjyOxul0QKP4F_H7-mY"></script>
+		
 </body>
 </html>
