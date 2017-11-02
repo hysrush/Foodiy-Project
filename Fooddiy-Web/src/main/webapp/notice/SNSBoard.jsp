@@ -89,10 +89,10 @@
 						</div>
 					</div>
 				</section>
-				
 				<div class= "container">
 					<div class="row">
 						<div class="col-md-2 hidden-xs hidden-sm">
+						<div class="col-md-2 ">
 				<div class="container">
 				<div class="row">
 					<div class="col-md-2 hidden-xs">
@@ -286,18 +286,31 @@
 						</div>
 					</div>
 				</div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 			</div>
 							<!-- END -->
 			</div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 				</div>
 							<!-- END -->
 						</div>
 					</div>
+<<<<<<< HEAD
 					</div>
+=======
+
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 			<footer id="footer">
 				<jsp:include page="/resources/include/bottom.jsp"/>
 			</footer>
-	
+		</div>
+		
 
 		<!-- Vendor -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
