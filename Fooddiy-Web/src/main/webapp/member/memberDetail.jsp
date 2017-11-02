@@ -131,11 +131,10 @@
 		</aside></div></div>
 		
 		<div class="container">
-			<div class="row">
-				<div style="margin-left: 5%" class="col-md-5">
+				<div style="margin-left: 5%" class="col-md-5 col-sm-8 col-xs-8">
 					<img src="${ pageContext.request.contextPath }/resources/img/projects/project-4.jpg" class="img-responsive" alt="" style="margin-left: 20%; margin-top: 8%; width: 300px;">
 				</div>
-				<div class="col-md-3" style="margin-top: 8%">
+				<div class="col-md-3 col-sm-8 col-xs-12" style="margin-top: 8%">
 					<h2 class="mb-none"><strong>등급</strong></h2>
 					<div class="feature-box feature-box-style-2">
 						<div class="feature-box-icon">
@@ -143,13 +142,17 @@
 						</div>
 					</div>
 					<br /> <br /> <br />
-					<h2 class="mb-none"><strong>포인트 : 4250 P</strong></h2>
+					<h2 class="mb-none"><strong>포인트 : 4250P</strong></h2>
 
 				</div>
 			</div>
 		</div>
-						<div class="col-sm-4" style="margin-top: 1%; margin-left: 25%">
-										<div class="featured-box featured-box-primary align-left mt-xlg">
+				<div class="container" >
+					<div class="row">
+					<div  class="col-md-3">
+					</div>
+						<div class="col-md-4" style=" margin-top: 1%; margin-right: 3%;">
+										<div  class="featured-box featured-box-primary align-left mt-xlg">
 											<div class="box-content">
 												<table class="member">
 													<tbody>
@@ -188,13 +191,14 @@
 											</div>
 										</div>
 									</div>
+									</div>
 								</div>
 
 							</div>
 							
 							<div style="margin-top: 1%;  ">
 							<div class="row">
-							<div  style="margin-left: 65%">
+							<div  style="margin-left: 58%">
 									<button class="btn btn-info" data-toggle="modal" data-target="#formModal">회원정보 수정</button>
 									<button id="memberDel" type="button" class="btn  btn-info">회원탈퇴</button>
 							</div>
