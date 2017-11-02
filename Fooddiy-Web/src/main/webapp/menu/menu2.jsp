@@ -119,75 +119,98 @@
 				<div class="row">
 
 					<div class="col-md-3">
-						<aside class="sidebar" id="sidebar" data-plugin-sticky
-							data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+						<aside class="sidebar hidden-sm hidden-xs" data-plugin-sticky
+							data-plugin-options="{ 'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}, 'items': 4 }">
 							<h4 class="heading-primary">MENU</h4>
-							<ul class="nav nav-list mb-xlg">
-								<li class="active"><a href="#">전체메뉴</a></li>
-								<li><a href="#">프리미엄</a></li>
-								<li><a href="#">베스트</a></li>
-								<li><a href="#">신제품</a></li>
-								<li><a href="#">사이드 음료</a></li>
+							<ul class="nav nav-list sort-source" data-sort-id="portfolio"
+								data-option-key="filter"
+								data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
+								<li data-option-value="*" class="active"><a href="#">전체메뉴</a></li>
+								<li data-option-value=".recommend"><a href="#">추천메뉴</a></li>
+								<li data-option-value=".premium"><a href="#">프리미엄</a></li>
+								<li data-option-value=".best"><a href="#">베스트</a></li>
+								<li data-option-value=".classic"><a href="#">클래식</a></li>
+								<li data-option-value=".breakfast"><a href="#">아침식사</a></li>
+								<li data-option-value=".salad"><a href="#">샐러드</a></li>
+								<li data-option-value=".addition"><a href="#">음료&추가메뉴</a></li>
 							</ul>
-						</aside>
-					</div>
+						</aside>						
+					</div>					
 
 
 					<div class="col-md-9">
-						<h2>프리미엄</h2>
+						<aside class="sidebar hidden-sm hidden-xs carouselmenu" data-plugin-sticky
+							data-plugin-options="{ 'maxWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+							<h4 class="heading-primary">MENU</h4>
+							<ul class="nav nav-list sort-source owl-carousel owl-theme" id="sidemenu" data-sort-id="portfolio"
+								data-option-key="filter"
+								data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*', 'items': 4}">
+								<li data-option-value="*" class="active"><a href="#">전체메뉴</a></li>
+								<li data-option-value=".recommend"><a href="#">추천메뉴</a></li>
+								<li data-option-value=".premium"><a href="#">프리미엄</a></li>
+								<li data-option-value=".best"><a href="#">베스트</a></li>
+								<li data-option-value=".classic"><a href="#">클래식</a></li>
+								<li data-option-value=".breakfast"><a href="#">아침식사</a></li>
+								<li data-option-value=".salad"><a href="#">샐러드</a></li>
+								<li data-option-value=".addition"><a href="#">음료&추가메뉴</a></li>
+							</ul>
+						</aside>
+						
+						
+						
+
 						<ul class="nav nav-pills sort-source" data-sort-id="portfolio"
 							data-option-key="filter"
-							data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
-						</ul>
+							data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}"></ul>
 						<div class="row">
 							<div
 								class="sort-destination-loader sort-destination-loader-showing">
 								<ul class="portfolio-list sort-destination"
 									data-sort-id="portfolio">
-									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item recommend">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
-													src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Meatball-Marinara.jpg"
 													class="img-responsive" alt=""
 													style="margin-top: 50px; margin-bottom: 50px"> <span
 													class="thumb-info-title"> <span
-														class="thumb-info-inner">스테이크 & 치즈</span> <span
-														class="thumb-info-type">6,100</span>
+														class="thumb-info-inner">미트볼</span> <span
+														class="thumb-info-type">4,900</span>
 												</span> <span class="thumb-info-action"> <span
 														class="thumb-info-action-icon"><a
 															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
-																class="fa fa-shopping-cart"></i></a></span></span>
+																class="fa fa-plus"></i></a></span></span>
 											</span>
 											</span>
 										</div>
 									</li>
-									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item recommend">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
-													src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Italian-BMT.jpg"
 													class="img-responsive" alt=""
 													style="margin-top: 50px; margin-bottom: 50px"> <span
 													class="thumb-info-title"> <span
-														class="thumb-info-inner">스테이크 & 치즈</span> <span
-														class="thumb-info-type">6,100</span>
+														class="thumb-info-inner">이탈리안 비엠티</span> <span
+														class="thumb-info-type">4,900</span>
 												</span> <span class="thumb-info-action"> <span
 														class="thumb-info-action-icon"><a
 															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
-																class="fa fa-shopping-cart"></i></a></span></span>
+																class="fa fa-plus"></i></a></span></span>
 											</span>
 											</span>
 										</div>
 									</li>
-									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item premium">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
-													src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Steak-Cheese.jpg"
 													class="img-responsive" alt=""
 													style="margin-top: 50px; margin-bottom: 50px"> <span
 													class="thumb-info-title"> <span
@@ -196,45 +219,180 @@
 												</span> <span class="thumb-info-action"> <span
 														class="thumb-info-action-icon"><a
 															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
-																class="fa fa-shopping-cart"></i></a></span></span>
+																class="fa fa-plus"></i></a></span></span>
 											</span>
 											</span>
 										</div>
 									</li>
-									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item premium">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
-													src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Roast-Beef.jpg"
 													class="img-responsive" alt=""
 													style="margin-top: 50px; margin-bottom: 50px"> <span
 													class="thumb-info-title"> <span
-														class="thumb-info-inner">스테이크 & 치즈</span> <span
-														class="thumb-info-type">6,100</span>
+														class="thumb-info-inner">로스트 비프</span> <span
+														class="thumb-info-type">5,800</span>
 												</span> <span class="thumb-info-action"> <span
 														class="thumb-info-action-icon"><a
 															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
-																class="fa fa-shopping-cart"></i></a></span></span>
+																class="fa fa-plus"></i></a></span></span>
 											</span>
 											</span>
 										</div>
 									</li>
-									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item logos">
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item premium">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
-													src="${ pageContext.request.contextPath }/resources/img/products/mn-Steak-Cheese.jpg"
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Oven-Roasted-Chicken.jpg"
 													class="img-responsive" alt=""
 													style="margin-top: 50px; margin-bottom: 50px"> <span
 													class="thumb-info-title"> <span
-														class="thumb-info-inner">스테이크 & 치즈</span> <span
-														class="thumb-info-type">6,100</span>
+														class="thumb-info-inner">로스트 치킨</span> <span
+														class="thumb-info-type">5,800</span>
 												</span> <span class="thumb-info-action"> <span
 														class="thumb-info-action-icon"><a
 															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
-																class="fa fa-shopping-cart"></i></a></span></span>
+																class="fa fa-plus"></i></a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item premium">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Chicken-Bacon-Ranch-Melt.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">치킨 베이컨랜치</span> <span
+														class="thumb-info-type">5,800</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
+																class="fa fa-plus"></i></a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item best">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Spicy-Italian.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">스파이시 이탈리안</span> <span
+														class="thumb-info-type">5,300</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
+																class="fa fa-plus"></i></a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item best">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Turkey-Breast.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">터키 베이컨</span> <span
+														class="thumb-info-type">5,300</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
+																class="fa fa-plus"></i></a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item best">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Sweet-Onion-Chicken-Teriyaki.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">치킨 데리야끼</span> <span
+														class="thumb-info-type">5,300</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
+																class="fa fa-plus"></i></a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item best">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Subway-Club.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">써브웨이 클럽</span> <span
+														class="thumb-info-type">5,300</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
+																class="fa fa-plus"></i></a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item classic">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Classic-Tuna.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">참치</span> <span
+														class="thumb-info-type">4,500</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item classic">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Black-Forest-Ham.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">햄</span> <span
+														class="thumb-info-type">4,500</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
 											</span>
 											</span>
 										</div>
@@ -296,7 +454,7 @@
 									<div class="thumbnail"
 										style="margin-top: 90px; margin-bottom: 90px">
 										<img alt="" class="img-responsive img-rounded"
-											src="${ pageContext.request.contextPath }/resources/img/products/steak_and_cheese.jpg">
+											src="${ pageContext.request.contextPath }/resources/img/menu_detail/steak_and_cheese.jpg">
 									</div>
 								</div>
 							</div>
@@ -330,10 +488,10 @@
 									달콤한 풍미와 풍부한 식감으로 모든 이들을 잡아끄는 맛입니다.
 								</p>
 								<p class="inch">
-									<input type="radio" name="chk_info" value="HTML"><span
+									<input type="radio" name="chk_info" value="HTML" checked="checked"><span
 										style="font-size: 18px; margin-left: 5px; margin-right: 20px">15cm</span>
 									<input type="radio" name="chk_info" value="CSS"
-										checked="checked"><span
+										><span
 										style="font-size: 18px; margin-left: 5px">30cm</span>
 								</p>
 

@@ -37,6 +37,11 @@
 	
 }
 
+.carouselmenu{
+	display: none;
+	height: 20px;
+}
+
 /* Responsive */
 @media ( max-width : 991px) {
 	.shop .actions-continue {
@@ -74,6 +79,11 @@
 		width : 150px;
 		height : 40px;
 	}
+	
+	.carouselmenu{
+		display: block;
+		height: auto;
+	}	
 	
 	
 }
