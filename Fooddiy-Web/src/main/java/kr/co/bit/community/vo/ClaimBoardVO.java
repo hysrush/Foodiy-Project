@@ -3,7 +3,6 @@ package kr.co.bit.community.vo;
 public class ClaimBoardVO {
 	
 	private int no;
-	private int userNo;
 	private String title;
 	private String content;
 //	private String file;  첨부파일임.
@@ -16,12 +15,6 @@ public class ClaimBoardVO {
 	}
 	public void setNo(int no) {
 		this.no = no;
-	}
-	public int getUserNo() {
-		return userNo;
-	}
-	public void setUserNo(int userNo) {
-		this.userNo = userNo;
 	}
 	public String getTitle() {
 		return title;
@@ -49,7 +42,7 @@ public class ClaimBoardVO {
 	}
 	@Override
 	public String toString() {
-		return "ClaimBoardVO [no=" + no + ", userNo=" + userNo + ", title=" + title + ", content=" + content
+		return "ClaimBoardVO [no=" + no + ",  title=" + title + ", content=" + content
 				+ ", viewCnt=" + viewCnt + ", regDate=" + regDate + "]";
 	}
 

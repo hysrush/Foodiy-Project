@@ -2,18 +2,11 @@ package kr.co.bit.community.vo;
 
 public class SNSBoardVO {
 	
-	private int cNo;
 	private int no;
 	private String writer;
 	private String content;
 	private String regDate;
 	
-	public int getcNo() {
-		return cNo;
-	}
-	public void setcNo(int cNo) {
-		this.cNo = cNo;
-	}
 	public int getNo() {
 		return no;
 	}
@@ -40,7 +33,7 @@ public class SNSBoardVO {
 	}
 	@Override
 	public String toString() {
-		return "SNSBoardVO [cNo=" + cNo + ", no=" + no + ", writer=" + writer + ", content=" + content + ", regDate="
+		return "SNSBoardVO [no=" + no + ", writer=" + writer + ", content=" + content + ", regDate="
 				+ regDate + "]";
 	}
 
