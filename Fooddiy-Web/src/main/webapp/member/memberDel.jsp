@@ -14,12 +14,18 @@
 <meta name="description" content="Porto - Responsive HTML5 Template">
 <meta name="author" content="okler.net">
 
+<<<<<<< HEAD
 <!-- Favicon -->
 <link rel="shortcut icon"
 	href="${ pageContext.request.contextPath}/resources/img/favicon.ico"
 	type="image/x-icon" />
 <link rel="apple-touch-icon"
 	href="${ pageContext.request.contextPath}/resources/img/apple-touch-icon.png">
+=======
+		<!-- Favicon --> 
+		<link rel="shortcut icon" href="${ pageContext.request.contextPath}/resources/img/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="${ pageContext.request.contextPath}/resources/img/apple-touch-icon.png">
+>>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 
 <!-- Mobile Metas -->
 <meta name="viewport"
