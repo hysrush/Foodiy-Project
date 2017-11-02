@@ -11,9 +11,30 @@
 
 </head>
 <body>
-<a id="kakao-login-btn"></a>
-<a href="http://developers.kakao.com/logout"></a>
+<!-- <a id="kakao-login-btn"></a>
+<a href="http://developers.kakao.com/logout"></a> -->
+
+<a id="custom-login-btn" href="javascript:loginWithKakao()">
+<img src="${ pageContext.request.contextPath }/resources/img/login/kakao_account_login_btn_medium_narrow.png"/>
+</a>
 <script type='text/javascript'>
+  //<![CDATA[
+    // 사용할 앱의 JavaScript 키를 설정해 주세요.
+    Kakao.init('8b3eb6fd5d5edc6a771d504d0ecb4e22');
+    function loginWithKakao() {
+      // 로그인 창을 띄웁니다.
+      Kakao.Auth.login({
+        success: function(authObj) {
+          alert(JSON.stringify(authObj));
+          location.href="${ pageContext.request.contextPath }/sign/signUp.jsp";
+        },
+        fail: function(err) {
+          alert(JSON.stringify(err));
+        }
+      });
+    };
+
+/* 
   //<![CDATA[
     // 사용할 앱의 JavaScript 키를 설정해 주세요.
     Kakao.init('8b3eb6fd5d5edc6a771d504d0ecb4e22');
@@ -28,8 +49,7 @@
          alert(JSON.stringify(err));
       }
     });
-  //]]>
+  //]]> */
 </script>
-
 </body>
 </html>

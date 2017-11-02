@@ -44,14 +44,14 @@
 								</form>
 								<!-- API 로그인 -->
 								<div class="row">		
-									<div class="col-md-4">
+									<div class="col-md-6">
 										<jsp:include page="/resources/include/login/kakaoLogin.jsp"/>
 									</div>
-									<div class="col-md-4">
-										<a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+									<div class="col-md-6">
+										<jsp:include page="/resources/include/login/facebookLogin.jsp"/>
 									</div>
 									<div class="col-md-4">
-										<a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+										<jsp:include page="/resources/include/login/naverLogin.jsp"/>
 									</div>
 								</div>
 								<div class="row mt-xlg">
