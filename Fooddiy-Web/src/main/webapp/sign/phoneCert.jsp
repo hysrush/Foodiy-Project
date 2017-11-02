@@ -104,52 +104,76 @@
 </head>
 <body>
 	<div class="body">
-		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 145, 'stickySetTop': '-145px', 'stickyChangeLogo': false}">
+		<header id="header"
+				data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 53, 'stickySetTop': '-53px', 'stickyChangeLogo': false}">
 				<jsp:include page="/resources/include/top-new.jsp"/>
 		</header>
+		<!-- Mobile menu 부분 -->
+		<jsp:include page="/resources/include/mobile-menu.jsp"/>
+		
 		<!-- ---------------------------------------------------------------------------------------------- -->
-		<div class="container">
-			<div class="row"><br/><br/><br/>
-				<div class="col-md-4"></div>
-				
-				<div class="col-md-4">
-					<span class="checkbox">
-						<label for="phoneCheck">
-							<h5>
-								<input type="checkbox" id="phoneCheck" name="phoneCert">
-								<strong>이용약관 및 개인정보수집 및이용에 모두 동의합니다.</strong>
-							</h5>
-						</label>
-					</span>
+		<div role="main" class="main">
+			<section class="page-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="breadcrumb">
+									<li><a href="#">Sign Up</a></li>
+									<li class="active">Register</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<h1>회원가입</h1>
+							</div>
+						</div>
+					</div>
+				</section>
+			
+			<div class="container">
+				<div class="row"><br/><br/><br/>
+					<div class="col-md-4"></div>
+					
+					<div class="col-md-4">
+						<span class="checkbox">
+							<label for="phoneCheck">
+								<h5>
+									<input type="checkbox" id="phoneCheck" name="phoneCert">
+									<strong>이용약관 및 개인정보수집 및이용에 모두 동의합니다.</strong>
+								</h5>
+							</label>
+						</span>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-			<div class="col-md-4"></div>
-				<div class="col-md-4">
-					<div class="featured-boxes">
-						<div class="featured-box featured-box-primary align-left mt-xlg">
-							<div align="center" class="box-content">
-								<h4>휴대전화 인증</h4><br/>
-								<p>본인명의의 휴대폰을 통해 인증합니다.</p>
-								<div class="row mt-xlg">
-									<div class="col-md-12">
-										<%-- <input type="hidden" value="업체정보 암호화 데이타 : [AgAFRzQ2MTmDwh6PPOLysfSzTiYkMQeFSoA0LZWcg8izIf/fBtdoP6yDckoE2x8ro7y9POSvE2VFWiR6MbJgUuKemI5vGYjkSGIzGscKWJUOSbq4ZhlzIbGynT6t9uQReoHAdy5CiYDZ9WmcCborA7QxWUNjI79labRQV1pCEd4Wzj6q1DhJopIlEy/BT9hzAyBEjLjlBzRKlBo2+VdTCUwszTRRUxJ/9sH24XN99Tqm7ik97ewlAaZOpTm7r1pW+X5bzzQbxBORemkVec91d8VdWcDgXyFv4XBpwMG0oUgHy44ULok/DwiyjU9wcKZ4SmkIHuAfsAHwXkCKISAVQXaiKW6+JJZvMadSDAVIM8/ZLcAlxBG71Ya78zMs/U5Ict2WjHglkHXqwLG/F8aSkvjvIkH0KzS4jTiPWK9exS6Y9ixgRAkNLSDv7EkihS/zqAUawDDYwb1aCdv5AqCT2fEJygCfnVM38siWb5NfwSBT0L9CTfHzCg==]"/>
-									
-										<!-- 본인인증 서비스 팝업을 호출하기 위해서는 다음과 같은 form이 필요합니다. -->
-										<form name="form_chk" method="post" action="${ pageContext.request.contextPath }/sign/signup.jsp" onsubmit="return check()" target="popupChk">
-											<input type="hidden" name="m" value="checkplusSerivce">						<!-- 필수 데이타로, 누락하시면 안됩니다. -->
-											<input type="hidden" name="EncodeData" value="AgAFRzQ2MTmDwh6PPOLysfSzTiYkMQeFSoA0LZWcg8izIf/fBtdoP6yDckoE2x8ro7y9POSvE2VFWiR6MbJgUuKemI5vGYjkSGIzGscKWJUOSbq4ZhlzIbGynT6t9uQReoHAdy5CiYDZ9WmcCborA7QxWUNjI79labRQV1pCEd4Wzj6q1DhJopIlEy/BT9hzAyBEjLjlBzRKlBo2+VdTCUwszTRRUxJ/9sH24XN99Tqm7ik97ewlAaZOpTm7r1pW+X5bzzQbxBORemkVec91d8VdWcDgXyFv4XBpwMG0oUgHy44ULok/DwiyjU9wcKZ4SmkIHuAfsAHwXkCKISAVQXaiKW6+JJZvMadSDAVIM8/ZLcAlxBG71Ya78zMs/U5Ict2WjHglkHXqwLG/F8aSkvjvIkH0KzS4jTiPWK9exS6Y9ixgRAkNLSDv7EkihS/zqAUawDDYwb1aCdv5AqCT2fEJygCfnVM38siWb5NfwSBT0L9CTfHzCg==">		<!-- 위에서 업체정보를 암호화 한 데이타입니다. -->
-										    
-										    <!-- 업체에서 응답받기 원하는 데이타를 설정하기 위해 사용할 수 있으며, 인증결과 응답시 해당 값을 그대로 송신합니다.
-										    	 해당 파라미터는 추가하실 수 없습니다. -->
-											<input type="hidden" name="param_r1" value="">
-											<input type="hidden" name="param_r2" value="">
-											<input type="hidden" name="param_r3" value="">
-										    
-											<!-- <a href="javascript:fnPopup();" class="btn btn-info mb-md form-control"> 인증하기 </a> -->
-											<input type="submit" id="phoneCert" value="인증하기" class="btn btn-info mb-md form-control"/>
-										</form> --%>
-										<button id="phoneCert" class="btn btn-info mb-md form-control">인증하기</button>
+				<div class="row">
+				<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<div class="featured-boxes">
+							<div class="featured-box featured-box-primary align-left mt-xlg">
+								<div align="center" class="box-content">
+									<h4>휴대전화 인증</h4><br/>
+									<p>본인명의의 휴대폰을 통해 인증합니다.</p>
+									<div class="row mt-xlg">
+										<div class="col-md-12">
+											<%-- <input type="hidden" value="업체정보 암호화 데이타 : [AgAFRzQ2MTmDwh6PPOLysfSzTiYkMQeFSoA0LZWcg8izIf/fBtdoP6yDckoE2x8ro7y9POSvE2VFWiR6MbJgUuKemI5vGYjkSGIzGscKWJUOSbq4ZhlzIbGynT6t9uQReoHAdy5CiYDZ9WmcCborA7QxWUNjI79labRQV1pCEd4Wzj6q1DhJopIlEy/BT9hzAyBEjLjlBzRKlBo2+VdTCUwszTRRUxJ/9sH24XN99Tqm7ik97ewlAaZOpTm7r1pW+X5bzzQbxBORemkVec91d8VdWcDgXyFv4XBpwMG0oUgHy44ULok/DwiyjU9wcKZ4SmkIHuAfsAHwXkCKISAVQXaiKW6+JJZvMadSDAVIM8/ZLcAlxBG71Ya78zMs/U5Ict2WjHglkHXqwLG/F8aSkvjvIkH0KzS4jTiPWK9exS6Y9ixgRAkNLSDv7EkihS/zqAUawDDYwb1aCdv5AqCT2fEJygCfnVM38siWb5NfwSBT0L9CTfHzCg==]"/>
+										
+											<!-- 본인인증 서비스 팝업을 호출하기 위해서는 다음과 같은 form이 필요합니다. -->
+											<form name="form_chk" method="post" action="${ pageContext.request.contextPath }/sign/signup.jsp" onsubmit="return check()" target="popupChk">
+												<input type="hidden" name="m" value="checkplusSerivce">						<!-- 필수 데이타로, 누락하시면 안됩니다. -->
+												<input type="hidden" name="EncodeData" value="AgAFRzQ2MTmDwh6PPOLysfSzTiYkMQeFSoA0LZWcg8izIf/fBtdoP6yDckoE2x8ro7y9POSvE2VFWiR6MbJgUuKemI5vGYjkSGIzGscKWJUOSbq4ZhlzIbGynT6t9uQReoHAdy5CiYDZ9WmcCborA7QxWUNjI79labRQV1pCEd4Wzj6q1DhJopIlEy/BT9hzAyBEjLjlBzRKlBo2+VdTCUwszTRRUxJ/9sH24XN99Tqm7ik97ewlAaZOpTm7r1pW+X5bzzQbxBORemkVec91d8VdWcDgXyFv4XBpwMG0oUgHy44ULok/DwiyjU9wcKZ4SmkIHuAfsAHwXkCKISAVQXaiKW6+JJZvMadSDAVIM8/ZLcAlxBG71Ya78zMs/U5Ict2WjHglkHXqwLG/F8aSkvjvIkH0KzS4jTiPWK9exS6Y9ixgRAkNLSDv7EkihS/zqAUawDDYwb1aCdv5AqCT2fEJygCfnVM38siWb5NfwSBT0L9CTfHzCg==">		<!-- 위에서 업체정보를 암호화 한 데이타입니다. -->
+											    
+											    <!-- 업체에서 응답받기 원하는 데이타를 설정하기 위해 사용할 수 있으며, 인증결과 응답시 해당 값을 그대로 송신합니다.
+											    	 해당 파라미터는 추가하실 수 없습니다. -->
+												<input type="hidden" name="param_r1" value="">
+												<input type="hidden" name="param_r2" value="">
+												<input type="hidden" name="param_r3" value="">
+											    
+												<!-- <a href="javascript:fnPopup();" class="btn btn-info mb-md form-control"> 인증하기 </a> -->
+												<input type="submit" id="phoneCert" value="인증하기" class="btn btn-info mb-md form-control"/>
+											</form> --%>
+											<button id="phoneCert" class="btn btn-info mb-md form-control">인증하기</button>
+										</div>
 									</div>
 								</div>
 							</div>
