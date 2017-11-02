@@ -8,7 +8,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title> | MyPage | </title>
+<title> | 최극 주문 내역 | </title>
 
 <meta name="keywords" content="HTML5 Template" />
 <meta name="description" content="Porto - Responsive HTML5 Template">
@@ -91,6 +91,7 @@
 		<!-- Mobile menu 부분 -->
 			<jsp:include page="/resources/include/mobile-menu.jsp"/>
 		<!-- ---------------------------------------------------------------------------------------------- -->
+	<div role="main" class="main">
 	<section class="page-header">
 					<div class="container">
 						<div class="row">
@@ -103,6 +104,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-12">
+								<h1>내 정보</h1>
 							</div>
 						</div>
 					</div>
@@ -143,6 +145,7 @@
 												<table class="cart-totals">
 													<tbody>
 														<tr class="cart-subtotal">
+																
 															<th style="width: 66px">
 																<strong >1</strong>
 															</th>
@@ -160,6 +163,11 @@
 															<td align="left">
 																<button style="width: 60px; height: 30px; font-size: 12px" type="button" class="btn  btn-info"> 준비중 </button>
 															</td>
+															<td  class="product-thumbnail">
+																	<a href="shop-product-sidebar.html">
+																		<img style="width:50%; height:40px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/rr.JPG">
+																	</a>
+																</td>
 														</tr>
 														<tr class="shipping">
 															<th style="width: 66px">
@@ -179,6 +187,11 @@
 															<td align="left">
 																<button style="background-color:orange; width: 80px; height: 30px; font-size: 14px" type="button" class="btn  btn-info"> 주문완료 </button>
 															</td>
+															<td  class="product-thumbnail">
+																	<a href="shop-product-sidebar.html">
+																		<img style="width:50%; height:40px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/rr.JPG">
+																	</a>
+																</td>
 														</tr>
 														<tr class="shipping">
 															<th style="width: 66px">
@@ -198,6 +211,11 @@
 															<td align="left">
 																<button style="background-color:orange; width: 80px; height: 30px; font-size: 14px" type="button" class="btn  btn-info"> 주문완료 </button>
 															</td>
+															<td  class="product-thumbnail">
+																	<a href="shop-product-sidebar.html">
+																		<img style="width:50%; height:40px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/rr.JPG">
+																	</a>
+																</td>
 														</tr>
 														<tr class="shipping">
 															<th style="width: 66px">
@@ -217,6 +235,11 @@
 															<td align="left">
 																<button style="background-color:orange; width: 80px; height: 30px; font-size: 14px" type="button" class="btn  btn-info"> 주문완료 </button>
 															</td>
+															<td  class="product-thumbnail">
+																	<a href="shop-product-sidebar.html">
+																		<img style="width:50%; height:40px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/rr.JPG">
+																	</a>
+																</td>
 														</tr>
 														<tr class="shipping">
 															<th style="width: 66px">
@@ -236,6 +259,11 @@
 															<td align="left">
 																<button style="background-color:orange; width: 80px; height: 30px; font-size: 14px" type="button" class="btn  btn-info"> 주문완료 </button>
 															</td>
+															<td  class="product-thumbnail">
+																	<a href="shop-product-sidebar.html">
+																		<img style="width:50%; height:40px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/rr.JPG">
+																	</a>
+																</td>
 														</tr>
 													</tbody>
 												</table>
@@ -269,7 +297,7 @@
 							</div>
 		</div>
 	</div>
-
+	</div>
 	<!-- ---------------------------------------------------------------------------------------------- -->
 		<footer id="footer">
 			<jsp:include page="/resources/include/bottom.jsp"/>
