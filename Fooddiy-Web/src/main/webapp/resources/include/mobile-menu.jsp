@@ -5,106 +5,57 @@
 	<div class="mobile-nav-wrapper">
 		<ul class="mobile-side-menu">
 			<li><a href="demo-shop-9.html">Home</a></li>
-			<li><span class="mmenu-toggle"></span> <a href="#">Fashion <span
-					class="tip tip-new">New</span></a>
-
+			<li><span class="mmenu-toggle"></span> <a href="#">Menu</a>
 				<ul>
-					<li><span class="mmenu-toggle"></span> <a href="#">Women</a>
-						<ul>
-							<li><a href="#">Tops &amp; Blouses</a></li>
-							<li><a href="#">Accessories</a></li>
-							<li><a href="#">Dresses &amp; Skirts</a></li>
-							<li><a href="#">Shoes &amp; Boots</a></li>
-						</ul></li>
-					<li><span class="mmenu-toggle"></span> <a href="#">Men</a>
-
-						<ul>
-							<li><a href="#">Accessories</a></li>
-							<li><a href="#">Watch &amp; Fashion <span
-									class="tip tip-new">New</span></a></li>
-							<li><a href="#">Tees, Knits &amp; Polos</a></li>
-							<li><a href="#">Pants &amp; Denim</a></li>
-						</ul></li>
-					<li><span class="mmenu-toggle"></span> <a href="#">Jewellery
-							<span class="tip tip-hot">Hot</span>
-					</a>
-
-						<ul>
-							<li><a href="#">Sweaters</a></li>
-							<li><a href="#">Heels &amp; Sandals</a></li>
-							<li><a href="#">Jeans &amp; Shorts</a></li>
-						</ul></li>
-					<li><span class="mmenu-toggle"></span> <a href="#">Kids
-							Fashion</a>
-
-						<ul>
-							<li><a href="#">Casual Shoes</a></li>
-							<li><a href="#">Spring &amp; Autumn</a></li>
-							<li><a href="#">Winter Sneakers</a></li>
-						</ul></li>
-				</ul></li>
-			<li><span class="mmenu-toggle"></span> <a href="#">Pages <span
-					class="tip tip-hot">Hot!</span></a>
-
+					<li><a href="${ pageContext.request.contextPath}/menu/menu2.jsp">전체메뉴 ALL MENU</a></li>
+					<li><a href="${ pageContext.request.contextPath}/member/memberDetail.jsp">클래식 CLASSICS</a></li>
+					<li><a href="${ pageContext.request.contextPath}/member/Latest-Order.jsp">베스트 SIGNATURE</a></li>
+					<li><a href="${ pageContext.request.contextPath}/member/myMenu.jsp">추천메뉴 FAVORITES</a></li>
+					<li><a href="${ pageContext.request.contextPath}/member/myQnA.jsp">프리미엄 PREMIUM</a></li>
+					<li><a href="${ pageContext.request.contextPath}/member/myQnA.jsp">음료&추가 Drink&Extras</a></li>
+					<li><a href="${ pageContext.request.contextPath}/member/myQnA.jsp">찹샐러드 Chopped Salads</a></li>
+					<li><a href="${ pageContext.request.contextPath}/member/myQnA.jsp">아침식사 Breakfast</a></li>
+				</ul>
+			</li>
+			<li><span class="mmenu-toggle"></span> <a href="#">EVENT
+					<span class="tip tip-new">New</span></a>
 				<ul>
-					<li><span class="mmenu-toggle"></span> <a href="#">Category</a>
-						<ul>
-							<li><a href="demo-shop-9-category-2col.html">2 Columns</a></li>
-							<li><a href="demo-shop-9-category-3col.html">3 Columns</a></li>
-							<li><a href="demo-shop-9-category-4col.html">4 Columns</a></li>
-							<li><a href="demo-shop-9-category-5col.html">5 Columns</a></li>
-							<li><a href="demo-shop-9-category-6col.html">6 Columns</a></li>
-							<li><a href="demo-shop-9-category-7col.html">7 Columns</a></li>
-							<li><a href="demo-shop-9-category-8col.html">8 Columns</a></li>
-							<li><a href="demo-shop-9-category-right-sidebar.html">Right
-									Sidebar</a></li>
-							<li><a href="demo-shop-9-category-list.html">Category
-									List</a></li>
-						</ul></li>
-					<li><span class="mmenu-toggle"></span> <a href="#">Category
-							Banners</a>
-						<ul>
-							<li><a href="demo-shop-9-category-banner-boxed-slider.html">Boxed
-									slider</a></li>
-							<li><a href="demo-shop-9-category-banner-boxed-image.html">Boxed
-									Image</a></li>
-							<li><a href="demo-shop-9-category-banner-fullwidth.html">Fullwidth</a>
-							</li>
-						</ul></li>
-					<li><span class="mmenu-toggle"></span> <a href="#">Product
-							Details</a>
-						<ul>
-							<li><a href="demo-shop-9-product-details.html">Product
-									Details 1</a></li>
-							<li><a href="demo-shop-9-product-details2.html">Product
-									Details 2</a></li>
-							<li><a href="demo-shop-9-product-details3.html">Product
-									Details 3</a></li>
-							<li><a href="demo-shop-9-product-details4.html">Product
-									Details 4</a></li>
-						</ul></li>
-					<li><a href="demo-shop-9-cart.html">Shopping Cart</a></li>
-					<li><a href="demo-shop-9-checkout.html">Checkout</a></li>
-					<li><span class="mmenu-toggle"></span> <a href="#">Loign
-							&amp; Register</a>
-						<ul>
-							<li><a href="demo-shop-9-login.html">Login</a></li>
-							<li><a href="demo-shop-9-register.html">Register</a></li>
-						</ul></li>
-					<li><span class="mmenu-toggle"></span> <a href="#">Dashboard</a>
-						<ul>
-							<li><a href="demo-shop-9-dashboard.html">Dashboard</a></li>
-							<li><a href="demo-shop-9-myaccount.html">My Account</a></li>
-						</ul></li>
-				</ul></li>
-			<li><a href="demo-shop-9-about-us.html">About Us</a></li>
-			<li><span class="mmenu-toggle"></span> <a href="#">Blog</a>
+					<li><a href="${ pageContext.request.contextPath}/event/EventPage.jsp">브랜드 EVENT</a></li>
+					<li><a href="${ pageContext.request.contextPath}/event/StoreEventPage.jsp">매장별 EVENT</a></li>
+				</ul>
+			</li>
+			<li><span class="mmenu-toggle"></span> <a href="#">Community
+					<span class="tip tip-hot">Hot!</span></a>
 				<ul>
-					<li><a href="demo-shop-9-blog.html">Blog</a></li>
-					<li><a href="demo-shop-9-blog-post.html">Blog Post</a></li>
-				</ul></li>
-			<li><a href="demo-shop-9-contact-us.html">Contact Us</a></li>
-			<li><a href="#">Buy Porto!</a></li>
+					<li><a href="${ pageContext.request.contextPath }/notice/qna.jsp">자주묻는 질문</a></li>
+					<li><a href="${ pageContext.request.contextPath }/notice/noticeList.jsp">공지사항</a></li>
+					<li><a href="${ pageContext.request.contextPath }/notice/suggestion.jsp">1:1 문의</a></li>
+					<li><a href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"
+						data-thumb-preview="${ pageContext.request.contextPath }/resources/img/previews/subway-sns.jpg">SNS 게시판</a></li>
+				</ul>
+			</li>
+			<!-- 회원 로그인하면 My page -->
+			<li><span class="mmenu-toggle"></span> <a href="#">My Page</a>
+				<ul>
+					<li><a href="${ pageContext.request.contextPath}/member/memberDetail.jsp">회원 정보</a></li>
+					<li><a href="${ pageContext.request.contextPath}/member/Latest-Order.jsp">최근 주문 내역</a></li>
+					<li><a href="${ pageContext.request.contextPath}/member/myMenu.jsp">나만의 메뉴</a></li>
+					<li><a href="${ pageContext.request.contextPath}/member/myQnA.jsp">나의 문의사항</a></li>
+				</ul>
+			</li>
+			<!-- 비회원 로그인하면 주문내역 조회 -->
+			<c:if test="${ not empty nonMember }">
+				<li><a href="#">주문내역조회</a></li>
+			</c:if>
+			<c:choose>
+				<c:when test="${ empty userVO }">
+					<li><a href="${ pageContext.request.contextPath }/sign/login.jsp">
+						<i class="fa fa-user"></i> Sign In</a>
+					</li>
+				</c:when>
+				<c:otherwise>
+				</c:otherwise>
+			</c:choose>
 		</ul>
 	</div>
 </div>

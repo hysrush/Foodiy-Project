@@ -78,7 +78,7 @@
 								<input type="text" class="form-control" name="q" id="q"
 									placeholder="Search..." required> <select id="cat"
 									name="cat">
-									<option value="">All Categories</option>
+									<option value="">전체</option>
 									<option value="4">Fashion</option>
 									<option value="12">- Women</option>
 									<option value="13">- Men</option>
@@ -111,7 +111,7 @@
 			<div class="header-column header-column-center">
 				<div class="header-logo">
 					<a href="${ pageContext.request.contextPath }/index2.jsp"> 
-						<img alt="Porto" style="margin: 0px; border-radius:50%;" width="111" height="54" src="${ pageContext.request.contextPath }/resources/img/Subway-logo.jpg">
+						<img alt="Subway" style="margin: 0px;" width="220" height="95" src="${ pageContext.request.contextPath }/resources/img/subwayLOGO.jpg">
 					</a>
 				</div>
 			</div>
@@ -237,6 +237,12 @@
 											<div class="col-md-8">
 												<div class="row">
 													<div class="col-md-3">
+														<a href="${ pageContext.request.contextPath}/menu/menu2.jsp" class="cat-img">
+														<img src="${ pageContext.request.contextPath}/resources/img/demos/shop/cat-tv.png" alt="Category Name"></a>
+														<a href="${ pageContext.request.contextPath}/menu/menu2.jsp" 
+															class="dropdown-mega-sub-title" style="font-size: 10pt; font-weight: bold;">전체메뉴<br>ALL MENU</a>
+													</div>
+													<div class="col-md-3">
 														<a href="#" class="cat-img">
 														<img src="${ pageContext.request.contextPath}/resources/img/demos/shop/cat-tv.png" alt="Category Name"></a>
 														<a href="#" class="dropdown-mega-sub-title" style="font-size: 10pt; font-weight: bold;">클래식<br>CLASSICS</a>
@@ -294,18 +300,18 @@
 							</ul>
 						</li>
 						<li class="dropdown">
-						<a href="demo-shop-9-category-4col.html" class="dropdown-toggle">
+						<a href="#" class="dropdown-toggle">
 								EVENT <span class="tip tip-new">New</span>
 						</a>
 							<ul class="dropdown-menu">
 								<li><a href="${ pageContext.request.contextPath}/event/EventPage.jsp">브랜드 EVENT</a></li>
-								<li><a href="${ pageContext.request.contextPath}/event/EventPage.jsp">매장별 EVENT</a></li>
+								<li><a href="${ pageContext.request.contextPath}/event/StoreEventPage.jsp">매장별 EVENT</a></li>
 							</ul>
 						</li>
 						<li class="dropdown"><a class="dropdown-toggle" href="#">
 								Community <span class="tip tip-hot">Hot!</span></a>
 							<ul class="dropdown-menu">
-								<li><a href="${ pageContext.request.contextPath }/notice/qna.jsp">자주하는 질문</a></li>
+								<li><a href="${ pageContext.request.contextPath }/notice/qna.jsp">자주묻는 질문</a></li>
 								<li><a href="${ pageContext.request.contextPath }/notice/noticeList.jsp">공지사항</a></li>
 								<li><a href="${ pageContext.request.contextPath }/notice/suggestion.jsp">1:1 문의</a></li>
 								<li><a href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"
