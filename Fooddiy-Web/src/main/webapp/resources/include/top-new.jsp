@@ -295,9 +295,7 @@
 								</li>
 							</ul>
 						</li>
-						<li class="dropdown">
-						<a href="${ pageContext.request.contextPath }/event/EventPage.jsp" class="dropdown-toggle"></a>
-						<a href="#" class="dropdown-toggle">
+						<li class="dropdown"><a href="${ pageContext.request.contextPath }/event/EventPage.jsp" class="dropdown-toggle">
 								EVENT <span class="tip tip-new">New</span>
 						</a>
 							<ul class="dropdown-menu">

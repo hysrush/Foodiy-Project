@@ -84,7 +84,8 @@
 </head>
 <body>
 	<div class="body">
-		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 145, 'stickySetTop': '-145px', 'stickyChangeLogo': false}">
+		<header id="header"
+				data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 53, 'stickySetTop': '-53px', 'stickyChangeLogo': false}">
 				<jsp:include page="/resources/include/top-new.jsp"/>
 		</header>
 		
@@ -145,6 +146,7 @@
 												<table class="cart-totals">
 													<tbody>
 														<tr class="cart-subtotal">
+																
 															<th style="width: 66px">
 																<strong >1</strong>
 															</th>
@@ -162,6 +164,11 @@
 															<td align="left">
 																<button style="width: 60px; height: 30px; font-size: 12px" type="button" class="btn  btn-info"> 준비중 </button>
 															</td>
+															<td  class="product-thumbnail">
+																	<a href="shop-product-sidebar.html">
+																		<img style="width:50%; height:40px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/rr.JPG">
+																	</a>
+																</td>
 														</tr>
 														<tr class="shipping">
 															<th style="width: 66px">
@@ -181,6 +188,11 @@
 															<td align="left">
 																<button style="background-color:orange; width: 80px; height: 30px; font-size: 14px" type="button" class="btn  btn-info"> 주문완료 </button>
 															</td>
+															<td  class="product-thumbnail">
+																	<a href="shop-product-sidebar.html">
+																		<img style="width:50%; height:40px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/rr.JPG">
+																	</a>
+																</td>
 														</tr>
 														<tr class="shipping">
 															<th style="width: 66px">
@@ -200,6 +212,11 @@
 															<td align="left">
 																<button style="background-color:orange; width: 80px; height: 30px; font-size: 14px" type="button" class="btn  btn-info"> 주문완료 </button>
 															</td>
+															<td  class="product-thumbnail">
+																	<a href="shop-product-sidebar.html">
+																		<img style="width:50%; height:40px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/rr.JPG">
+																	</a>
+																</td>
 														</tr>
 														<tr class="shipping">
 															<th style="width: 66px">
@@ -219,6 +236,11 @@
 															<td align="left">
 																<button style="background-color:orange; width: 80px; height: 30px; font-size: 14px" type="button" class="btn  btn-info"> 주문완료 </button>
 															</td>
+															<td  class="product-thumbnail">
+																	<a href="shop-product-sidebar.html">
+																		<img style="width:50%; height:40px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/rr.JPG">
+																	</a>
+																</td>
 														</tr>
 														<tr class="shipping">
 															<th style="width: 66px">
@@ -238,6 +260,11 @@
 															<td align="left">
 																<button style="background-color:orange; width: 80px; height: 30px; font-size: 14px" type="button" class="btn  btn-info"> 주문완료 </button>
 															</td>
+															<td  class="product-thumbnail">
+																	<a href="shop-product-sidebar.html">
+																		<img style="width:50%; height:40px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/rr.JPG">
+																	</a>
+																</td>
 														</tr>
 													</tbody>
 												</table>

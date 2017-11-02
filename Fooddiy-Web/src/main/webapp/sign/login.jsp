@@ -57,13 +57,9 @@
 		
 		<!-- Head Libs -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
-<<<<<<< HEAD
-
 
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/custom.css">	
-=======
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 		<script src="${ pageContext.request.contextPath}/resources/js/jquery-3.2.1.min.js"></script>
 		
 <script>
@@ -84,7 +80,8 @@
 </head>
 <body>
 	<div class="body">
-		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 145, 'stickySetTop': '-145px', 'stickyChangeLogo': false}">
+		<header id="header"
+				data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 53, 'stickySetTop': '-53px', 'stickyChangeLogo': false}">
 				<jsp:include page="/resources/include/top-new.jsp"/>
 		</header>
 		
