@@ -124,7 +124,7 @@
 
 					<div class="col-md-3">
 						<aside class="sidebar hidden-sm hidden-xs" data-plugin-sticky
-							data-plugin-options="{ 'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}, 'items': 4 }">
+							data-plugin-options="{ 'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110} }">
 							<h4 class="heading-primary">MENU</h4>
 							<ul class="nav nav-list sort-source" data-sort-id="portfolio"
 								data-option-key="filter"
@@ -143,7 +143,7 @@
 
 
 					<div class="col-md-9">
-						<aside class="sidebar hidden-md hidden-lg carouselmenu" data-plugin-sticky
+						<!-- <aside class="sidebar hidden-md hidden-lg carouselmenu" data-plugin-sticky
 							data-plugin-options="{ 'maxWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
 							<h4 class="heading-primary">MENU</h4>
 							<ul class="nav nav-list sort-source owl-carousel owl-theme" id="sidemenu" data-sort-id="portfolio"
@@ -158,33 +158,67 @@
 								<li data-option-value=".salad"><a href="#">샐러드</a></li>
 								<li data-option-value=".addition"><a href="#">음료&추가메뉴</a></li>
 							</ul>
+						</aside> -->
+						
+						<aside id="lnb" class="hidden-md hidden-lg">
+							<nav>
+								<ul>
+									<li class="active">
+										<a href="/menu/All">전체메뉴</a>
+									</li>
+									<li>
+										<a href="/menu/All">추천메뉴</a>
+									</li>
+									<li>
+										<a href="/menu/All">프리미엄</a>
+									</li>
+									<li>
+										<a href="/menu/All">베스트</a>
+									</li>
+									<li>
+										<a href="/menu/All">클래식</a>
+									</li>
+									<li>
+										<a href="/menu/All">아침식사</a>
+									</li>
+									<li>
+										<a href="/menu/All">샐러드</a>
+									</li>
+									<li>
+										<a href="/menu/All">음료&추가메뉴</a>
+									</li>
+								</ul>
+							</nav>						
 						</aside>
 						
+						
+						
+						
+						
+						
+						
 
-						<ul class="nav nav-pills sort-source" data-sort-id="portfolio"
-							data-option-key="filter"
-							data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}"></ul>
+						<ul class="nav nav-pills sort-source" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}"></ul>
 						<div class="row">
-							<div
-								class="sort-destination-loader sort-destination-loader-showing">
-								<ul class="portfolio-list sort-destination"
-									data-sort-id="portfolio">
+							<div class="sort-destination-loader sort-destination-loader-showing">
+								<ul class="portfolio-list sort-destination"	data-sort-id="portfolio">
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item recommend">
-										<div class="portfolio-item" data-toggle="modal"
-											data-target="#largeModal">
-											<span class="thumb-info thumb-info-lighten"> <span
-												class="thumb-info-wrapper"> <img
-													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Meatball-Marinara.jpg"
-													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
-													class="thumb-info-title"> <span
-														class="thumb-info-inner">미트볼</span> <span
-														class="thumb-info-type">4,900</span>
-												</span> <span class="thumb-info-action"> <span
-														class="thumb-info-action-icon"><a
-															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp"><i
-																class="fa fa-plus"></i></a></span></span>
-											</span>
+										<div class="portfolio-item" data-toggle="modal"	data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten">
+												<span class="thumb-info-wrapper">
+													<img src="${ pageContext.request.contextPath }/resources/img/menu/mn-Meatball-Marinara.jpg" class="img-responsive" alt="" style="margin-top: 50px; margin-bottom: 50px">
+														<span class="thumb-info-title">
+															<span class="thumb-info-inner">미트볼</span>
+															<span class="thumb-info-type">4,900</span>
+														</span>
+													<span class="thumb-info-action">
+														<a href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+															<span class="thumb-info-action-icon">															
+																<i class="fa fa-plus"></i>															
+															</span>
+														</a>
+													</span>
+												</span>
 											</span>
 										</div>
 									</li>
