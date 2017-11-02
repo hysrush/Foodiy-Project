@@ -102,7 +102,7 @@
 				
 
 					<div class="row">
-					<div style="width: 600px">
+					<div style="width: 550px">
 						<div style="margin-top: 2%; margin-right: 10%" class="col-md-3">
 							<aside  class="sidebar">
 
@@ -121,7 +121,7 @@
 
 			<div class="container">
 					<div class="row">
-						<div class="col-md-9">
+						<div class="col-md-10">
 
 							<div class="featured-boxes">
 								<div class="row">
@@ -132,24 +132,25 @@
 													<table class="shop_table cart">
 														<tbody>
 															<tr class="cart_table_item">
-															<td style="width: 50px" class="col-md-8">
-															<span style="width: 50px" class="member-box checkbox">
+															<td style=" width: 10px" class="col-md-1">
+															<span style="width: 10px" class="member-box checkbox">
 																<label for="memberme">
-																	<h5><input  type="checkbox" id="member3" name="member3"></h5>
+																	<h5 ><input  type="checkbox" id="member3" name="member3"></h5>
 																</label>
 															</span>
 															</td>
-															
-																<td style="width:30%;" style="" class="product-thumbnail">
+																
+																<td class="product-thumbnail">
 																	<a href="shop-product-sidebar.html">
-																		<img style="width:80%; height:120px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/products/product-1.jpg">
-																	</a>
+																		<img style="width:65%; height:25%"  class="img-responsive " src="${ pageContext.request.contextPath }/resources/img/products/product-1.jpg">
+																	</a> 
 																</td>
 																<td class="product-name">
-																	<a href="shop-product-sidebar.html">선택한 재료 내용</a>
+																	<a  href="shop-product-sidebar.html">선택한 재료 내용</a>
+																	
 																</td>
 																<td class="product-price">
-																	<span class="amount">$299</span>
+																	<span class="amount">5,000</span>
 																</td>
 																<td class="product-quantity">
 																	<form enctype="multipart/form-data" method="post" class="cart">
@@ -161,7 +162,7 @@
 																	</form>
 																</td>
 																<td>
-																	<button style="width: 100px; height: 30px; font-size: 15px" type="button" class="btn  btn-info"> 결제하기 </button>
+																	<button style="width: 80px; height: 30px; font-size: 13px" type="button" class="btn  btn-info"> 결제하기 </button>
 																</td>
 															</tr>
 															<tr class="cart_table_item">
@@ -172,17 +173,16 @@
 																	</label>
 																</span>
 																</td>
-																<div>
 																<td style="width: 50%" class="product-thumbnail">
 																	<a href="shop-product-sidebar.html">
-																		<img style="width: 80%; height: 120px;" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/products/product-2.jpg">
+																		<img style="width:65%; height:25%" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/products/product-2.jpg">
 																	</a>
 																</td>
 																<td class="product-name">
 																	<a href="shop-product-sidebar.html">선택한 재료 내용</a>
 																</td>
 																<td class="product-price">
-																	<span class="amount">$72</span>
+																	<span class="amount">4500</span>
 																</td>
 																<td class="product-quantity">
 																	<form enctype="multipart/form-data" method="post" class="cart">
@@ -190,11 +190,10 @@
 																			<input type="button" class="minus" value="-">
 																			<input type="text" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
 																			<input type="button" class="plus" value="+">
-																		</div>
 																	</form>
 																</td>
 																<td>
-																	<button style="width: 100px; height: 30px; font-size: 15px" type="button" class="btn  btn-info"> 결제하기 </button>
+																	<button style="width: 80px; height: 30px; font-size: 13px" type="button" class="btn  btn-info"> 결제하기 </button>
 																</td>
 															</tr>
 															<tr class="cart_table_item">
@@ -207,14 +206,14 @@
 																</td>
 																<td class="product-thumbnail">
 																	<a href="shop-product-sidebar.html">
-																		<img style="width: 80%"; height="120px" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/products/product-3.jpg">
+																		<img style="width:65%; height:25%" alt="" class="img-responsive" src="${ pageContext.request.contextPath }/resources/img/products/product-3.jpg">
 																	</a>
 																</td>
 																<td class="product-name">
 																	<a href="shop-product-sidebar.html">선택한 재료 내용</a>
 																</td>
 																<td class="product-price">
-																	<span class="amount">$60</span>
+																	<span class="amount">5500</span>
 																</td>
 																<td class="product-quantity">
 																	<form enctype="multipart/form-data" method="post" class="cart">
@@ -226,7 +225,7 @@
 																	</form>
 																</td>
 																<td>
-																	<button style="width: 100px; height: 30px; font-size: 15px" type="button" class="btn  btn-info"> 결제하기 </button>
+																	<button style="width: 80px; height: 30px; font-size: 13px" type="button" class="btn  btn-info"> 결제하기 </button>
 																</td>
 															</tr>
 															<tr>
@@ -241,9 +240,9 @@
 							</div>
 	
 
-			<div style="margin-bottom:5% ; margin-left: 45%" class="col-md-8">
-				<button style="width: 100px; height: 30px; font-size: 15px" type="button" class="btn  btn-info">  메뉴삭제 </button>
+			<div align="right" style="margin-bottom:5% ; margin-left: 29%" class="col-md-9 col-sm-4 col-xs-9 ">
 				<button style="width: 120px; height: 30px; font-size: 15px" type="button" class="btn  btn-info">  장바구니 담기 </button>
+				<button style="width: 100px; height: 30px; font-size: 15px" type="button" class="btn  btn-info">  메뉴삭제 </button>
 				<button style="width: 120px; height: 30px; font-size: 15px" type="button" class="btn  btn-info">  sns게시글 등록 </button>
 				<button style="width: 100px; height: 30px; font-size: 15px" type="button" class="btn  btn-info">  주문하기 </button>
 			</div>
