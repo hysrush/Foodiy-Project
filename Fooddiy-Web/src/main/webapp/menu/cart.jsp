@@ -154,6 +154,7 @@
 																</td>
 																<td class="product-add-ingredient">
 																	추가재료
+															
 																</td>
 																<td class="product-quantity">
 																	<form enctype="multipart/form-data" method="post" class="cart">
@@ -164,6 +165,7 @@
 																		</div>
 																	</form>
 																</td>
+																
 																<td class="product-subtotal">
 																	<span class="amount">$299</span>
 																</td>

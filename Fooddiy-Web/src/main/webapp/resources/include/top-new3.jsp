@@ -196,18 +196,6 @@
 			</div>
 		</div>
 	</div>
-	
-	<script type="text/javascript">
-			$(document).ready(function() {
-		
-				$('.cart-dropdown-icon').click(function() {
-					$('.cart-dropdownmenu').toggle();
-					
-				});
-				
-			})
-	</script>
-	
 	<div class="header-container header-nav header-nav-center">
 		<div class="container">
 			<div class="header-nav-main">
@@ -329,7 +317,7 @@
 						<c:choose>
 							<c:when test="${ empty userVO }">
 								<li class="dropdown dropdown-mega dropdown-mega-signin signin" id="headerAccount">
-									<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/sign/login.jsp">
+									<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/member/login.jsp">
 										<i class="fa fa-user"></i> Sign In</a>
 								</li>
 							</c:when>
