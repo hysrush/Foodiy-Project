@@ -29,7 +29,7 @@
 				<div class="compare-dropdown">
 					<a href="#"><i class="fa fa-retweet"></i> Compare (2)</a>
 
-					<div class="compare-dropdownmenu">java.io.IOException cannot be resolved to a type
+					<div class="compare-dropdownmenu">
 						<div class="dropdownmenu-wrapper">
 							<ul class="compare-products">
 								<li class="product"><a href="#" class="btn-remove"
@@ -125,12 +125,21 @@
 
 						<div class="cart-dropdown">
 							<a href="#" class="cart-dropdown-icon"> 
-							<i class="minicart-icon"></i> <span class="cart-info"> <span
-									class="cart-qty">2</span> <span class="cart-text">item(s)</span>
-							</span>
+							<i class="minicart-icon"></i> 
+								<span class="cart-info"> 
+									<span class="cart-qty">3</span> 
+									<span class="cart-text">item(s)</span>
+								</span>
 							</a>
 							<div class="center">장바구니</div>
+							
+							<!-- hover 또는 focus시  display 속성이 block으로 바뀜 -->
 							<div class="cart-dropdownmenu right">
+							
+								<div class="col-xs-1 close-icon">
+									<a href="#"><i class="fa fa-close"></i></a>
+								</div>
+								
 								<div class="dropdownmenu-wrapper">
 									<div class="cart-products">
 										<div class="product product-sm">
@@ -196,6 +205,37 @@
 			</div>
 		</div>
 	</div>
+	
+	<script src = "/Lecture-Web/jquery/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+			$(document).ready(function() {
+		
+				$('.cart-dropdown').on({
+					"click" : function() {
+						$('.cart-dropdownmenu').css({
+							'display' : 'block'
+						});
+						
+						$('.close-icon').css({
+							'display' : 'block'
+						});
+					}
+				});
+				
+				$('.close-icon').on({
+					"click" : function() {
+						$('.cart-dropdownmenu').css({
+							'display' : 'none'
+						});
+						
+						$('.close-icon').css({
+							'display' : 'none'
+						});
+					}
+				});
+			})
+	</script>
+	
 	<div class="header-container header-nav header-nav-center">
 		<div class="container">
 			<div class="header-nav-main">
@@ -317,7 +357,7 @@
 						<c:choose>
 							<c:when test="${ empty userVO }">
 								<li class="dropdown dropdown-mega dropdown-mega-signin signin" id="headerAccount">
-									<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/sign/login.jsp">
+									<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/member/login.jsp">
 										<i class="fa fa-user"></i> Sign In</a>
 								</li>
 							</c:when>
