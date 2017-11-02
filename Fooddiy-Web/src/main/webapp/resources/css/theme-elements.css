@@ -506,6 +506,8 @@ ul.nav-pills > li.active > a:hover, ul.nav-pills > li.active > a:focus {
 	display: inline-block;
 }
 
+
+
 .nav-secondary .nav-pills > li a {
 	font-size: 12px;
 	font-style: normal;
@@ -5191,10 +5193,10 @@ html.boxed .pricing-table .plan, html.boxed .pricing-table h3 {
 }
 
 .thumb-info .thumb-info-action-icon i {
-	font-size: 24px;
+	font-size: 30px;
 	left: 3px;
 	position: relative;
-	top: -4px;
+	top: 0px;
 	color: #FFF;
 }
 

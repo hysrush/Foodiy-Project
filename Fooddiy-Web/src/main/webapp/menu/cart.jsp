@@ -71,7 +71,7 @@
 <body>
 	<div class="body">
 			<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 145, 'stickySetTop': '-145px', 'stickyChangeLogo': false}">
-				<jsp:include page="/resources/include/top-new2.jsp"/>
+				<jsp:include page="/resources/include/top-new.jsp"/>
 			</header>
 			<!-- Mobile menu 부분 -->
 			<jsp:include page="/resources/include/mobile-menu.jsp"/>
