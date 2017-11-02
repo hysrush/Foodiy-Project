@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<!-- mapper 사용할 때 type이 너무 길어서 줄여서 쓰고 싶을 때 설정 -->
+  <typeAliases>
+	<typeAlias type="" alias=""/>  
+  
+  </typeAliases>
+</configuration>
