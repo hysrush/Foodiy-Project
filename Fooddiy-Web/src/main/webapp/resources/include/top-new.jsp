@@ -296,11 +296,8 @@
 							</ul>
 						</li>
 						<li class="dropdown">
-<<<<<<< HEAD
-						<a href="${ pageContext.request.contextPath }/event/EventPage.jsp" class="dropdown-toggle">
-=======
+						<a href="${ pageContext.request.contextPath }/event/EventPage.jsp" class="dropdown-toggle"></a>
 						<a href="#" class="dropdown-toggle">
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 								EVENT <span class="tip tip-new">New</span>
 						</a>
 							<ul class="dropdown-menu">
