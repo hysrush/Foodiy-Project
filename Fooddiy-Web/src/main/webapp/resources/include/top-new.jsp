@@ -196,6 +196,18 @@
 			</div>
 		</div>
 	</div>
+	
+	<script type="text/javascript">
+			$(document).ready(function() {
+		
+				$('.cart-dropdown-icon').click(function() {
+					$('.cart-dropdownmenu').toggle();
+					
+				});
+				
+			})
+	</script>
+	
 	<div class="header-container header-nav header-nav-center">
 		<div class="container">
 			<div class="header-nav-main">
