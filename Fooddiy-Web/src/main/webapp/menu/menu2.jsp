@@ -96,6 +96,10 @@
 			data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 145, 'stickySetTop': '-145px', 'stickyChangeLogo': false}">
 			<jsp:include page="/resources/include/top-new.jsp" />
 		</header>
+		
+		<!-- Mobile menu 부분 -->
+		<jsp:include page="/resources/include/mobile-menu.jsp"/>
+		
 		<div role="main" class="main">
 			<section class="page-header">
 				<div class="container">
@@ -139,7 +143,7 @@
 
 
 					<div class="col-md-9">
-						<aside class="sidebar hidden-sm hidden-xs carouselmenu" data-plugin-sticky
+						<aside class="sidebar hidden-md hidden-lg carouselmenu" data-plugin-sticky
 							data-plugin-options="{ 'maxWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
 							<h4 class="heading-primary">MENU</h4>
 							<ul class="nav nav-list sort-source owl-carousel owl-theme" id="sidemenu" data-sort-id="portfolio"
@@ -155,8 +159,6 @@
 								<li data-option-value=".addition"><a href="#">음료&추가메뉴</a></li>
 							</ul>
 						</aside>
-						
-						
 						
 
 						<ul class="nav nav-pills sort-source" data-sort-id="portfolio"
@@ -413,14 +415,6 @@
 		</footer>
 
 	</div>
-
-
-
-
-
-
-
-
 
 
 	<!-- 모달들 -->
@@ -692,15 +686,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
-
-
-
-
-
-
 
 
 	<!-- Vendor -->

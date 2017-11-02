@@ -111,7 +111,7 @@
 			<div class="header-column header-column-center">
 				<div class="header-logo">
 					<a href="${ pageContext.request.contextPath }/index2.jsp"> 
-						<img alt="Subway" style="margin: 0px;" width="210" height="85" src="${ pageContext.request.contextPath }/resources/img/subwayLOGO.jpg">
+						<img alt="Subway" style="margin: 0px;" width="220" height="95" src="${ pageContext.request.contextPath }/resources/img/subwayLOGO.jpg">
 					</a>
 				</div>
 			</div>
@@ -236,6 +236,12 @@
 										<div class="row">
 											<div class="col-md-8">
 												<div class="row">
+													<div class="col-md-3">
+														<a href="${ pageContext.request.contextPath}/menu/menu2.jsp" class="cat-img">
+														<img src="${ pageContext.request.contextPath}/resources/img/demos/shop/cat-tv.png" alt="Category Name"></a>
+														<a href="${ pageContext.request.contextPath}/menu/menu2.jsp" 
+															class="dropdown-mega-sub-title" style="font-size: 10pt; font-weight: bold;">전체메뉴<br>ALL MENU</a>
+													</div>
 													<div class="col-md-3">
 														<a href="#" class="cat-img">
 														<img src="${ pageContext.request.contextPath}/resources/img/demos/shop/cat-tv.png" alt="Category Name"></a>

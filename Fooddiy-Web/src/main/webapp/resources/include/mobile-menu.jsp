@@ -7,12 +7,14 @@
 			<li><a href="demo-shop-9.html">Home</a></li>
 			<li><span class="mmenu-toggle"></span> <a href="#">Menu</a>
 				<ul>
+					<li><a href="${ pageContext.request.contextPath}/menu/menu2.jsp">전체메뉴 ALL MENU</a></li>
 					<li><a href="${ pageContext.request.contextPath}/member/memberDetail.jsp">클래식 CLASSICS</a></li>
 					<li><a href="${ pageContext.request.contextPath}/member/Latest-Order.jsp">베스트 SIGNATURE</a></li>
 					<li><a href="${ pageContext.request.contextPath}/member/myMenu.jsp">추천메뉴 FAVORITES</a></li>
 					<li><a href="${ pageContext.request.contextPath}/member/myQnA.jsp">프리미엄 PREMIUM</a></li>
 					<li><a href="${ pageContext.request.contextPath}/member/myQnA.jsp">음료&추가 Drink&Extras</a></li>
 					<li><a href="${ pageContext.request.contextPath}/member/myQnA.jsp">찹샐러드 Chopped Salads</a></li>
+					<li><a href="${ pageContext.request.contextPath}/member/myQnA.jsp">아침식사 Breakfast</a></li>
 				</ul>
 			</li>
 			<li><span class="mmenu-toggle"></span> <a href="#">EVENT
@@ -41,8 +43,19 @@
 					<li><a href="${ pageContext.request.contextPath}/member/myQnA.jsp">나의 문의사항</a></li>
 				</ul>
 			</li>
-			<li><a href="demo-shop-9-contact-us.html">Contact Us</a></li>
-			<li><a href="#">Buy Porto!</a></li>
+			<!-- 비회원 로그인하면 주문내역 조회 -->
+			<c:if test="${ not empty nonMember }">
+				<li><a href="#">주문내역조회</a></li>
+			</c:if>
+			<c:choose>
+				<c:when test="${ empty userVO }">
+					<li><a href="${ pageContext.request.contextPath }/sign/login.jsp">
+						<i class="fa fa-user"></i> Sign In</a>
+					</li>
+				</c:when>
+				<c:otherwise>
+				</c:otherwise>
+			</c:choose>
 		</ul>
 	</div>
 </div>
