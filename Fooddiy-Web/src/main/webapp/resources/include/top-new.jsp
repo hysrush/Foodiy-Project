@@ -124,12 +124,12 @@
 						</div>
 
 						<div class="cart-dropdown">
-							<a href="#" class="cart-dropdown-icon"> 
+							<a href="${ pageContext.request.contextPath}/menu/cart.jsp" class="cart-dropdown-icon"> 
 							<i class="minicart-icon"></i> <span class="cart-info"> <span
 									class="cart-qty">2</span> <span class="cart-text">item(s)</span>
 							</span>
 							</a>
-							<div class="center">장바구니</div>
+							<div class="center" style="font-size: 9pt; font-weight: bold;">장바구니</div>
 							<div class="cart-dropdownmenu right">
 								<div class="dropdownmenu-wrapper">
 									<div class="cart-products">
