@@ -1,4 +1,4 @@
-confirm('확인과 취소버튼으로 구선되어있습니다.');<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -93,8 +93,8 @@ confirm('확인과 취소버튼으로 구선되어있습니다.');<%@ page langu
 <body>
 	<div class="body">
 		<header id="header"
-			data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 145, 'stickySetTop': '-145px', 'stickyChangeLogo': false}">
-			<jsp:include page="/resources/include/top-new.jsp" />
+				data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 53, 'stickySetTop': '-53px', 'stickyChangeLogo': false}">
+				<jsp:include page="/resources/include/top-new.jsp"/>
 		</header>
 		
 		<!-- Mobile menu 부분 -->
