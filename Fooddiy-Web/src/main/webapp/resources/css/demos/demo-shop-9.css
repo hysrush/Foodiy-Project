@@ -1153,6 +1153,7 @@ h2.word-rotator-title .word-rotate {
 .sticky-header-active #header .header-nav {
 	padding: 4px 0;
 }
+
 .sticky-header-active #header .header-nav-main {
 	min-height: 38px;
 	border-bottom: none;
@@ -4099,7 +4100,7 @@ body,
 	margin: 0;
 }
 .modal .modal-header .close {
-	font-size: 14px;
+	font-size: 50px;
 	opacity: 0.95;
 	margin-top: -8px;
 	margin-right: -8px;
