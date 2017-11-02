@@ -115,7 +115,5 @@
 		<!-- Theme Initialization Files -->
 		<script src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
 		
-		
-		
 	</body>
 </html>

@@ -77,7 +77,8 @@
 
 <body>
 	<div class="body">
-		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 145, 'stickySetTop': '-145px', 'stickyChangeLogo': false}">
+		<header id="header"
+				data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 53, 'stickySetTop': '-53px', 'stickyChangeLogo': false}">
 				<jsp:include page="/resources/include/top-new.jsp"/>
 		</header>
 		<!-- Mobile menu 부분 -->
@@ -95,6 +96,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-12">
+								<h1>내 정보</h1>
 							</div>
 						</div>
 					</div>

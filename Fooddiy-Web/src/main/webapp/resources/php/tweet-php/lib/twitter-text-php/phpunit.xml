@@ -1,3 +1,4 @@
+<!DOCTYPE configuration>
 <phpunit backupGlobals="true"
          bootstrap="tests/bootstrap.php"
          colors="true"

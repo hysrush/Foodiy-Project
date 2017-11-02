@@ -7,9 +7,9 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title>Fooddiy-Order</title>	
+		<title> | Q & A | </title>	
 
-		<meta name="keywords" content="HTML5 Template" />
+				<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
 		<meta name="author" content="okler.net">
 
@@ -55,14 +55,13 @@
 
 
 		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/custom.css">
-		
+		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/custom.css">	
 </head>
 <body>
 	<div class="body">
 		<header id="header"
 				data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 53, 'stickySetTop': '-53px', 'stickyChangeLogo': false}">
-			<jsp:include page="/resources/include/top-new.jsp"/>
+				<jsp:include page="/resources/include/top-new.jsp"/>
 		</header>
 		
 		<!-- Mobile menu 부분 -->
@@ -75,7 +74,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<ul class="breadcrumb">
-								<li><a href="#">커뮤니티</a></li>
+								<li><a href="${ pageContext.request.contextPath }/notice/qna.jsp">커뮤니티</a></li>
 								<li class="active">자주묻는 질문</li>
 							</ul>
 						</div>
@@ -634,7 +633,7 @@
 		</footer>
 	</div>
 
-		<!-- Vendor -->
+			<!-- Vendor -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.easing/jquery.easing.min.js"></script>

@@ -8,7 +8,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title>Fooddiy-Order</title>	
+		<title> | 매장 찾기 | </title>	
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -67,7 +67,8 @@
 	</head>
 	<body>
 		<div class="body">
-			<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 145, 'stickySetTop': '-145px', 'stickyChangeLogo': false}">
+			<header id="header"
+				data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 53, 'stickySetTop': '-53px', 'stickyChangeLogo': false}">
 				<jsp:include page="/resources/include/top-new.jsp"/>
 			</header>
 			<!-- Mobile menu 부분 -->
@@ -101,9 +102,9 @@
 
 									<h4 class="heading-primary">매장찾기</h4>
 								<ul class="nav nav-list mb-xlg">
-									<li><a href="#">My매장 </a></li>
+									<li><a href="${ pageContext.request.contextPath }/event/MyStore.jsp">My매장 </a></li>
 									<li class="active">
-										<a href="#">매장찾기</a>
+										<a href="${ pageContext.request.contextPath }/event/FindStore.jsp">매장찾기</a>
 									</li>
 								</ul>
 							</aside>

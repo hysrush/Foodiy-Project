@@ -6970,12 +6970,13 @@ html.ie11 .scroll-to-top {
 }
 
 /* Responsive */
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
 	html .scroll-to-top.hidden-mobile {
 		display: none !important;
 	}
 }
-
+ */
+ 
 .flag {
 	width: 16px;
 	height: 11px;
