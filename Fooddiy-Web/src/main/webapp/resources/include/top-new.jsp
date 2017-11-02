@@ -204,7 +204,7 @@
 						<li class="">
 						<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/index2.jsp"> Home </a>
 						<li class="dropdown dropdown-mega active">
-						<a href="demo-shop-9-category-4col.html" class="dropdown-toggle">
+						<a href="${ pageContext.request.contextPath }/menu/menu.jsp" class="dropdown-toggle">
 								Menu
 						</a>
 							<ul class="dropdown-menu">
@@ -282,7 +282,7 @@
 							</ul>
 						</li>
 						<li class="dropdown">
-						<a href="demo-shop-9-category-4col.html" class="dropdown-toggle">
+						<a href="${ pageContext.request.contextPath }/event/EventPage.jsp" class="dropdown-toggle">
 								EVENT <span class="tip tip-new">New</span>
 						</a>
 							<ul class="dropdown-menu">
@@ -290,7 +290,7 @@
 								<li><a href="${ pageContext.request.contextPath}/event/EventPage.jsp">매장별 EVENT</a></li>
 							</ul>
 						</li>
-						<li class="dropdown"><a class="dropdown-toggle" href="#">
+						<li class="dropdown"><a class="dropdown-toggle" href="${ pageContext.request.contextPath }/notice/qna.jsp">
 								Community <span class="tip tip-hot">Hot!</span></a>
 							<ul class="dropdown-menu">
 								<li><a href="${ pageContext.request.contextPath }/notice/qna.jsp">자주하는 질문</a></li>
@@ -301,7 +301,7 @@
 							</ul>
 						</li>
 						<!-- 회원 로그인하면 My page -->
-						<li class="dropdown"><a href="#" class="dropdown-toggle">
+						<li class="dropdown"><a href="${ pageContext.request.contextPath }/member/memberDetail.jsp" class="dropdown-toggle">
 								My Page </a>
 							<ul class="dropdown-menu">
 								<li><a href="${ pageContext.request.contextPath}/member/memberDetail.jsp">회원 정보</a></li>
@@ -318,7 +318,13 @@
 							<c:when test="${ empty userVO }">
 								<li class="dropdown dropdown-mega dropdown-mega-signin signin" id="headerAccount">
 									<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/sign/login.jsp">
-										<i class="fa fa-user"></i> Sign In</a>
+										<i class="fa fa-user"></i> Sign IN
+									</a>
+								</li>
+								<li class="dropdown dropdown-mega dropdown-mega-signin signin" id="headerAccount">
+									<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/sign/phoneCert.jsp">
+										<i class="fa fa-user"></i> Sign UP
+									</a>
 								</li>
 							</c:when>
 							<c:otherwise>
