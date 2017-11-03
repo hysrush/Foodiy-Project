@@ -52,15 +52,119 @@
 	height: 50px;
 	
 }
+.body
+	{
+		min-width: 320px;
+	}
+ 	.shop table.cart th.product-bread, .shop table.cart td.product-bread
+	{
+		display: none;
+	}
+ 	.shop table.cart th.product-add-ingredient, .shop table.cart td.product-add-ingredient
+	{
+		display: none;
+	} 
+ 	.shop table.cart th.product-sauce, .shop table.cart td.product-sauce
+	{
+		display: none;
+	} 
 
-.carouselmenu{
-	display: none;
-	height: 20px;
+#lnb {
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+    width: 179px;
+    /* display: block; */
 }
+#lnb > nav {
+    /* display: block; */
+}
+#lnb > nav > ul {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+#lnb > nav > ul > li {
+    border-bottom: 1px solid #cccccc;
+}
+li {
+    list-style: none;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+#lnb > nav > ul > li > a {
+    display: block;
+    padding: 0 15px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 40px;
+    color: #222222;
+    
+}
+
+
 
 /* Responsive */
 /* 991  */
-@media ( max-width : 731px) {
+@media ( max-width : 991px) {
+	#lnb {
+		float: none;
+		width: auto;
+		border-bottom: 1px solid #ccc;
+	}
+	#lnb > nav {
+	    height: 40px;
+	    overflow: hidden;
+	}
+	#lnb > nav > ul {
+		margin: 0;
+	    padding: 0;
+	    display: -webkit-flex;
+	    display: flex;
+	    overflow-x: auto;
+	    overflow-y: hidden;
+	    /* list-style:none;
+	    padding-left: 0px; */
+	    /* padding-left: 0px; */
+	}
+	#lnb > nav > ul > li {
+	    position: relative;
+	    -webkit-flex: none;
+	    flex: none;
+	    border-bottom: 0 none;
+	}
+	#lnb > nav > ul > li > a:hover, #lnb > nav > ul > li.active > a {
+	    background: none;
+	    color: #ed7901;
+	}
+	#lnb > nav > ul > li > a {
+	    font-size: 13px;
+	    display: block;
+	    padding: 0 15px;
+	    font-weight: 600;
+	    font-size: 14px;
+	    line-height: 40px;
+	    color: #222222;
+		}
+	#lnb > nav > ul > li:after {
+	    content: '';
+	    display: block;
+	    width: 1px;
+	    height: 40%;
+	    position: absolute;
+	    top: 30%;
+	    right: 0;
+	    background: #ddd;
+	}
+	
 	.shop .actions-continue {
 		float: none;
 	}
@@ -104,34 +208,15 @@
 		width : 150px;
 		height : 40px;
 	}
-	.carouselmenu{
-		display: block;
-		height: auto;
-	}	
 	
-}
-/* Responsive */
-/* 991  */
-@media ( max-width : 515px) {
 	
- 	.body
-	{
-		min-width: 320px;
-	}
- 	.shop table.cart th.product-bread, .shop table.cart td.product-bread
-	{
-		display: none;
-	}
- 	.shop table.cart th.product-add-ingredient, .shop table.cart td.product-add-ingredient
-	{
-		display: none;
-	} 
- 	.shop table.cart th.product-sauce, .shop table.cart td.product-sauce
-	{
-		display: none;
-	} 
 
+	
 }
+
+		
+	
+ 	
 
 
 

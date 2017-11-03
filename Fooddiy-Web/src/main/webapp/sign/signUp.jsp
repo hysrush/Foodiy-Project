@@ -69,7 +69,7 @@
 				<jsp:include page="/resources/include/top-new.jsp"/>
 		</header>
 		<!-- Mobile menu 부분 -->
-			<jsp:include page="/resources/include/mobile-menu.jsp"/>
+		<jsp:include page="/resources/include/mobile-menu.jsp"/>
 			
 		<div role="main" class="main">
 			<section class="page-header">

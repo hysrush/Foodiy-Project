@@ -90,22 +90,23 @@
 		
 		<div role="main" class="main">
 			<section class="page-header">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<ul class="breadcrumb">
-								<li><a href="#">Sign In</a></li>
-								<li>Login</li>
-							</ul>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="breadcrumb">
+									<li><a href="#">Sign In</a></li>
+									<li class="active">Login</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<h1>로그인</h1>
+							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<h1>로그인</h1>
-						</div>
-					</div>
-				</div>
-			</section>
+				</section>
+			
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3">

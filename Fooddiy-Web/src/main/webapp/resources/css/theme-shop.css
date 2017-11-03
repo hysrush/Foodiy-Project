@@ -690,8 +690,8 @@ Theme Version:	5.7.2
 }
 
 .product-thumb-info:hover .product-thumb-info-image:before {
-	/* filter: alpha(opacity=80);
-	opacity: 0.8; */
+	filter: alpha(opacity=80);
+	opacity: 0.8;
 	
 }
 

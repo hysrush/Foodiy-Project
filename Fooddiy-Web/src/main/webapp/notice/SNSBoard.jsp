@@ -99,8 +99,13 @@
 					</div>
 				</section>
 
+
 				
-					<div class="col-md-2 hidden-xs hidden-sm">
+					
+
+				
+					<div class="col-md-2 hidden-xs">
+
 						<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
 							<h4 class="heading-primary"><strong>커뮤니티 </strong></h4>
 
@@ -152,15 +157,15 @@
 						</div> 
 				
 				</div>
+
 			</div>
+
 			</div>
 							<!-- END -->
 			</div>
 
-				
 							<!-- END -->
-						
-
+					
 			<footer id="footer">
 				<jsp:include page="/resources/include/bottom.jsp"/>
 			</footer>
