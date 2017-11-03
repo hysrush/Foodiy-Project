@@ -11,7 +11,7 @@
 						<div class="featured-box featured-box-primary align-left mt-xlg">
 							<div class="box-content">
 								<h4 class="heading-primary text-uppercase mb-md">주문조회</h4>
-								<form action="비회원 번호랑 주문번호 확인 후 주문내역으로 이동~?" id="frmSignIn" method="post">
+								<form action="${ pageContext.request.contextPath }/" id="frmSignIn" method="post">
 									<div class="row">
 										<div class="form-group">
 											<div class="col-md-12">
