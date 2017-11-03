@@ -101,9 +101,8 @@
 
 
 				
-					
-
-				
+				<div class="container">
+					<div class="row">
 					<div class="col-md-2 hidden-xs">
 
 						<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
@@ -112,15 +111,17 @@
 							<ul class="nav nav-list mb-xlg sort-source" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
 								<li><a href="${ pageContext.request.contextPath }/notice/qna.jsp">자주하는 질문</a></li>
 								<li><a href="${ pageContext.request.contextPath }/notice/noticeList.jsp">공지사항</a></li>
-								<li class="active"><a href="${ pageContext.request.contextPath }/notice/suggestion.jsp">1:1 문의</a></li>
-								<li><a href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">SNS게시판</a></li>
+								<li><a href="${ pageContext.request.contextPath }/notice/suggestion.jsp">1:1 문의</a></li>
+								<li class="active"><a href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">SNS게시판</a></li>
 							</ul>
 						</aside>
 					</div>
+				
+						<!-- START! -->  
 					
-						<!-- START! -->
-					<div class="container">
-						<div class="row">		
+					<div class="col-md-10">
+					 <div class="container">
+						<div class="row">	
 						 
 						<div class="sort-destination-loader sort-destination-loader-showing">
 							<ul class="portfolio-list sort-destination popup-gallery-ajax" data-sort-id="portfolio">
@@ -156,15 +157,14 @@
 							</ul>
 						</div> 
 				
+						</div>
+
+						</div>
+
+					</div>
+							<!-- END -->
 				</div>
-
-			</div>
-
-			</div>
-							<!-- END -->
-			</div>
-
-							<!-- END -->
+			</div>				<!-- END -->
 					
 			<footer id="footer">
 				<jsp:include page="/resources/include/bottom.jsp"/>
@@ -189,7 +189,7 @@
 		<script src="${ pageContext.request.contextPath}/resources/vendor/vide/vide.min.js"></script>
 		
 		<!-- Theme Base, Components and Settings -->
-		<script src="${ pageContext.request.contextPath}/resources/js/theme.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/js/theme.js"></script> 
 		
 		<!-- Current Page Vendor and Views -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
