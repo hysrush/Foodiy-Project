@@ -4323,6 +4323,7 @@ article.post-large .post-meta a:focus {
 aside ul.nav-list > li > a {
 	font-size: 13px;
 	padding-left: 21px;
+	font-weight: 600;
 }
 aside ul.nav-list > li > a:before {
 	margin-left: -11px;
