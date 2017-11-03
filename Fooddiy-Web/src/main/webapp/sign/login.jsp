@@ -191,12 +191,9 @@
 		
 		<!-- Theme Initialization Files -->
 		<script src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
-<<<<<<< HEAD
-=======
 		
 		<!-- Examples -->
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqatUi4ICaA6KBVjyOxul0QKP4F_H7-mY"></script>
 		
->>>>>>> branch 'master' of https://github.com/hysrush/Foodiy-Project.git
 </body>
 </html>
