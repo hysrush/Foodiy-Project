@@ -61,6 +61,15 @@
 
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/custom.css">
+		
+			
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> 
+		
+		
 	</head>
 	<body>
 		<div class="body">
@@ -89,29 +98,25 @@
 						</div>
 					</div>
 				</section>
+
 				
-
-				<div class= "container">
-					<div class="row">
-						<div class="col-md-2 ">
-
-				<div class="container">
-				<div class="row">
-					<div class="col-md-2 hidden-xs">
-
+					<div class="col-md-2 hidden-xs hidden-sm">
 						<aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
 							<h4 class="heading-primary"><strong>커뮤니티 </strong></h4>
 
 							<ul class="nav nav-list mb-xlg sort-source" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
-									<li><a href="${ pageContext.request.contextPath }/notice/qna.jsp">자주하는 질문</a></li>
-									<li><a href="${ pageContext.request.contextPath }/notice/noticeList.jsp">공지사항</a></li>
-									<li><a href="${ pageContext.request.contextPath }/notice/suggestion.jsp">1:1 문의</a></li>
-									<li class="active"><a href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">SNS게시판</a></li>
+								<li><a href="${ pageContext.request.contextPath }/notice/qna.jsp">자주하는 질문</a></li>
+								<li><a href="${ pageContext.request.contextPath }/notice/noticeList.jsp">공지사항</a></li>
+								<li class="active"><a href="${ pageContext.request.contextPath }/notice/suggestion.jsp">1:1 문의</a></li>
+								<li><a href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">SNS게시판</a></li>
 							</ul>
 						</aside>
 					</div>
+					
 						<!-- START! -->
-						<div class="row">
+					<div class="container">
+						<div class="row">		
+						 
 						<div class="sort-destination-loader sort-destination-loader-showing">
 							<ul class="portfolio-list sort-destination popup-gallery-ajax" data-sort-id="portfolio">
 								<li class="col-md-4 col-sm-10 col-xs-12 isotope-item brands">
@@ -143,166 +148,23 @@
 										</span>
 									</span>	
 								</li>
-								<li class="col-md-4 col-sm-10 col-xs-12 isotope-item brands">
-									<div class="testimonial testimonial-style-3">
-										<div class="testimonial-author">
-											<div class="testimonial-author-thumbnail">
-												<img src="${ pageContext.request.contextPath }/resources/img/clients/client-1.png" class="img-responsive img-circle" alt="">
-											</div>
-												<p><strong>hysrush</strong></p>
-										</div>
-									</div>
-									<span class="product-thumb-info">
-										<a href="${ pageContext.request.contextPath }/notice/SNSBoard-Modal.jsp" data-ajax-on-modal>
-											<span class="thumb-info thumb-info-lighten">
-												<span class="thumb-info-wrapper">
-													<img src="${ pageContext.request.contextPath }/resources/img/products/product-1.png" class="img-responsive" alt="">
-												</span>
-											</span>
-										</a>
-											<span class="product-thumb-info-content">
-											<a href="${ pageContext.request.contextPath }/notice/SNSBoard-Modal.jsp">
-												<span>
-													<button type="button" class="mb-xs mt-xs mr-xs btn btn-borders btn-info"><i class="fa fa-thumbs-up"></i> </button>
-												</span>
-												<span>
-												<h4>오늘 먹은 이탈리안 BMT에요 !!</h4>
-												</span>
-											</a>
-										</span>
-									</span>	
-								</li>
-								<li class="col-md-4 col-sm-10 col-xs-12 isotope-item brands">
-									<div class="testimonial testimonial-style-3">
-										<div class="testimonial-author">
-											<div class="testimonial-author-thumbnail">
-												<img src="${ pageContext.request.contextPath }/resources/img/clients/client-1.png" class="img-responsive img-circle" alt="">
-											</div>
-												<p><strong>hysrush</strong></p>
-										</div>
-									</div>
-									<span class="product-thumb-info">
-										<a href="${ pageContext.request.contextPath }/notice/SNSBoard-Modal.jsp" data-ajax-on-modal>
-											<span class="thumb-info thumb-info-lighten">
-												<span class="thumb-info-wrapper">
-													<img src="${ pageContext.request.contextPath }/resources/img/products/product-1.png" class="img-responsive" alt="">
-												</span>
-											</span>
-										</a>
-											<span class="product-thumb-info-content">
-											<a href="shop-product-sidebar.html">
-												<span>
-													<button type="button" class="mb-xs mt-xs mr-xs btn btn-borders btn-info"><i class="fa fa-thumbs-up"></i> </button>
-												</span>
-												<span>
-												<h4>오늘 먹은 이탈리안 BMT에요 !!</h4>
-												</span>
-											</a>
-										</span>
-									</span>	
-								</li><li class="col-md-4 col-sm-10 col-xs-12 isotope-item brands">
-									<div class="testimonial testimonial-style-3">
-										<div class="testimonial-author">
-											<div class="testimonial-author-thumbnail">
-												<img src="${ pageContext.request.contextPath }/resources/img/clients/client-1.png" class="img-responsive img-circle" alt="">
-											</div>
-												<p><strong>hysrush</strong></p>
-										</div>
-									</div>
-									<span class="product-thumb-info">
-										<a href="${ pageContext.request.contextPath }/notice/SNSBoard-Modal.jsp" data-ajax-on-modal>
-											<span class="thumb-info thumb-info-lighten">
-												<span class="thumb-info-wrapper">
-													<img src="${ pageContext.request.contextPath }/resources/img/products/product-1.png" class="img-responsive" alt="">
-												</span>
-											</span>
-										</a>
-											<span class="product-thumb-info-content">
-											<a href="shop-product-sidebar.html">
-												<span>
-													<button type="button" class="mb-xs mt-xs mr-xs btn btn-borders btn-info"><i class="fa fa-thumbs-up"></i> </button>
-												</span>
-												<span>
-												<h4>오늘 먹은 이탈리안 BMT에요 !!</h4>
-												</span>
-											</a>
-										</span>
-									</span>	
-								</li><li class="col-md-4 col-sm-10 col-xs-12 isotope-item brands">
-									<div class="testimonial testimonial-style-3">
-										<div class="testimonial-author">
-											<div class="testimonial-author-thumbnail">
-												<img src="${ pageContext.request.contextPath }/resources/img/clients/client-1.png" class="img-responsive img-circle" alt="">
-											</div>
-												<p><strong>hysrush</strong></p>
-										</div>
-									</div>
-									<span class="product-thumb-info">
-										<a href="${ pageContext.request.contextPath }/notice/SNSBoard-Modal.jsp" data-ajax-on-modal>
-											<span class="thumb-info thumb-info-lighten">
-												<span class="thumb-info-wrapper">
-													<img src="${ pageContext.request.contextPath }/resources/img/products/product-1.png" class="img-responsive" alt="">
-												</span>
-											</span>
-										</a>
-											<span class="product-thumb-info-content">
-											<a href="shop-product-sidebar.html">
-												<span>
-													<button type="button" class="mb-xs mt-xs mr-xs btn btn-borders btn-info"><i class="fa fa-thumbs-up"></i> </button>
-												</span>
-												<span>
-												<h4>오늘 먹은 이탈리안 BMT에요 !!</h4>
-												</span>
-											</a>
-										</span>
-									</span>	
-								</li><li class="col-md-4 col-sm-10 col-xs-12 isotope-item brands">
-									<div class="testimonial testimonial-style-3">
-										<div class="testimonial-author">
-											<div class="testimonial-author-thumbnail">
-												<img src="${ pageContext.request.contextPath }/resources/img/clients/client-1.png" class="img-responsive img-circle" alt="">
-											</div>
-												<p><strong>hysrush</strong></p>
-										</div>
-									</div>
-									<span class="product-thumb-info">
-										<a href="${ pageContext.request.contextPath }/notice/SNSBoard-Modal.jsp" data-ajax-on-modal>
-											<span class="thumb-info thumb-info-lighten">
-												<span class="thumb-info-wrapper">
-													<img src="${ pageContext.request.contextPath }/resources/img/products/product-1.png" class="img-responsive" alt="">
-												</span>
-											</span>
-										</a>
-											<span class="product-thumb-info-content">
-											<a href="shop-product-sidebar.html">
-												<span>
-													<button type="button" class="mb-xs mt-xs mr-xs btn btn-borders btn-info"><i class="fa fa-thumbs-up"></i> </button>
-												</span>
-												<span>
-												<h4>오늘 먹은 이탈리안 BMT에요 !!</h4>
-												</span>
-											</a>
-										</span>
-									</span>	
-								</li>
 							</ul>
-						</div>
-					</div>
+						</div> 
+				
 				</div>
-
+			</div>
 			</div>
 							<!-- END -->
 			</div>
 
-				</div>
+				
 							<!-- END -->
-						</div>
-					</div>
+						
 
 			<footer id="footer">
 				<jsp:include page="/resources/include/bottom.jsp"/>
 			</footer>
-		</div>
+	
 		
 
 		<!-- Vendor -->
@@ -342,6 +204,6 @@
 		<script src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
 		
 		<!-- 모달창 띄우는 js -->
-		<script src="${ pageContext.request.contextPath}/resources/js/examples/examples.portfolio.js"></script>
+		<script src="${ pageContext.request.contextPath}/resources/js/examples/examples.portfolio.js"></script> 
 	</body>
 </html>
