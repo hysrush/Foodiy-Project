@@ -9,7 +9,7 @@
 <script>
 $(document).ready(function(){
 	
-
+/* 유저 데이터 받아올 때  */
 function getUserData() {
     /* FB.api('/me', function(response) {
         document.getElementById('response').innerHTML = 'Hello ' + response.name;
@@ -86,7 +86,7 @@ document.getElementById('loginBtn').addEventListener('click', function() {
 </script>
 <body>
 <!-- 	<div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="false"></div> -->
-	<div class="fb-login-button" id="loginBtn" data-width="200" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+	<div class="fb-login-button" id="loginBtn" data-width="200" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
 
 
 </body>

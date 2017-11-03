@@ -1,9 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
-<head>
 		<!-- Basic -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,23 +58,6 @@
 
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/custom.css">	
-		<script src="${ pageContext.request.contextPath}/resources/js/jquery-3.2.1.min.js"></script>
-		
-<script>
-	
-	$(document).ready(function(){
-		
-		$("#check").click(function(){
-
-			location.href="${pageContext.request.contextPath}/menu/menu.jsp"; 
-		});
-		
-		$("#signUp").click(function(){
-
-			location.href="${pageContext.request.contextPath}/sign/phoneCert.jsp"; 
-		});
-	});
-</script>
 </head>
 <body>
 	<div class="body">
@@ -94,14 +75,14 @@
 						<div class="row">
 							<div class="col-md-12">
 								<ul class="breadcrumb">
-									<li><a href="#">Sign In</a></li>
-									<li class="active">Login</li>
+									<li><a href="#">비회원</a></li>
+									<li class="active">주문조회</li>
 								</ul>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<h1>로그인</h1>
+								<h1>주문조회</h1>
 							</div>
 						</div>
 					</div>
@@ -121,20 +102,29 @@
 								<div class="tabs tabs-bottom tabs-center tabs-simple">
 									<ul class="nav nav-tabs">
 										<li class="active">
-											<a href="#memberLogin" data-toggle="tab" aria-expanded="true"> 회원 로그인</a>
-										</li>
-										<li class="">
-											<a href="#nonLogin" data-toggle="tab" aria-expanded="false"> 비회원 로그인</a>
+											<a href="#nonLogin" data-toggle="tab" aria-expanded="false"> 주문조회</a>
 										</li>
 									</ul>
-									<!-- 회원 로그인 -->
-										<div class="tab-content">
-											<div class="tab-pane active" id="memberLogin">
-												<jsp:include page="/resources/include/login/memberLogin.jsp"/>
-										</div>
 										<!--  비회원 로그인    -->
-										<div class="tab-pane" id="nonLogin">
-											<jsp:include page="/resources/include/login/nonmemberLogin.jsp"/>
+										<div class="tab-pane active" id="nonLogin">
+											<div class="container">
+												<div class="col-md-12">
+													<div class="row">
+														<div class="col-md-12">
+															<div class="tabs tabs-bottom tabs-center tabs-simple">
+																
+																<div class="tab-content">
+																	<!-- 주문조회 -->
+																	<div class="tab-pane  active" id="nonmemberMenu">
+																		<jsp:include
+																			page="/resources/include/login/nonmemberMenu.jsp" />
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>

@@ -325,7 +325,7 @@
 						</li>
 						<!-- 비회원 로그인하면 주문내역 조회 -->
 						<c:if test="${ not empty nonMember }">
-							<li class="dropdown"><a class="dropdown-toggle" href="#">주문내역조회</a></li>
+							<li class="dropdown"><a class="dropdown-toggle" href="${ pageContext.request.contextPath }/sign/nonmemberMenu.jsp">주문내역조회</a></li>
 						</c:if>
 						<c:choose>
 							<c:when test="${ empty userVO }">
@@ -342,7 +342,7 @@
 							</c:when>
 							<c:otherwise>
 								<li class="dropdown dropdown-mega dropdown-mega-signin signin logged" id="headerAccount">
-									<a class="dropdown-toggle" href="page-login.html"> <i class="fa fa-user"></i>${ userVO.name }</a>
+									<a class="dropdown-toggle" href="page-login.html"> <i class="fa fa-user"></i>이름</a>
 									<ul class="dropdown-menu">
 										<li>
 											<div class="dropdown-mega-content">
@@ -350,17 +350,17 @@
 													<div class="col-md-8">
 														<div class="user-avatar">
 															<div class="img-thumbnail">
-																<img src="${ pageContext.request.contextPath }/img/clients/client-1.jpg" alt="">
+																<img src="${ pageContext.request.contextPath }/resources/img/clients/client-1.jpg" alt="">
 															</div>
 															<p>
-																<strong>${ userVO.id }</strong> <span>${ 등급 }</span>
+																<strong>그린</strong> <span>등급</span>
 															</p>
 														</div>
 													</div>
 													<div class="col-md-4">
 														<ul class="list-account-options">
 															<li><a href="${ pageContext.request.contextPath }/member/memberDetail.jsp">My Page</a></li>
-															<li><a href="#">Log Out</a></li>
+															<li><a href="${ pageContext.request.contextPath }/sign/logout.jsp">Log Out</a></li>
 														</ul>
 													</div>
 												</div>
