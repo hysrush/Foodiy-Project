@@ -26,7 +26,7 @@
 	<!-- 새 글 등록 -->
 	<insert id="insertEvent" parameterType="eventVO">
 		insert into t_event(no, title, writer, content)
-			values(seq_t_board_no.nextval, #{title}, #{writer}, #{content})
+			values(seq_t_event_no.nextval, #{title}, #{writer}, #{content})
 	</insert>
 	
 	<select id="selectByNo" parameterType="int" resultMap="MapEventVO" >
