@@ -210,7 +210,36 @@ li {
 	}
 	
 	
+	.tabs.tabs-simple .nav-tabs > li a, .tabs.tabs-simple .nav-tabs > li a:hover, .tabs.tabs-simple .nav-tabs > li a:focus {
+	padding: 0px 0px;
+	background: none;
+	border: 0;
+	border-bottom: 3px solid #eee;
+	border-radius: 0;
+	color: #777;
+	font-size: 14px;
+	width:85.5px;
 
+	}
+	
+	.featured-boxes-style-5 .featured-box .icon-featured, .featured-boxes-style-6 .featured-box .icon-featured, .featured-boxes-style-7 .featured-box .icon-featured {
+	display: inline-block;
+	font-size: 20px;
+	height: 33px;
+	padding: 0;
+	width: 33px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	background: #FFF;
+	border: 1px solid #dfdfdf;
+	color: #777;
+	line-height: 35px;
+	}
+	
+	.tabs-center .nav-tabs {
+	margin: 15px auto;
+	text-align: center;	
+	}
 	
 }
 

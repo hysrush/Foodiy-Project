@@ -111,7 +111,8 @@
 								<div class="col-md-12">
 		
 									<div class="tabs tabs-bottom tabs-center tabs-simple">
-										<ul class="nav nav-tabs">
+										
+										<ul class="nav nav-tabs" style = "align:center">
 											<li class="active">
 												<a href="#tabsNavigationSimple1" data-toggle="tab" aria-expanded="true">진행중인 이벤트</a>
 											</li>
@@ -119,6 +120,7 @@
 												<a href="#tabsNavigationSimple2" data-toggle="tab" aria-expanded="false">종료된 이벤트 </a>
 											</li>
 										</ul>
+										
 										<div class="tab-content">
 											<div class="tab-pane active" id="tabsNavigationSimple1">
 												<div class="center">
