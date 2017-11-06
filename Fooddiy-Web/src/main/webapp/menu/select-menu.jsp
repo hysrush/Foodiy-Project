@@ -54,6 +54,9 @@
 
 <!-- Theme Custom CSS -->
 <link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/demos/demo-shop-9.css">
+<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/custom
+.css">
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
@@ -158,15 +161,12 @@
 										<jsp:include page="/menu/select-vegetable.jsp"/>
 									</div>
 									<div class="tab-pane" id="tabsNavigationSimpleIcons4">
-										<jsp:include page="/menu/select-sause.jsp"/>
+										<jsp:include page="/menu/select-sauce.jsp"/>
 									</div>
 								</div> 
 							</div>
 						</div>
 					</div>
-
-
-
 				</div>
 
 			</div>

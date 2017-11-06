@@ -199,7 +199,7 @@
 	<script type="text/javascript" >
 		$(document).ready(function() {
 			$('.cart-dropdown-icon').click(function() {
-				$('.cart-dropdownmenu').toggle();
+				$('.cart-dropdownmenu').toggle(500);
 			});
 		})
 	</script>

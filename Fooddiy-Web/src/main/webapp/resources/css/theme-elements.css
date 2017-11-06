@@ -3251,6 +3251,7 @@ html[xmlns] .clearfix {
 }
 
 @media (max-width: 991px) {
+
 	.sample-item .sample-item-image-wrapper, .sample-item .owl-carousel {
 		height: 33vw;
 	}
