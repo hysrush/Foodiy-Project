@@ -112,7 +112,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<h1>프리미엄</h1>
+							<h1>전체메뉴</h1>
 						</div>
 					</div>
 				</div>
@@ -136,7 +136,8 @@
 								<li data-option-value=".classic"><a href="#">클래식</a></li>
 								<li data-option-value=".breakfast"><a href="#">아침식사</a></li>
 								<li data-option-value=".salad"><a href="#">샐러드</a></li>
-								<li data-option-value=".addition"><a href="#">음료&추가메뉴</a></li>
+								<li data-option-value=".addition"><a href="#">추가메뉴</a></li>
+								<li data-option-value=".beverage"><a href="#">음료</a></li>
 							</ul>
 						</aside>						
 					</div>					
@@ -146,13 +147,13 @@
 						<aside id="lnb" class="hidden-md hidden-lg">
 							<nav>
 								<ul>
-									<li>
+									<li class="active">
 										<a href="${ pageContext.request.contextPath }/menu/menu2.jsp">전체메뉴</a>
 									</li>
 									<li>
 										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/recommend.jsp">추천메뉴</a>
 									</li>
-									<li class="active">
+									<li>
 										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/premium.jsp">프리미엄</a>
 									</li>
 									<li>
@@ -168,7 +169,10 @@
 										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/salad.jsp">샐러드</a>
 									</li>
 									<li>
-										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/side.jsp">음료&추가메뉴</a>
+										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/addition.jsp">추가메뉴</a>
+									</li>
+									<li>
+										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/beverage.jsp">음료</a>
 									</li>
 								</ul>
 							</nav>						
@@ -185,6 +189,9 @@
 						<div class="row">
 							<div class="sort-destination-loader sort-destination-loader-showing">
 								<ul class="portfolio-list sort-destination"	data-sort-id="portfolio">
+								
+								
+									<!-- 프리미엄 -->
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item premium">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
@@ -192,7 +199,7 @@
 												class="thumb-info-wrapper"> <img
 													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Steak-Cheese.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">스테이크 & 치즈</span> <span
 														class="thumb-info-type">6,100</span>
@@ -211,7 +218,7 @@
 												class="thumb-info-wrapper"> <img
 													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Roast-Beef.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">로스트 비프</span> <span
 														class="thumb-info-type">5,800</span>
@@ -230,7 +237,7 @@
 												class="thumb-info-wrapper"> <img
 													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Oven-Roasted-Chicken.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">로스트 치킨</span> <span
 														class="thumb-info-type">5,800</span>
@@ -249,7 +256,7 @@
 												class="thumb-info-wrapper"> <img
 													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Chicken-Bacon-Ranch-Melt.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">치킨 베이컨랜치</span> <span
 														class="thumb-info-type">5,800</span>
@@ -260,7 +267,9 @@
 											</span>
 											</span>
 										</div>
-									</li>																	
+									</li>
+									
+									
 								</ul>
 							</div>
 						</div>

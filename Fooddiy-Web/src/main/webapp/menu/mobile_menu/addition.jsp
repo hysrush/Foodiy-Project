@@ -191,18 +191,18 @@
 								<ul class="portfolio-list sort-destination"	data-sort-id="portfolio">
 								
 								
-									<!-- 클래식 -->
-									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item classic">
+									<!-- 추가메뉴 -->
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item addition">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
-													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Classic-Tuna.jpg"
+													src="${ pageContext.request.contextPath }/resources/img/menu/SubChips.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 65px; margin-bottom: 65px"> <span
+													style="margin-top: 66px; margin-bottom: 66px"> <span
 													class="thumb-info-title"> <span
-														class="thumb-info-inner">참치</span> <span
-														class="thumb-info-type">4,500</span>
+														class="thumb-info-inner">칩</span> <span
+														class="thumb-info-type">1,000</span>
 												</span> <span class="thumb-info-action"> <span
 														class="thumb-info-action-icon"><a
 															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
@@ -212,18 +212,117 @@
 											</span>
 										</div>
 									</li>
-									
-									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item classic">
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item addition">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
-													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Black-Forest-Ham.jpg"
+													src="${ pageContext.request.contextPath }/resources/img/menu/cookei_double_choco.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 65px; margin-bottom: 65px"> <span
+													style="margin-top: 50px; margin-bottom: 50px"> <span
 													class="thumb-info-title"> <span
-														class="thumb-info-inner">햄</span> <span
-														class="thumb-info-type">4,500</span>
+														class="thumb-info-inner">더블 초코칩 쿠키</span> <span
+														class="thumb-info-type">1,000</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item addition">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/cookei_maple_macadamia.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">메이플 마카다미아 쿠키</span> <span
+														class="thumb-info-type">1,000</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item addition">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/cookei_caramel_choco.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">카라멜 초코칩 쿠키</span> <span
+														class="thumb-info-type">1,000</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item addition">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/minestrone.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">미네스트로네</span> <span
+														class="thumb-info-type">3,600</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item addition">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/cream_corn_chowder.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">크림콘 차우더</span> <span
+														class="thumb-info-type">3,600</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item addition">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/vegetables_soup.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">크림야채 차우더</span> <span
+														class="thumb-info-type">3,600</span>
 												</span> <span class="thumb-info-action"> <span
 														class="thumb-info-action-icon"><a
 															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">

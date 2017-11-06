@@ -112,7 +112,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<h1>베스트</h1>
+							<h1>전체메뉴</h1>
 						</div>
 					</div>
 				</div>
@@ -136,7 +136,8 @@
 								<li data-option-value=".classic"><a href="#">클래식</a></li>
 								<li data-option-value=".breakfast"><a href="#">아침식사</a></li>
 								<li data-option-value=".salad"><a href="#">샐러드</a></li>
-								<li data-option-value=".addition"><a href="#">음료&추가메뉴</a></li>
+								<li data-option-value=".addition"><a href="#">추가메뉴</a></li>
+								<li data-option-value=".beverage"><a href="#">음료</a></li>
 							</ul>
 						</aside>						
 					</div>					
@@ -146,7 +147,7 @@
 						<aside id="lnb" class="hidden-md hidden-lg">
 							<nav>
 								<ul>
-									<li>
+									<li class="active">
 										<a href="${ pageContext.request.contextPath }/menu/menu2.jsp">전체메뉴</a>
 									</li>
 									<li>
@@ -155,7 +156,7 @@
 									<li>
 										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/premium.jsp">프리미엄</a>
 									</li>
-									<li class="active">
+									<li>
 										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/best.jsp">베스트</a>
 									</li>
 									<li>
@@ -168,7 +169,10 @@
 										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/salad.jsp">샐러드</a>
 									</li>
 									<li>
-										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/side.jsp">음료&추가메뉴</a>
+										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/addition.jsp">추가메뉴</a>
+									</li>
+									<li>
+										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/beverage.jsp">음료</a>
 									</li>
 								</ul>
 							</nav>						
@@ -185,6 +189,9 @@
 						<div class="row">
 							<div class="sort-destination-loader sort-destination-loader-showing">
 								<ul class="portfolio-list sort-destination"	data-sort-id="portfolio">
+								
+								
+									<!-- 베스트 -->
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item best">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
@@ -192,7 +199,7 @@
 												class="thumb-info-wrapper"> <img
 													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Spicy-Italian.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">스파이시 이탈리안</span> <span
 														class="thumb-info-type">5,300</span>
@@ -211,7 +218,7 @@
 												class="thumb-info-wrapper"> <img
 													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Turkey-Breast.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">터키 베이컨</span> <span
 														class="thumb-info-type">5,300</span>
@@ -230,7 +237,7 @@
 												class="thumb-info-wrapper"> <img
 													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Sweet-Onion-Chicken-Teriyaki.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">치킨 데리야끼</span> <span
 														class="thumb-info-type">5,300</span>
@@ -249,7 +256,7 @@
 												class="thumb-info-wrapper"> <img
 													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Subway-Club.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">써브웨이 클럽</span> <span
 														class="thumb-info-type">5,300</span>
@@ -260,7 +267,9 @@
 											</span>
 											</span>
 										</div>
-									</li>																	
+									</li>
+									
+									
 								</ul>
 							</div>
 						</div>
