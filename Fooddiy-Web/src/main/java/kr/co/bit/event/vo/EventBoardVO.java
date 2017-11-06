@@ -1,10 +1,12 @@
 package kr.co.bit.event.vo;
 
+import org.springframework.web.multipart.MultipartFile;
+
 public class EventBoardVO {
 
 	private int no;
 	private String title;
-	//private 첨부사진 보류 
+	private MultipartFile imgFile; // 첨부파일
 	private String content;
 	private String StartDate;
 	private String EndDate;
@@ -21,6 +23,13 @@ public class EventBoardVO {
 	public void setTitle(String title) {
 		this.title = title;
 	}
+	public MultipartFile getImgFile() {
+	    return imgFile;
+	}
+	public void setImgFile(MultipartFile imgFile) {
+	    this.imgFile = imgFile;
+	}
+
 	public String getContent() {
 		return content;
 	}
