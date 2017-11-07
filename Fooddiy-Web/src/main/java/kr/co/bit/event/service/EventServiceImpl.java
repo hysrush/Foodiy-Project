@@ -9,7 +9,7 @@ import kr.co.bit.event.dao.EventDAO;
 import kr.co.bit.event.vo.EventBoardVO;
 
 @Service
-public class EventServiceImpl {
+public class EventServiceImpl implements EventService{
 
 	@Autowired
 	private EventDAO eventDAO;
