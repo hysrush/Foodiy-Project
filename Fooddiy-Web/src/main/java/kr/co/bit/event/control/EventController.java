@@ -18,13 +18,13 @@ public class EventController {
 	private EventService eventService;
 	
 	
-	@RequestMapping("/eventList.do")
+	@RequestMapping("EventPage.do")
 	public ModelAndView list() {
 		List<EventBoardVO> eventList = eventService.selectAllEvent();
 		
 		ModelAndView mav = new ModelAndView();
 		//setViewName : 어떤 페이지를 보여줄것인가
-		mav.setViewName("event/EventPage");
+		mav.setViewName("event/EventPage.jsp");
 		//addObject : key 와 value 를 담아 보내는 메서드 
 		mav.addObject("eventList", eventList);
 		

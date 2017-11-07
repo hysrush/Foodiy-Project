@@ -96,7 +96,6 @@
 		<!-- ---------------------------------------------------------------------------------------------- -->
 			
 			
-			
 				<section class="page-header">
 					<div class="container">
 						<div class="row">
@@ -115,13 +114,11 @@
 					</div>
 				</section>
 			
-			
 			<div class="container" style="">
 				<div class="row">
 					<div style="width: 600px">
 						<div style="margin-top: 10%" class="col-md-3">
 							<aside  class="sidebar">
-
 								<h3 class="heading-primary">Categories</h3>
 								<ul class="nav nav-list mb-xlg">
 									<li class="active"><a href="${ pageContext.request.contextPath}/member/memberDetail.jsp">내 정보</a></li>
@@ -135,18 +132,14 @@
 					
 				<div class="col-md-4 ">
 					<img src="${ pageContext.request.contextPath }/resources/img/projects/project-4.jpg" class="img-responsive" alt="" style="margin-left: 7%; margin-top: 20%; width: 300px;">
-					<button style="float:right; margin-top: 4%; margin-right: 10%" type="button" class="btn btn-default" data-dismiss="modal">프로필변경</button>
+					<button style="float:right; margin-top: 4%; margin-right: 10%" type="button" class="btn btn-default" >프로필변경</button>
 				</div><br/><br/>
-				
 						<div class="col-md-5" style="margin-top: 3%; margin-left: 2%">
-
 							<div class="panel-group" id="accordion">
 								<div class="panel panel-default">
 									<div class="panel-heading">
 										<h4 class="panel-title">
-											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-												내정보
-											</a>
+											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">내정보</a>
 										</h4>
 									</div>
 									<div id="collapseOne" class="accordion-body collapse in">
@@ -168,7 +161,6 @@
 														</div>
 												</div>
 
-												
 													</div>
 												<div class="row">
 													<div class="form-group">
@@ -202,13 +194,10 @@
 														</div>
 													</div>
 												</div>
-														
 													</div>
 												</div>
 												<div class="row">
 													<div class="col-md-12">
-														
-													
 													</div>
 												</div>
 											</form>
@@ -216,7 +205,6 @@
 									</div>
 								</div>
 						</div>	
-						
 							<div style="margin-top: 12%; ">
 							<div class="row">
 									<input style="margin-left: 63%" type="submit" value="저장" class="btn btn-info" data-toggle="modal" data-target="#formModal"/>
@@ -239,9 +227,7 @@
 											</div>
 										</div>
 									</div>
-							
 							</div>
-
 					</div>
 					</div>
 					</div>
@@ -253,7 +239,6 @@
 			<jsp:include page="/resources/include/bottom.jsp"/>
 		</footer>
 	</div>
-
 		<!-- Vendor -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery.appear/jquery.appear.min.js"></script>
@@ -291,7 +276,6 @@
 		<script src="${ pageContext.request.contextPath}/resources/js/theme.init.js"></script>
 
 </body>
-
 
 
 
