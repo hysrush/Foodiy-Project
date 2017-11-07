@@ -147,7 +147,7 @@
 						<aside id="lnb" class="hidden-md hidden-lg">
 							<nav>
 								<ul>
-									<li class="active">
+									<li>
 										<a href="${ pageContext.request.contextPath }/menu/menu2.jsp">전체메뉴</a>
 									</li>
 									<li>
@@ -171,7 +171,7 @@
 									<li>
 										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/addition.jsp">추가메뉴</a>
 									</li>
-									<li>
+									<li  class="active">
 										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/beverage.jsp">음료</a>
 									</li>
 								</ul>

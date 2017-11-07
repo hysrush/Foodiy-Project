@@ -147,10 +147,10 @@
 						<aside id="lnb" class="hidden-md hidden-lg">
 							<nav>
 								<ul>
-									<li class="active">
+									<li>
 										<a href="${ pageContext.request.contextPath }/menu/menu2.jsp">전체메뉴</a>
 									</li>
-									<li>
+									<li class="active">
 										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/recommend.jsp">추천메뉴</a>
 									</li>
 									<li>
