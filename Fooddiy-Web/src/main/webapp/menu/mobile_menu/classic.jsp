@@ -112,7 +112,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<h1>클래식</h1>
+							<h1>전체메뉴</h1>
 						</div>
 					</div>
 				</div>
@@ -136,7 +136,8 @@
 								<li data-option-value=".classic"><a href="#">클래식</a></li>
 								<li data-option-value=".breakfast"><a href="#">아침식사</a></li>
 								<li data-option-value=".salad"><a href="#">샐러드</a></li>
-								<li data-option-value=".addition"><a href="#">음료&추가메뉴</a></li>
+								<li data-option-value=".addition"><a href="#">추가메뉴</a></li>
+								<li data-option-value=".beverage"><a href="#">음료</a></li>
 							</ul>
 						</aside>						
 					</div>					
@@ -146,7 +147,7 @@
 						<aside id="lnb" class="hidden-md hidden-lg">
 							<nav>
 								<ul>
-									<li>
+									<li class="active">
 										<a href="${ pageContext.request.contextPath }/menu/menu2.jsp">전체메뉴</a>
 									</li>
 									<li>
@@ -158,7 +159,7 @@
 									<li>
 										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/best.jsp">베스트</a>
 									</li>
-									<li class="active">
+									<li>
 										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/classic.jsp">클래식</a>
 									</li>
 									<li>
@@ -168,7 +169,10 @@
 										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/salad.jsp">샐러드</a>
 									</li>
 									<li>
-										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/side.jsp">음료&추가메뉴</a>
+										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/addition.jsp">추가메뉴</a>
+									</li>
+									<li>
+										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/beverage.jsp">음료</a>
 									</li>
 								</ul>
 							</nav>						
@@ -185,6 +189,9 @@
 						<div class="row">
 							<div class="sort-destination-loader sort-destination-loader-showing">
 								<ul class="portfolio-list sort-destination"	data-sort-id="portfolio">
+								
+								
+									<!-- 클래식 -->
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item classic">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
@@ -192,7 +199,7 @@
 												class="thumb-info-wrapper"> <img
 													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Classic-Tuna.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">참치</span> <span
 														class="thumb-info-type">4,500</span>
@@ -205,6 +212,7 @@
 											</span>
 										</div>
 									</li>
+									
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item classic">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
@@ -212,7 +220,7 @@
 												class="thumb-info-wrapper"> <img
 													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Black-Forest-Ham.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">햄</span> <span
 														class="thumb-info-type">4,500</span>
@@ -224,7 +232,9 @@
 											</span>
 											</span>
 										</div>
-									</li>																	
+									</li>
+									
+									
 								</ul>
 							</div>
 						</div>

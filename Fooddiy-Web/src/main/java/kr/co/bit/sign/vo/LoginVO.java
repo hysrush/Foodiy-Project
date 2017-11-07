@@ -1,4 +1,4 @@
-package kr.co.bit.login.vo;
+package kr.co.bit.sign.vo;
 
 public class LoginVO {
 

@@ -11,7 +11,7 @@
 						<div class="featured-box featured-box-primary align-left mt-xlg">
 							<div class="box-content">
 								<h4 class="heading-primary text-uppercase mb-md">회원</h4>
-								<form action="${ pageContext.request.contextPath }/index.jsp" id="frmSignIn" method="post">
+								<form action="${ pageContext.request.contextPath }/sign/login.do" id="frmSignIn" method="post">
 									<div class="row">
 										<div class="form-group">
 											<div class="col-md-12">
@@ -56,7 +56,7 @@
 								</div>
 								<div class="row mt-xlg">
 									<div class="col-md-12">
-										<input type="button" value="회원가입" id="signUp" class="btn btn-info mb-md form-control"/>
+										<a href="${ pageContext.request.contextPath }/sign/signUp.do" class="btn btn-info mb-md form-control">회원가입</a>
 									</div>
 								</div>
 							</div>

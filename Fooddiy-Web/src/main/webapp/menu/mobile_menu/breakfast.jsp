@@ -112,7 +112,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<h1>아침식사</h1>
+							<h1>전체메뉴</h1>
 						</div>
 					</div>
 				</div>
@@ -136,7 +136,8 @@
 								<li data-option-value=".classic"><a href="#">클래식</a></li>
 								<li data-option-value=".breakfast"><a href="#">아침식사</a></li>
 								<li data-option-value=".salad"><a href="#">샐러드</a></li>
-								<li data-option-value=".addition"><a href="#">음료&추가메뉴</a></li>
+								<li data-option-value=".addition"><a href="#">추가메뉴</a></li>
+								<li data-option-value=".beverage"><a href="#">음료</a></li>
 							</ul>
 						</aside>						
 					</div>					
@@ -146,7 +147,7 @@
 						<aside id="lnb" class="hidden-md hidden-lg">
 							<nav>
 								<ul>
-									<li>
+									<li class="active">
 										<a href="${ pageContext.request.contextPath }/menu/menu2.jsp">전체메뉴</a>
 									</li>
 									<li>
@@ -161,14 +162,17 @@
 									<li>
 										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/classic.jsp">클래식</a>
 									</li>
-									<li class="active">
+									<li>
 										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/breakfast.jsp">아침식사</a>
 									</li>
 									<li>
 										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/salad.jsp">샐러드</a>
 									</li>
 									<li>
-										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/side.jsp">음료&추가메뉴</a>
+										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/addition.jsp">추가메뉴</a>
+									</li>
+									<li>
+										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/beverage.jsp">음료</a>
 									</li>
 								</ul>
 							</nav>						
@@ -185,17 +189,20 @@
 						<div class="row">
 							<div class="sort-destination-loader sort-destination-loader-showing">
 								<ul class="portfolio-list sort-destination"	data-sort-id="portfolio">
+								
+								
+									<!-- 아침식사 -->
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item breakfast">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
-													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Classic-Tuna.jpg"
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-brkfst-baceggchs.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
-														class="thumb-info-inner">참치</span> <span
-														class="thumb-info-type">4,500</span>
+														class="thumb-info-inner">베이컨 에그&치즈</span> <span
+														class="thumb-info-type">2,900</span>
 												</span> <span class="thumb-info-action"> <span
 														class="thumb-info-action-icon"><a
 															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
@@ -205,17 +212,17 @@
 											</span>
 										</div>
 									</li>
-									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item classic">
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item breakfast">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
-													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Black-Forest-Ham.jpg"
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-brkfst-hameggchs.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
-														class="thumb-info-inner">햄</span> <span
-														class="thumb-info-type">4,500</span>
+														class="thumb-info-inner">블랙 포레스트 햄&에그,치즈</span> <span
+														class="thumb-info-type">2,900</span>
 												</span> <span class="thumb-info-action"> <span
 														class="thumb-info-action-icon"><a
 															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
@@ -224,7 +231,49 @@
 											</span>
 											</span>
 										</div>
-									</li>																	
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item breakfast">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-brkfst-stkeggchs.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 65px; margin-bottom: 65px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">스테이크 에그&치즈</span> <span
+														class="thumb-info-type">3,900</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item breakfast">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-brkfst-eggchs.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 65px; margin-bottom: 65px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">에그&치즈</span> <span
+														class="thumb-info-type">2,900</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									
+									
 								</ul>
 							</div>
 						</div>
