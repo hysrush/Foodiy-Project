@@ -135,9 +135,10 @@
 					
 				<div class="col-md-4 ">
 					<img src="${ pageContext.request.contextPath }/resources/img/projects/project-4.jpg" class="img-responsive" alt="" style="margin-left: 7%; margin-top: 20%; width: 300px;">
-				</div>
+					<button style="float:right; margin-top: 4%; margin-right: 10%" type="button" class="btn btn-default" data-dismiss="modal">프로필변경</button>
+				</div><br/><br/>
 				
-						<div class="col-md-5" style="margin-top: 6%; margin-left: 2%">
+						<div class="col-md-5" style="margin-top: 3%; margin-left: 2%">
 
 							<div class="panel-group" id="accordion">
 								<div class="panel panel-default">
