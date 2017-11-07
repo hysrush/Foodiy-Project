@@ -12,7 +12,7 @@ import kr.co.bit.member.vo.MemberVO;
 
 
 @Controller
-@RequestMapping("/board")
+@RequestMapping("/member")
 public class MemberController {
 		
 		@Autowired
