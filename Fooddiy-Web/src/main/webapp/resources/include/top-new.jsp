@@ -330,12 +330,12 @@
 						<c:choose>
 							<c:when test="${ empty userVO }">
 								<li class="dropdown dropdown-mega dropdown-mega-signin signin" id="headerAccount">
-									<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/sign/login.jsp">
+									<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/sign/login.do">
 										<i class="fa fa-user"></i> Sign IN
 									</a>
 								</li>
 								<li class="dropdown dropdown-mega dropdown-mega-signin signin" id="headerAccount">
-									<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/sign/phoneCert.jsp">
+									<a class="dropdown-toggle" href="${ pageContext.request.contextPath }/sign/phoneCert.do">
 										<i class="fa fa-user"></i> Sign UP
 									</a>
 								</li>

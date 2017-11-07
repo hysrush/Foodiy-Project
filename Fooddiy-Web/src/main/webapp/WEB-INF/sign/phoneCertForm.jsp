@@ -65,14 +65,16 @@
 	<script src="${ pageContext.request.contextPath }/resources/js/jquery-3.2.1.min.js"></script>
 	
 	<script>
-		$(document).ready(function(){
+		$(document).ready(function() {
 			
 			$("#phone").click(function(){
-				self.close();
-				opener.parent.location.href="${ pageContext.request.contextPath }/sign/signUp.jsp";
-				
+		    window.opener.name = "main"; // 부모창의 이름 설정
+		    document.form_chk.target = opener.window.name; // 타켓을 부모창으로 설정
+		    document.form_chk.method="post";
+		    document.form_chk.action = "${ pageContext.request.contextPath }/sign/phoneCertForm.do";
+		    document.form_chk.submit();
+		    self.close();
 			});
-				
 		});
 	</script>
 </head>
@@ -90,7 +92,7 @@
 								<p>본인 인증 서비스</p>
 								<div class="row mt-xlg">
 									<div class="col-md-12">
-										<form name="form_chk" method="post">
+										<form name="form_chk" method="post" target="main">
 											<div class="form-group">
 												<div class="col-xs-6 col-md-6">
 												<label>이름 </label> <input type="text" name="name" value="" class="form-control"/>

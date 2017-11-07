@@ -3,10 +3,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <script src="${ pageContext.request.contextPath }/resources/js/jquery-3.2.1.mis.js"></script>
 <script>
-	function account(){
+/* 	function account(){
 		alert("가입 축하드립니다!");
 		location.href="${ pageContext.request.contextPath }/index2.jsp";
-	}
+	} */
 
 </script>
 <!-- 회원 가입 -->
@@ -14,7 +14,7 @@
 	<div class="box-content">
 		<div id="collapseOne" class="accordion-body collapse in">
 			<div class="panel-body">
-				<form action="javascript:account();" id="frmBillingAddress" method="post">
+				<form action="${ pageConetext.reqeust.contextPath }/sign/signUp.do" id="frmBillingAddress" method="post">
 					<div class="row">
 						<div class="form-group">
 							<div class="col-md-4">
@@ -22,23 +22,21 @@
 							</div>
 							<div class="col-md-4">
 								<br />
-								<button id="idCheck" class="btn  btn-info">중복 확인</button>
 								<label>(영소문자/숫자, 6~16자)</label>
 							</div>
 							<div class="col-md-4">
-								<label>이름*</label> <input type="text" value=""
-									class="form-control">
+								<label>이름*</label> <input type="text" value="${ phoneCert.name }" class="form-control">
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="form-group">
 							<div class="col-md-6">
-								<label>비밀번호*</label> <input type="text" value=""
+								<label>비밀번호*</label> <input type="password" value=""
 									class="form-control">
 							</div>
 							<div class="col-md-6">
-								<label>비밀번호 확인*</label> <input type="text" value=""
+								<label>비밀번호 확인*</label> <input type="password" value=""
 									class="form-control">
 							</div>
 						</div>
@@ -47,19 +45,21 @@
 					<div class="row">
 						<div class="form-group">
 							<div class="col-md-4">
-								<label>전화번호 </label> <select class="form-control">
-									<option>010</option>
+								<label>전화번호 </label> 
+								<select class="form-control">
+									<option contenteditable="true">010</option>
 									<option>011</option>
 									<option>018</option>
 									<option>019</option>
 								</select>
+							
 							</div>
 							<br />
 							<div class="col-md-4">
-								<input type="text" value="" class="form-control">
+								<input type="text" value="${ phoneCert.phone2 }" class="form-control">
 							</div>
 							<div class="col-md-4">
-								<input type="text" value="" class="form-control">
+								<input type="text" value="${ phoneCert.phone3 }" class="form-control">
 							</div>
 						</div>
 					</div>
@@ -125,7 +125,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-6">
-							<input type="submit" id="member" class="btn btn-info mb-md" value="가입">
+							<input type="submit" id="member" class="btn btn-info mb-md" value="가입" disabled="disabled">
 						</div>
 						<div class="col-md-6">
 							<input type="reset" class="btn btn-info mb-md" value="취소">
