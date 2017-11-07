@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import kr.co.bit.event.dao.EventDAO;
+import kr.co.bit.event.vo.EventBoardVO;
 import kr.co.bit.member.dao.MemberDAO;
 import kr.co.bit.member.vo.MemberVO;
 
@@ -15,28 +17,29 @@ public class MemberServiceImp  implements MemberService  {
 	@Autowired
 	private MemberDAO memberDAO;
 	
-	public List<MemberVO> selectAllBoard() {
+	public List<MemberVO> selectAllmember() {
 		List<MemberVO> list = memberDAO.selectAll();
 		return list;
 	}
 
-	public MemberVO selectOneBoard(int no) {
+	public MemberVO selectOneMember(int no) {
 		return memberDAO.selectOne(no);
 	}
 
-	public void insertBoard(MemberVO board) {
-		memberDAO.insert(board);
-	
-	}
-
-	public void modifyBoard(MemberVO board) {
-		// TODO Auto-generated method stub
+	public void insertMember(MemberVO member) {
+		memberDAO.insert(member);
 		
 	}
 
-	public void removeBoard(int no) {
-		// TODO Auto-generated method stub
+	public void modifyMember(MemberVO member) {
+		memberDAO.update(member);
 		
 	}
+
+	public void removeMember(int no) {
+		memberDAO.delete(no);
+		
+	}
+
 
 }

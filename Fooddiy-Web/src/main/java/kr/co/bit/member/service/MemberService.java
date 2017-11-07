@@ -7,9 +7,9 @@ import kr.co.bit.member.vo.MemberVO;
 
 public interface MemberService {
 
-	List<MemberVO> selectAllBoard();
-	MemberVO selectOneBoard(int no);
-	void insertBoard(MemberVO board);
-	void modifyBoard(MemberVO board);
-	void removeBoard(int no);
+	List<MemberVO> selectAllmember();
+	MemberVO selectOneMember(int no);
+	void insertMember(MemberVO member);
+	void modifyMember(MemberVO member);
+	void removeMember(int no);
 }

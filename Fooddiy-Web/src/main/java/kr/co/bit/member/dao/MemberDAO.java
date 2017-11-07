@@ -6,9 +6,10 @@ import kr.co.bit.member.vo.MemberVO;
 
 
 public interface MemberDAO {
+	
 	List<MemberVO> selectAll();
 	MemberVO selectOne(int no);
-	void insert(MemberVO board);
-	void update(MemberVO board);
+	void insert(MemberVO member);
+	void update(MemberVO member);
 	void delete(int no);
 }
