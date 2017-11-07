@@ -3,71 +3,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<!-- Basic -->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title> | Menu | </title>	  
+<title>Fooddiy-Order</title>
 
-		<meta name="keywords" content="HTML5 Template" />
-		<meta name="description" content="Porto - Responsive HTML5 Template">
-		<meta name="author" content="okler.net">
+<meta name="keywords" content="HTML5 Template" />
+<meta name="description" content="Porto - Responsive HTML5 Template">
+<meta name="author" content="okler.net">
 
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="${ pageContext.request.contextPath}/resources/img/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="${ pageContext.request.contextPath}/resources/img/apple-touch-icon.png">
+<!-- Favicon -->
+<link rel="shortcut icon"
+	href="${ pageContext.request.contextPath}/resources/img/favicon.ico"
+	type="image/x-icon" />
+<link rel="apple-touch-icon"
+	href="${ pageContext.request.contextPath}/resources/img/apple-touch-icon.png">
 
-		<!-- Mobile Metas -->
-		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- Mobile Metas -->
+<meta name="viewport"
+	content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<!-- Web Fonts  -->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+<!-- Web Fonts  -->
+<link
+	href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light"
+	rel="stylesheet" type="text/css">
 
-		<!-- Vendor CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/animate/animate.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/simple-line-icons/css/simple-line-icons.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.theme.default.min.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/magnific-popup.min.css">
+<!-- Vendor CSS -->
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/animate/animate.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/simple-line-icons/css/simple-line-icons.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.carousel.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/owl.carousel/assets/owl.theme.default.min.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/magnific-popup/magnific-popup.min.css">
 
-		<!-- Theme CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-elements.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-blog.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/theme-shop.css">
+<!-- Theme CSS -->
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/css/theme.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/css/theme-elements.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/css/theme-blog.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/css/theme-shop.css">
 
-		<!-- Current Page CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/settings.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/layers.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/navigation.css">
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/css/component.css">
+<!-- Current Page CSS -->
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/settings.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/layers.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/rs-plugin/css/navigation.css">
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/vendor/circle-flip-slideshow/css/component.css">
 
-		<!-- Skin CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/skins/skin-shop-9.css"> 
+<!-- Skin CSS -->
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/css/skins/skin-shop-9.css">
 
-		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/demos/demo-shop-9.css">
+<!-- Theme Custom CSS -->
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/css/demos/demo-shop-9.css">
 
-		<!-- 이미지 캐러셀 -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		
-		<!-- Head Libs -->
-		<script src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
+<!-- 이미지 캐러셀 -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Head Libs -->
+<script
+	src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
 
 
-		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="${ pageContext.request.contextPath}/resources/css/custom.css">
-
+<!-- Theme Custom CSS -->
+<link rel="stylesheet"
+	href="${ pageContext.request.contextPath}/resources/css/custom.css">
 </head>
 <body>
 	<div class="body">
-		<header id="header" class="header-no-min-height header-mobile-nav-only header-flex" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0'}">
-				<jsp:include page="/resources/include/top2.jsp"/>
+		<header id="header"
+				data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 53, 'stickySetTop': '-53px', 'stickyChangeLogo': false}">
+				<jsp:include page="/resources/include/top-new.jsp"/>
 		</header>
+		
+		<!-- Mobile menu 부분 -->
+		<jsp:include page="/resources/include/mobile-menu.jsp"/>
 		<div role="main" class="main">
 			<section class="page-header">
 				<div class="container">

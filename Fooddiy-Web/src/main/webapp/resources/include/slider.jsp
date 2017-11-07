@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div role="main" class="main">
 	
+	<div class= "container">	
 		<div class="row">
 			<div class="col-xs-6 col-md-2 hidden-xs" style="margin:10px 0px">
 					<div style="text-align:center; padding:5px;">공지사항&nbsp;
@@ -242,6 +243,7 @@
 						</table>
 					</div>
 				</div>
+			</div>
 		</div>
 	</div>
 

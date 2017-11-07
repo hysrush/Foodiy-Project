@@ -83,8 +83,25 @@
 
 <!-- Head Libs -->
 <script
-	src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js"></script>
+	src="${ pageContext.request.contextPath}/resources/vendor/modernizr/modernizr.min.js">
+</script>
+	
+<script>
+$(function(){
+    $(".portfolio-item").click(function(){
+    	var menu = $(this).attr("id");
+    	var url = 'detail_menu/'+menu+'.jsp';
+    	$('div.modal').modal().removeData();
+        $('div.modal').modal({remote : url});
+    })
+})
+/* $(function(){
+    $("#steakcheese").click(function(){
+        $('div.modal').modal({remote : 'detail_menu/steakcheese.jsp'});
+    })
+}) */
 
+</script>
 
 <!-- Theme Custom CSS -->
 <link rel="stylesheet"
@@ -136,56 +153,43 @@
 								<li data-option-value=".classic"><a href="#">클래식</a></li>
 								<li data-option-value=".breakfast"><a href="#">아침식사</a></li>
 								<li data-option-value=".salad"><a href="#">샐러드</a></li>
-								<li data-option-value=".addition"><a href="#">음료&추가메뉴</a></li>
+								<li data-option-value=".addition"><a href="#">추가메뉴</a></li>
+								<li data-option-value=".beverage"><a href="#">음료</a></li>
 							</ul>
 						</aside>						
 					</div>					
 
 
 					<div class="col-md-9">
-						<!-- <aside class="sidebar hidden-md hidden-lg carouselmenu" data-plugin-sticky
-							data-plugin-options="{ 'maxWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
-							<h4 class="heading-primary">MENU</h4>
-							<ul class="nav nav-list sort-source owl-carousel owl-theme" id="sidemenu" data-sort-id="portfolio"
-								data-option-key="filter"
-								data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*', 'items': 4}">
-								<li data-option-value="*" class="active"><a href="#">전체메뉴</a></li>
-								<li data-option-value=".recommend"><a href="#">추천메뉴</a></li>
-								<li data-option-value=".premium"><a href="#">프리미엄</a></li>
-								<li data-option-value=".best"><a href="#">베스트</a></li>
-								<li data-option-value=".classic"><a href="#">클래식</a></li>
-								<li data-option-value=".breakfast"><a href="#">아침식사</a></li>
-								<li data-option-value=".salad"><a href="#">샐러드</a></li>
-								<li data-option-value=".addition"><a href="#">음료&추가메뉴</a></li>
-							</ul>
-						</aside> -->
-						
 						<aside id="lnb" class="hidden-md hidden-lg">
 							<nav>
 								<ul>
 									<li class="active">
-										<a href="/menu/All">전체메뉴</a>
+										<a href="${ pageContext.request.contextPath }/menu/menu2.jsp">전체메뉴</a>
 									</li>
 									<li>
-										<a href="/menu/All">추천메뉴</a>
+										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/recommend.jsp">추천메뉴</a>
 									</li>
 									<li>
-										<a href="/menu/All">프리미엄</a>
+										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/premium.jsp">프리미엄</a>
 									</li>
 									<li>
-										<a href="/menu/All">베스트</a>
+										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/best.jsp">베스트</a>
 									</li>
 									<li>
-										<a href="/menu/All">클래식</a>
+										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/classic.jsp">클래식</a>
 									</li>
 									<li>
-										<a href="/menu/All">아침식사</a>
+										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/breakfast.jsp">아침식사</a>
 									</li>
 									<li>
-										<a href="/menu/All">샐러드</a>
+										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/salad.jsp">샐러드</a>
 									</li>
 									<li>
-										<a href="/menu/All">음료&추가메뉴</a>
+										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/addition.jsp">추가메뉴</a>
+									</li>
+									<li>
+										<a href="${ pageContext.request.contextPath }/menu/mobile_menu/beverage.jsp">음료</a>
 									</li>
 								</ul>
 							</nav>						
@@ -202,11 +206,13 @@
 						<div class="row">
 							<div class="sort-destination-loader sort-destination-loader-showing">
 								<ul class="portfolio-list sort-destination"	data-sort-id="portfolio">
+								
+									<!-- 추천메뉴 -->							
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item recommend">
-										<div class="portfolio-item" data-toggle="modal"	data-target="#largeModal">
+										<div class="portfolio-item" id="meatball">
 											<span class="thumb-info thumb-info-lighten">
 												<span class="thumb-info-wrapper">
-													<img src="${ pageContext.request.contextPath }/resources/img/menu/mn-Meatball-Marinara.jpg" class="img-responsive" alt="" style="margin-top: 50px; margin-bottom: 50px">
+													<img src="${ pageContext.request.contextPath }/resources/img/menu/mn-Meatball-Marinara.jpg" class="img-responsive" alt="" style="margin-top: 65px; margin-bottom: 65px">
 														<span class="thumb-info-title">
 															<span class="thumb-info-inner">미트볼</span>
 															<span class="thumb-info-type">4,900</span>
@@ -222,14 +228,14 @@
 											</span>
 										</div>
 									</li>
+																		
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item recommend">
-										<div class="portfolio-item" data-toggle="modal"
-											data-target="#largeModal">
+										<div class="portfolio-item" id="italianbmt">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
 													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Italian-BMT.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">이탈리안 비엠티</span> <span
 														class="thumb-info-type">4,900</span>
@@ -241,14 +247,15 @@
 											</span>
 										</div>
 									</li>
+									
+									<!-- 프리미엄 -->
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item premium">
-										<div class="portfolio-item" data-toggle="modal"
-											data-target="#largeModal">
+										<div class="portfolio-item" id="steakcheese">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
 													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Steak-Cheese.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">스테이크 & 치즈</span> <span
 														class="thumb-info-type">6,100</span>
@@ -261,13 +268,12 @@
 										</div>
 									</li>
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item premium">
-										<div class="portfolio-item" data-toggle="modal"
-											data-target="#largeModal">
+										<div class="portfolio-item" id="roastbeef">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
 													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Roast-Beef.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">로스트 비프</span> <span
 														class="thumb-info-type">5,800</span>
@@ -280,13 +286,12 @@
 										</div>
 									</li>
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item premium">
-										<div class="portfolio-item" data-toggle="modal"
-											data-target="#largeModal">
+										<div class="portfolio-item" id="roastchicken">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
 													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Oven-Roasted-Chicken.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">로스트 치킨</span> <span
 														class="thumb-info-type">5,800</span>
@@ -299,13 +304,12 @@
 										</div>
 									</li>
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item premium">
-										<div class="portfolio-item" data-toggle="modal"
-											data-target="#largeModal">
+										<div class="portfolio-item" id="chickenbaconranch">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
 													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Chicken-Bacon-Ranch-Melt.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">치킨 베이컨랜치</span> <span
 														class="thumb-info-type">5,800</span>
@@ -317,14 +321,15 @@
 											</span>
 										</div>
 									</li>
+									
+									<!-- 베스트 -->
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item best">
-										<div class="portfolio-item" data-toggle="modal"
-											data-target="#largeModal">
+										<div class="portfolio-item" id="spicyitalian">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
 													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Spicy-Italian.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">스파이시 이탈리안</span> <span
 														class="thumb-info-type">5,300</span>
@@ -337,13 +342,12 @@
 										</div>
 									</li>
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item best">
-										<div class="portfolio-item" data-toggle="modal"
-											data-target="#largeModal">
+										<div class="portfolio-item" id="turkeybacon">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
 													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Turkey-Breast.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">터키 베이컨</span> <span
 														class="thumb-info-type">5,300</span>
@@ -356,13 +360,12 @@
 										</div>
 									</li>
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item best">
-										<div class="portfolio-item" data-toggle="modal"
-											data-target="#largeModal">
+										<div class="portfolio-item" id="chickenteriyaki">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
 													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Sweet-Onion-Chicken-Teriyaki.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">치킨 데리야끼</span> <span
 														class="thumb-info-type">5,300</span>
@@ -375,13 +378,12 @@
 										</div>
 									</li>
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item best">
-										<div class="portfolio-item" data-toggle="modal"
-											data-target="#largeModal">
+										<div class="portfolio-item" id="subwayclub">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
 													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Subway-Club.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">써브웨이 클럽</span> <span
 														class="thumb-info-type">5,300</span>
@@ -393,14 +395,15 @@
 											</span>
 										</div>
 									</li>
+									
+									<!-- 클래식 -->
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item classic">
-										<div class="portfolio-item" data-toggle="modal"
-											data-target="#largeModal">
+										<div class="portfolio-item" id="tuna">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
 													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Classic-Tuna.jpg"
 													class="img-responsive" alt=""
-													style="margin-top: 50px; margin-bottom: 50px"> <span
+													style="margin-top: 65px; margin-bottom: 65px"> <span
 													class="thumb-info-title"> <span
 														class="thumb-info-inner">참치</span> <span
 														class="thumb-info-type">4,500</span>
@@ -413,12 +416,275 @@
 											</span>
 										</div>
 									</li>
+									
 									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item classic">
+										<div class="portfolio-item" id="ham">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Black-Forest-Ham.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 65px; margin-bottom: 65px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">햄</span> <span
+														class="thumb-info-type">4,500</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									
+									<!-- 아침식사 -->
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item breakfast">
+										<div class="portfolio-item" id="baconeggcheese">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-brkfst-baceggchs.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 65px; margin-bottom: 65px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">베이컨 에그&치즈</span> <span
+														class="thumb-info-type">2,900</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item breakfast">
 										<div class="portfolio-item" data-toggle="modal"
 											data-target="#largeModal">
 											<span class="thumb-info thumb-info-lighten"> <span
 												class="thumb-info-wrapper"> <img
-													src="${ pageContext.request.contextPath }/resources/img/menu/mn-Black-Forest-Ham.jpg"
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-brkfst-hameggchs.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 65px; margin-bottom: 65px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">블랙 포레스트 햄&에그,치즈</span> <span
+														class="thumb-info-type">2,900</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item breakfast">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-brkfst-stkeggchs.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 65px; margin-bottom: 65px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">스테이크 에그&치즈</span> <span
+														class="thumb-info-type">3,900</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item breakfast">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-brkfst-eggchs.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 65px; margin-bottom: 65px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">에그&치즈</span> <span
+														class="thumb-info-type">2,900</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									
+									<!-- 샐러드 -->
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item salad">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-salad_loastbeef.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">로스트 비프</span> <span
+														class="thumb-info-type">5,800</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item salad">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-salad_ebi_avocado.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">슈림프 아보카도</span> <span
+														class="thumb-info-type">4,900</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item salad">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-salad_BLT.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">BLT</span> <span
+														class="thumb-info-type">4,100</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item salad">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-salad_subwayclub.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">서브웨이클럽</span> <span
+														class="thumb-info-type">5,400</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item salad">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-salad_namahamu_maskalu.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">햄&마스카르포네</span> <span
+														class="thumb-info-type">5,200</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item salad">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-salad_cheese_loastchiken.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">치즈로스트치킨</span> <span
+														class="thumb-info-type">4,900</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item salad">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-salad_teriyakichiken.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">데리야끼치킨</span> <span
+														class="thumb-info-type">4,900</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item salad">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-salad_turkeybrest.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">터키</span> <span
+														class="thumb-info-type">4,500</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item salad">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-salad_ham.jpg"
 													class="img-responsive" alt=""
 													style="margin-top: 50px; margin-bottom: 50px"> <span
 													class="thumb-info-title"> <span
@@ -433,6 +699,513 @@
 											</span>
 										</div>
 									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item salad">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-salad_egg.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">달걀</span> <span
+														class="thumb-info-type">3,900</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item salad">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-salad_avocado_veggie.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">아보카도</span> <span
+														class="thumb-info-type">3,900</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item salad">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/mn-salad_vegee_delight.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">야채</span> <span
+														class="thumb-info-type">3,000</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									
+									<!-- 추가메뉴 -->
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item addition">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/SubChips.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 66px; margin-bottom: 66px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">칩</span> <span
+														class="thumb-info-type">1,000</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item addition">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/cookei_double_choco.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">더블 초코칩 쿠키</span> <span
+														class="thumb-info-type">1,000</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item addition">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/cookei_maple_macadamia.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">메이플 마카다미아 쿠키</span> <span
+														class="thumb-info-type">1,000</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item addition">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/cookei_caramel_choco.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">카라멜 초코칩 쿠키</span> <span
+														class="thumb-info-type">1,000</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item addition">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/minestrone.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">미네스트로네</span> <span
+														class="thumb-info-type">3,600</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item addition">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/cream_corn_chowder.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">크림콘 차우더</span> <span
+														class="thumb-info-type">3,600</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item addition">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/vegetables_soup.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">크림야채 차우더</span> <span
+														class="thumb-info-type">3,600</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									
+									<!-- 음료 -->
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item beverage">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/icecaffee.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">아이스 커피</span> <span
+														class="thumb-info-type">2,200</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item beverage">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/icecocoa.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">아이스 코코아</span> <span
+														class="thumb-info-type">2,400</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item beverage">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/icetea.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">아이스 티</span> <span
+														class="thumb-info-type">2,200</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item beverage">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/orangejuice.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">오렌지주스</span> <span
+														class="thumb-info-type">2,200</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item beverage">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/pepsi.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">펩시</span> <span
+														class="thumb-info-type">2,200</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item beverage">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/hot_caffee.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">핫 커피</span> <span
+														class="thumb-info-type">2,200</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>									
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item beverage">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/hot_caffe_latte.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">핫 카페라떼</span> <span
+														class="thumb-info-type">2,400</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item beverage">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/hot_cocoa.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">핫 코코아</span> <span
+														class="thumb-info-type">2,400</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item beverage">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/hot_tea.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">핫 티</span> <span
+														class="thumb-info-type">2,200</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item beverage">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/hot_milktea.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">핫 밀크티</span> <span
+														class="thumb-info-type">2,200</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item beverage">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/hot_herbtea.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">핫 허브티</span> <span
+														class="thumb-info-type">2,200</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item beverage">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/soy_latte.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">핫 소이라떼</span> <span
+														class="thumb-info-type">2,700</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item beverage">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/cafemoca.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">핫 카페모카</span> <span
+														class="thumb-info-type">2,700</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item beverage">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/maccha_latte.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">핫 말차라떼</span> <span
+														class="thumb-info-type">2,700</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									<li class="col-md-4 col-sm-6 col-xs-6 isotope-item beverage">
+										<div class="portfolio-item" data-toggle="modal"
+											data-target="#largeModal">
+											<span class="thumb-info thumb-info-lighten"> <span
+												class="thumb-info-wrapper"> <img
+													src="${ pageContext.request.contextPath }/resources/img/menu/soycocoa.jpg"
+													class="img-responsive" alt=""
+													style="margin-top: 50px; margin-bottom: 50px"> <span
+													class="thumb-info-title"> <span
+														class="thumb-info-inner">핫 소이코코아</span> <span
+														class="thumb-info-type">2,700</span>
+												</span> <span class="thumb-info-action"> <span
+														class="thumb-info-action-icon"><a
+															href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
+																<i class="fa fa-plus"></i>
+														</a></span></span>
+											</span>
+											</span>
+										</div>
+									</li>
+									
+									
+									
 								</ul>
 							</div>
 						</div>
@@ -452,274 +1225,12 @@
 
 
 	<!-- 모달들 -->
-	<div class="modal fade" id="largeModal" tabindex="-1" role="dialog"
-		aria-labelledby="largeModalLabel" aria-hidden="true">
+	<div class="modal fade" tabindex="-1" role="dialog"	aria-labelledby="largeModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"
-						aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="largeModalLabel">MENU</h4>
-				</div>
-				<div class="modal-body shop">
-
-
-
-					<!-- 모달 속 상세내용 -->
-
-					<div class="row">
-						<div class="col-md-12">
-							<!-- <hr class="tall"> -->
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-md-6">
-
-							<div class="owl-carousel owl-theme"
-								data-plugin-options="{'items': 1}">
-								<div>
-									<div class="thumbnail"
-										style="margin-top: 90px; margin-bottom: 90px">
-										<img alt="" class="img-responsive img-rounded"
-											src="${ pageContext.request.contextPath }/resources/img/menu_detail/steak_and_cheese.jpg">
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="col-md-6">
-
-							<div class="summary entry-summary">
-
-								<h1 class="mb-none">
-									<strong>스테이크 & 치즈</strong>
-								</h1>
-								<div>스테이크 1 스쿱, 치즈 2장</div>
-
-								<div class="review_num">
-									<span class="count" itemprop="ratingCount">4</span> reviews
-								</div>
-
-								<div title="Rated 5.00 out of 5" class="star-rating">
-									<span style="width: 100%"><strong class="rating">4.50</strong>
-										out of 5</span>
-								</div>
-
-								<p class="price">
-									<span class="amount">6,100원</span>
-								</p>
-
-								<p class="taller">
-									푸짐한 스테이크에 살짝 녹은 치즈가 듬뿍! 보기만 해도 왜 사랑받는지 아실 수 있을거에요. <br>스테이크의
-									달콤한 풍미와 풍부한 식감으로 모든 이들을 잡아끄는 맛입니다.
-								</p>
-								<p class="inch">
-									<input type="radio" name="chk_info" value="HTML" checked="checked"><span
-										style="font-size: 18px; margin-left: 5px; margin-right: 20px">15cm</span>
-									<input type="radio" name="chk_info" value="CSS"
-										><span
-										style="font-size: 18px; margin-left: 5px">30cm</span>
-								</p>
-
-
-
-								<form enctype="multipart/form-data" method="post" class="cart">
-									<div class="quantity">
-										<input type="button" class="minus" value="-"> <input
-											type="text" class="input-text qty text" title="Qty" value="1"
-											name="quantity" min="1" step="1"> <input
-											type="button" class="plus" value="+">
-									</div>
-									<button href="#" class="btn btn-primary btn-icon">주문하기</button>
-								</form>
-
-								<div class="product_meta">
-									<span class="posted_in">Categories: <a rel="tag"
-										href="#">Steak</a>, <a rel="tag" href="#">Cheese</a>.
-									</span>
-								</div>
-
-							</div>
-
-
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-md-12">
-							<div class="tabs tabs-product">
-								<ul class="nav nav-tabs">
-									<li class="active"><a href="#productInfo"
-										data-toggle="tab">영양정보</a></li>
-								</ul>
-								<div class="tab-content">
-									<div class="tab-pane active" id="productInfo">
-										<table class="table table-striped mt-xl">
-											<tbody>
-												<tr>
-													<th>칼로리</th>
-													<td>390.0</td>
-												</tr>
-												<tr>
-													<th>총지방(g)</th>
-													<td>10.0</td>
-												</tr>
-												<tr>
-													<th>콜레스테롤(mg)</th>
-													<td>50.0</td>
-												</tr>
-												<tr>
-													<th>나트륨(mg)</th>
-													<td>1030.0</td>
-												</tr>
-												<tr>
-													<th>단백질(g)</th>
-													<td>26.0</td>
-												</tr>
-												<tr>
-													<th>탄수화물(g)</th>
-													<td>48.0</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-
-					<!-- SNS -->
-					<div class="row">
-						<div class="col-md-12">
-							<hr class="tall">
-
-							<h4 class="mb-md text-uppercase">
-								<strong>SNS</strong> Review
-							</h4>
-
-							<div class="row">
-
-								<ul class="team-list sort-destination" data-sort-id="team">
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item leadership">
-										<span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
-											<span class="thumb-info-wrapper"> <a
-												href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
-													<img
-													src="${ pageContext.request.contextPath }/resources/img/sns/review01.jpg"
-													class="img-responsive" alt=""> <!-- <span
-													class="thumb-info-title"> <span
-														class="thumb-info-inner">John Doe</span>
-														<span class="thumb-info-type">CEO</span>
-												</span> -->
-											</a>
-										</span> <span class="thumb-info-caption"> <span
-												class="thumb-info-caption-text">내 입맛대로 골라먹었어염 :)</span> <span
-												class="thumb-info-social-icons"> <a target="_blank"
-													href="http://www.facebook.com"><i
-														class="fa fa-facebook"></i><span>Facebook</span></a> <a
-													target="_blank" href="http://www.twitter.com"><i
-														class="fa fa-twitter"></i><span>Twitter</span></a> <a
-													target="_blank" href="http://www.instagram.com"><i
-														class="fa fa-instagram"></i><span>Instagram</span></a>
-											</span>
-										</span>
-									</span>
-									</li>
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item leadership">
-										<span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
-											<span class="thumb-info-wrapper"> <a
-												href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
-													<img
-													src="${ pageContext.request.contextPath }/resources/img/sns/review01.jpg"
-													class="img-responsive" alt=""> <!-- <span
-													class="thumb-info-title"> <span
-														class="thumb-info-inner">John Doe</span>
-														<span class="thumb-info-type">CEO</span>
-												</span> -->
-											</a>
-										</span> <span class="thumb-info-caption"> <span
-												class="thumb-info-caption-text">내 입맛대로 골라먹었어염 :)</span> <span
-												class="thumb-info-social-icons"> <a target="_blank"
-													href="http://www.facebook.com"><i
-														class="fa fa-facebook"></i><span>Facebook</span></a> <a
-													target="_blank" href="http://www.twitter.com"><i
-														class="fa fa-twitter"></i><span>Twitter</span></a> <a
-													target="_blank" href="http://www.instagram.com"><i
-														class="fa fa-instagram"></i><span>Instagram</span></a>
-											</span>
-										</span>
-									</span>
-									</li>
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item leadership">
-										<span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
-											<span class="thumb-info-wrapper"> <a
-												href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
-													<img
-													src="${ pageContext.request.contextPath }/resources/img/sns/review01.jpg"
-													class="img-responsive" alt=""> <!-- <span
-													class="thumb-info-title"> <span
-														class="thumb-info-inner">John Doe</span>
-														<span class="thumb-info-type">CEO</span>
-												</span> -->
-											</a>
-										</span> <span class="thumb-info-caption"> <span
-												class="thumb-info-caption-text">내 입맛대로 골라먹었어염 :)</span> <span
-												class="thumb-info-social-icons"> <a target="_blank"
-													href="http://www.facebook.com"><i
-														class="fa fa-facebook"></i><span>Facebook</span></a> <a
-													target="_blank" href="http://www.twitter.com"><i
-														class="fa fa-twitter"></i><span>Twitter</span></a> <a
-													target="_blank" href="http://www.instagram.com"><i
-														class="fa fa-instagram"></i><span>Instagram</span></a>
-											</span>
-										</span>
-									</span>
-									</li>
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item leadership">
-										<span class="thumb-info thumb-info-hide-wrapper-bg mb-xlg">
-											<span class="thumb-info-wrapper"> <a
-												href="${ pageContext.request.contextPath }/notice/SNSBoard.jsp">
-													<img
-													src="${ pageContext.request.contextPath }/resources/img/sns/review01.jpg"
-													class="img-responsive" alt=""> <!-- <span
-													class="thumb-info-title"> <span
-														class="thumb-info-inner">John Doe</span>
-														<span class="thumb-info-type">CEO</span>
-												</span> -->
-											</a>
-										</span> <span class="thumb-info-caption"> <span
-												class="thumb-info-caption-text">내 입맛대로 골라먹었어염 :)</span> <span
-												class="thumb-info-social-icons"> <a target="_blank"
-													href="http://www.facebook.com"><i
-														class="fa fa-facebook"></i><span>Facebook</span></a> <a
-													target="_blank" href="http://www.twitter.com"><i
-														class="fa fa-twitter"></i><span>Twitter</span></a> <a
-													target="_blank" href="http://www.instagram.com"><i
-														class="fa fa-instagram"></i><span>Instagram</span></a>
-											</span>
-										</span>
-									</span>
-									</li>
-
-
-								</ul>
-							</div>
-						</div>
-					</div>
-
-
-
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				</div>
-			</div>
+			<div class="modal-content"><!-- .jsp로 모달내용 -->	</div>
 		</div>
 	</div>
+	
 
 
 	<!-- Vendor -->

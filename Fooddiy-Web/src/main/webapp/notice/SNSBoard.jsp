@@ -166,11 +166,12 @@
 				</div>
 			</div>				<!-- END -->
 					
+		</div>
 			<footer id="footer">
 				<jsp:include page="/resources/include/bottom.jsp"/>
 			</footer>
 	
-		
+		</div>
 
 		<!-- Vendor -->
 		<script src="${ pageContext.request.contextPath}/resources/vendor/jquery/jquery.min.js"></script>
