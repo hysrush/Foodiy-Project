@@ -26,8 +26,8 @@ public class MemberDAOImpl implements MemberDAO {
 
 	}
 
-	public void insert(MemberVO board) {
-		sqlSession.insert("kr.co.bit.member.dao.MemberDAO.insertBoard", board);
+	public void insert(MemberVO member) {
+		sqlSession.insert("kr.co.bit.member.dao.MemberDAO.insertBoard", member);
 		
 	}
 

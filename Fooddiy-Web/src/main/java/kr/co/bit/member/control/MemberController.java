@@ -12,7 +12,7 @@ import kr.co.bit.member.vo.MemberVO;
 
 
 @Controller
-@RequestMapping("/board")
+@RequestMapping("/member")
 public class MemberController {
 		
 		@Autowired
@@ -20,11 +20,11 @@ public class MemberController {
 		
 		@RequestMapping("list.do")
 		public ModelAndView list() {
-			List<MemberVO>boardList=memberService.selectAllBoard();
+			List<MemberVO>memberList=memberService.selectAllmember();
 			
 			ModelAndView mav = new ModelAndView();
-			mav.setViewName("board/list");
-			mav.addObject("boardList", boardList);
+			mav.setViewName("member/Latest-Order");
+			mav.addObject("memberList", memberList);
 			
 			return mav;
 			
