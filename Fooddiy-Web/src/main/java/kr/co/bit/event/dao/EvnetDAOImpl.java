@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import kr.co.bit.event.vo.EventBoardVO;
 
 @Repository
-public class EvnetDAOImpl {
+public class EvnetDAOImpl implements EventDAO {
 	
 	@Autowired
 	private SqlSessionTemplate sqlSession;

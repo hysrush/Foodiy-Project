@@ -25,6 +25,7 @@
 	<!-- 객체 생성을 선언해 주는 태그 & annotation 사용 가능하게 할 태그 -->
 	<context:component-scan base-package="kr.co.bit"/>
 	
+	
 	<!-- aop annotation으로 이용 -->
 	<aop:aspectj-autoproxy/>
 	
